@@ -1,0 +1,129 @@
+- section: doc-widget
+  title: Sommaire
+  links:
+  - url: /fr/doc/
+    text: Documentation
+    icon: fa-book
+  - url: /fr/doc/doc-guidelines/
+    text: Improve the Docs
+    icon: fa-pencil
+  - text: View Page Source
+    icon: fa-code
+  - text: Edit This Page
+    icon: fa-code-fork
+  - url: /fr/security/
+    text: Report a Security Issue
+    icon: fa-lock
+  - url: /fr/doc/reporting-bugs/
+    text: Signaler un bogue
+    icon: fa-bug
+  - url: /fr/support/
+    text: Help & Support
+    icon: fa-life-ring
+  - url: /fr/donate/
+    text: Make a Donation
+    icon: fa-heart
+- section: intro
+  links:
+  - url: /video-tours/
+    text: Video Tours
+    id: 1
+  - url: /fr/screenshots/
+    text: Screenshots
+    id: 2
+- section: news-heading
+  title: Recent News
+  links:
+  - url: /fr/news/
+    text: Nouvelles
+    id: 1
+  - url: /fr/news/categories/
+    text: "Cat\xE9gories"
+    id: 2
+  - url: /fr/statistics/
+    text: Statistiques
+    id: 3
+- section: doc-external
+  text: This is unofficial, third-party documentation. The Qubes OS Project cannot
+    guarantee the accuracy of this page. Please exercise caution.
+- section: doc-translated
+  text: This page is an unverified full translation or translation currently in progress.
+    The Qubes OS Project cannot evaluate the accuracy of translations into languages
+    that our team cannot read.
+- section: doc-content
+  text: Sommaire
+- section: home-news
+  snippets:
+  - snippet: "Publi\xE9 dans"
+  - snippet: true
+- section: footer
+  title: The Qubes OS Project and others
+  search: Chercher
+  go: Go!
+  ddg: Using DurckDuckGo
+  links:
+  - url: https://github.com/QubesOS/qubesos.github.io
+    text: Website Source Code
+    id: 1
+  - url: http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion
+    text: Service onion de Tor
+    id: 2
+  - url: /fr/doc/reporting-bugs/
+    text: Report a Problem
+    id: 3
+  - url: /fr/privacy/
+    text: "Politique de confidentialit\xE9"
+    id: 4
+  - url: /fr/terms/
+    text: "Conditions g\xE9n\xE9rales d\u2019utilisation"
+    id: 5
+  - url: /sitemap.xml
+    text: Sitemap
+    id: 6
+- section: catnews
+  htmlsections:
+  - htmlsection: main
+    title: News by Category
+  - htmlsection: back
+    title: Back to main News page
+    url: /fr/news/
+- section: news
+  htmlsections:
+  - htmlsection: download
+    title: "T\xE9l\xE9charger"
+  - htmlsection: news
+    title: Nouvelles
+    url: /fr/news/
+  - htmlsection: newscategory
+    title: News by Category
+    url: /fr/news/categories/
+- section: security-xsa
+  htmlsections:
+  - htmlsection: statistics
+    title: Statistiques
+    tts1: Total time span
+    tts2: ans
+    txp: Total XSAs published
+    txaq: Total XSAs affecting Qubes OS
+    pxaq: Percentage of XSAs affecting Qubes OS
+  - htmlsection: tracker
+    title: Traqueur
+    column1: Date
+    column2: XSA
+    column3: Is Qubes Affected?
+    yes_short: Oui
+    no_short: Non
+    no_extended: No (unused or withdrawn XSA number)
+    tba: TBA
+- section: security-bulletins
+  htmlsections:
+  - htmlsection: table
+    columns:
+    - title: Date
+    - title: Qubes Security Bulletin
+- section: security-canaries
+  htmlsections:
+  - htmlsection: table
+    columns:
+    - title: Date
+    - title: Qubes Canary

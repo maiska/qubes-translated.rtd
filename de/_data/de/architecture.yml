@@ -1,0 +1,129 @@
+- title: Einleitung
+  url: /de/intro/
+  icon: fa-flag
+  sub-pages:
+  - title: Was ist Qubes OS?
+    url: /de/intro/
+  - title: FAQ
+    url: /de/faq/
+    icon: fa-question-circle
+  - title: Video Touren updated
+    url: /video-tours/
+    icon: fa-play-circle
+  - title: From the Experts
+    url: /de/experts/
+  - title: Screenshots
+    url: /de/screenshots/
+    icon: fa-picture-o
+  - title: Erste Schritte
+    url: /de/getting-started/
+    icon: fa-cubes
+  - title: Help and Support
+    url: /de/support/
+    icon: fa-life-ring
+  - title: Verhaltenskodex
+    url: /de/code-of-conduct/
+  - title: Security Center
+    url: /de/security/
+  - title: OS Architecture
+    url: /de/doc/architecture/
+- title: Downloads
+  url: /de/downloads/
+  icon: fa-download
+  sub-pages:
+  - title: Systemanforderungen
+    url: /de/doc/system-requirements/
+  - title: Zertifizierte Hardware
+    url: /de/doc/certified-hardware/
+  - title: Compatibility List
+    url: /de/hcl/
+  - title: Installationsanleitung
+    url: /de/doc/installation-guide/
+  - title: Verifying Signatures
+    url: /de/security/verifying-signatures/
+  - title: Supported Versions
+    url: /de/doc/supported-versions/
+  - title: Version Scheme
+    url: /de/doc/version-scheme/
+  - title: Quellcode
+    url: /de/doc/source-code/
+  - title: Software License
+    url: /de/doc/license/
+  - title: Download Mirrors
+    url: /de/downloads/#mirrors
+- title: Dokumentation
+  url: /de/doc/
+  icon: fa-book
+  sub-pages:
+  - title: Einleitung
+    url: /de/doc/#introduction
+  - title: Projektsicherheit
+    url: /de/doc/#project-security
+  - title: Choosing Hardware
+    url: /de/doc/#choosing-your-hardware
+  - title: Installieren und Aktualisieren
+    url: /de/doc/#downloading-installing-and-upgrading-qubes
+  - title: Allgemeine Aufgaben
+    url: /de/doc/#common-tasks
+  - title: Betriebssysteme verwalten
+    url: /de/doc/#managing-operating-systems-within-qubes
+  - title: Sicherheit in Qubes
+    url: /de/doc/#security-in-qubes
+  - title: Advanced Config
+    url: /de/doc/#advanced-configuration
+  - title: Entwicklerdokus
+    url: /de/doc/#developer-documentation
+  - title: Externe Dokus
+    url: /de/doc/#external-documentation
+- title: Neuigkeiten
+  url: /de/news/
+  icon: fa-newspaper-o
+  sub-pages:
+  - title: "Ank\xFCndigungen"
+    url: /de/news/categories/#announcements
+  - title: Articles
+    url: /de/news/categories/#articles
+  - title: Forschung
+    icon: fa-file-text
+    url: /de/research/
+  - title: Statistiken
+    url: /de/statistics/
+    icon: fa-bar-chart
+  - title: GitHub
+    url: https://github.com/QubesOS
+  - title: Qubes Forum
+    url: https://qubes-os.discourse.group/
+  - title: Twitter
+    url: https://twitter.com/QubesOS
+  - title: Reddit
+    url: https://www.reddit.com/r/Qubes/
+  - title: Facebook
+    url: https://www.facebook.com/QubesOS
+  - title: LinkedIn
+    url: https://www.linkedin.com/company/qubes-os/
+- title: Team
+  url: /de/team/
+  icon: fa-users
+  sub-pages:
+  - title: Report a Security Issue
+    url: /de/security/
+    icon: fa-lock
+  - title: Einen Fehler melden
+    url: /de/doc/reporting-bugs/
+  - title: Press Inquiries
+    url: mailto:press@qubes-os.org
+  - title: Business Inquiries
+    url: mailto:business@qubes-os.org
+- title: Spenden
+  url: /de/donate/
+  icon: fa-heart
+  sub-pages:
+  - title: "Wie Sie spenden k\xF6nnen"
+    url: /de/donate/
+  - title: Partner
+    url: /de/partners/
+    icon: fa-globe
+  - title: Merchandise
+    url: /de/merchandise/
+  - title: Mitwirken
+    url: /de/doc/contributing/

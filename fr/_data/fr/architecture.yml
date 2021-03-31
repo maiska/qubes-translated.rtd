@@ -1,0 +1,129 @@
+- title: "Pr\xE9sentation"
+  url: /fr/intro/
+  icon: fa-flag
+  sub-pages:
+  - title: "Qu\u2019est-ce que Qubes OS\u2009?"
+    url: /fr/intro/
+  - title: FAQ
+    url: /fr/faq/
+    icon: fa-question-circle
+  - title: Video Tours
+    url: /video-tours/
+    icon: fa-play-circle
+  - title: From the Experts
+    url: /fr/experts/
+  - title: Screenshots
+    url: /fr/screenshots/
+    icon: fa-picture-o
+  - title: Premier pas
+    url: /fr/getting-started/
+    icon: fa-cubes
+  - title: Help and Support
+    url: /fr/support/
+    icon: fa-life-ring
+  - title: Code de conduite
+    url: /fr/code-of-conduct/
+  - title: Security Center
+    url: /fr/security/
+  - title: OS Architecture
+    url: /fr/doc/architecture/
+- title: "T\xE9l\xE9chargements"
+  url: /fr/downloads/
+  icon: fa-download
+  sub-pages:
+  - title: "Configuration exig\xE9e"
+    url: /fr/doc/system-requirements/
+  - title: Certified Hardware
+    url: /fr/doc/certified-hardware/
+  - title: Compatibility List
+    url: /fr/hcl/
+  - title: Installation Guide
+    url: /fr/doc/installation-guide/
+  - title: "V\xE9rification des signatures"
+    url: /fr/security/verifying-signatures/
+  - title: Supported Versions
+    url: /fr/doc/supported-versions/
+  - title: Version Scheme
+    url: /fr/doc/version-scheme/
+  - title: Code source
+    url: /fr/doc/source-code/
+  - title: Software License
+    url: /fr/doc/license/
+  - title: Download Mirrors
+    url: /fr/downloads/#mirrors
+- title: Documentation
+  url: /fr/doc/
+  icon: fa-book
+  sub-pages:
+  - title: "Pr\xE9sentation"
+    url: /fr/doc/#introduction
+  - title: "S\xE9curit\xE9 du projet"
+    url: /fr/doc/#project-security
+  - title: Choosing Hardware
+    url: /fr/doc/#choosing-your-hardware
+  - title: Installing & Upgrading
+    url: /fr/doc/#downloading-installing-and-upgrading-qubes
+  - title: Common Tasks
+    url: /fr/doc/#common-tasks
+  - title: Managing OSes
+    url: /fr/doc/#managing-operating-systems-within-qubes
+  - title: Security in Qubes
+    url: /fr/doc/#security-in-qubes
+  - title: Advanced Config
+    url: /fr/doc/#advanced-configuration
+  - title: Developer Docs
+    url: /fr/doc/#developer-documentation
+  - title: External Docs
+    url: /fr/doc/#external-documentation
+- title: Nouvelles
+  url: /fr/news/
+  icon: fa-newspaper-o
+  sub-pages:
+  - title: Annonces
+    url: /fr/news/categories/#announcements
+  - title: Articles
+    url: /fr/news/categories/#articles
+  - title: Recherche
+    icon: fa-file-text
+    url: /fr/research/
+  - title: Statistiques
+    url: /fr/statistics/
+    icon: fa-bar-chart
+  - title: GitHub
+    url: https://github.com/QubesOS
+  - title: Qubes Forum
+    url: https://qubes-os.discourse.group/
+  - title: Twitter
+    url: https://twitter.com/QubesOS
+  - title: Reddit
+    url: https://www.reddit.com/r/Qubes/
+  - title: Facebook
+    url: https://www.facebook.com/QubesOS
+  - title: LinkedIn
+    url: https://www.linkedin.com/company/qubes-os/
+- title: "\xC9quipe"
+  url: /fr/team/
+  icon: fa-users
+  sub-pages:
+  - title: Report a Security Issue
+    url: /fr/security/
+    icon: fa-lock
+  - title: Signaler un bogue
+    url: /fr/doc/reporting-bugs/
+  - title: Press Inquiries
+    url: mailto:press@qubes-os.org
+  - title: Business Inquiries
+    url: mailto:business@qubes-os.org
+- title: Faire un don
+  url: /fr/donate/
+  icon: fa-heart
+  sub-pages:
+  - title: Comment faire un don
+    url: /fr/donate/
+  - title: Partenaires
+    url: /fr/partners/
+    icon: fa-globe
+  - title: Marchandise
+    url: /fr/merchandise/
+  - title: Participer
+    url: /fr/doc/contributing/
