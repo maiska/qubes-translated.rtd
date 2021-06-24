@@ -3,14 +3,11 @@ lang: de
 layout: doc
 permalink: /de/doc/test-bench/
 redirect_from:
-- /de/wiki/TestBench/
 - /de/doc/TestBench/
+- /de/wiki/TestBench/
 ref: 44
-title: Test Bench
+title: How to Set Up a Test Bench
 ---
-
-# Test bench for Dom0
-<a id="test-bench-for-dom0"></a>
 
 This guide shows how to set up simple test bench that automatically test your code you're about to push. It is written especially for `core3` branch of `core-admin.git` repo, but some ideas are universal.
 

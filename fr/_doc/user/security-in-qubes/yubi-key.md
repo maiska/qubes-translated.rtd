@@ -1,15 +1,13 @@
 ---
 lang: fr
 layout: doc
-permalink: /fr/doc/yubi-key/
+permalink: /fr/doc/yubikey/
 redirect_from:
 - /fr/doc/YubiKey/
+- /fr/doc/yubi-key/
 ref: 169
-title: YubiKey in Qubes
+title: YubiKey
 ---
-
-# Using YubiKey to Qubes authentication
-<a id="using-yubikey-to-qubes-authentication"></a>
 
 You can use a YubiKey to enhance Qubes user authentication, for example to mitigate risk of someone snooping the password.
 This can also slightly improve security when you have a [USB keyboard](/fr/doc/device-handling-security/#security-warning-on-usb-input-devices).
@@ -25,7 +23,7 @@ Same as in the OTP case, you will need to set up your YubiKey, choose a separate
 
 To use this mode you need to:
 
-1. Install yubikey personalization the packages in your TemplateVM on which your USB VM is based.
+1. Install yubikey personalization the packages in your template on which your USB VM is based.
 
    For Fedora.
 
@@ -39,8 +37,8 @@ To use this mode you need to:
     sudo apt-get install yubikey-personalization yubikey-personalization-gui
     ```
 
-   Shut down your TemplateVM.
-   Then, either reboot your USB VM (so changes inside the TemplateVM take effect in your USB TemplateBasedVM) or install the packages inside your USB VM if you would like to avoid rebooting it.
+   Shut down your template.
+   Then, either reboot your USB VM (so changes inside the template take effect in your USB app qube) or install the packages inside your USB VM if you would like to avoid rebooting it.
 
 2. Configure your YubiKey for challenge-response `HMAC-SHA1` mode, for example [following this tutorial](https://www.yubico.com/products/services-software/personalization-tools/challenge-response/).
 

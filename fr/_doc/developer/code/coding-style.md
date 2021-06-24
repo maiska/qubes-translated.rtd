@@ -3,16 +3,12 @@ lang: fr
 layout: doc
 permalink: /fr/doc/coding-style/
 redirect_from:
-- /fr/wiki/CodingStyle/
-- /fr/trac/wiki/CodingStyle/
 - /fr/doc/CodingStyle/
+- /fr/trac/wiki/CodingStyle/
+- /fr/wiki/CodingStyle/
 ref: 53
 title: Coding Style
 ---
-
-Coding Guidelines for Qubes Developers
-======================================
-<a id="coding-guidelines-for-qubes-developers"></a>
 
 Rationale
 ---------

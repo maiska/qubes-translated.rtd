@@ -7,10 +7,6 @@ ref: 20
 title: Qubes R3.0 Release Schedule
 ---
 
-Qubes R3.0 Release Schedule
-===========================
-<a id="qubes-r30-release-schedule"></a>
-
 |  Date       | Stage                                 |
 | -----------:| ------------------------------------- |
 |  5 Sep 2015 | current-testing freeze before 3.0-rc3 |

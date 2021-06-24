@@ -7,9 +7,6 @@ ref: 18
 title: Qubes R1.0 Release Notes
 ---
 
-# Qubes R1.0 Release Notes
-<a id="qubes-r10-release-notes"></a>
-
 Detailed release notes in [this blog post](https://blog.invisiblethings.org/2012/09/03/introducing-qubes-10.html).
 
 ## Known issues

@@ -1,6 +1,6 @@
 ---
 lang: de
-layout: default
+layout: site
 permalink: /de/statistics/
 redirect_from:
 - /de/counter/
@@ -30,7 +30,7 @@ Since the graph is updated daily, the bar for the current month will be very low
 ### How is the userbase estimated?
 <a id="how-is-the-userbase-estimated"></a>
 
-We simply count the number of unique IPv4 addresses that connect to the Qubes update servers each month (except for Tor connections; see [below][tor-methodology]).
+We simply count the number of unique IPv4 addresses that connect to the Qubes update servers each month (except for Tor connections; see [below](#how-has-the-methodology-for-counting-tor-users-changed)).
 
 ### How has the methodology for counting Tor users changed?
 <a id="how-has-the-methodology-for-counting-tor-users-changed"></a>
@@ -51,29 +51,18 @@ Where:
 - `plain_users` is the number of unique clearnet IPv4 addresses that connect to the Qubes update servers each month.
 - `plain_requests` is the total number of requests the Qubes update servers receive from clearnet IPv4 addresses each month.
 
-We cross-reference the list of connecting IP addresses with [TorDNSEL's exit lists] in order to distinguish Tor and clearnet IPs and requests.
+We cross-reference the list of connecting IP addresses with [TorDNSEL's exit lists](https://metrics.torproject.org/collector.html#type-tordnsel) in order to distinguish Tor and clearnet IPs and requests.
 For this purpose, we count an IP address as belonging to a Tor exit node if there was a Tor exit node active for that address within the 24-hour periods before or after it connected to the Qubes update servers.
 
 ### What kinds of data do you collect about Qubes users?
 <a id="what-kinds-of-data-do-you-collect-about-qubes-users"></a>
 
-We collect:
-
-- The IPv4 addresses that connect to the Qubes update servers
-- The number of requests from each IPv4 address
-- Standard server access and error logs
-
-We do not collect any other kinds of data about Qubes users.
+Please see our [Privacy Policy](/de/privacy/).
 
 ### Where can I find the raw data and source code?
 <a id="where-can-i-find-the-raw-data-and-source-code"></a>
 
-The raw data is available [here][raw-data].
+The raw data is available [here](https://tools.qubes-os.org/counter/stats.json).
 (This does not include any personally-identifying user data.)
 Please note that the format of this data is not documented and may change any time if the developers feel the need to include something else.
-The source code is available [here][source-code].
-
-[tor-methodology]: #how-has-the-methodology-for-counting-tor-users-changed
-[TorDNSEL's exit lists]: https://metrics.torproject.org/collector.html#type-tordnsel
-[raw-data]: https://tools.qubes-os.org/counter/stats.json
-[source-code]: https://github.com/woju/qubes-stats
+The source code is available [here](https://github.com/woju/qubes-stats).

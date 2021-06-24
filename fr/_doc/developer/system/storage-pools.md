@@ -6,10 +6,6 @@ ref: 57
 title: Storage Pools
 ---
 
-Storage Pools in Qubes
-======================
-<a id="storage-pools-in-qubes"></a>
-
 Qubes OS R3.2 introduced the concept of storage drivers and pools.  This feature
 was a first step towards a saner storage API, which is heavily rewritten in R4.
 See [here](https://dev.qubes-os.org/projects/core-admin/en/latest/qubes-storage.html)

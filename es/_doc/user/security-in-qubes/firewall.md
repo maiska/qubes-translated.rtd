@@ -4,15 +4,11 @@ layout: doc
 permalink: /es/doc/firewall/
 redirect_from:
 - /es/doc/QubesFirewall/
-- /es/wiki/QubesFirewall/
 - /es/doc/qubes-firewall/
+- /es/wiki/QubesFirewall/
 ref: 166
-title: The Qubes Firewall
+title: Firewall
 ---
-
-The Qubes Firewall
-==================
-<a id="the-qubes-firewall"></a>
 
 Understanding firewalling in Qubes
 ----------------------------------
@@ -32,7 +28,7 @@ How to edit rules
 
 In order to edit rules for a given qube, select it in the Qube Manager and press the "firewall" button.
 
-![r4.0-manager-firewall.png](/attachment/wiki/QubesFirewall/r4.0-manager-firewall.png)
+![r4.0-manager-firewall.png](/attachment/doc/r4.0-manager-firewall.png)
 
 If the qube is running, you can open Settings from the Qube Popup Menu.
 
@@ -505,7 +501,7 @@ Where to put firewall rules
 <a id="where-to-put-firewall-rules"></a>
 
 Implicit in the above example [scripts](/es/doc/config-files/), but worth calling attention to: for all qubes *except* those supplying networking, iptables commands should be added to the `/rw/config/rc.local` script.
-For AppVMs supplying networking (`sys-firewall` inclusive), iptables commands should be added to `/rw/config/qubes-firewall-user-script`.
+For app qubes supplying networking (`sys-firewall` inclusive), iptables commands should be added to `/rw/config/qubes-firewall-user-script`.
 
 Firewall troubleshooting
 ------------------------

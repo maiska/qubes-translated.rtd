@@ -3,15 +3,11 @@ lang: es
 layout: doc
 permalink: /es/doc/upgrade-to-r4.0/
 redirect_from:
-- /es/doc/UpgradeToR4.0rc1/
 - /es/doc/UpgradeToR4.0/
+- /es/doc/UpgradeToR4.0rc1/
 ref: 162
 title: Upgrading to R4.0
 ---
-
-Upgrading Qubes R3.2 to R4.0
-============================
-<a id="upgrading-qubes-r32-to-r40"></a>
 
 **Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users [back up their systems](/es/doc/backup-restore/).**
 
@@ -46,7 +42,7 @@ Backup R3.2
 
 7. If your backup verifies successfully, proceed to the next section.
    If it does not, **stop**.
-   Go back and repeat the backup steps, review the documentation, and ask for [help].
+   Go back and repeat the backup steps, review the documentation, and ask for [help](/es/support/).
 
 Install R4.0
 ------------
@@ -64,7 +60,7 @@ For further details, please see the [installation guide](/es/doc/installation-gu
    If you did not successfully verify your backup in the previous section, cancel the installation, and go back to do that now. 
 
 3. Complete the R4.0 installation.
-   Ask for [help] if you run into trouble.
+   Ask for [help](/es/support/) if you run into trouble.
 
 4. If you are unable to successfully install R4.0 on your system, all is not lost.
    Use the R3.2 installer to reinstall R3.2, then restore from your backup.
@@ -88,41 +84,39 @@ Restore from your backup
 4. Go to **Qubes menu -> System Tools -> Qubes Manager** to start it.
 
 5. Follow the **Restoring from a Backup** section in the [Backup, Restoration, and Migration](/es/doc/backup-restore/) guide.
-   We recommend that you restore only your [TemplateBasedVMs](/es/doc/glossary/#templatebasedvm) and [StandaloneVMs](/es/doc/glossary/#standalonevm) from R3.2.
-   Using [TemplateVMs](/es/doc/templates/) and [SystemVMs](/es/doc/glossary/#systemvm) from R3.2 is not fully supported (see [#3514](https://github.com/QubesOS/qubes-issues/issues/3514)).
-   Instead, we recommend using the TemplateVMs that were created specifically for R4.0, which you can [customize](/es/doc/software-update-vm/) according to your needs.
-   For the TemplateVM OS versions supported in R4.0, see [Supported Versions](/es/doc/supported-versions/#templatevms).
-   If the restore tool complains about missing templates, you can select the option to restore the AppVMs anyway, then change them afterward to use one of the default R4.0 templates.
+   We recommend that you restore only your [app qubes](/es/doc/glossary/#app-qube) and [standalones](/es/doc/glossary/#standalone) from R3.2.
+   Using [templates](/es/doc/templates/) and [service qubes](/es/doc/glossary/#service-qube) from R3.2 is not fully supported (see [#3514](https://github.com/QubesOS/qubes-issues/issues/3514)).
+   Instead, we recommend using the templates that were created specifically for R4.0, which you can [customize](/es/doc/software-update-vm/) according to your needs.
+   For the template OS versions supported in R4.0, see [Supported Versions](/es/doc/supported-versions/#templates).
+   If the restore tool complains about missing templates, you can select the option to restore the app qubes anyway, then change them afterward to use one of the default R4.0 templates.
 
 Note about additional disp-* qubes created during restore
 ---------------------------------------------------------
 <a id="note-about-additional-disp--qubes-created-during-restore"></a>
 
-One of differences between R3.2 and R4.0 is the handling of DisposableVMs.
-In R3.2, a DisposableVM inherited its network settings (NetVM and firewall rules) from the calling qube.
+One of differences between R3.2 and R4.0 is the handling of disposables.
+In R3.2, a disposable inherited its network settings (NetVM and firewall rules) from the calling qube.
 In R4.0, this is no longer the case.
-Instead, in R4.0 it's possible to create multiple DisposableVM Templates and choose which one should be used by each qube.
-It's even possible to use different DisposableVM Templates for different operations from the same qube.
+Instead, in R4.0 it's possible to create multiple disposable templates and choose which one should be used by each qube.
+It's even possible to use different disposable templates for different operations from the same qube.
 This allows much more flexibility, since it allows you to differentiate not only network settings, but all of a qube's properties (including its template, memory settings, etc.).
 
-Restoring a backup from R3.2 preserves the old behavior by creating separate DisposableVM Template for each network-providing qube (and also `disp-no-netvm` for network-isolated qubes).
-Then, each restored qube is configured to use the appropriate DisposableVM Template according to its `netvm` or `dispvm_netvm` property from R3.2.
-This way, DisposableVMs started on R4.0 by qubes restored from a R3.2 backup have the same NetVM settings as they had on R3.2.
+Restoring a backup from R3.2 preserves the old behavior by creating separate disposable template for each network-providing qube (and also `disp-no-netvm` for network-isolated qubes).
+Then, each restored qube is configured to use the appropriate disposable template according to its `netvm` or `dispvm_netvm` property from R3.2.
+This way, disposables started on R4.0 by qubes restored from a R3.2 backup have the same NetVM settings as they had on R3.2.
 
-If you find this behavior undesirable and want to configure it differently, you can remove those `disp-*` DisposableVM Templates.
+If you find this behavior undesirable and want to configure it differently, you can remove those `disp-*` disposable templates.
 But, to do so, you must first make sure they are not set as the value for the `default_dispvm` property on any other qube.
-Both Qubes Manager and the `qvm-remove` tool will show you where a DisposableVM Template is being used, so you can go there and change the setting.
+Both Qubes Manager and the `qvm-remove` tool will show you where a disposable template is being used, so you can go there and change the setting.
 
 Upgrade all Template and Standalone VM(s)
 -----------------------------------------
 <a id="upgrade-all-template-and-standalone-vms"></a>
 
-We strongly recommend that you update **all** TemplateVMs and StandaloneVMs before use so that you have the latest security patches from upstream distributions.
+We strongly recommend that you update **all** templates and standalones before use so that you have the latest security patches from upstream distributions.
 In addition, if the default templates have reached EOL (end-of-life) by the time you install R4.0, we strongly recommend that you upgrade them before use.
 Please see [Supported Versions](/es/doc/supported-versions/) for information on supported OS versions and consult the guides below for specific upgrade instructions:
 
-* [Upgrading Fedora TemplateVMs](/es/doc/templates/fedora/#upgrading)
-* [Upgrading Debian TemplateVMs](/es/doc/templates/debian/#upgrading)
-* [Updating Whonix TemplateVMs](https://www.whonix.org/wiki/Qubes/Update)
-
-[help]: /es/support/
+* [Upgrading Fedora templates](/es/doc/templates/fedora/#upgrading)
+* [Upgrading Debian templates](/es/doc/templates/debian/#upgrading)
+* [Updating Whonix templates](https://www.whonix.org/wiki/Qubes/Update)

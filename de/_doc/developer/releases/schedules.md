@@ -6,10 +6,6 @@ ref: 15
 title: Release Schedules
 ---
 
-Release Schedules
-=================
-<a id="release-schedules"></a>
-
 * [Qubes R3.0 release schedule](/de/doc/releases/3.0/schedule/)
 * [Qubes R3.1 release schedule](/de/doc/releases/3.1/schedule/)
 * [Qubes R3.2 release schedule](/de/doc/releases/3.2/schedule/)

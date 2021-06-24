@@ -1,3 +1,18 @@
+- name: Presse
+  icon: fa-newspaper-o
+  type: inquiries
+  email: press@qubes-os.org
+  fingerprint: null
+- name: "Gesch\xE4ft"
+  icon: fa-briefcase
+  type: inquiries
+  email: business@qubes-os.org
+  fingerprint: null
+- name: Nutzerforschung
+  icon: fa-flask
+  type: inquiries
+  email: team@research.qubes-os.org
+  fingerprint: 4D2E B2FA E2BE 5E8F D785  2DE0 DE1B 6337 FF6C 36F1
 - name: "Marek Marczykowski-G\xF3recki"
   role: Project lead; everything Xen / Linux related
   type: Kern
@@ -55,7 +70,7 @@
   github: fepitre
 - name: "Marta Marczykowska-G\xF3recka"
   email: marmarta@invisiblethingslab.com
-  role: Qubes Manager, Linux desktop, and core development
+  role: Qubes Manager, Linux desktop, core development, and user research
   type: Kern
   picture: team-marta.jpg
   fingerprint: 7D22 413E F3DB 0761 2CF7  3808 7D77 9BFA 6C80 6F69
@@ -68,18 +83,18 @@
   fingerprint: 6B52 7FE5 6308 5B7A 34B9  6C2F 8F90 3F3E 5662 199B
   github: MiCh
 - name: Nina Eleanor Alter
-  email: ninavizz@gmail.com
-  role: User experience
+  email: nina@research.qubes-os.org
+  role: Design and user research
   type: Kern
   picture: team-nina.jpg
-  fingerprint: A9BC 4019 D695 AF0D D65D F726 2CA7 C96A DBDF DC5B
+  fingerprint: 97A2 5336 1A54 C66F E1DF  515B 0812 46AC 3393 E74F
   github: ninavizz
 - name: Demi Marie Obenour
   email: demi@invisiblethingslab.com
   role: 'Software developer: Rust, Python, package management, GUI, and storage'
   type: Kern
   picture: team-demi.jpg
-  fingerprint: 7687 4D9F 1336 BA22 5907 1C71 B288 B55F FF9C 22C1
+  fingerprint: 7687 4D9F 1336 BA22 5907  1C71 B288 B55F FF9C 22C1
   github: DemiMarie
 - name: Joanna Rutkowska
   role: Founder and advisor (formerly architecture, security, and development)
@@ -123,6 +138,11 @@
   role: Minor various cleanups and miscs.
   type: community
   fingerprint: null
+- name: deeplow
+  email: deeplower@protonmail.com
+  role: Qubes Forum administrator and moderator
+  type: community
+  fingerprint: 67D7 D67D 6DB1 57ED A320 4AB5 499D 45F7 5259 D8AB
 - name: Desobediente Civil
   email: desci@riseup.net
   role: Localization Team co-leader, core and documentation contributions
@@ -179,6 +199,11 @@
   role: Debian templates improvements, Whonix integration
   type: community
   fingerprint: null
+- name: Simon Newton
+  email: theplexus@ctemplar.com
+  role: Qubes Forum moderator
+  type: community
+  fingerprint: null
 - name: Brennan Novak
   email: hi@brennannovak.com
   role: Web design, art, documentation, and minor UX contributions
@@ -207,6 +232,11 @@
   fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org
   github: adrelanos
+- name: Sven Semmler
+  email: Sven@SvenSemmler.org
+  role: HCL maintainer
+  type: community
+  fingerprint: DA59 75C9 ABC4 0C83 3B2F 620B 2A63 2C53 7D74 4BC7
 - name: Andrew Sorensen
   email: andrew@localcoast.net
   role: Misc. backup subsystem fixes

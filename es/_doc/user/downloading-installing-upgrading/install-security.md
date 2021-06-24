@@ -9,9 +9,6 @@ ref: 149
 title: Installation security
 ---
 
-# Installation security
-<a id="installation-security"></a>
-
 There are several security matters to consider before and during the Qubes installation process.
 
 ## Trusting your hardware
@@ -20,19 +17,19 @@ There are several security matters to consider before and during the Qubes insta
 No operating system, not even Qubes, can help you if you're installing it on hardware that is already compromised.
 This includes CPUs, GPUs, SSDs, HDDs, the motherboard, BIOS/EFI/UEFI, and all relevant firmware.
 Unfortunately, in today's world of undetectable supply chain attacks, there are no easy solutions.
-(Tools like [Anti Evil Maid (AEM)][AEM] can help with *maintaining* the trustworthiness of your hardware, but not with establishing it in the first place.)
-Some users have chosen to use tools like [Coreboot], [Heads], and [Skulls].
+(Tools like [Anti Evil Maid (AEM)](/es/doc/anti-evil-maid/) can help with *maintaining* the trustworthiness of your hardware, but not with establishing it in the first place.)
+Some users have chosen to use tools like [Coreboot](https://www.coreboot.org/), [Heads](http://osresearch.net/), and [Skulls](https://github.com/merge/skulls).
 
 ## Verifying the Qubes ISO
 <a id="verifying-the-qubes-iso"></a>
 
-You should [verify] the PGP signature on your Qubes ISO before you install from it.
+You should [verify](/es/security/verifying-signatures/) the PGP signature on your Qubes ISO before you install from it.
 However, if the machine on which you attempt the verification process is already compromised, it could falsely claim that a malicious ISO has a good signature.
 Therefore, in order to be certain that your Qubes ISO is trustworthy, you require a trustworthy machine.
 But how can you be certain *that* machine is trustworthy?
 Only by using another trusted machine, and so forth.
-This is a [classic problem].
-While various [solutions] have been proposed, the point is that each user must ultimately make a choice about whether to trust that a file is non-malicious.
+This is a [classic problem](https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf).
+While various [solutions](https://www.dwheeler.com/trusting-trust/) have been proposed, the point is that each user must ultimately make a choice about whether to trust that a file is non-malicious.
 
 ## Choosing an installation medium
 <a id="choosing-an-installation-medium"></a>
@@ -47,7 +44,7 @@ From a Qubes-specific security perspective, each has certain pros and cons.
 
 Pros:
 
-* Works via USB, including with a [USB qube].
+* Works via USB, including with a [USB qube](/es/doc/usb-qubes/#creating-and-using-a-usb-qube).
 * Non-fixed capacity.
   (Easy to find one on which the ISO can fit.)
 
@@ -57,7 +54,7 @@ Cons:
   (If the drive is mounted to a compromised machine, the ISO could be maliciously altered after it has been written to the drive.)
 * Untrustworthy firmware.
   (Firmware can be malicious even if the drive is new.
-  Plugging a drive with rewritable firmware into a compromised machine can also [compromise the drive][BadUSB].
+  Plugging a drive with rewritable firmware into a compromised machine can also [compromise the drive](https://srlabs.de/badusb/).
   Installing from a compromised drive could compromise even a brand new Qubes installation.)
 
 ### Optical discs
@@ -77,19 +74,9 @@ Cons:
   (This mainly applies if you're upgrading from a previous version of Qubes.)
   Currently, the only options for recording optical discs (e.g., CDs, DVDs, BRDs) in Qubes are:
   1. Use a USB optical drive.
-  2. Attach a SATA optical drive to a secondary SATA controller, then assign this secondary SATA controller to an AppVM.
+  2. Attach a SATA optical drive to a secondary SATA controller, then assign this secondary SATA controller to an app qube.
   3. Use a SATA optical drive attached to dom0.
 
   (Option 3 violates the Qubes security model since it entails transferring an untrusted ISO to dom0 in order to burn it to disc, which leaves only the other two options.)
 
 Considering the pros and cons of each, perhaps a USB drive with non-rewritable (or at least cryptographically-signed) firmware and a physical write-protect switch might be the best option.
-
-[AEM]: /es/doc/anti-evil-maid/
-[verify]: /es/security/verifying-signatures/
-[classic problem]: https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf
-[solutions]: https://www.dwheeler.com/trusting-trust/
-[USB qube]: /es/doc/usb-qubes/#creating-and-using-a-usb-qube
-[BadUSB]: https://srlabs.de/badusb/
-[Coreboot]: https://www.coreboot.org/
-[Heads]: http://osresearch.net/
-[Skulls]: https://github.com/merge/skulls

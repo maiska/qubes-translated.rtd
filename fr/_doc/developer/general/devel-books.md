@@ -3,8 +3,8 @@ lang: fr
 layout: doc
 permalink: /fr/doc/devel-books/
 redirect_from:
-- /fr/wiki/DevelBooks/
 - /fr/doc/DevelBooks/
+- /fr/wiki/DevelBooks/
 ref: 32
 title: Developer Books
 ---

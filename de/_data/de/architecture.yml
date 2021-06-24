@@ -1,4 +1,4 @@
-- title: Einleitung
+- title: "Einf\xFChrung"
   url: /de/intro/
   icon: fa-flag
   sub-pages:
@@ -8,7 +8,7 @@
     url: /de/faq/
     icon: fa-question-circle
   - title: Video Touren updated
-    url: /video-tours/
+    url: /de/video-tours/
     icon: fa-play-circle
   - title: From the Experts
     url: /de/experts/
@@ -18,7 +18,7 @@
   - title: Erste Schritte
     url: /de/getting-started/
     icon: fa-cubes
-  - title: Help and Support
+  - title: Hilfe und Support
     url: /de/support/
     icon: fa-life-ring
   - title: Verhaltenskodex
@@ -37,6 +37,7 @@
     url: /de/doc/certified-hardware/
   - title: Compatibility List
     url: /de/hcl/
+    icon: fa-power-off
   - title: Installationsanleitung
     url: /de/doc/installation-guide/
   - title: Verifying Signatures
@@ -63,14 +64,14 @@
     url: /de/doc/#choosing-your-hardware
   - title: Installieren und Aktualisieren
     url: /de/doc/#downloading-installing-and-upgrading-qubes
-  - title: Allgemeine Aufgaben
-    url: /de/doc/#common-tasks
-  - title: Betriebssysteme verwalten
-    url: /de/doc/#managing-operating-systems-within-qubes
+  - title: How-to Guides
+    url: /de/doc/#how-to-guides
+  - title: Vorlagen
+    url: /de/doc/#templates
+  - title: Fehlerbehebung
+    url: /de/doc/#troubleshooting
   - title: Sicherheit in Qubes
     url: /de/doc/#security-in-qubes
-  - title: Advanced Config
-    url: /de/doc/#advanced-configuration
   - title: Entwicklerdokus
     url: /de/doc/#developer-documentation
   - title: Externe Dokus
@@ -109,11 +110,15 @@
     url: /de/security/
     icon: fa-lock
   - title: Einen Fehler melden
-    url: /de/doc/reporting-bugs/
-  - title: Press Inquiries
-    url: mailto:press@qubes-os.org
-  - title: Business Inquiries
-    url: mailto:business@qubes-os.org
+    url: /de/doc/issue-tracking/
+  - title: Inquiries
+    url: /de/team/#inquiries
+  - title: Kernteam
+    url: /de/team/#core-team
+  - title: Emeritus
+    url: /de/team/#emeritus
+  - title: Community-Mitwirkende
+    url: /de/team/#community-contributors
 - title: Spenden
   url: /de/donate/
   icon: fa-heart
@@ -123,7 +128,5 @@
   - title: Partner
     url: /de/partners/
     icon: fa-globe
-  - title: Merchandise
-    url: /de/merchandise/
   - title: Mitwirken
     url: /de/doc/contributing/

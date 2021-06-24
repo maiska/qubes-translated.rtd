@@ -3,17 +3,13 @@ lang: fr
 layout: doc
 permalink: /fr/doc/hcl/
 redirect_from:
-- /fr/wiki/HCL/
-- /fr/wiki/HCL-R2B2/
 - /fr/doc/HCL/
+- /fr/wiki/HCL-R2B2/
+- /fr/wiki/HCL/
 - /fr/wiki/HCLR1/
 ref: 146
 title: Hardware Compatibility List (HCL)
 ---
-
-Hardware Compatibility List (HCL) for All Qubes OS Releases
-===========================================================
-<a id="hardware-compatibility-list-hcl-for-all-qubes-os-releases"></a>
 
 The [HCL](/hcl) is a compilation of reports generated and submitted by users across various Qubes versions about their hardware's compatibility with Qubes.
 
@@ -31,7 +27,7 @@ If using the list to make a purchasing decision, we recommend that you choose ha
 -   the best achievable Qubes security level (green columns in HVM, IOMMU, TPM)
 -   and general machine compatibility (green columns in Qubes version, dom0 kernel, remarks).
 
-Also see [Certified Hardware] and [Hardware Testing].
+Also see [Certified Hardware](/fr/doc/certified-hardware/) and [Hardware Testing](/fr/doc/hardware-testing/).
 
 Generating and Submitting New Reports
 -------------------------------------
@@ -49,7 +45,3 @@ Please consider sending the **HCL Support Files** `.cpio.gz` file as well. To ge
 
 **Please note:**
  The **HCL Support Files** may contain numerous hardware details, including serial numbers. If, for privacy or security reasons, you do not wish to make this information public, please **do not** send the `.cpio.gz` file to the public mailing list.
-
-
-[Certified Hardware]: /fr/doc/certified-hardware/
-[Hardware Testing]: /fr/doc/hardware-testing/

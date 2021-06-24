@@ -3,11 +3,8 @@ lang: de
 layout: doc
 permalink: /de/doc/mount-lvm-image/
 ref: 46
-title: Mount LVM image
+title: How to Mount LVM Images
 ---
-
-# How to mount LVM image
-<a id="how-to-mount-lvm-image"></a>
 
 You want to read your LVM image (e.g., there is a problem where you can't start any VMs except dom0).
 
@@ -55,6 +52,4 @@ From the GUI, or from the command line:
 # References
 <a id="references"></a>
 
-Please consult this issue's [comment].
-
-[comment]: https://github.com/QubesOS/qubes-issues/issues/4687#issuecomment-451626625
+Please consult this issue's [comment](https://github.com/QubesOS/qubes-issues/issues/4687#issuecomment-451626625).

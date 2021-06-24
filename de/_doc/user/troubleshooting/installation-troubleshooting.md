@@ -6,9 +6,6 @@ ref: 224
 title: Installation Troubleshooting
 ---
 
-# Installation Troubleshooting 
-<a id="installation-troubleshooting"></a>
-
 ## "An unknown error has occurred" error during installation 
 <a id="an-unknown-error-has-occurred-error-during-installation"></a>
 
@@ -37,6 +34,16 @@ Some people use the ``dd`` command (recommended), others use tools like Rufus, b
 If installation fails after using one tool, try a different one. 
 For example, if you are facing trouble installing Qubes after writing the ISO using Rufus, then try using other tools like balenaEtcher or the ``dd`` command. 
 In case the boot partition is not set to "active" after copying the ISO, you can use some other tool like `gparted` on a Linux system to activate it. 
+
+## "Warning: dracut-initqueue timeout - starting timeout scripts" during installation
+<a id="warning-dracut-initqueue-timeout---starting-timeout-scripts-during-installation"></a>
+
+This error message is related to the faulty creation of the USB installation medium.  If you receive this error message during installation, please make sure you have followed the instructions on [how to write your ISO to a USB key](/de/doc/installation-guide/#copying-the-iso-onto-the-installation-medium).  Specifically, the ``dd`` command listed on that page has been verified to solve this issue on multiple Qubes installation versions. 
+```
+$ sudo dd if=Qubes-RX-x86_64.iso of=/dev/sdY status=progress bs=1048576 && sync
+```
+
+See [here](https://github.com/QubesOS/qubes-issues/issues/6447) for a discussion of this error message.
 
 ## Boot screen does not appear / system does not detect your installation medium 
 <a id="boot-screen-does-not-appear--system-does-not-detect-your-installation-medium"></a>
@@ -98,11 +105,9 @@ During Qubes installation, you may come across the error message which reads "Un
 Missing features: IOMMU/VT-d/AMD-Vi, Interrupt Remapping. Without these features, Qubes OS will not function normally". 
 
 This error message indicates that IOMMU-virtualization hasn’t been activated in the BIOS. 
-Return to the [hardware requirements][hardware-reqs] section to learn how to activate it. 
+Return to the [hardware requirements](/de/doc/installation-guide/#hardware-requirements) section to learn how to activate it. 
 If the setting is not configured correctly, it means that your hardware won’t be able to leverage some Qubes security features, such as a strict isolation of the networking and USB hardware.
 
 In Qubes 4.0, the default installation won't function properly without IOMMU, as default sys-net and sys-usb qubes require IOMMU. It is possible to configure them to reduce isolation and not use IOMMU by changing virtualization mode of these two VMs to "PV".
 
 In Qubes 4.1, IOMMU is strictly required, even when the virtualization mode of a VM is changed to "PV"; it is not possible to use Qubes on a system without IOMMU.
-
-[hardware-reqs]: /de/doc/installation-guide/#hardware-requirements

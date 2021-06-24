@@ -6,12 +6,8 @@ redirect_from:
 - /de/doc/Qfilecopy/
 - /de/wiki/Qfilecopy/
 ref: 35
-title: Qfilecopy
+title: Inter-VM File Copying (qfilecopy)
 ---
-
-InterVM file copy design
-========================
-<a id="intervm-file-copy-design"></a>
 
 There are two cases when we need a mechanism to copy files between VMs:
 

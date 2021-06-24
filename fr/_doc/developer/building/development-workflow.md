@@ -3,14 +3,11 @@ lang: fr
 layout: doc
 permalink: /fr/doc/development-workflow/
 redirect_from:
-- /fr/wiki/DevelopmentWorkflow/
 - /fr/doc/DevelopmentWorkflow/
+- /fr/wiki/DevelopmentWorkflow/
 ref: 66
 title: Development Workflow
 ---
-
-# Development Workflow
-<a id="development-workflow"></a>
 
 A workflow for developing Qubes OS+
 
@@ -20,7 +17,7 @@ assumes you're using qubes-builder to build Qubes.
 # Repositories and committing Code
 <a id="repositories-and-committing-code"></a>
 
-Qubes is split into a bunch of git repos. This are all contained in the
+Qubes is split into a bunch of git repos. These are all contained in the
 `qubes-src` directory under qubes-builder. Subdirectories there are separate
 components, stored in separate git repositories.
 
@@ -123,7 +120,7 @@ cd ../..
 vi series.conf
 ~~~
 
-#### Building RPMS
+#### Building RPMs
 <a id="building-rpms"></a>
 
 TODO: Is this step generic for all subsystems?
@@ -137,13 +134,13 @@ distinguish between different versions of the same package.
 You might want to take a moment here to review (git diff, git status), commit
 your changes locally.
 
-To actually build RPMS, in qubes-builder:
+To actually build RPMs, in qubes-builder:
 
 ~~~
 make linux-kernel
 ~~~
 
-RPMS will appear in qubes-src/linux-kernel/pkgs/fc20/x86\_64:
+RPMs will appear in qubes-src/linux-kernel/pkgs/fc20/x86\_64:
 
 ~~~
 -rw-rw-r-- 1 user user 42996126 Nov 17 04:08 kernel-3.4.18-1debug20121116c.pvops.qubes.x86_64.rpm
@@ -161,7 +158,7 @@ RPMS will appear in qubes-src/linux-kernel/pkgs/fc20/x86\_64:
 if all repository are tagged with signed tag.
 2. `make show-vtags` - show version of each component (based on git tags) -
 mostly useful just before building ISO. **Note:** this will not show version
-for components containing changes since last version tag
+for components containing changes since last version tag.
 3. `make push` - push change from **all** repositories to git server. You must
 set proper remotes (see above) for all repositories first.
 4. `make prepare-merge` - fetch changes from remote repositories (can be
@@ -175,7 +172,7 @@ FETCH_HEAD` (in each repo directory). Or `make do-merge` to merge all of them.
 
 When developing it is convenient to be able to rapidly test changes. Assuming
 you're developing Qubes on Qubes, you should be working in a special VM for
-Qubes and occasionally you will want to transfer code or rpms back to dom0 for
+Qubes and occasionally you will want to transfer code or RPMs back to dom0 for
 testing.
 
 Here are some handy scripts Marek has shared to facilitate this.
@@ -338,7 +335,7 @@ current and current-testing).
 ### RPM packages - yum repo
 <a id="rpm-packages---yum-repo"></a>
 
-In source VM, grab [linux-yum] repository (below is assumed you've made it in
+In source VM, grab [linux-yum](https://github.com/QubesOS/qubes-linux-yum) repository (below is assumed you've made it in
 `~/repo-yum-upload` directory) and replace `update_repo.sh` script with:
 
 ~~~
@@ -354,7 +351,7 @@ find -type f -name '*.rpm' -delete
 qrexec-client-vm $VMNAME local.UpdateYum
 ~~~
 
-In target VM, setup actual yum repository (also based on [linux-yum], this time
+In target VM, setup actual yum repository (also based on [linux-yum](https://github.com/QubesOS/qubes-linux-yum), this time
 without modifications). You will also need to setup some gpg key for signing
 packages (it is possible to force yum to install unsigned packages, but it
 isn't possible for `qubes-dom0-update` tool). Fill `~/.rpmmacros` with
@@ -402,7 +399,7 @@ Of course you will also need to setup qrexec policy in dom0
 If you want to access the repository from network, you need to setup HTTP
 server serving it, and configure the system to let other machines actually
 reach this HTTP server. You can use for example using [port
-forwarding][port-forwarding] or setting up Tor hidden service. Configuration
+forwarding](/fr/doc/firewall/#port-forwarding-to-a-qube-from-the-outside-world) or setting up Tor hidden service. Configuration
 details of those services are outside of the scope of this page.
 
 Usage: setup `builder.conf` in source VM to use your dummy-uploader repository:
@@ -435,7 +432,7 @@ Remember to also import gpg public key using `rpm --import`.
 
 Steps are mostly the same as in the case of yum repo. The only details that differ:
 
-- use [linux-deb] instead of [linux-yum] as a base - both in source and target VM
+- use [linux-deb](https://github.com/QubesOS/qubes-linux-deb) instead of [linux-yum](https://github.com/QubesOS/qubes-linux-yum) as a base - both in source and target VM
 - use different `update_repo.sh` script in source VM (below)
 - use `local.UpdateApt` qrexec service in target VM (code below)
 - in target VM additionally place `update-local-repo.sh` script in repository dir (code below)
@@ -554,7 +551,3 @@ Usage: add this line to `/etc/apt/sources.list` on test machine (adjust host and
 ~~~
 deb http://local-test.lan/linux-deb/r3.1 jessie-unstable main
 ~~~
-
-[port-forwarding]: /fr/doc/firewall/#port-forwarding-to-a-qube-from-the-outside-world
-[linux-yum]: https://github.com/QubesOS/qubes-linux-yum
-[linux-deb]: https://github.com/QubesOS/qubes-linux-deb

@@ -9,9 +9,6 @@ ref: 159
 title: Upgrading to R3.0
 ---
 
-# Upgrading Qubes R2 to R3.0
-<a id="upgrading-qubes-r2-to-r30"></a>
-
 **This instruction is highly experimental, the official way to upgrade from R2 is to backup the data and reinstall the system. Use at your own risk!**
 
 Current Qubes R3.0 (R3.0) systems can be upgraded in-place to the latest R3.0 by following the procedure below. However, upgrading in-place is riskier than performing a clean installation, since there are more things which can go wrong. For this reason, **we strongly recommended that users perform a [clean installation](/es/doc/installation-guide/) of Qubes R3.0**.
@@ -23,14 +20,14 @@ Experienced users may be comfortable accepting the risks of upgrading in-place. 
 ## Upgrade all Template and Standalone VM(s)
 <a id="upgrade-all-template-and-standalone-vms"></a>
 
-By default, in Qubes R2, there is only one Template VM, however users are free to create more Template VMs for special purposes, as well as Standalone VMs. More information on using multiple Template VMs, as well as Standalone VMs, can be found [here](/es/doc/software-update-vm/). The steps described in this section should be repeated in **all** user's Template and Standalone VMs.
+By default, in Qubes R2, there is only one template, however users are free to create more templates for special purposes, as well as Standalone VMs. More information on using multiple templates, as well as Standalone VMs, can be found [here](/es/doc/software-update-vm/). The steps described in this section should be repeated in **all** user's Template and Standalone VMs.
 
 It is critical to complete this step **before** proceeding to dom0 upgrade. Otherwise you will most likely end with unusable system.
 
 ### Upgrade Fedora template:
 <a id="upgrade-fedora-template"></a>
 
-1. Open terminal in the template VM (or standalone VM). E.g. use the Qubes Manager's right-click menu and choose Run Command in VM and type `gnome-terminal` there.
+1. Open terminal in the template (or standalone VM). E.g. use the Qubes Manager's right-click menu and choose Run Command in VM and type `gnome-terminal` there.
 2. Install `qubes-upgrade-vm` package:
 
     ```
@@ -45,12 +42,12 @@ It is critical to complete this step **before** proceeding to dom0 upgrade. Othe
 
     You'll need to accept "Qubes Release 3 Signing Key" - it is delivered by signed qubes-upgrade-vm package (verify that the message is about local file), so you don't need to manually verify it.
 
-4. Shutdown the template VM.
+4. Shutdown the template.
 
 ### Upgrade Debian template:
 <a id="upgrade-debian-template"></a>
 
-1. Open terminal in the template VM (or standalone VM). E.g. use the Qubes Manager's right-click menu and choose Run Command in VM and type `gnome-terminal` there.
+1. Open terminal in the template (or standalone VM). E.g. use the Qubes Manager's right-click menu and choose Run Command in VM and type `gnome-terminal` there.
 2. Update repository definition:
 
     ```
@@ -72,7 +69,7 @@ It is critical to complete this step **before** proceeding to dom0 upgrade. Othe
     (after 3min timeout), but you can ignore this problem for now. After
     completing the whole upgrade the service will be properly restarted.
 
-4. Shutdown the template VM.
+4. Shutdown the template.
 
 ## Upgrading dom0
 <a id="upgrading-dom0"></a>
@@ -143,7 +140,7 @@ Because of above limitations, you will need to configure some of those manually.
 
     ```shell_session
     [user@dom0 ~]$ qvm-start custom-template
-    --> Loading the VM (type = TemplateVM)...
+    --> Loading the VM (type = template)...
     --> Starting Qubes DB...
     --> Setting Qubes DB info for the VM...
     --> Updating firewall rules...

@@ -3,15 +3,12 @@ lang: es
 layout: doc
 permalink: /es/doc/qrexec-internals/
 redirect_from:
-- /es/doc/qrexec3-implementation/
 - /es/doc/Qrexec3Implementation/
+- /es/doc/qrexec3-implementation/
 - /es/wiki/Qrexec3Implementation/
 ref: 39
-title: 'Qrexec: Qubes RPC internals'
+title: 'Qrexec: Qubes RPC Internals'
 ---
-
-# Qubes RPC internals
-<a id="qubes-rpc-internals"></a>
 
 (*This page details the current implementation of qrexec (qrexec3).
 A [general introduction](/es/doc/qrexec/) to qrexec is also available.
@@ -69,7 +66,7 @@ Command line usage:
 ### qrexec-agent
 <a id="qrexec-agent"></a>
 
-`/usr/lib/qubes/qrexec-agrent`
+`/usr/lib/qubes/qrexec-agent`
 
 One instance runs in each active domain.
 Responsible for:
@@ -126,7 +123,7 @@ Details of all possible use cases and the messages involved are described below.
 ### dom0: request execution of `cmd` in domX
 <a id="dom0-request-execution-of-cmd-in-domx"></a>
 
-![qrexec internals diagram dom0-vm](/attachment/wiki/qrexec3/qrexec-dom0-vm.png)
+![qrexec internals diagram dom0-vm](/attachment/doc/qrexec-dom0-vm.png)
 
 - **dom0**: `qrexec-client` is invoked in **dom0** as follows:
 
@@ -155,7 +152,7 @@ Details of all possible use cases and the messages involved are described below.
 ### domX: request execution of service `admin.Service` in dom0
 <a id="domx-request-execution-of-service-adminservice-in-dom0"></a>
 
-![qrexec internals diagram vm-dom0](/attachment/wiki/qrexec3/qrexec-vm-dom0.png)
+![qrexec internals diagram vm-dom0](/attachment/doc/qrexec-vm-dom0.png)
 
 - **domX**: `qrexec-client-vm` is invoked as follows:
 
@@ -202,7 +199,7 @@ Details of all possible use cases and the messages involved are described below.
 ### domX: invoke execution of qubes service `qubes.Service` in domY
 <a id="domx-invoke-execution-of-qubes-service-qubesservice-in-domy"></a>
 
-![qrexec internals diagram vm-vm](/attachment/wiki/qrexec3/qrexec-vm-vm.png)
+![qrexec internals diagram vm-vm](/attachment/doc/qrexec-vm-vm.png)
 
 - **domX**: `qrexec-client-vm` is invoked as follows:
 

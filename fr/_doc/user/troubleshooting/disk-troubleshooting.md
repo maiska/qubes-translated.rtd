@@ -10,9 +10,6 @@ ref: 231
 title: Disk Troubleshooting
 ---
 
-# Disk Troubleshooting Guide #
-<a id="disk-troubleshooting-guide"></a>
-
 ## "Out of disk space" error ##
 <a id="out-of-disk-space-error"></a>
 

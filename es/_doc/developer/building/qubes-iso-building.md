@@ -3,16 +3,12 @@ lang: es
 layout: doc
 permalink: /es/doc/qubes-iso-building/
 redirect_from:
-- /es/wiki/QubesR3Building/
 - /es/doc/QubesR3Building/
 - /es/doc/qubes-r3-building/
+- /es/wiki/QubesR3Building/
 ref: 63
 title: Qubes ISO Building
 ---
-
-Building Qubes OS ISO
-=========================
-<a id="building-qubes-os-iso"></a>
 
 Build Environment
 -----------------

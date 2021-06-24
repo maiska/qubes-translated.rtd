@@ -3,15 +3,11 @@ lang: de
 layout: doc
 permalink: /de/doc/qmemman/
 redirect_from:
-- /de/wiki/Qmemman/
 - /de/doc/Qmemman/
+- /de/wiki/Qmemman/
 ref: 41
-title: Qmemman
+title: Qubes Memory Manager (qmemman)
 ---
-
-qmemman, Qubes memory manager
-=============================
-<a id="qmemman-qubes-memory-manager"></a>
 
 Rationale
 ---------

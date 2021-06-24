@@ -6,11 +6,8 @@ ref: 145
 title: Hardware Testing
 ---
 
-# Hardware Testing
-<a id="hardware-testing"></a>
-
 The Qubes developers test Qubes OS on certain hardware models.
-The tested hardware described on this page differs from [Qubes Certified Hardware] in a few key ways:
+The tested hardware described on this page differs from [Qubes Certified Hardware](/es/doc/certified-hardware/) in a few key ways:
 
 - Qubes Certified Hardware has to meet more demanding standards than hardware that is merely tested.
 - All Qubes Certified Hardware is tested, but not all tested hardware is certified.
@@ -18,9 +15,9 @@ The tested hardware described on this page differs from [Qubes Certified Hardwar
 
 In general, you can think of tested hardware as "unofficial recommended" hardware:
 
-- [Qubes Certified Hardware] --- Qubes developer certified, officially recommended
+- [Qubes Certified Hardware](/es/doc/certified-hardware/) --- Qubes developer certified, officially recommended
 - Hardware Testing (this page) --- Qubes developer tested, unofficially recommended
-- [Hardware Compatibility List (HCL)] --- community test results, neither recommended nor disrecommended
+- [Hardware Compatibility List (HCL)](/es/hcl/) --- community test results, neither recommended nor disrecommended
 
 ## Tested Models
 <a id="tested-models"></a>
@@ -42,6 +39,3 @@ If anyone is willing to lend or donate these models to us, we would be happy to 
 - Dell Latitude with Intel 8th Gen CPU and integrated graphics
 
 Note: The Lenovo X and T series are similar enough to assume similar compatibility of the matching model from the other series.
-
-[Qubes Certified Hardware]: /es/doc/certified-hardware/
-[Hardware Compatibility List (HCL)]: /es/hcl/

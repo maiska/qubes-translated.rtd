@@ -8,9 +8,6 @@ ref: 94
 title: Suspend/Resume Troubleshooting
 ---
 
-# Troubleshooting problems relating to suspend/resume 
-<a id="troubleshooting-problems-relating-to-suspendresume"></a>
-
 ## Network-Manager says “Device not ready” on suspend/resume 
 <a id="network-manager-says-device-not-ready-on-suspendresume"></a>
 
@@ -138,4 +135,4 @@ After the whole system gets suspended into S3 sleep and subsequently resumed, so
 This can be achieved under a Windows HVM by opening the Device Manager, selecting the actual device (such as a USB controller), 'Disabling' the device, and then 'Enabling' the device again.
 This is illustrated on the screenshot below:
 
-![r2b1-win7-usb-disable.png](/attachment/wiki/HvmCreate/r2b1-win7-usb-disable.png)
+![r2b1-win7-usb-disable.png](/attachment/doc/r2b1-win7-usb-disable.png)

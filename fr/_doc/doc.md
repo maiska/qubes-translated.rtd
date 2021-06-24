@@ -1,14 +1,14 @@
 ---
 lang: fr
-layout: doc-index
+layout: doc
 permalink: /fr/doc/
 redirect_from:
-- /fr/doc/QubesDocs/
-- /fr/wiki/QubesDocs/
-- /fr/help/
 - /fr/community/
-- /fr/wiki/UserDoc/
+- /fr/doc/QubesDocs/
 - /fr/doc/UserDoc/
+- /fr/help/
+- /fr/wiki/QubesDocs/
+- /fr/wiki/UserDoc/
 ref: 12
 title: Documentation
 ---

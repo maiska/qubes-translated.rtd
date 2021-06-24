@@ -1,6 +1,6 @@
 ---
 lang: es
-layout: default
+layout: site
 permalink: /es/terms/
 redirect_from:
 - /es/doc/terms/

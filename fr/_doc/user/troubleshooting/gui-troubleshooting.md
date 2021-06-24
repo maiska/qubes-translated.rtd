@@ -6,9 +6,6 @@ ref: 233
 title: GUI Troubleshooting
 ---
 
-# GUI Troubleshooting
-<a id="gui-troubleshooting"></a>
-
 ## Can't click on anything after connecting 4k external display
 <a id="cant-click-on-anything-after-connecting-4k-external-display"></a>
 

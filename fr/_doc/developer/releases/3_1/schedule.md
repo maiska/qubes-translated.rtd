@@ -7,10 +7,6 @@ ref: 17
 title: Qubes R3.1 Release Schedule
 ---
 
-Qubes R3.1 Release Schedule
-===========================
-<a id="qubes-r31-release-schedule"></a>
-
 This schedule is based on [Version Scheme](/fr/doc/version-scheme/#release-schedule).
 
 |  Date       | Stage                                   |

@@ -3,15 +3,11 @@ lang: fr
 layout: doc
 permalink: /fr/doc/qubes-builder-details/
 redirect_from:
-- /fr/wiki/QubesBuilderDetails/
 - /fr/doc/QubesBuilderDetails/
+- /fr/wiki/QubesBuilderDetails/
 ref: 65
 title: Qubes Builder Details
 ---
-
-[QubesBuilder](/fr/doc/qubes-builder/) "API"
-========================================
-<a id="qubesbuilderdocqubes-builder-api"></a>
 
 Components Makefile.builder file
 --------------------------------

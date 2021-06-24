@@ -8,13 +8,10 @@ ref: 45
 title: Automated Tests
 ---
 
-# Automated Tests
-<a id="automated-tests"></a>
-
 ## Unit and Integration Tests
 <a id="unit-and-integration-tests"></a>
 
-Starting with Qubes R3 we use [python unittest][unittest] to perform automatic tests of Qubes OS.
+Starting with Qubes R3 we use [python unittest](https://docs.python.org/3/library/unittest.html) to perform automatic tests of Qubes OS.
 Despite the name, we use it for both [unit tests](https://en.wikipedia.org/wiki/Unit_tests) and [integration tests](https://en.wikipedia.org/wiki/Integration_tests).
 The main purpose is, of course, to deliver much more stable releases.
 
@@ -117,7 +114,7 @@ vm_qrexec_gui/TC_20_DispVM_fedora-21/test_030_edit_file
 
 Example test run:
 
-![snapshot-tests2.png](/attachment/wiki/developers/snapshot-tests2.png)
+![snapshot-tests2.png](/attachment/doc/snapshot-tests2.png)
 
 Tests are also compatible with nose2 test runner, so you can use this instead:
 
@@ -125,7 +122,7 @@ Tests are also compatible with nose2 test runner, so you can use this instead:
 sudo systemctl stop qubesd; sudo -E nose2 -v --plugin nose2.plugins.loader.loadtests qubes.tests; sudo systemctl start qubesd
 ```
 
-This may be especially useful together with various nose2 plugins to store tests results (for example `nose2.plugins.junitxml`), to ease presenting results. This is what we use on [OpenQA].
+This may be especially useful together with various nose2 plugins to store tests results (for example `nose2.plugins.junitxml`), to ease presenting results. This is what we use on [OpenQA](http://open.qa/).
 
 ### Unit testing inside a VM
 <a id="unit-testing-inside-a-vm"></a>
@@ -259,7 +256,7 @@ class SomeTestCase(unittest.TestCase):
 **Tests:** <https://github.com/marmarek/openqa-tests-qubesos>
 
 Manually testing the installation of Qubes OS is a time-consuming process.
-We use [openQA] to automate this process.
+We use [OpenQA](http://open.qa/) to automate this process.
 It works by installing Qubes in KVM and interacting with it as a user would, including simulating mouse clicks and keyboard presses.
 Then, it checks the output to see whether various tests were passed, e.g. by comparing the virtual screen output to screenshots of a successful installation.
 
@@ -269,6 +266,3 @@ In practice, however, either Xen or QEMU crashes when this is attempted.
 Nonetheless, PV works well, which is sufficient for automated installation testing.
 
 Thanks to an anonymous donor, our openQA system is hosted in a datacenter on hardware that meets these requirements.
-
-[unittest]: https://docs.python.org/3/library/unittest.html
-[OpenQA]: http://open.qa/

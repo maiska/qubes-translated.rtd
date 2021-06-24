@@ -3,16 +3,14 @@ lang: es
 layout: doc
 permalink: /es/doc/qubes-builder/
 redirect_from:
-- /es/wiki/QubesBuilder/
 - /es/doc/QubesBuilder/
+- /es/wiki/QubesBuilder/
 ref: 64
 title: Qubes Builder
 ---
 
 **Note: See [ISO building instructions](/es/doc/qubes-iso-building/) for a streamlined overview on how to use the build system.**
 
-# Building Qubes from scratch
-<a id="building-qubes-from-scratch"></a>
 
 We have a fully automated build system for Qubes, that downloads, builds and
 packages all the Qubes components, and finally should spit out a ready-to-use
@@ -102,7 +100,7 @@ cp example-configs/qubes-os-master.conf builder.conf
 
 make get-sources
 
-# And now to build all Qubes rpms (this will take a few hours):
+# And now to build all Qubes RPMs (this will take a few hours):
 <a id="and-now-to-build-all-qubes-rpms-this-will-take-a-few-hours"></a>
 
 make qubes

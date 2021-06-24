@@ -3,21 +3,16 @@ lang: es
 layout: doc
 permalink: /es/doc/qfileexchgd/
 redirect_from:
-- /es/wiki/Qfileexchgd/
 - /es/doc/Qfileexchgd/
+- /es/wiki/Qfileexchgd/
 ref: 40
-title: Qfileexchgd
+title: qfileexchgd (deprecated)
 ---
 
 **This mechanism is obsolete as of Qubes Beta 1!**
-==================================================
-<a id="this-mechanism-is-obsolete-as-of-qubes-beta-1"></a>
 
 Please see this [page](/es/doc/qfilecopy/) instead.
 
-qfilexchgd, the Qubes file exchange daemon
-==========================================
-<a id="qfilexchgd-the-qubes-file-exchange-daemon"></a>
 
 Overview
 --------

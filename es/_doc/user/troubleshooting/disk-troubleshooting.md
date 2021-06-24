@@ -3,15 +3,12 @@ lang: es
 layout: doc
 permalink: /es/doc/disk-troubleshooting/
 redirect_from:
-- /es/doc/out-of-memory/
 - /es/doc/OutOfmemory/
+- /es/doc/out-of-memory/
 - /es/wiki/OutOfmemory/
 ref: 231
 title: Disk Troubleshooting
 ---
-
-# Disk Troubleshooting Guide #
-<a id="disk-troubleshooting-guide"></a>
 
 ## "Out of disk space" error ##
 <a id="out-of-disk-space-error"></a>

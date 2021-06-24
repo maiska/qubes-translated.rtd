@@ -1,13 +1,12 @@
 ---
 lang: de
 layout: doc
-permalink: /de/security/canaries/checklist/
+permalink: /de/security/canary/checklist/
+redirect_from:
+- /de/security/canaries/checklist/
 ref: 216
-title: Canary Checklist
+title: Qubes Canary Checklist
 ---
-
-# Canary Checklist
-<a id="canary-checklist"></a>
 
 ## Preparation
 <a id="preparation"></a>
@@ -19,7 +18,9 @@ title: Canary Checklist
 <a id="announcement"></a>
 
 * Push canary to public repository
-* Publish a [news post](/news/) using the [Canary Template](/de/security/canaries/template/)
-* Send the content of the news post to the appropriate [mailing lists](/de/support/)
+* Publish a [news post](/news/) using the [Canary
+  Template](/de/security/canary/template/)
+* Send the content of the news post to the appropriate [mailing
+  lists](/de/support/)
 * Share link to news post on social media
 * Set a reminder for the next canary

@@ -4,18 +4,14 @@ layout: doc
 permalink: /de/doc/tools/
 redirect_from:
 - /de/doc/tools/3.2/
+- /de/doc/tools/3.2/dom0/
+- /de/doc/tools/3.2/domU/
 - /de/doc/tools/4.0/
 - /de/doc/tools/4.0/dom0/
 - /de/doc/tools/4.0/domU/
-- /de/doc/tools/3.2/domU/
-- /de/doc/tools/3.2/dom0/
 ref: 141
-title: Command-Line Tools
+title: Command-line Tools
 ---
-
-Command-Line Tools
-==================
-<a id="command-line-tools"></a>
 
 Dom0
 ----
@@ -33,3 +29,5 @@ DomU
 * [qvm-open-in-dvm](https://github.com/QubesOS/qubes-core-agent-linux/blob/master/doc/vm-tools/qvm-open-in-dvm.rst)
 * [qvm-open-in-vm](https://github.com/QubesOS/qubes-core-agent-linux/blob/master/doc/vm-tools/qvm-open-in-vm.rst)
 * [qvm-run-vm](https://github.com/QubesOS/qubes-core-agent-linux/blob/master/doc/vm-tools/qvm-run-vm.rst)
+* [qvm-convert-pdf](https://github.com/QubesOS/qubes-app-linux-pdf-converter/blob/master/README.md)
+* [qvm-convert-img](https://github.com/QubesOS/qubes-app-linux-img-converter/blob/master/README.md)

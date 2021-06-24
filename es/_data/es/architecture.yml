@@ -8,7 +8,7 @@
     url: /es/faq/
     icon: fa-question-circle
   - title: Video Tours
-    url: /video-tours/
+    url: /es/video-tours/
     icon: fa-play-circle
   - title: From the Experts
     url: /es/experts/
@@ -37,6 +37,7 @@
     url: /es/doc/certified-hardware/
   - title: Compatibility List
     url: /es/hcl/
+    icon: fa-power-off
   - title: Installation Guide
     url: /es/doc/installation-guide/
   - title: Verificar firmas
@@ -63,14 +64,14 @@
     url: /es/doc/#choosing-your-hardware
   - title: Installing & Upgrading
     url: /es/doc/#downloading-installing-and-upgrading-qubes
-  - title: Tareas comunes
-    url: /es/doc/#common-tasks
-  - title: Managing OSes
-    url: /es/doc/#managing-operating-systems-within-qubes
+  - title: How-to Guides
+    url: /es/doc/#how-to-guides
+  - title: Plantillas
+    url: /es/doc/#templates
+  - title: "Resoluci\xF3n de problemas"
+    url: /es/doc/#troubleshooting
   - title: Security in Qubes
     url: /es/doc/#security-in-qubes
-  - title: Advanced Config
-    url: /es/doc/#advanced-configuration
   - title: Developer Docs
     url: /es/doc/#developer-documentation
   - title: External Docs
@@ -109,11 +110,15 @@
     url: /es/security/
     icon: fa-lock
   - title: Informar sobre un error
-    url: /es/doc/reporting-bugs/
-  - title: Press Inquiries
-    url: mailto:press@qubes-os.org
-  - title: Business Inquiries
-    url: mailto:business@qubes-os.org
+    url: /es/doc/issue-tracking/
+  - title: Inquiries
+    url: /es/team/#inquiries
+  - title: Core Team
+    url: /es/team/#core-team
+  - title: Emeritus
+    url: /es/team/#emeritus
+  - title: Community Contributors
+    url: /es/team/#community-contributors
 - title: Donar
   url: /es/donate/
   icon: fa-heart
@@ -123,7 +128,5 @@
   - title: Socios
     url: /es/partners/
     icon: fa-globe
-  - title: Merchandise
-    url: /es/merchandise/
   - title: Contribuir
     url: /es/doc/contributing/

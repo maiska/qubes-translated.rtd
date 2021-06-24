@@ -3,14 +3,11 @@ lang: es
 layout: doc
 permalink: /es/doc/template-implementation/
 redirect_from:
-- /es/wiki/TemplateImplementation/
 - /es/doc/TemplateImplementation/
+- /es/wiki/TemplateImplementation/
 ref: 58
 title: Template Implementation
 ---
-
-# Overview of VM block devices
-<a id="overview-of-vm-block-devices"></a>
 
 Every VM has 4 block devices connected:
 
@@ -28,7 +25,7 @@ This is mounted as /rw and here is placed all VM private data. This includes:
 - */usr/local* – which is symlink to /rw/usrlocal
 - some config files (/rw/config) called by qubes core scripts (ex /rw/config/rc.local)
 
-**Note:** Whenever a TemplateBasedVM is created, the contents of the `/home` directory of its parent TemplateVM are copied to the child TemplateBasedVM's `/home`. From that point onward, the child TemplateBasedVM's `/home` is independent from its parent TemplateVM's `/home`, which means that any subsequent changes to the parent TemplateVM's `/home` will no longer affect the child TemplateBasedVM's `/home`. Once a TemplateBasedVM has been created, any changes in its `/home`, `/usr/local`, or `/rw/config` directories will be persistent across reboots, which means that any files stored there will still be available after restarting the TemplateBasedVM. No changes in any other directories in TemplateBasedVMs persist in this manner. If you would like to make changes in other directories which *do* persist in this manner, you must make those changes in the parent TemplateVM.
+**Note:** Whenever a TemplateBasedVM is created, the contents of the `/home` directory of its parent TemplateVM are *not* copied to the child TemplateBasedVM's `/home`. The child TemplateBasedVM's `/home` is independent from its parent TemplateVM's `/home`, which means that any changes to the parent TemplateVM's `/home` will not affect the child TemplateBasedVM's `/home`. Once a TemplateBasedVM has been created, any changes in its `/home`, `/usr/local`, or `/rw/config` directories will be persistent across reboots, which means that any files stored there will still be available after restarting the TemplateBasedVM. No changes in any other directories in TemplateBasedVMs persist in this manner. If you would like to make changes in other directories which *do* persist in this manner, you must make those changes in the parent TemplateVM.
 
 ## modules.img (xvdd)
 <a id="modulesimg-xvdd"></a>
@@ -53,7 +50,7 @@ TemplateVM has a shared root.img across all AppVMs that are based on it. This me
 
 There are two layers of the device-mapper snapshot device; the first one enables modifying root.img without stopping the AppVMs and the second one, which is contained in the AppVM, enables temporal modifications to its filesystem. These modifications will be discarded after a restart of the AppVM.
 
-![TemplateSharing2.png](/attachment/wiki/TemplateImplementation/TemplateSharing2.png)
+![TemplateSharing2.png](/attachment/doc/TemplateSharing2.png)
 
 ## Snapshot device in Dom0
 <a id="snapshot-device-in-dom0"></a>

@@ -1,0 +1,331 @@
+- topic: Qubes OS Documentation
+  subtopic: Welcome to the Qubes OS documentation!
+  metatopic: Documentation
+- title: "Pr\xE9sentation"
+  category: introduction
+  sub-pages:
+  - url: /fr/intro/
+  - url: /fr/video-tours/
+  - url: /fr/screenshots/
+  - url: /fr/faq/
+  - url: /fr/doc/issue-tracking/
+  - url: /fr/support/
+  - url: /fr/doc/contributing/
+- title: "S\xE9curit\xE9 du projet"
+  category: project-security
+  sub-pages:
+  - url: /fr/security/
+  - url: /fr/security/pack/
+  - url: /fr/security/qsb/
+  - url: /fr/security/canary/
+  - url: /fr/security/xsa/
+  - url: /fr/security/verifying-signatures/
+  - url: /fr/security/pgp-keys/
+- title: Documentation pour les utilisateurs
+  subtitle: Core documentation for Qubes users.
+  category: user
+  sub-pages:
+  - title: Choosing Your Hardware
+    subcategory: hardware
+    sub-pages:
+    - url: /fr/doc/system-requirements/
+    - url: /fr/doc/certified-hardware/
+    - url: /fr/hcl/
+    - url: /fr/doc/hardware-testing/
+  - title: Downloading, Installing, and Upgrading Qubes
+    subcategory: downloading-installing-upgrading
+    sub-pages:
+    - url: /fr/doc/downloads/
+    - url: /fr/doc/installation-guide/
+    - url: /fr/doc/upgrade/
+    - url: /fr/doc/supported-versions/
+    - url: /fr/doc/testing/
+  - title: How-to Guides
+    subcategory: how-to-guides
+    sub-pages:
+    - url: /fr/doc/how-to-get-started/
+    - url: /fr/doc/how-to-update/
+    - url: /fr/doc/how-to-back-up-restore-and-migrate/
+    - url: /fr/doc/how-to-copy-and-paste-text/
+    - url: /fr/doc/how-to-copy-and-move-files/
+    - url: /fr/doc/how-to-copy-from-dom0/
+    - url: /fr/doc/how-to-install-software/
+    - url: /fr/doc/how-to-use-disposables/
+    - url: /fr/doc/how-to-enter-fullscreen-mode/
+    - url: /fr/doc/how-to-use-devices/
+    - url: /fr/doc/how-to-use-block-storage-devices/
+    - url: /fr/doc/how-to-use-usb-devices/
+    - url: /fr/doc/how-to-use-pci-devices/
+    - url: /fr/doc/how-to-use-optical-discs/
+  - title: "Mod\xE8les"
+    subcategory: templates
+    sub-pages:
+    - url: /fr/doc/templates/
+    - url: /fr/doc/templates/fedora/
+    - url: /fr/doc/templates/debian/
+    - url: /fr/doc/templates/minimal/
+    - url: /fr/doc/templates/xfce/
+  - title: "D\xE9pannage"
+    subcategory: "D\xE9pannage"
+    sub-pages:
+    - url: /fr/doc/installation-troubleshooting/
+    - url: /fr/doc/update-troubleshooting/
+    - url: /fr/doc/hardware-troubleshooting/
+    - url: /fr/doc/uefi-troubleshooting/
+    - url: /fr/doc/suspend-resume-troubleshooting/
+    - url: /fr/doc/app-menu-shortcut-troubleshooting/
+    - url: /fr/doc/vm-troubleshooting/
+    - url: /fr/doc/hvm-troubleshooting/
+    - url: /fr/doc/disk-troubleshooting/
+    - url: /fr/doc/pci-troubleshooting/
+    - url: /fr/doc/usb-troubleshooting/
+    - url: /fr/doc/gui-troubleshooting/
+    - url: /fr/doc/media-troubleshooting/
+    - url: /fr/doc/vpn-troubleshooting/
+  - title: Security in Qubes
+    subcategory: security-in-qubes
+    sub-pages:
+    - url: /fr/doc/firewall/
+    - url: /fr/doc/data-leaks/
+    - url: /fr/doc/vm-sudo/
+    - url: /fr/doc/device-handling-security/
+    - url: /fr/doc/anti-evil-maid/
+    - url: /fr/doc/split-gpg/
+    - url: /fr/doc/u2f-proxy/
+    - url: /fr/doc/yubikey/
+  - title: Advanced Topics
+    subcategory: advanced-topics
+    sub-pages:
+    - url: /fr/doc/how-to-install-software-in-dom0/
+    - url: /fr/doc/volume-backup-revert/
+    - url: /fr/doc/standalones-and-hvms/
+    - url: /fr/doc/windows/
+    - url: /fr/doc/config-files/
+    - url: /fr/doc/secondary-storage/
+    - url: /fr/doc/rpc-policy/
+    - url: /fr/doc/usb-qubes/
+    - url: /fr/doc/managing-vm-kernels/
+    - url: /fr/doc/salt/
+    - url: /fr/doc/disposable-customization/
+    - url: /fr/doc/installing-contributed-packages/
+    - url: /fr/doc/bind-dirs/
+    - url: /fr/doc/gui-configuration/
+    - url: /fr/doc/resize-disk-image/
+    - url: /fr/doc/qubes-service/
+    - url: /fr/doc/mount-from-other-os/
+    - url: /fr/doc/kde/
+    - url: /fr/doc/i3/
+    - url: /fr/doc/awesomewm/
+  - title: Reference
+    subcategory: reference
+    sub-pages:
+    - url: /fr/doc/tools/
+    - url: /fr/doc/glossary/
+- title: "Documentation pour les d\xE9veloppeurs"
+  subtitle: Core documentation for Qubes developers and advanced users.
+  category: developer
+  sub-pages:
+  - title: "G\xE9n\xE9ral"
+    subcategory: general
+    sub-pages:
+    - url: /fr/faq/
+    - url: /fr/doc/package-contributions/
+    - url: /fr/doc/doc-guidelines/
+    - url: /fr/gsoc/
+    - url: /fr/gsod/
+    - url: /fr/doc/usability-ux/
+    - url: /fr/doc/style-guide/
+    - url: /fr/research/
+    - url: /fr/doc/devel-books/
+  - title: Code
+    subcategory: code
+    sub-pages:
+    - url: /fr/doc/source-code/
+    - url: /fr/doc/license/
+    - url: /fr/doc/coding-style/
+    - url: /fr/doc/code-signing/
+  - title: "Syst\xE8me"
+    subcategory: system
+    sub-pages:
+    - url: /fr/doc/architecture/
+    - url: /fr/doc/security-design-goals/
+    - url: /fr/doc/security-critical-code/
+    - url: /fr/doc/qubes-core-admin/
+    - url: /fr/doc/qubes-core-admin-client/
+    - url: /fr/doc/qubes-core-stack/
+    - url: /fr/doc/gui/
+    - url: /fr/doc/networking/
+    - url: /fr/doc/template-implementation/
+    - url: /fr/doc/storage-pools/
+    - url: /fr/doc/audio-virtualization/
+  - title: Services
+    subcategory: services
+    sub-pages:
+    - url: /fr/doc/qfilecopy/
+    - url: /fr/doc/qmemman/
+    - url: /fr/doc/dvm-impl/
+    - url: /fr/doc/dom0-secure-updates/
+    - url: /fr/doc/qrexec/
+    - url: /fr/doc/qrexec-internals/
+    - url: /fr/doc/qrexec-socket-services/
+    - url: /fr/doc/admin-api/
+  - title: "D\xE9bogage"
+    subcategory: debugging
+    sub-pages:
+    - url: /fr/doc/test-bench/
+    - url: /fr/doc/automated-tests/
+    - url: /fr/doc/profiling/
+    - url: /fr/doc/vm-interface/
+    - url: /fr/doc/windows-debugging/
+    - url: /fr/doc/safe-remote-ttys/
+    - url: /fr/doc/mount-lvm-image/
+  - title: Construction
+    subcategory: building
+    sub-pages:
+    - url: /fr/doc/qubes-builder/
+    - url: /fr/doc/development-workflow/
+    - url: /fr/doc/qubes-iso-building/
+    - url: /fr/doc/qubes-template-configs/
+  - title: Versions
+    subcategory: releases
+    sub-pages:
+    - url: /fr/doc/releases/notes/
+    - url: /fr/doc/releases/schedules/
+    - url: /fr/doc/releases/todo/
+    - url: /fr/doc/version-scheme/
+- title: Documentation externe
+  subtitle: Unofficial, third-party documentation from the Qubes community and others.
+  snippets:
+  - snippet: For more, please see
+  - snippet: Qubes Community Documentation
+    url: https://github.com/Qubes-Community/Contents/tree/master/docs
+  category: external
+  sub-pages:
+  - title: Operating System Guides
+    sub-pages:
+    - text: 'Template: Ubuntu'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/ubuntu.md
+    - text: 'Template: Whonix'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/whonix.md
+    - text: 'Template: CentOS'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/centos.md
+    - text: 'Template: Gentoo'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/gentoo.md
+    - text: Pentesting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/pentesting.md
+    - text: 'Pentesting: BlackArch'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/pentesting/blackarch.md
+    - text: 'Pentesting: Kali'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/pentesting/kali.md
+    - text: 'Pentesting: PTF'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/pentesting/ptf.md
+    - text: Tips for Using Linux in an HVM
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/linux-hvm-tips.md
+    - text: Creating a NetBSD VM
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/netbsd.md
+  - title: Security Guides
+    sub-pages:
+    - text: Security Guidelines
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md
+    - text: Using Multi-factor Authentication with Qubes
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/security/multifactor-authentication.md
+    - text: How to Set Up a Split Bitcoin Wallet in Qubes
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/security/split-bitcoin.md
+    - text: Split dm-crypt
+      url: https://github.com/rustybird/qubes-split-dm-crypt
+    - text: Split SSH
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/split-ssh.md
+    - text: Using OnlyKey with Qubes OS
+      url: https://docs.crp.to/qubes.html
+  - title: Privacy Guides
+    sub-pages:
+    - text: Whonix for Privacy & Anonymity
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/whonix.md
+    - text: Running Tails in Qubes
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/tails.md
+    - text: Anonymizing your MAC Address
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/anonymizing-your-mac-address.md
+    - text: Signal
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/signal.md
+    - text: Reducing the fingerprint of the text-based web browser w3m
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/w3m.md
+  - title: Configuration Guides
+    sub-pages:
+    - text: Qubes Tips and Tricks
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/tips-and-tricks.md
+    - text: How to set up a ProxyVM as a VPN Gateway
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md
+    - text: Multibooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/multiboot.md
+    - text: Changing your Time Zone
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/change-time-zone.md
+    - text: Installing ZFS in Qubes
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/zfs.md
+    - text: Mutt Guide
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/mutt.md
+    - text: Postfix Guide
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/postfix.md
+    - text: Fetchmail Guide
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/fetchmail.md
+    - text: Creating Custom NetVMs and ProxyVMs
+      url: https://theinvisiblethings.blogspot.com/2011/09/playing-with-qubes-networking-for-fun.html
+    - text: How to make proxy for individual tcp connection from networkless VM
+      url: https://groups.google.com/group/qubes-devel/msg/4ca950ab6d7cd11a
+    - text: Adding Bridge Support to the NetVM (EXPERIMENTAL)
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/network-bridge-support.md
+    - text: Screen Sharing
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/screen-share.md
+    - text: Enabling TRIM for SSD disks
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md
+    - text: Configuring a Network Printer
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/network-printer.md
+    - text: Using External Audio Devices
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/external-audio.md
+    - text: Rxvt Guide
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/rxvt.md
+    - text: Adding SSD storage cache
+      url: https://groups.google.com/d/msgid/qubes-users/a08359c9-9eb0-4d1a-ad92-a8a9bc676ea6%40googlegroups.com
+    - text: How to Make a Multimedia TemplateVM
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/multimedia.md
+    - text: How to install an Nvidia driver in dom0
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/install-nvidia-driver.md
+  - title: Customization Guides
+    sub-pages:
+    - text: Customizing Fedora minimal templates
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/customization/fedora-minimal-template-customization.md
+    - text: Customizing Windows 7 templates
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/customization/windows-template-customization.md
+    - text: Language Localization
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/customization/language-localization.md
+    - text: Dark Theme in Dom0 and DomU
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/customization/dark-theme.md
+    - text: 'Safely Removing TemplateVM Packages (Example: Thunderbird)'
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/customization/removing-templatevm-packages.md
+  - title: "D\xE9pannage"
+    sub-pages:
+    - text: Nvidia troubleshooting guide
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/nvidia-troubleshooting.md
+    - text: Lenovo ThinkPad Troubleshooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/thinkpad-troubleshooting.md
+    - text: Apple MacBook Troubleshooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/macbook-troubleshooting.md
+    - text: Sony Vaio Troubleshooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/sony-vaio-tinkering.md
+    - text: Intel Integrated Graphics Troubleshooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/intel-igfx-troubleshooting.md
+    - text: Multiboot Troubleshooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/multiboot.md#troubleshooting
+    - text: Application Troubleshooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/application-troubleshooting.md
+    - text: Tails Troubleshooting
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/tails-troubleshooting.md
+  - title: Building Guides
+    sub-pages:
+    - text: Building a TemplateVM based on a new OS (ArchLinux example)
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-non-fedora-template.md
+    - text: Building the Archlinux Template
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-archlinux-template.md
+    - text: Building the Whonix Templates
+      url: https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-whonix-template.md
+    - text: How to compile kernels for dom0
+      url: https://groups.google.com/d/topic/qubes-users/yBeUJPwKwHM/discussion

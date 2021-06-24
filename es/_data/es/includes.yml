@@ -11,10 +11,12 @@
     icon: fa-code
   - text: Edit This Page
     icon: fa-code-fork
+  - text: Translate This Page
+    icon: fa-language
   - url: /es/security/
     text: Report a Security Issue
     icon: fa-lock
-  - url: /es/doc/reporting-bugs/
+  - url: /es/doc/issue-tracking/
     text: Informar sobre un error
     icon: fa-bug
   - url: /es/support/
@@ -25,7 +27,7 @@
     icon: fa-heart
 - section: intro
   links:
-  - url: /video-tours/
+  - url: /es/video-tours/
     text: Video Tours
     id: 1
   - url: /es/screenshots/
@@ -50,6 +52,9 @@
   text: This page is an unverified full translation or translation currently in progress.
     The Qubes OS Project cannot evaluate the accuracy of translations into languages
     that our team cannot read.
+- section: doc-advanced
+  prompt: 'Caution:'
+  text: This page is intended for advanced users.
 - section: doc-content
   text: "\xCDndice"
 - section: home-news
@@ -60,7 +65,7 @@
   title: The Qubes OS Project and others
   search: Buscar
   go: Go!
-  ddg: Using DurckDuckGo
+  ddg: Using DuckDuckGo
   links:
   - url: https://github.com/QubesOS/qubesos.github.io
     text: Website Source Code
@@ -68,7 +73,7 @@
   - url: http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion
     text: Servicio Tor Onion
     id: 2
-  - url: /es/doc/reporting-bugs/
+  - url: /es/doc/issue-tracking/
     text: Report a Problem
     id: 3
   - url: /es/privacy/

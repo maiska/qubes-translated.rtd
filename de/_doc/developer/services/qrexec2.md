@@ -3,17 +3,14 @@ lang: de
 layout: doc
 permalink: /de/doc/qrexec2/
 redirect_from:
-- /de/wiki/Qrexec2Implementation/
 - /de/doc/Qrexec2Implementation/
 - /de/doc/qrexec2-implementation/
+- /de/wiki/Qrexec2Implementation/
 ref: 38
-title: Qrexec2
+title: qrexec v2 (deprecated)
 ---
 
-# Command execution in VMs #
-<a id="command-execution-in-vms"></a>
-
-(*This page is about qrexec v2. For qrexec v3, see [here](/de/doc/qrexec3/).*)
+(*This page is about qrexec v2. For qrexec v3, see [here](/de/doc/qrexec/).*)
 
 Qubes **qrexec** is a framework for implementing inter-VM (incl. Dom0-VM)
 services. It offers a mechanism to start programs in VMs, redirect their
@@ -314,7 +311,7 @@ significantly differs from what is described in this section.
 The VM-VM channels in Qubes R2 are made via "gluing" two VM-Dom0 and Dom0-VM
 vchan connections:
 
-![qrexec2-internals.png](/attachment/wiki/Qrexec2Implementation/qrexec2-internals.png)
+![qrexec2-internals.png](/attachment/doc/qrexec2-internals.png)
 
 Note that Dom0 never examines the actual data flowing in neither of the two
 vchan connections.

@@ -3,17 +3,14 @@ lang: es
 layout: doc
 permalink: /es/doc/qrexec/
 redirect_from:
+- /es/doc/Qrexec/
+- /es/doc/Qrexec3/
 - /es/doc/qrexec3/
 - /es/wiki/Qrexec/
 - /es/wiki/Qrexec3/
-- /es/doc/Qrexec3/
-- /es/doc/Qrexec/
 ref: 37
-title: 'Qrexec: secure communication across domains'
+title: 'Qrexec: Secure Communication Across Domains'
 ---
-
-# Qrexec: secure communication across domains
-<a id="qrexec-secure-communication-across-domains"></a>
 
 (*This page is about qrexec v3. For qrexec v2, see [here](/es/doc/qrexec2/).*)
 
@@ -40,7 +37,7 @@ Typically, the first thing that a `qrexec-client` instance does is to send a req
 `qrexec-client` starts a vchan server, which `qrexec-agent` then connects to.
 Once this channel is established, stdin/stdout/stderr from the VMprocess is passed between `qrexec-agent` and the `qrexec-client` process.
 
-![qrexec basics diagram](/attachment/wiki/qrexec3/qrexec3-basics.png)
+![qrexec basics diagram](/attachment/doc/qrexec3-basics.png)
 
 The `qrexec-client` command is used to make connections to VMs from dom0.
 For example, the following command creates an empty file called `hello-world.txt` in the home folder of `someVM`:
@@ -210,7 +207,7 @@ This is why `qubes.StartApp` uses our standard `qrexec` argument grammar to stri
 <a id="service-policies-with-arguments"></a>
 
 Sometimes a service name alone isn't enough to make reasonable qrexec policy.
-One example of such a situation is [qrexec-based USB passthrough](/es/doc/usb-devices/).
+One example of such a situation is [qrexec-based USB passthrough](/es/doc/how-to-use-usb-devices/).
 Using just a service name would make it difficult to express the policy "allow access to devices X and Y, but deny to all others."
 It isn't feasible to create a separate service for every device: we would need to change the code in multiple files any time we wanted to update the service.
 

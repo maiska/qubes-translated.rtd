@@ -7,10 +7,6 @@ ref: 14
 title: Release Checklist
 ---
 
-Release Checklist
-=================
-<a id="release-checklist"></a>
-
 *the checklist is probably unfinished*
 
 On -rc1

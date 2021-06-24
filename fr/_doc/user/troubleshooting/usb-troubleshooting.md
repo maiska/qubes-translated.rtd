@@ -6,9 +6,6 @@ ref: 234
 title: USB Troubleshooting
 ---
 
-# USB troubleshooting
-<a id="usb-troubleshooting"></a>
-
 ## disp-sys-usb does not start
 <a id="disp-sys-usb-does-not-start"></a>
 
@@ -19,12 +16,12 @@ For more details on this issue along with possible solutions, look at [PCI passt
 <a id="cant-attach-a-usb-device--usb-device-not-showing-in-qvm-usb"></a>
 
 To successfully attach a USB device, you require a VM dedicated to handling the USB input and output.
-For guidance setting up a USB qube, see the [USB documentation](/fr/doc/usb-devices/#creating-and-using-a-usb-qube).
+For guidance setting up a USB qube, see the [USB documentation](/fr/doc/how-to-use-usb-devices/#creating-and-using-a-usb-qube).
 
 Currently (until issue [1082](https://github.com/QubesOS/qubes-issues/issues/1082) gets implemented), if you remove the device before detaching it from the qube, Qubes OS (more precisely, `libvirtd`) will think that the device is still attached to the qube and will not allow attaching further devices under the same name.
 This may be characterized by VM manager crashes and the error message: `Houston, we have a problem`.
 The easiest way to recover from such a situation is to reboot the qube to which the device was attached.
-If this isn't an option, you can manually recover from the situation by following the instructions at the [Block Devices documentation](/fr/doc/block-devices/#what-if-i-removed-the-device-before-detaching-it-from-the-vm)
+If this isn't an option, you can manually recover from the situation by following the instructions at the [Block Devices documentation](/fr/doc/how-to-use-block-storage-devices/#what-if-i-removed-the-device-before-detaching-it-from-the-vm)
 
 ## "Device attach failed" error
 <a id="device-attach-failed-error"></a>
@@ -39,8 +36,8 @@ After attaching a device to a qube, upon attempting to use the device results in
 
 As a first line of defense, increase the amount of memory given to the USB VM (sys-usb). High-bandwidth devices such as webcams have been [observed](https://github.com/QubesOS/qubes-issues/issues/6200) to need more memory in sys-usb. If increasing the amount of memory does not resolve the issue, check kernel logs within sys-usb as well as the attached qube for errors before filing a bug report.
 
-## usbVM does not boot after creating and assigning USB controllers to it
-<a id="usbvm-does-not-boot-after-creating-and-assigning-usb-controllers-to-it"></a>
+## USB VM does not boot after creating and assigning USB controllers to it
+<a id="usb-vm-does-not-boot-after-creating-and-assigning-usb-controllers-to-it"></a>
 
 This is probably because one of the controllers does not support reset.
 In Qubes R2 any such errors were ignored. In Qubes R3.x they are not.
@@ -49,9 +46,9 @@ In R4.x, devices that are automatically added to sys-net and sys-usb on install 
 A device that does not support reset is not ideal and generally should not be assigned to a VM.
 
 Most likely the offending controller is a USB 3.0 device.
-You can remove this controller from the usbVM, and see if this allows the VM to boot.
+You can remove this controller from the USB VM, and see if this allows the VM to boot.
 Alternatively you may be able to disable USB 3.0 in the BIOS.
-If the BIOS does not have the option to disable USB 3.0, try running the following command in dom0 to [force USB 2.0 modes for the USB ports][force_usb2]:
+If the BIOS does not have the option to disable USB 3.0, try running the following command in dom0 to force USB 2.0 modes for the USB ports:
 
 ```
 lspci -nn | grep USB | cut -d '[' -f3 | cut -d ']' -f1 | xargs -I@ setpci -H1 -d @ d0.l=0
@@ -61,33 +58,33 @@ Errors suggesting this issue:
 
 - in `xl dmesg` output:
 
-    ```
-    (XEN) [VT-D] It's disallowed to assign 0000:00:1a.0 with shared RMRR at dbe9a000 for Dom19.
-    (XEN) XEN_DOMCTL_assign_device: assign 0000:00:1a.0 to dom19 failed (-1)
-    ```
+  ```
+  (XEN) [VT-D] It's disallowed to assign 0000:00:1a.0 with shared RMRR at dbe9a000 for Dom19.
+  (XEN) XEN_DOMCTL_assign_device: assign 0000:00:1a.0 to dom19 failed (-1)
+  ```
 
 - during `qvm-start sys-usb`:
 
-    `
-    internal error: Unable to reset PCI device [...]  no FLR, PM reset or bus reset available.
-    `
+  ```
+  internal error: Unable to reset PCI device [...]  no FLR, PM reset or bus reset available.
+  ```
 
 Another solution would be to set the pci_strictreset option in dom0:
 
 - In Qubes R4.x, when attaching the PCI device to the VM (where `<BDF>` can be obtained from running `qvm-pci`):
 
-    ```
-    qvm-pci attach --persistent --option no-strict-reset=true usbVM dom0:<BDF>
-    ```
+  ```
+  qvm-pci attach --persistent --option no-strict-reset=true usbVM dom0:<BDF>
+  ```
 
 - In Qubes R3.x, by modifying the VM's properties:
 
-    ```
-    qvm-prefs usbVM -s pci_strictreset false
-    ```
+  ```
+  qvm-prefs usbVM -s pci_strictreset false
+  ```
 
 These options allow the VM to ignore the error and the VM will start.
-Please review the notes in the `qvm-prefs` man page and [here][assign_devices] and be aware of the potential risks.
+Please review the notes in the `qvm-prefs` man page and [here](/fr/doc/how-to-use-devices/) and be aware of the potential risks.
 
 ## Can't use keyboard or mouse after creating sys-usb
 <a id="cant-use-keyboard-or-mouse-after-creating-sys-usb"></a>
@@ -107,10 +104,10 @@ If your computer has a PS/2 port, you may instead use a PS/2 keyboard to enter t
 ## "qubes-usb-proxy not installed in the VM" error
 <a id="qubes-usb-proxy-not-installed-in-the-vm-error"></a>
 
-When trying to [create and use a USB qube](/fr/doc/usb-devices/#creating-and-using-a-usb-qube) with the `qubes-usb-proxy` package, you may receive this error: `ERROR: qubes-usb-proxy not installed in the VM`.
+When trying to [create and use a USB qube](/fr/doc/how-to-use-usb-devices/#creating-and-using-a-usb-qube) with the `qubes-usb-proxy` package, you may receive this error: `ERROR: qubes-usb-proxy not installed in the VM`.
 
 If you encounter this error, you can install the `qubes-usb-proxy` with the package manager in the VM you want to attach the USB device to.
-Depending on your operating system, open a terminal in the TemplateVM and enter one of the following commands:
+Depending on your operating system, open a terminal in the template and enter one of the following commands:
 
 - Fedora: `sudo dnf install qubes-usb-proxy`
 - Debian/Ubuntu: `sudo apt-get install qubes-usb-proxy`

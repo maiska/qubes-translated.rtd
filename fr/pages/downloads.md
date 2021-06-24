@@ -1,10 +1,12 @@
 ---
 lang: fr
-layout: downloads
+layout: site
 permalink: /fr/downloads/
 redirect_from:
-- /fr/wiki/QubesDownloads/
 - /fr/doc/QubesDownloads/
+- /fr/wiki/QubesDownloads/
 ref: 2
-title: Download Qubes OS
+title: Download Qubes&nbsp;OS
 ---
+
+{% include downloads.html %}

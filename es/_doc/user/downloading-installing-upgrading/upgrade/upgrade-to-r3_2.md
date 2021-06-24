@@ -3,14 +3,11 @@ lang: es
 layout: doc
 permalink: /es/doc/upgrade-to-r3.2/
 redirect_from:
-- /es/doc/UpgradeToR3.2rc1/
 - /es/doc/UpgradeToR3.2/
+- /es/doc/UpgradeToR3.2rc1/
 ref: 161
 title: Upgrading to R3.2
 ---
-
-# Upgrading Qubes R3.1 to R3.2
-<a id="upgrading-qubes-r31-to-r32"></a>
 
 **Before attempting either an in-place upgrade or a clean installation, we
 strongly recommend that users [back up their systems](/es/doc/backup-restore/).**
@@ -117,9 +114,9 @@ your favorite desktop environment and continue.
 ## Upgrade all Template and Standalone VM(s)
 <a id="upgrade-all-template-and-standalone-vms"></a>
 
-By default, in Qubes R3.1, there are few TemplateVMs and no StandaloneVMs.
-However, users are free to create StandaloneVMs More information on using
-multiple TemplateVMs, as well as StandaloneVMs, can be found
+By default, in Qubes R3.1, there are few templates and no standalones.
+However, users are free to create standalones More information on using
+multiple templates, as well as standalones, can be found
 [here](/es/doc/software-update-vm/). The steps described in this section should be
 repeated in **all** the user's Template and Standalone VMs.
 
@@ -131,7 +128,7 @@ repeated in **all** the user's Template and Standalone VMs.
 In order to do that, please see the
 [Fedora 23 template upgrade instructions](/es/doc/templates/fedora/#upgrading).
 
-1. Open a terminal in the TemplateVM (or StandaloneVM). (E.g., use Qubes VM
+1. Open a terminal in the template (or standalone). (E.g., use Qubes VM
     Manager's right-click menu, choose "Run Command in VM," and type
     `gnome-terminal` there.)
 
@@ -153,12 +150,12 @@ In order to do that, please see the
     sudo dnf install qubes-mgmt-salt-vm-connector
     ```
 
-5. Shut down the template VM.
+5. Shut down the template.
 
 ### Upgrade Debian (and Whonix) templates: 
 <a id="upgrade-debian-and-whonix-templates"></a>
 
-1. Open a terminal in the TemplateVM (or StandaloneVM). (E.g., use Qubes VM
+1. Open a terminal in the template (or standalone). (E.g., use Qubes VM
     Manager's right-click menu, choose "Run Command in VM," and type
     `gnome-terminal` there.)
 
@@ -188,4 +185,4 @@ In order to do that, please see the
     sudo rm -f /etc/apt/sources.list.d/qubes-r3-upgrade.list
     ```
 
-6. Shut down the template VM.
+6. Shut down the template.

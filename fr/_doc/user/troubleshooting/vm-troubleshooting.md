@@ -8,13 +8,10 @@ ref: 223
 title: VM Troubleshooting
 ---
 
-# VM troubleshooting
-<a id="vm-troubleshooting"></a>
-
 ## VM Kernel troubleshooting
 <a id="vm-kernel-troubleshooting"></a>
 
-This troubleshoot applies to the non-default kernel choice described in the [Managing VM docs](/fr/doc/managing-vm-kernel/#using-kernel-installed-in-the-vm).
+This troubleshoot applies to the non-default kernel choice described in the [Managing VM docs](/fr/doc/managing-vm-kernels/#using-kernel-installed-in-the-vm).
 
 In case of problems, you can access the VM console using `qvm-console-dispvm VMNAME` in dom0, then access the GRUB menu.
 You need to call it just after starting the VM (until `GRUB_TIMEOUT` expires); for example, in a separate dom0 terminal window.
@@ -33,7 +30,6 @@ This issue has been seen to occur if a dom0 update is interrupted halfway throug
 ## Can not uninstall a VM / “ERROR: VM installed by package manager: template-vm-name”
 <a id="can-not-uninstall-a-vm--error-vm-installed-by-package-manager-template-vm-name"></a>
 
-Try the [normal method] before resorting to this method to remove a VM manually.
 All of the following commands should be executed in a dom0 terminal.
 
 When a template is marked as 'installed by package manager', but cannot be uninstalled there, trying to uninstall manually will result in the error "ERROR: VM installed by package manager: template-vm-name". Do as follows to be able to uninstall the template:
@@ -84,8 +80,8 @@ Common reasons that may be revealed are: too low memory, corrupted files or a VM
 
 If the error occurs as a result of too little initial memory, increase the initial memory from 200MB to 400MB by navigating to VM settings » Advanced » Initial memory.
 
-## "No match found" when trying to install a TemplateVM
-<a id="no-match-found-when-trying-to-install-a-templatevm"></a>
+## "No match found" when trying to install a template
+<a id="no-match-found-when-trying-to-install-a-template"></a>
 
 For example:
 

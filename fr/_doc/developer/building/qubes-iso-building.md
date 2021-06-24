@@ -10,10 +10,6 @@ ref: 63
 title: Qubes ISO Building
 ---
 
-Building Qubes OS ISO
-=========================
-<a id="building-qubes-os-iso"></a>
-
 Build Environment
 -----------------
 <a id="build-environment"></a>

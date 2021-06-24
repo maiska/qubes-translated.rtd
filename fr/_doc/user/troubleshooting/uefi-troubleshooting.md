@@ -6,9 +6,6 @@ ref: 177
 title: UEFI Troubleshooting
 ---
 
-# Troubleshooting UEFI related problems
-<a id="troubleshooting-uefi-related-problems"></a>
-
 ## Successfully installed in legacy mode, but had to change some kernel parameters
 <a id="successfully-installed-in-legacy-mode-but-had-to-change-some-kernel-parameters"></a>
 
