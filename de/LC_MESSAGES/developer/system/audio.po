@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:12+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/audio.rst:1 9652fe5f1ca2474baae127dfe6b9dd6b
+msgid ""
+"VMs on Qubes OS have access to virtualized audio through the PulseAudio "
+"module. It consists of two parts:"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:4 be186eb19dfb420492191eba782f3adf
+msgid ""
+"``pacat-simple-vchan`` running in a dom0/Audio VM (standalone application, "
+"one per VM, connected to the PulseAudio daemon)"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:6 f2b42da29e564d059b9ebb3c3e1ef2ee
+msgid ""
+"``module-vchan-sink`` running in a VM (loaded into the PulseAudio process)"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:10
+#: 81ac36e855ea452fb6aa41d98ee990c9
+msgid "Protocol"
+msgstr "Protokoll"
+
+#: ../../../_doc/developer/system/audio.rst:12
+#: c63bebb3acbf41f8930da4f4e2b8bf25
+msgid ""
+"The protocol between these two parts is designed to be as simple as "
+"possible. Specifically, there is no audio format negotiation, no "
+"compression, etc. All the audio data is transferred as raw 44.1kHz samples "
+"in S16LE format, 2 channels."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:17
+#: c5066ca6638f4300a01b5998e2b470b3
+msgid "These two parts are connected with two vchan links:"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:19
+#: 71abb382a9764051a2e5182dcd78ac28
+msgid ""
+"Connection on vchan port 4713 used to transfer audio from VM to dom0/Audio "
+"VM. There is no negotiation, no headers, etc. Only raw samples are sent over"
+" this channel."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:22
+#: 20b35ef08ecd46289411053bfe090b04
+msgid ""
+"Connection on vchan port 4714 used to transfer audio from dom0/Audio VM to "
+"VM. Like the previous one, audio data is sent as raw samples."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:25
+#: 01dd2d2229f640519a3f3df1d3b0033c
+msgid ""
+"Additionally, the second vchan connection (on port 4714) is used in the "
+"opposite direction (VM to dom0) to send simple notifications/commands about "
+"the audio state. Each such notification is a 4-byte number in little-endian "
+"format."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:30
+#: aa57cdc5063e40ed846e8c0da863757e
+msgid "List of defined codes:"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:32
+#: f1562e197b31404c8d4e76f61d1a55c3
+msgid ""
+"``0x00010001`` – VM wants to receive audio input (some process is "
+"listening); prior to this message, ``pacat-simple-vchan`` will not send any "
+"audio samples to the VM."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:35
+#: c9bcf2b3e0294879979deb3bf75acf06
+msgid ""
+"``0x00010000`` – VM does not want to receive audio input (no process is "
+"listening anymore); after this message, ``pacat-simple-vchan`` will not send"
+" any audio samples to the VM."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:38
+#: 9dacd06086f640ff88dcce3da0f9ed49
+msgid ""
+"``0x00020000`` – VM does not want to send audio output; informational for "
+"dom0, to avoid buffer under runs (may affect PulseAudio calculated delays)."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:41
+#: cc885ae6334a473a826014c48dec3c2c
+msgid "``0x00020001`` – VM does want to send audio output."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:44
+#: b21224aeb0c541508b856681176eec49
+msgid "pacat-simple-vchan"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:46
+#: 5c11204f19af4e25bed8c9415fcc1bb1
+msgid ""
+"This is the dom0 (or Audio VM) part of the audio virtualization. It is "
+"responsible for transferring audio samples between the PulseAudio daemon in "
+"dom0/Audio VM (which has access to the actual audio hardware) and a VM "
+"playing/recording sounds. A separate ``pacat-simple-vchan`` process runs in "
+"dom0 for each VM with audio. Each of them opens separate input and output "
+"streams to their local PulseAudio, which allows for controlling the volume "
+"of each VM separately (using the ``pavucontrol`` tool, for example). In "
+"order to (re)create a stream for a VM in dom0, ``pacat-simple-vchan`` can be"
+" used. In order to find the needed parameters, domid and domain name, the "
+"command ``xl list`` can be used."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:57
+#: b722fc9f271c44cc9e281c2314b1eab3
+msgid ""
+"Audio input to the VM is not sent by default. It needs to be both requested "
+"by the VM part and explicitly enabled in ``pacat-simple-vchan``. The "
+"mechanism to do this differs between Qubes versions. In Qubes before R4.1, "
+"``pacat-simple-vchan`` is controlled over system D-Bus:"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:63
+#: 231815c038744cd39d14fb6643acbec2
+msgid ""
+"destination: ``org.qubesos.Audio.VMNAME`` (where ``VMNAME`` is the VM’s "
+"name)"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:65
+#: a5b2f5e44f36406cad76e6923041612a
+msgid "object path: ``/org/qubesos/audio``"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:66
+#: d5c315dce3ce494997f96f33ce149638
+msgid "interface: ``org.qubesos.Audio``"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:67
+#: f649310251d046de8eee64a102fcda9e
+msgid ""
+"property: ``RecAllowed`` (which can be set using the "
+"``org.freedesktop.DBus.Properties`` interface)"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:70
+#: c1da47c4845840bb8c9ff747daabb344
+msgid ""
+"In Qubes R4.1 and later, ``pacat-simple-vchan`` is controlled over a UNIX "
+"socket at ``/var/run/qubes/audio-control.VMNAME`` (where ``VMNAME`` is the "
+"VM’s name). Supported commands:"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:74
+#: c72752f951f44bc5979eddae5d68aae9
+msgid "``audio-input 1\\n`` - enable audio input"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:75
+#: 0f0d81bebbdf4890afa8dd218863660a
+msgid "``audio-input 0\\n`` - disable audio input"
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:77
+#: 0868aeaf80184073b777edf6e19e78f6
+msgid ""
+"These commands can be sent using the ``qubes.AudioInputEnable+VMNAME`` and "
+"``qubes.AudioInputDisable+VMNAME`` qrexec services, respectively. The "
+"current status is written into QubesDB at ``/audio-input/VMNAME`` (where "
+"``VMNAME`` is the VM’s name) with either ``1`` or ``0`` values. The lack of "
+"a key means that the ``pacat-simple-vchan`` for a given VM is not running."
+msgstr ""
+
+#: ../../../_doc/developer/system/audio.rst:84
+#: bf6933372758421fabcca6beaaab6e41
+msgid ""
+"In either version, it is exposed to the user as device of class ``mic``, "
+"which can be attached to a VM (for example, using the ``qvm-device mic`` "
+"command)."
+msgstr ""

@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Tobias Killer, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:09+0000\n"
+"Last-Translator: Tobias Killer, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/hardware/system-requirements.rst:3
+#: 9be113eb33044c989bae922f6381f4bf
+msgid ""
+"Notice: The system requirements on this page are necessary, but not "
+"sufficient, for Qubes compatibility at a minimal or recommended level. In "
+"other words, just because a computer satisfies these requirements doesn’t "
+"mean that Qubes will successfully install and run on it. We strongly "
+"recommend consulting the resources below when selecting hardware for Qubes."
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:11
+#: f05ef15e9cf14ff987d2079448e88b7e
+msgid "Minimum"
+msgstr "Minimal"
+
+#: ../../../_doc/user/hardware/system-requirements.rst:13
+#: ../../../_doc/user/hardware/system-requirements.rst:35
+#: dbf0fb2b19414514a15cff19f4eecdd4 3912d83f49d243178ccf3445d2998c5f
+msgid ""
+"**CPU:** 64-bit Intel or AMD processor (also known as ``x86_64``, ``x64``, "
+"and ``AMD64``)"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:16
+#: ../../../_doc/user/hardware/system-requirements.rst:38
+#: ac05503cb9e24f3789b4c7e90cbd922e 71812f5a78be4a76ac3b4d7c21235da2
+msgid ""
+"`Intel VT-x "
+"<https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29>`__"
+" with `EPT "
+"<https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Extended_Page_Tables>`__"
+" or `AMD-V "
+"<https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29>`__"
+" with `RVI "
+"<https://en.wikipedia.org/wiki/Second_Level_Address_Translation#Rapid_Virtualization_Indexing>`__"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:24
+#: ../../../_doc/user/hardware/system-requirements.rst:46
+#: 97009cc9e68549b8ae7b6b31133c1dc2 35afbefe18cb4f81b95a4090a777f0ff
+msgid ""
+"`Intel VT-d <https://en.wikipedia.org/wiki/X86_virtualization#Intel-VT-d>`__"
+" or `AMD-Vi (also known as AMD IOMMU) "
+"<https://en.wikipedia.org/wiki/X86_virtualization#I.2FO_MMU_virtualization_.28AMD-"
+"Vi_and_Intel_VT-d.29>`__"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:29
+#: 5e33d3fc28774805bc1bf92735c9379d
+msgid "**Memory:** 6 GB RAM"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:30
+#: b52b78921e704fe0b8898b646f299271
+msgid "**Storage:** 32 GB free space"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:33
+#: 80a1adab84ed44de8b61807aa6a150ed
+msgid "Recommended"
+msgstr "Empfohlen"
+
+#: ../../../_doc/user/hardware/system-requirements.rst:51
+#: d87b2e752bef4739b56a29c210bb21cd
+msgid "**Memory:** 16 GB RAM"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:52
+#: eb8a5bb8b49345baa6d9e5c3e91e65e0
+msgid "**Storage:** 128 GB free space"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:54
+#: fd1f2140816249dcb954a3cef736ab88
+msgid "High-speed solid-state drive strongly recommended"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:56
+#: a0877f8ad4cc42f69cfdf8dfca7b1cc6
+msgid ""
+"**Graphics:** Intel integrated graphics processor (IGP) strongly recommended"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:59
+#: 5b81d6240c474b6e82796668824b5b98
+msgid ""
+"Nvidia GPUs may require significant :doc:`troubleshooting "
+"</external/configuration-guides/install-nvidia-driver>`"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:61
+#: ca8bf55964614038b5a6381d70fd1a45
+msgid ""
+"AMD GPUs have not been formally tested, but Radeons (especially RX580 and "
+"earlier) generally work well"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:64
+#: 4ac842f6c7164b45806d3e35679d67ce
+msgid "**Peripherals:** A non-USB keyboard or multiple USB controllers"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:65
+#: 321ea88ccd554085b81033bcc03d1b46
+msgid ""
+"**TPM:** Trusted Platform Module (TPM) with proper BIOS support (required "
+"for :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`)"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:67
+#: 3e2a5d78c4b34b08a70e87e089533bd9
+msgid ""
+"**Other:** Satisfaction of all `hardware certification requirements for "
+"Qubes 4.x <https://www.qubes-os.org/news/2016/07/21/new-hw-certification-"
+"for-q4/>`__"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:71
+#: d591a4558e5c44d391e8fe96dc7c66af
+msgid "Choosing Hardware"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:73
+#: cddf2e7957154eb493d4c9d1c1c3c269
+msgid ""
+"We recommend consulting these resources when selecting hardware for Qubes "
+"OS:"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:76
+#: 1ab002a59337442396f9f88d110ddadd
+msgid ""
+":doc:`Certified hardware </user/hardware/certified-hardware>` — Qubes "
+"developer certified, officially recommended"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:78
+#: 67d422db9ead4c729f5c2eb731c41669
+msgid ""
+"`Community-recommended hardware <https://forum.qubes-os.org/t/5560>`__ — "
+"list curated and maintained by the community, unofficially recommended"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:81
+#: 3cc34c6bb7884a0599aa10b258df616c
+msgid ""
+":doc:`Hardware compatibility list (HCL) </user/hardware/hcl>` — community "
+"test results, neither recommended nor disrecommended"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:85
+#: 3dbd096c82ed46019a274490deab2009
+msgid "Important Notes"
+msgstr "Wichtige Hinweise"
+
+#: ../../../_doc/user/hardware/system-requirements.rst:87
+#: 607a661a12044579bd3d8c5e469f640b
+msgid ""
+"**Installing Qubes in a virtual machine is not recommended, as it uses its "
+"own bare-metal hypervisor (Xen).**"
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:90
+#: 6a6091109b2445489dd3008a76fe0441
+msgid ""
+"Qubes **can** be installed on many systems that do not meet the recommended "
+"requirements. Such systems will still offer significant security "
+"improvements over traditional operating systems, since things like GUI "
+"isolation and kernel protection do not require special hardware."
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:96
+#: 54fe9915f68a44528f0563361b6e9a01
+msgid ""
+"Qubes **can** be installed on a USB flash drive or external disk, and "
+"testing has shown that this works very well. A fast USB 3.0 flash drive is "
+"recommended for this. (As a reminder, its capacity must be at least 32 GiB.)"
+" Simply plug the flash drive into the computer before booting into the Qubes"
+" installer from a separate installation medium, choose the flash drive as "
+"the target installation disk, and proceed with the installation normally. "
+"After Qubes has been installed on the flash drive, it can then be plugged "
+"into other computers in order to boot into Qubes. In addition to the "
+"convenience of having a portable copy of Qubes, this allows users to test "
+"for hardware compatibility on multiple machines (e.g., at a brick-and-mortar"
+" computer store) before deciding on which computer to purchase. (See "
+"`generating and submitting HCL reports </user/hardware/how-to-use-the-"
+"hcl.html#generating-and-submitting-new-reports>`__ for advice on hardware "
+"compatibility testing.) Remember to change the devices assigned to your "
+"NetVM and USB VM if you move between different machines."
+msgstr ""
+
+#: ../../../_doc/user/hardware/system-requirements.rst:114
+#: ed3c8c883874481282457a5c0230d319
+msgid ""
+"You can check whether an Intel processor has VT-x and VT-d on `ark.intel.com"
+" <https://ark.intel.com/content/www/us/en/ark.html#@Processors>`__."
+msgstr ""

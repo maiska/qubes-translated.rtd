@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/project-security/qsb.rst:1 b277158791f2460d921c4d566673ae9a
+msgid ""
+"A **Qubes security bulletin (QSB)** is a security announcement issued by the"
+" `Qubes security team </project-security/security.html#qubes-security-"
+"team>`__ through the :doc:`Qubes security pack </project-security/security-"
+"pack>`. A QSB typically provides a summary and impact analysis of one or "
+"more recently-discovered software vulnerabilities, including details about "
+"patching to address them."
+msgstr ""
+
+#: ../../../_doc/project-security/qsb.rst:8 d76207ef774f4019ad457faae9a974a4
+msgid "Full list"
+msgstr ""

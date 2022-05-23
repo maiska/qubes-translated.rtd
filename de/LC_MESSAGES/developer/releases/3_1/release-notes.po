@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2022
+# Emma Peel, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Last-Translator: Emma Peel, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:2
+#: 87f736039fb4402a91d55ec98843afe3
+msgid "New features since 3.0"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:4
+#: 6566771b7ef24566a4f34645976821e6
+msgid ""
+"Management Stack based of Salt Stack in dom0 - :doc::doc:`documentation "
+"</user/advanced-topics/salt>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:6
+#: 02abac3a7f4f470a9d57167c9394a419
+msgid "Out of the box Whonix setup"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:7
+#: c47f22cd7688483bb9d6002842a776a5
+msgid "UEFI support"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:8
+#: 12ed2e8cd6d54dc29cade568cdbba159
+msgid "LIVE edition (still alpha, not part of R3.1-rc1)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:9
+#: 88287a6f8f0241a6b48c3db6d5ebafbe
+msgid "Updated GPU drivers in dom0"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:10
+#: cb60c2d535c048bf9316af36787d795e
+msgid "Colorful window application icons (instead of just colorful lock icon)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:12
+#: 2152e51986754e99be9228ad928a2d4a
+msgid ""
+"PV Grub support (:doc::doc:`documentation </user/advanced-topics/managing-"
+"vm-kernels>`)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:13
+#: b026d2d7ecc24282b16402e9640477fa
+msgid ""
+"Out of the box USB VM setup, including `handling USB mouse "
+"<https://github.com/QubesOS/qubes-app-linux-input-"
+"proxy/blob/master/README.md>`__"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:15
+#: 7d55fcc698d64287a2a4d8c4638541dc
+msgid ""
+"Xen upgraded to 4.6, for better hardware support (especially Skylake "
+"platform)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:17
+#: ac8f49dd3f3a4bf49afd4b9ac9c281bb
+msgid ""
+"Improve updates proxy flexibility - especially repositories served over "
+"HTTPS"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:20
+#: a23ed61375e9495e86d4a23318df0484
+msgid ""
+"You can get detailed description in `completed github issues "
+"<https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-"
+"desc+milestone%3A%22Release+3.1%22+label%3Arelease-notes+is%3Aclosed>`__"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:24
+#: 1dfca935835e4d0380789b365a3134b1
+msgid "Known issues"
+msgstr "Bekannte Probleme"
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:26
+#: 6953d444628d4b24877edfd9c4845f3b
+msgid ""
+"Installation image does not fit on DVD, requires either DVD DL, or USB stick"
+" (5GB or more)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:29
+#: 3804bb0101cb482aafde6f1378a5a663
+msgid "Windows Tools: ``qvm-block`` does not work"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:31
+#: 3c8770cf8d2545fa805acd8d9c304dbc
+msgid ""
+"Some icons in the Qubes Manager application might not be drawn correctly "
+"when using the Xfce4 environment in Dom0. If this bothers you, please use "
+"the KDE environment instead."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:35
+#: 3ea3c4d7ed5a46bda5b8dc7e3d77ca86
+msgid ""
+"USB mouse (in the case of USB VM) does not work at first system startup "
+"(just after completing firstboot). Workaround: restart the system."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:39
+#: 9e094ee0090d4ebb8326adf80c51b4a9
+msgid ""
+"For other known issues take a look at `our tickets "
+"<https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+3.1%22+label%3Abug>`__"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:42
+#: e80ef658e2fb4eb8ace66d6bcd6cd18b
+msgid ""
+"It is advised to install updates just after system installation to apply bug"
+" fixes for (some of) the above problems."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:46
+#: 7d565ebb2b694fab90f9c90fac8971f6
+msgid "Downloads"
+msgstr "Downloads"
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:48
+#: 12e01e892a5748a0a99d61a660620807
+msgid ""
+"See :doc:`Qubes Downloads </user/downloading-installing-"
+"upgrading/downloads>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:51
+#: e09f474ee2f14cca94a8d1c1d5b40740
+msgid "Installation instructions"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:53
+#: 819f2eea32a94738835537095db8f171
+msgid ""
+"See :doc:`Installation Guide </user/downloading-installing-"
+"upgrading/installation-guide>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:56
+#: 1ebc023cc97740a6a53f4095be18d1bb
+msgid "Upgrading"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:59
+#: 002de376696f47b6bdd10d390ca73907
+msgid "From R3.0"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:61
+#: bbf528e783da4967874a38083e4325d0
+msgid ""
+"The easiest and safest way to upgrade to Qubes R3.1 is to install it from "
+"scratch and use :doc:`qubes backup and restore tools </user/how-to-"
+"guides/how-to-back-up-restore-and-migrate>` for migrating of all of the user"
+" VMs."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:65
+#: 07a67435400d4058be6ffacb55655cd0
+msgid ""
+"Users of Qubes R3.0 can upgrade using :doc:`experimental procedure "
+"</user/downloading-installing-upgrading/upgrade/3_1>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:69
+#: 176a9eaf5a8e4f67b5efbbcd1da06462
+msgid "From R2 or earlier"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:71
+#: f0d3fdc8130f44219cdaa63ce7492435
+msgid ""
+"When upgrading from earlier versions the easiest and safest way is to "
+"install it from scratch and use :doc:`qubes backup and restore tools "
+"</user/how-to-guides/how-to-back-up-restore-and-migrate>` for migrating of "
+"all of the user VMs."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_1/release-notes.rst:75
+#: f1287b77b0084975a1d7091a1f3f4cda
+msgid ""
+"Alternatively you can `upgrade to R3.0 using "
+"</developer/releases/3_0/release-notes.html#upgrading>`__ first, then follow"
+" the instructions above. This will be time consuming process."
+msgstr ""

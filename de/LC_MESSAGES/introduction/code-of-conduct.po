@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# Tobias Killer, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:14+0000\n"
+"Last-Translator: Tobias Killer, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/introduction/code-of-conduct.rst:2
+#: 743ad57d32e3423f82f441c2491c7d44
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../../_doc/introduction/code-of-conduct.rst:4
+#: ec4e18da28f34b42a63b45e7e4d055c6
+msgid ""
+"This Code of Conduct is a collaborative, evolving document that attempts to "
+"transparently set out a public set of standards regarding appropriate "
+"conduct in the Qubes OS Project. It is *not* intended to be a statement or "
+"endorsement, whether implicit or explicit, of any particular political or "
+"philosophical attitude, belief, or way of living. Rather, it is an attempt "
+"to find a reasonable middle ground among the inevitable disagreements "
+"regarding free expression that arise in a large, diverse community of people"
+" from around the world. It is intended to be a practical means of serving "
+"the best interests of our users, contributors, and the project itself. We "
+"welcome you to view the `history of changes "
+"<https://github.com/QubesOS/qubes-doc/commits/master/about/code-of-"
+"conduct.md>`__ to this document and the `discussion "
+"<https://github.com/QubesOS/qubes-issues/issues/2163>`__ leading to its "
+"creation."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:21
+#: 45f6d74fd8444f669eec23b862ddd9bd
+msgid "Our Pledge"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:23
+#: 7fbb2dc307c646f5b0f85e6b7e0eae91
+msgid ""
+"The Qubes OS project creates a reasonably secure OS. In the interest of "
+"fostering an open and welcoming environment, we as contributors and "
+"maintainers pledge to make participation in our project and our community a "
+"harassment-free experience for everyone, regardless of age, body size, "
+"disability, ethnicity, gender identity and expression, level of experience, "
+"nationality, personal appearance, race, religion, sexual identity and "
+"orientation, or other characteristic."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:32
+#: 66c358ceb32f4eecadfb6020428a4c1f
+msgid "Our Standards"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:34
+#: d4c4f2c4554d4ab3bdb57966855ad615
+msgid ""
+"Examples of behavior that contributes to creating a positive environment "
+"include:"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:37
+#: 1525c18379aa4ca3804b5afcaebb15bb
+msgid "Using welcoming and inclusive language"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:38
+#: 612137f44a3744aa9bd16e8fc5032062
+msgid "Being respectful of differing viewpoints and experiences"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:39
+#: 06432efb2d8440429db4cd1161df87a1
+msgid "Gracefully accepting constructive criticism"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:40
+#: 0638d5c18fe64cf3a6c15246e892d09f
+msgid "Focusing on what is best for the community"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:41
+#: 9ccefa94b05248b287e2df2d2756a587
+msgid "Showing empathy towards other community members"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:43
+#: 615f667ca8304fcd8ff6b1138cac3c94
+msgid "Examples of unacceptable behavior by participants include:"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:45
+#: 4583d2b1f8f44987a5c5729601b838cd
+msgid ""
+"The use of sexualized language or imagery and unwelcome sexual attention or "
+"advances"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:47
+#: 22a844dfdcd641be85b182385b0bf23c
+msgid ""
+"Trolling, insulting/derogatory comments, and personal or political attacks"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:49
+#: ef11fa77d7d243fcb449b4a5a266fdc1
+msgid ""
+"Reinforcing stereotypical models for illustration of non-technical users "
+"(e.g. our mothers/grandmothers, etc.)"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:51
+#: fd8c3c71740544f3a20859cdba142d1a
+msgid ""
+"Public or private harassment, as defined by the `Citizen Code of Conduct "
+"<https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:53
+#: 8fb78e4d1b26499cb4d5b645d651f9ec
+msgid ""
+"Publishing others’ private information, such as a physical or electronic "
+"address, without explicit permission"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:55
+#: 02cbd548709e4badbf3d0585e9963ad0
+msgid ""
+"Other conduct which could reasonably be considered inappropriate in a "
+"professional setting"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:58
+#: ddb38691cbe7496b9f9650c7b6d91341
+msgid ""
+"(Please also see our `discussion guidelines "
+"</introduction/support.html#discussion-guidelines>`__.)"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:62
+#: 12a4dc9fb87444899579906c3c181194
+msgid "Our Responsibilities"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:64
+#: ce4fbb4fa371433cb97130fc61591571
+msgid ""
+"Project maintainers are responsible for clarifying the standards of "
+"acceptable behavior and are expected to take appropriate and fair corrective"
+" action in response to any instances of unacceptable behavior. This action "
+"can include removing, editing, or rejecting comments, commits, code, wiki "
+"edits, issues, and other contributions, or to ban temporarily or permanently"
+" any contributor for other behaviors that they deem inappropriate, "
+"threatening, offensive, or harmful."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:73
+#: 6f751ef147374f039a61ec8f0cb00500
+msgid "Scope"
+msgstr "Umfang"
+
+#: ../../../_doc/introduction/code-of-conduct.rst:75
+#: 45b87aa607e3410182ef379d933f083d
+msgid ""
+"This Code of Conduct applies both within project spaces and in public spaces"
+" when an individual is representing the project or its community. Examples "
+"of representing a project or community include using an official project "
+"e-mail address, posting via an official social media account, or acting as "
+"an appointed representative at an online or offline event. Representation of"
+" a project may be further defined and clarified by project maintainers."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:83
+#: b4fa6417521c4235a84cbb4731e9fc86
+msgid ""
+"In all other cases, this Code of Conduct applies only in the official "
+"project venues specified on :doc:`this page </introduction/support>`; it "
+"does not apply to unofficial venues, community-run venues, or any other "
+"public or private place. For example, if a Qubes user decides to create an "
+"unofficial discussion space on a third-party platform, and someone appears "
+"to violate this Code of Conduct in that space, we are not responsible for "
+"taking any action with respect to that behavior; the venue; the venue’s "
+"creators, owners, leaders, or moderators; or anything else pertaining to the"
+" incident."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:94
+#: f365c6f6185d4e5bb763f56afd82695d
+msgid "Enforcement"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:96
+#: 3112333f3ad24d44b871bf2f1e9e55af
+msgid ""
+"Instances of abusive, harassing, or otherwise unacceptable behavior may be "
+"reported by contacting the project CoC team at ``mods@qubes-os.org``. The "
+"project CoC team is the `Marek Marczykowski-Górecki </team/#marek-"
+"marczykowski-g%C3%B3recki>`__, `Andrew David Wong <https://www.qubes-"
+"os.org/team/#andrew-david-wong>`__, and `Michael Carbone <https://www.qubes-"
+"os.org/team/#michael-carbone>`__. All complaints will be reviewed and "
+"investigated and will result in a response that is deemed necessary and "
+"appropriate to the circumstances. The project team is obligated to maintain "
+"confidentiality with regard to the reporter of an incident, and will ensure "
+"reporter, reported and all others impacted are regularly updated through the"
+" process. Further details of specific enforcement policies may be posted "
+"separately."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:109
+#: 742b56f5b3004323b1eff6aa4e8bad6a
+msgid ""
+"Project maintainers who do not follow or enforce the Code of Conduct in good"
+" faith may face temporary or permanent repercussions as determined by other "
+"members of the project’s leadership."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:114
+#: ab56014ebc66403c86b7b88599c6cdc0
+msgid "A Note on Trust"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:116
+#: 9edf48cb01c94c1a813ce6287870401b
+msgid ""
+"Expect all contributions to be reviewed with some amount of healthy "
+"adversarial skepticism, regardless of your perceived standing in the "
+"community. This is a security project, and allowing ourselves to get "
+"complacent while reviewing code simply because it comes from a well-known "
+"party would not be in the best interest of the project. Please try not to "
+"get offended if you perceive your contributions as being met with distrust –"
+" we are most definitely thankful and appreciative of your efforts, but must "
+"also remain vigilant in order to ensure continued quality and safeguard "
+"against potential sabotage."
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:127
+#: 1202caefc72a4962be34012d10ec1283
+msgid "Attribution"
+msgstr ""
+
+#: ../../../_doc/introduction/code-of-conduct.rst:129
+#: 6583a0d748c24b82a9d0556fc7d011e2
+msgid ""
+"The initial published version of this Code of Conduct was adapted from the "
+"`Contributor Covenant, version 1.4 <https://contributor-"
+"covenant.org/version/1/4>`__ and the `Rust Code of Conduct "
+"<https://www.rust-lang.org/en-US/conduct.html>`__."
+msgstr ""

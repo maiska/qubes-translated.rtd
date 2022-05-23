@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:12+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/general/website-style-guide.rst:1
+#: 7f857086f17247469d4befee2e344cc2
+msgid ""
+"This page explains the standards we follow for building and maintaining the "
+"website. Please follow these guidelines and conventions when modifying the "
+"website. For the standards governing the documentation in particular, please"
+" see the :doc:`documentation style guide </developer/general/documentation-"
+"style-guide>`."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:8
+#: 72375cdf1d7b47d7b520543db5a21ee6
+msgid "Coding conventions"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:10
+#: 04eb526aec4643eb99f5a199fb41a780
+msgid ""
+"The following conventions apply to the website as a whole, including "
+"everything written in HTML, CSS, YAML, and Liquid. These conventions are "
+"intended to keep the codebase consistent when multiple collaborators are "
+"working on it. They should be understood as a practical set of rules for "
+"maintaining order in this specific codebase rather than as a statement of "
+"what is objectively right or good."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:18
+#: 29f5c8f0f501497cb14cf23e15db72be
+msgid "General practices"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:20
+#: 95cc3933df694f17824c98f03fa971a5
+msgid ""
+"Use comments to indicate the purposes of different blocks of code. This "
+"makes the file easier to understand and navigate."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:23
+#: a38b8fe343f94b41ab57449af4f18066
+msgid ""
+"Use descriptive variable names. Never use one or two letter variable names. "
+"Avoid obscure abbreviations and made-up words."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:26
+#: f5f1185ec61c43669efe75668fcd2147
+msgid ""
+"In general, make it easy for others to read your code. Your future self will"
+" thank you, and so will your collaborators!"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:29
+#: 1047368be8dd4f33896515a09e631778
+msgid ""
+"`Don’t Repeat Yourself (DRY)! "
+"<https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`__ Instead of "
+"repeating the same block of code multiple times, abstract it out into a "
+"separate file and ``include`` that file where you need it."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:36
+#: 2a08428301ce4fb88b1e70211ed96b75
+msgid "Whitespace"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:38
+#: 806c90d35060478c9d80dbb827d26965
+msgid "Always use spaces. Never use tabs."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:40
+#: ac8427ca286f45e0998f33fe3ee64212
+msgid "Each indentation step should be exactly two (2) spaces."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:42
+#: e476cf80444545349e0c8ab718265eb4
+msgid ""
+"Whenever you add an opening tag, indent the following line. (Exception: If "
+"you open and close the tag on the same line, do not indent the following "
+"line.)"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:46
+#: 1e6ba0cb2e23416499d6b8b54f925265
+msgid "Indent Liquid the same way as HTML."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:48
+#: ec25ee3bf0484423aefe3a0d845c5162
+msgid ""
+"In general, the starting columns of every adjacent pair of lines should be "
+"no more than two spaces apart (example below)."
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:51
+#: 78642e6f21ff47f6af33d75ae4cd62b7
+msgid ""
+"No blank or empty lines. (Hint: When you feel you need one, add a comment on"
+" that line instead.)"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:55
+#: a4aeea2328554e74a2342d9996ef95f9
+msgid "Indentation example"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:57
+#: 7298d2d6faf546478f5410b291366ad0
+msgid "Here’s an example that follows the indentation rules:"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:59
+#: 7cf5e9dd520f4c04a7db3051b8ee3ed0
+msgid "{% raw %}"
+msgstr ""
+
+#: ../../../_doc/developer/general/website-style-guide.rst:79
+#: 7133532620274d12a146887cbb729eb4
+msgid "{% endraw %}"
+msgstr ""

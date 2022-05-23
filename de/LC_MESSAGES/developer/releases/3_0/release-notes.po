@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Emma Peel, 2022
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:2
+#: 502d82b2b85a4bc4827c121e25891d45
+msgid "Qubes R3.0 Release Notes"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:4
+#: aa2f491ff36845beb6bb4185fc33f204
+msgid "This Qubes OS release is dedicated to the memory of Caspar Bowden."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:7
+#: f1dabc55f5db4e4bbee6b76857c561f6
+msgid "New features since 2.0"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:9
+#: 5c0445ed26c948dfa2c974647ecaafd7
+msgid ""
+"HAL (Hypervisor Abstraction Layer) - based on libvirt, opens a whole new "
+"possibilities of using different hypervisors. Currently Qubes OS uses Xen."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:12
+#: ad8fd99eb3e2474093f76e3c48931f2f
+msgid ""
+"Xen 4.4 - many new features, but for us the most important is much more "
+"mature libxl toolstack."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:14
+#: 35129347d73a46d79a8728be8c8d925a
+msgid ""
+"Qrexec 3 - greatly improved performance by using direct VM-VM connections "
+"and bigger buffers."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:16
+#: 81ca6fae90224f2c91fbbfd7131a0390
+msgid "Debian templates gets official support."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:17
+#: fb7a727785464f509fac8ae17a698c26
+msgid "Whonix templates"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:18
+#: 9452cbeb585c485ab91a56e6a174e984
+msgid ""
+"Build system improvements - especially support for distribution-specific "
+"plugins (makes supporting multiple distributions much easier) and building "
+"templates using DispVM."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:21
+#: bae7beca67d34083a17c9baba7b91e67
+msgid ""
+"Automated tests - makes much easier to find bugs, before its even shipped to"
+" users"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:25
+#: 70585dbce7ab415c82dccaba3cdbd1df
+msgid "Known issues"
+msgstr "Bekannte Probleme"
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:27
+#: e7a60282c72e4555855234eea3ce6fcf
+msgid "Windows Tools: ``qvm-block`` does not work"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:29
+#: d6c198f0ce4541b191504e35bcba1081
+msgid ""
+"UEFI is not supported, you need to enable “legacy boot” in BIOS before "
+"installing Qubes OS"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:32
+#: ebc66961265340e6b9ad4c2dd4869197
+msgid ""
+"Some icons in the Qubes Manager application might not be drawn correctly "
+"when using the Xfce4 environment in Dom0. If this bothers you, please use "
+"the KDE environment instead."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:36
+#: dfed3a8974f44d8bb9acbe09d288a722
+msgid ""
+"If your GPU is not correctly supported by the Dom0 kernel (e.g. the 3D "
+"desktop effects do not run smoothly) then you might experience “heaviness” "
+"with Windows 7-based AppVMs. In that case, please solve the problem with "
+"your GPU support in Dom0 in the first place (by using a different kernel), "
+"or install Qubes OS on a different system."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:42
+#: 2cb15455636b4c41bb7a68c09ec9a5f6
+msgid ""
+"For other known issues take a look at `our tickets "
+"<https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+3.0%22+label%3Abug>`__"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:45
+#: 1219d02aa81b47a19371d9eda9b7dd3e
+msgid ""
+"It is advised to install updates just after system installation to apply bug"
+" fixes for (some of) the above problems."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:49
+#: c60d13740f744d2e85d1c9cd62eb0cd6
+msgid "Downloads"
+msgstr "Downloads"
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:51
+#: dd2071d39d4f47c5badb64c522468653
+msgid ""
+"See :doc:`Qubes Downloads </user/downloading-installing-"
+"upgrading/downloads>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:54
+#: c5c3c5664d5c4a6ca588b6ec8aedf6a9
+msgid "Installation instructions"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:56
+#: 9625256a258742b0a1bb30f011b286b8
+msgid ""
+"See :doc:`Installation Guide </user/downloading-installing-"
+"upgrading/installation-guide>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:59
+#: b89d628e9bc9480fb8adacceefc7c4cd
+msgid "Upgrading"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:62
+#: b36cd3e464c847f78c65fdf790c049e5
+msgid "From R3.0 release candidate"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:64
+#: 6b61e5bf070b4bb29c36024a910ba9a7
+msgid ""
+"If you are using Qubes R3.0rc1, R3.0rc2 or R3.0rc3, just install system "
+"updates, there is no special steps required."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:68
+#: fc5430e1207d41468ce39711f1ee7c5e
+msgid "From R2.0 or earlier"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:70
+#: b1170b1878e84501a46e0b9ce21f24a5
+msgid ""
+"The easiest and safest way to upgrade to Qubes R3.0 is to install it from "
+"scratch and use :doc:`qubes backup and restore tools </user/how-to-"
+"guides/how-to-back-up-restore-and-migrate>` for migrating of all of the user"
+" VMs."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/release-notes.rst:74
+#: 3cf8f94dbc7545ad80cb9d6485ddcda9
+msgid ""
+"Users of Qubes R2 can upgrade using :doc:`experimental procedure "
+"</user/downloading-installing-upgrading/upgrade/3_0>`."
+msgstr ""

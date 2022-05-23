@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# IDRASSI Mounir <mounir.idrassi@idrix.fr>, 2022
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:11+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/i3.rst:1
+#: 7bc164b3d5a64c3493d62e81e447f61c
+msgid ""
+"i3 is part of the stable repository (as of Qubes R3.1) and can be installed "
+"by using the :doc:`dom0 update mechanism </user/advanced-topics/how-to-"
+"install-software-in-dom0>`. To install the i3 window manager and the its "
+"Qubes specific configuration:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:10
+#: 5687efb66cd74153918ea1e8c8fd9425
+msgid ""
+"The Qubes-specific configuration (package ``i3-settings-qubes``) can be "
+"installed optionally in case you would prefer writing your own configuration"
+" (see `customization <#customization>`__ section for scripts and "
+"configuration)."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:15
+#: b4218ba72c6b488181388cacd8aabba4
+msgid "That’s it. After logging out, you can select i3 in the login manager."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:18
+#: 30c9686db6a24d1b97d594706925dc8f
+msgid "Customization"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:20
+#: 54ddd22f082242ba8a04e1b43fdc8223
+msgid ""
+"**Caution:** The following external resources may not have been reviewed by "
+"the Qubes team."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:23
+#: 8289ad8f2062486484984a28de6bbab4
+msgid ""
+"`xdg_autostart_script "
+"<https://gist.github.com/SietsevanderMolen/7b4cc32ce7b4884513b0a639540e454f>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:24
+#: e9d1b26fbc1d46bc8dcf0e514ee7927e
+msgid ""
+"`i3bar_script "
+"<https://gist.github.com/SietsevanderMolen/e7f594f209dfaa3596907e427b657e30>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:25
+#: b1ad6a6321a1458ca0aa4ab6fedf44c6
+msgid ""
+"`terminal_start_script "
+"<https://gist.github.com/SietsevanderMolen/7c6f2b5773dbc0c08e1509e49abd1e96>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:26
+#: b6a0bfe05d40453e8e8fa1b9a4e42842
+msgid ""
+"`i3 config with dmenu-i3-window-jumper "
+"<https://github.com/anadahz/qubes-i3-config/blob/master/config>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:28
+#: 4f6b56abf09d4e0c83f1ca14d93c6d3e
+msgid ""
+"`dmenu script to open a terminal in a chosen VM "
+"<https://gist.github.com/dmoerner/65528941dd20b05c98ee79e92d7e0183>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:32
+#: 4794e565b42b4c01b7eb2146e465f8e3
+msgid "Compilation and installation from source"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:34
+#: 047c2faa86614a73a9108047591a0174
+msgid ""
+"Note that the compilation from source is done in a Fedora based domU (could "
+"be dispvm). The end result is always an ``.rpm`` that is copied to dom0 and "
+"then installed through the package manager."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:39
+#: a12d90acce0f4b2cbc899f0e23c06281
+msgid "Getting the code"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:41
+#: 3777edbfcc08499381b7353e397253b8
+msgid "Clone the i3-qubes repository here:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:47
+#: eed6d1d3535e432aaaed3d2d39e9d7c3
+msgid ""
+"In this case, the most interesting file is probably ``i3/0001-Show-qubes-"
+"domain-in-non-optional-colored-borders.patch`` It’s the patch with changes "
+"that are necessary to make i3 work nicely with Qubes OS. The code should not"
+" need much explanation, it just gets the vmname and label from Qubes OS and "
+"changes some defaults so the user can’t override decisions."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:54
+#: 2764ddded25a4e8a9c9716273773016c
+msgid ""
+"If you want to make any changes to the package, this is the time and place "
+"to do it."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:58
+#: 177927f204684ec3ab1f3a1f0f14ab30
+msgid "Building"
+msgstr "Aufbauen"
+
+#: ../../../_doc/user/advanced-topics/i3.rst:60
+#: 9af2ab0876f84dbcb9fc8630a75eb079
+msgid ""
+"You’ll need to install the build dependencies, which are listed in build-"
+"deps.list. You can verify them and then install them with:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:67
+#: d959de08d824465fb8e283f357e5f544
+msgid ""
+"This used to be more complicated, but I finally redid this and use the same "
+"buildsystem that’s used by Qubes OS for XFCE. It’s just a Makefile that "
+"helps you get the sources and start off the build:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:78
+#: cc98befb408e48c2a16c05a4ecf01841
+msgid "Installing"
+msgstr "Installiert"
+
+#: ../../../_doc/user/advanced-topics/i3.rst:80
+#: e3e8c1175d7340db87564f68e3d0d0a1
+msgid ""
+"**Warning**: Manually installing software in dom0 is inherently risky, and "
+"the method described here circumvents the usual security mechanisms of "
+"qubes-dom0-update."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:84
+#: e68ea5e0cd614cb28f5794957da0b21e
+msgid ""
+"You should now have your i3 rpm in "
+"``./rpm/x86_64/i3-4.8-3.fc20.x86_64.rpm``. Protip: copying this file to "
+"``~/i3.rpm`` now will save you some typing in the next step."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:88
+#: a1b36dd3f7db418d80bcf475adbd3f04
+msgid "Now in dom0, copy in the rpm:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:94
+#: b5cc1cab1fae48d4856d867db7a0634e
+msgid ""
+"Now that the rpm is in dom0 we can proceed with installing it. i3 has some "
+"dependencies that we can easily install with:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:103
+#: 35c1fdbd68564e90a06cf30ffac0e028
+msgid ""
+"After that you can just install the generated rpm like any other local "
+"package:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:110
+#: 11c8927ea9314d42bcf71deaaeccea33
+msgid "Log out, select i3, then log in again."
+msgstr ""

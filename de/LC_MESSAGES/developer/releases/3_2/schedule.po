@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:1
+#: ee91d232adf046aabe13f454ac33136b
+msgid ""
+"This schedule is based on `Version Scheme </developer/releases/version-"
+"scheme.html#release-schedule>`__."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:5
+#: 74ca15392f084e7788d543165af3b6d4
+msgid "Date"
+msgstr "Datum"
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:5
+#: 8df3363aed6242feb72f694bb8369e9b
+msgid "Stage"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:7
+#: 8c1a5858498d44c6a944cb0aa7d64f31
+msgid "18 Jun 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:7
+#: b8b20774c4f747729e9b50c0f21ddaa9
+msgid "3.2-rc1 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:9
+#: 738f679b9b884463aeef352a833150bb
+msgid "2 Jul 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:9
+#: e6b0055c91e845099219623a1394ef0b
+msgid "decide whether 3.2-rc1 is the final 3.2"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:12
+#: 279464b5178b4a8797ef7f32ca359698
+msgid "[STRIKEOUT:16 Jul 2016] 20 Jul 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:12
+#: b39b949d67d24334845c8bbec7fbcab2
+msgid "current-testing freeze before 3.2-rc2"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:15
+#: fafe041c54c046a787e6bdbbe7ba8da7
+msgid "[STRIKEOUT:23 Jul 2016] 27 Jul 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:15
+#: f5c27e9a2e8d44baa702030bf9fd92d7
+msgid "3.2-rc2 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:18
+#: 2b65ac3bb4774793ba68ec0ecc143a8b
+msgid "[STRIKEOUT:5 Aug 2016] 9 Aug 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:18
+#: 5b83c5cb64074f64af0195dbde299f3c
+msgid "decide whether 3.2-rc2 is the final 3.2"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:21
+#: f4ba5060e52f44cfa00d121c4c408f4a
+msgid "24 Aug 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:21
+#: da7f18576dd640e8bfcb9a6c113df7f3
+msgid "current-testing freeze before 3.2-rc3"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:24
+#: c90dde6183144813b8c8829ff955990f
+msgid "31 Aug 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:24
+#: 65aea7c3581c41d38110f9092ae697fd
+msgid "3.2-rc3 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:26
+#: 22b4f6c808b04b21918498ae09c8d5c4
+msgid "29 Sep 2016"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/schedule.rst:26
+#: 6d4ed2b790774611907752ef67bdbda3
+msgid "3.2 release"
+msgstr ""

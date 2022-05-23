@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Tobias Killer, 2022
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:08+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:1
+#: e72658040a9944e5b251799e72fa26d2
+msgid ""
+"*This page is about copying and pasting plain text. If you wish to copy more"
+" complex data, such as rich text or images, see*\\ :doc:`copying and moving "
+"files between qubes </user/how-to-guides/how-to-copy-and-move-files>`\\ *. "
+"For dom0, see*\\ :doc:`copying from (and to) dom0 </user/how-to-guides/how-"
+"to-copy-from-dom0>`\\ *.*"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:7
+#: 10a46dcdfa58499388820e26faac9ee5
+msgid ""
+"Qubes OS features a secure inter-qube clipboard that allows you to copy and "
+"paste text between qubes."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:10
+#: f63818a939ef45de990d21716e316a12
+msgid "In order to copy text from qube A to qube B:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:12
+#: 4e8a1d75f78e438dbe57659c6e3cec54
+msgid ""
+"Select text from the source app in qube A, then copy it normally (e.g., by "
+"pressing Ctrl+C)."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:15
+#: ec658b70b6e143609afcf2666372255c
+msgid ""
+"With the source app in qube A still in focus, press Ctrl+Shift+C. This "
+"copies the text from qube A’s clipboard to the inter-qube clipboard."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:19
+#: dfb45c28a2df4a96beb3c77f66e6bd7b
+msgid ""
+"Select the target app in qube B and press Ctrl+Shift+V. This copies the text"
+" from the inter-qube clipboard to qube B’s clipboard and clears the inter-"
+"qube clipboard, ensuring that only qube B will have access to the copied "
+"text."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:24
+#: 8d07e4ffbd3d4b56a6fd6b65366549c7
+msgid ""
+"Paste the text in the target app in qube B normally (e.g., by pressing "
+"Ctrl+V)."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:27
+#: e5fcfde1dedf48ecafefb8708481ee29
+msgid ""
+"This process might look complicated at first glance, but in practice it is "
+"actually very easy and fast once you get used to it. At the same time, it "
+"provides you with full control over exactly which qube receives the content "
+"of the inter-qube clipboard every time."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:33
+#: dd1e3d9558e44b4c9318313fb4a207af
+msgid "Security"
+msgstr "Sicherheit"
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:35
+#: 5a8b281f0e6042629482fdf0c74f40cf
+msgid ""
+"The inter-qube clipboard system is secure because it doesn’t allow any qube "
+"other than your selected target to steal any contents from the inter-qube "
+"clipboard. Without such a system in place, any password you were to copy "
+"from the password manager in your vault qube to another qube, for example, "
+"would immediately be leaked to every other running qube in the system, "
+"including qubes that are untrusted by default, such as ``sys-net``. By "
+"giving you precise control over exactly which qube receives the inter-qube "
+"clipboard content, then immediately wiping the inter-qube clipboard "
+"afterward, Qubes OS protects the confidentiality of the text being copied."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:46
+#: 8d81eb80eb0e48f9a371f682a433097f
+msgid ""
+"However, one should keep in mind that performing a copy and paste operation "
+"from *less trusted* to *more trusted* qube is always potentially insecure, "
+"since the data that we copy could exploit some hypothetical bug in the "
+"target qube. For example, the seemingly-innocent link that we copy from an "
+"untrusted qube could turn out to be a large buffer of junk that, when pasted"
+" into the target qube’s word processor, could exploit a hypothetical bug in "
+"the undo buffer. This is a general problem and applies to any data transfer "
+"from *less trusted* to *more trusted* qubes. It even applies to copying "
+"files between physically separate (air-gapped) machines. Therefore, you "
+"should always copy clipboard data only from *more trusted* to *less trusted*"
+" qubes."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:58
+#: 11ebdb4547d54886acbab23c6ba11f60
+msgid ""
+"See also `this article "
+"<https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-"
+"into.html>`__ for more information on this topic, and some ideas of how we "
+"might solve this problem in some future version of Qubes, as well as `this "
+"message <https://groups.google.com/group/qubes-"
+"devel/msg/48b4b532cee06e01>`__ from qubes-devel."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:66
+#: c7977fdd274c471ba3bb0c24c9df2204
+msgid "Focus stealing"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:68
+#: 849cfdbd063f480da92803d88562306d
+msgid ""
+"The above discussion assumes that you control which window is focused in "
+"dom0 at the time of the paste. However, if your dom0 window manager is "
+"configured to give focus to newly created windows (which, as of Qubes 4.0, "
+"is true in the default install with Xfce), then a malicious qube could "
+"“steal the focus” by creating a window just before you press Ctrl+Shift+V, "
+"and it would receive the data instead of your intended target. (Focus "
+"stealing is a risk any time you are typing confidential data, but a Qubes "
+"clipboard paste probably presents the greatest risk of leaking an entire "
+"password before you have time to react.) You may be able to mitigate this "
+"risk by changing the window manager configuration. For example, with Xfce, "
+"you could run ``xfwm4-settings`` in dom0, go to the “Focus” tab, and un-"
+"check “Automatically give focus to newly created windows”. However, we have "
+"not confirmed whether such settings are sufficient to prevent a malicious "
+"qube from stealing the focus in all cases."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:85
+#: e7888ef8cec94ecea8e9c3c0eb35c7d9
+msgid "Clipboard automatic policy enforcement"
+msgstr "Anwenden automatischer Regeln für die Zwischenablage"
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:87
+#: 0523ce4966df47b0819cc1e273ee4438
+msgid ""
+"The Qubes clipboard :doc:`RPC policy </user/advanced-topics/rpc-policy>` is "
+"configurable in:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:94
+#: d92cbd1d51624a40b6f14bdfc7918ddb
+msgid ""
+"You may wish to configure this policy in order to prevent user error. For "
+"example, if you are certain that you never wish to paste *into* your “vault”"
+" app qube (and it is highly recommended that you do not), then you should "
+"edit the policy as follows:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:105
+#: b5496eda4755476a99ba0027cfc67b33
+msgid "Shortcut configuration"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:107
+#: 506df3eacbbc442292456da39eb88ba2
+msgid "The copy/paste shortcuts are configurable in:"
+msgstr "Die Kopieren/Einfügen-Tastenkürzel sind konfigurierbar in:"
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:113
+#: 88fd4b322d014c45bd31d7d72ec17893
+msgid ""
+"If you edit a line in this file, you must uncomment it (by removing the "
+"initial ``#`` character), or else it will have no effect."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-and-paste-text.rst:116
+#: e7b1785663234039b6254f52ec6a19ef
+msgid ""
+"VMs need to be restarted in order for changes in ``/etc/qubes/guid.conf`` to"
+" take effect."
+msgstr ""

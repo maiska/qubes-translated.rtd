@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/todo.rst:1
+#: 0b44000c88db47fdb541b0a9e7d4e26c
+msgid "*the checklist is probably unfinished*"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:4
+#: b09091050d5845b1988439ea062f8c53
+msgid "On -rc1"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:6
+#: 3954dc6ffe3f4581b30f4baa057b947a
+msgid "write schedule"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:7
+#: 7960b43218bb43ea8c7802cdd7930200
+msgid "create package repositories (linux-yum, linux-deb)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:8
+#: af13a19706c043d2a3eda5a5cc978b53
+msgid ""
+"update repository definition (core-agent-linux, installer-qubes-os/qubes-"
+"release)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:10
+#: 8173ec713d024e01a5f85fa965e69c77
+msgid "push all packages to ``current-testing``"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:11
+#: 7f49d51790cf4b1aa1f4b1c7b9dcb9d3
+msgid "draft release notes, one note per feature"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:12
+#: 085a153b71534052a68d992348ecb7eb
+msgid ""
+"create upgrade package in previous release branch (r2->r3.0, r3.0->r3.1, "
+"etc) - core-agent-linux"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:14
+#: 1fd8e68f185445abb36f78931716cd7c
+msgid ""
+"make sure that keys for the current release are included in previous "
+"release’s qubes-release package (for upgrade)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:16
+#: ../../../_doc/developer/releases/todo.rst:23
+#: ../../../_doc/developer/releases/todo.rst:32
+#: 5a11bda21e3b4f02be0d58b28069f813 45cc46e4fda54212af83bc97a783b66c
+#: bd37434d50074b4796c135dcdf732e9d
+msgid "build ISO and push to mirrors"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:19
+#: a3dc39d9c45a44e89290180e14056824
+msgid "On subsequent -rc"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:21
+#: ../../../_doc/developer/releases/todo.rst:29
+#: 573e17eb561043549e4e9dabe7f9d674 25d6dcc85ee24cbd81b9d2ab1e756481
+msgid "push packages to ``current``"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:22
+#: 17c56d471938411da831eff26b80805d
+msgid "update release notes"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:24
+#: ../../../_doc/developer/releases/todo.rst:33
+#: 2f2459b538074fe5870c983480bd9b1f da288a629ddc471cb191ec1dff23d19e
+msgid "notify @Rudd-O about the new ISO for new torrent hosting"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:27
+#: 9191529f7df54910add7ec2a0285655c
+msgid "On final release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:30
+#: 01483d2e20fd4b05b33522063a303b79
+msgid "finish release notes"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:31
+#: ecf202c6fd4c44c78951b44ee69d3882
+msgid "update InstallationInstructions"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:34
+#: 874d69d677d2414b87363439dfb94ce4
+msgid "write blog post"
+msgstr ""
+
+#: ../../../_doc/developer/releases/todo.rst:35
+#: 23c28f02c8eb451680c4b987f5bf0988
+msgid "announce on Twitter"
+msgstr ""

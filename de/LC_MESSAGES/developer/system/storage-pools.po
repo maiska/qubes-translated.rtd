@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:11+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/storage-pools.rst:1
+#: 51954f69d2bb4ea5ab9f032e707cef26
+msgid ""
+"Qubes OS R3.2 introduced the concept of storage drivers and pools. This "
+"feature was a first step towards a saner storage API, which is heavily "
+"rewritten in R4. See `here <https://dev.qubes-os.org/projects/core-"
+"admin/en/latest/qubes-storage.html>`__ for documentation on storage pools in"
+" R4."
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:7
+#: a2746b9a7d3d4baaa132086a9cd5d2d9
+msgid ""
+"A storage driver provides a way to store VM images in a Qubes OS system. "
+"Currently, the default driver is ``xen`` which is the default way of storing"
+" volume images as files in a directory tree like ``/var/lib/qubes/``."
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:12
+#: 532e7929d3f440868bc01d94da1a734b
+msgid ""
+"A storage pool driver can be identified either by the driver name with the "
+"``driver`` key or by the class name like this: "
+"``class=qubes.storage.xen.XenStorage``. Because R3.2 doesn’t use Python "
+"``setup_hooks``, to actually use a short driver name for a custom storage "
+"driver, you have to patch ``qubes-core-admin``. You can use the ``class`` "
+"config key instead, when your class is accessible by ``import`` in Python."
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:20
+#: 130db9a321d54bc3a4ba7c4a2fa01e8e
+msgid ""
+"A pool (in R3.2) is configuration information which can be referenced when "
+"creating a new VM. Each pool is saved in ``storage.conf``. It has a name, a "
+"storage driver and some driver specific configuration attached."
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:24
+#: 0a3a55e7f2504a0a98724c5c92c79372
+msgid ""
+"When installed, the system has, as you can see from the contents of "
+"``/etc/qubes/storage.conf``, a pool named ``default``. It uses the driver "
+"``xen``. The default pool is special in R3.2. It will add "
+"``dir_path=/var/lib/qubes`` configuration value from "
+"``defaults[pool_config]``, if not overwritten."
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:30
+#: b36780fe4c874538b422bdf361409130
+msgid ""
+"Currently the only supported driver out of the box is ``xen``. The benefit "
+"of pools (besides that you can write your own storage driver e.g. for Btrfs)"
+" in R3.2 is that you can store your domains in multiple places."
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:35
+#: 25f6172e10e24d4593e4c43357c56152
+msgid "You can add a pool to ``storage.conf`` like this:"
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:43
+#: 3b8a523bec014c3cbed36a6036127041
+msgid ""
+"Now, when creating a new VM on the command-line, you may pass the ``-Pfoo`` "
+"argument to ``qvm-create`` to have the VM images stored in pool ``foo``. See"
+" also ``qvm-create --help``."
+msgstr ""
+
+#: ../../../_doc/developer/system/storage-pools.rst:47
+#: c7d6e73222a247fdb2c257c4fc33c86a
+msgid ""
+"While the current API is not as clean and beautiful as the R4 API, it allows"
+" you to write your own storage drivers e.g. for Btrfs today."
+msgstr ""

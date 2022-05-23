@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:10+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:2
+#: a49c21682cd24572be506ad1f0763878
+msgid "Video RAM adjustment for high-resolution displays"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:4
+#: 73c5991cd0144a9085899e6b78cf04f4
+msgid ""
+"When a qube starts, a fixed amount of RAM is allocated to the graphics "
+"buffer called video RAM. This buffer needs to be at least as big as the "
+"whole desktop, accounting for all displays that are or will be connected to "
+"the machine. By default, it is as much as needed for the current display and"
+" an additional full HD (FHD) display (1920×1080 8 bit/channel RGBA). This "
+"logic fails when the machine has primary display in FHD resolution and, "
+"after starting some qubes, a 4K display is connected. If the buffer is too "
+"small, and internal desktop resize fails."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:13
+#: 2090d134765e48af868e0e28c857b2d4
+msgid "To increase the minimum size of the video RAM buffer:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:20
+#: 6f5652c6663747d09fd8b19e8d565b03
+msgid ""
+"Where ``$WIDTH``\\ ×\\ ``$HEIGHT`` is the maximum desktop size that you "
+"anticipate needing. For example, if you expect to use a 1080p display and a "
+"4k display side-by-side, that is ``(1920 + 3840) × 2160 × 4 / 1024 = "
+"48600``, or slightly more than 48 MiB per qube. After making these "
+"adjustments, the qubes need to be restarted."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:27
+#: 039e81c619e241b8894376a12dc3b028
+msgid ""
+"In the case of multiple display with different orientations or if you "
+"plug/unplug displays, the following code will set correct memory size using "
+"xrandr."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:35
+#: 68661d5615fb4fe98539f19acac7d397
+msgid ""
+"The amount of memory allocated per qube is the maximum of: - ``gui-videoram-"
+"min`` - current display + ``gui-videoram-overhead``"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:38
+#: d7eee9cb525b42909945d813a3e272ea
+msgid ""
+"Default overhead is about 8 MiB, which is enough for a 1080p display (see "
+"above). So, the ``gui-videoram-overhead`` zeroing is not strictly necessary;"
+" it only avoids allocating memory that will not be used."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:42
+#: 3ceef6de07f64b0da7eee500436213fd
+msgid ""
+"You might face issues when playing video, if the video is choppy instead of "
+"smooth display this could be because the X server doesn’t work. You can use "
+"the Linux terminal (Ctrl-Alt-F2) after starting the virtual machine, login. "
+"You can look at the Xorg logs file. As an option you can have the below "
+"config as well present in ``/etc/X11/xorg.conf.d/90-intel.conf``, depends on"
+" HD graphics though -"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:58
+#: 08978451384948568f2c911150727af7
+msgid "GUI Troubleshooting"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/gui-configuration.rst:60
+#: 2d1d261facb24d1fa1d0ee681b9e658d
+msgid ""
+"See :doc:`GUI Troubleshooting </user/troubleshooting/gui-troubleshooting>` "
+"for issues relating to the Qubes graphical user interface and how to fix "
+"them."
+msgstr ""

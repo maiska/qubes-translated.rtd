@@ -1,0 +1,697 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ashoka <martin.tastler@posteo.de>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:12+0000\n"
+"Last-Translator: Ashoka <martin.tastler@posteo.de>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:1
+#: 7cdd3bf9d3bf4921a5dfc7e67f32c873
+msgid ""
+"*Also see*\\ `how to edit the documentation </developer/general/how-to-edit-"
+"the-documentation>`\\ *.*"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:4
+#: 3dee4510e1994788b2139d41294f6de6
+msgid ""
+"Qubes OS documentation pages are stored as plain text Markdown files in the "
+"`qubes-doc <https://github.com/QubesOS/qubes-doc>`__ repository. By cloning "
+"and regularly pulling from this repo, users can maintain their own up-to-"
+"date offline copy of all Qubes documentation rather than relying solely on "
+"the web."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:10
+#: 902b20600fd841f8b925605ce5fca77a
+msgid ""
+"The documentation is a volunteer community effort. People like you are "
+"constantly working to make it better. If you notice something that can be "
+"fixed or improved, please :doc:`edit the documentation "
+"</developer/general/how-to-edit-the-documentation>`!"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:15
+#: 219af06760444a23b725bd51320aa5a9
+msgid ""
+"This page explains the standards we follow for writing, formatting, and "
+"organizing the documentation. Please follow these guidelines and conventions"
+" when editing the documentation. For the standards governing the website as "
+"a whole, please see the :doc:`website style guide "
+"</developer/general/website-style-guide>`."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:22
+#: 17e4e2609596487d925f8ce4de2c338a
+msgid "Markdown conventions"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:24
+#: 4ecbfa0733db41258bb32166bb521123
+msgid ""
+"All the documentation is written in Markdown for maximum accessibility. When"
+" making contributions, please observe the following style conventions. If "
+"you’re not familiar with Markdown syntax, `this "
+"<https://daringfireball.net/projects/markdown/>`__ is a great resource."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:31
+#: 909bc4f02b7441d291e7c19823c434cd
+msgid "Hyperlink syntax"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:33
+#: 3a8cd9d046e24a8a9b47a84c828c8713
+msgid ""
+"Use non-reference-style links like ``[website](https://example.com/)``. Do "
+"*not* use reference-style links like ``[website][example]``, ``[website][]``"
+" or ``[website]``. This facilitates the localization process."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:39
+#: d40da1240cdd498698a638093e8adebb
+msgid "Relative vs. absolute links"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:41
+#: b43e4f006f274cb1b3e9818c3b84b9f2
+msgid ""
+"Always use relative rather than absolute paths for internal website links. "
+"For example, use ``/doc/documentation-style-guide/`` instead of "
+"``https://www.qubes-os.org/doc/documentation-style-guide/``."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:45
+#: 4bce390bd5554ca4a16e0a6db3d77785
+msgid "You may use absolute URLs in the following cases:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:47
+#: d05cea16950b47d2a10a9097aec00334
+msgid "External links"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:48
+#: 3013dc943d204dad97115c40bdb499e4
+msgid ""
+"URLs that appear inside code blocks (e.g., in comments and document "
+"templates, and the plain text reproductions of :doc:`QSBs </project-"
+"security/qsb>` and :doc:`Canaries </project-security/canary>`), since "
+"they’re not hyperlinks"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:52
+#: 74b289db26e44e4187481953d9e12762
+msgid ""
+"Git repo files like ``README.md`` and ``CONTRIBUTING.md``, since they’re not"
+" part of the website itself but rather of the auxiliary infrastructure "
+"supporting the website"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:56
+#: 5a776756cebb445a8a2b886613634b0a
+msgid ""
+"This rule is important because using absolute URLs for internal website "
+"links breaks:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:59
+#: 7a5a05b0fc674744b85612f410de6d5e
+msgid "Serving the website offline"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:60
+#: 2986167fd27a49c0ae0364976928b5c8
+msgid "Website localization"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:61
+#: 406ee75fcd0b4d389f322e896d09fa4f
+msgid "Generating offline documentation"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:62
+#: 60b299d6185148ce9cfdddbdbc79940c
+msgid ""
+"Automatically redirecting Tor Browser visitors to the correct page on the "
+"onion service mirror"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:66
+#: d133b2b6940b45ffa262c9be59af1dd6
+msgid "Image linking"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:68
+#: 5d1dd4eea79c47fb92ede0b83ca85405
+msgid ""
+"See `how to add images </developer/general/how-to-edit-the-"
+"documentation.html#how-to-add-images>`__ for the required syntax. This will "
+"make the image a hyperlink to the image file, allowing the reader to click "
+"on the image in order to view the full image by itself. This is important. "
+"Following best practices, our website has a responsive design, which allows "
+"the website to render appropriately across all screen sizes. When viewing "
+"this page on a smaller screen, such as on a mobile device, the image will "
+"automatically shrink down to fit the screen. If visitors cannot click on the"
+" image to view it in full size, then, depending on their device, they may "
+"have no way see the details in the image clearly."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:80
+#: 5e6f3a5fe919461fb4a154b729cb2eed
+msgid ""
+"In addition, make sure to link only to images in the `qubes-attachment "
+"<https://github.com/QubesOS/qubes-attachment>`__ repository. Do not attempt "
+"to link to images hosted on other websites."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:85
+#: 82a165af83ae40af8605a2043947a3bd
+msgid "HTML and CSS"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:87
+#: 3a862788a4604b648db170cd28bf73c7
+msgid ""
+"Do not write HTML inside Markdown documents (except in rare, unavoidable "
+"cases, such as alerts). In particular, never include HTML or CSS for "
+"styling, formatting, or white space control. That belongs in the (S)CSS "
+"files instead."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:93
+#: e29a8cd91a9749599a43fcd3b7ea67ba
+msgid "Headings"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:95
+#: 74e54b5ca3ef47b59d01f19ca62de366
+msgid ""
+"Do not use ``h1`` headings (single ``#`` or ``======`` underline). These are"
+" automatically generated from the ``title:`` line in the YAML front matter."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:99
+#: d17ae93ab829446095af2dbfb750485e
+msgid ""
+"Use Atx-style syntax for headings: ``##h2``, ``### h3``, etc. Do not use "
+"underlining syntax (``-----``)."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:103
+#: 350766d631084292b2988700a92ebab0
+msgid "Indentation"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:105
+#: ecd2c6da510a447286319a67a336df35
+msgid ""
+"Use spaces instead of tabs. Use hanging indentations where appropriate."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:108
+#: c97d3473b75043e99b47dae25c5fd9a4
+msgid "Lists"
+msgstr "Listen"
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:110
+#: 6d3ca92f623c4610baa1d6ea194c5d88
+msgid ""
+"If appropriate, make numerals in numbered lists match between Markdown "
+"source and HTML output. Some users read the Markdown source directly, and "
+"this makes numbered lists easier to follow."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:115
+#: 135ae1e2d8334c20bc7fa13a24496c17
+msgid "Code blocks"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:117
+#: 3b9a44e46858425a904f83d0e1449bfb
+msgid ""
+"When writing code blocks, use `syntax highlighting "
+"<https://github.github.com/gfm/#info-string>`__ where possible (see `here "
+"<https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-"
+"lexers>`__ for a list of supported languages). Use ``[...]`` for anything "
+"omitted."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:124
+#: ce421151361143da817962af97d56764
+msgid "Line wrapping"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:126
+#: a64ecc4ea8a24645a46897398751f900
+msgid ""
+"Hard wrap Markdown lines at 80 characters, unless the line can’t be broken "
+"(e.g., code or a URL)."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:130
+#: 44aeae95b9ed4eac80199078a5941204
+msgid "Writing guidelines"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:133
+#: 4145554e57ec4fdf8b9380e187894a7a
+msgid "Correct use of terminology"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:135
+#: bdfefe0ec5bb4a90b5fb8421e57de648
+msgid ""
+"Familiarize yourself with the terms defined in the :doc:`glossary "
+"</user/reference/glossary>`. Use these terms consistently and accurately "
+"throughout your writing."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:140
+#: 14d4da07905048a4abf85ef284b84865
+msgid "Sentence case in headings"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:142
+#: 8265ccb645eb4bf79c57f5ac6bce2233
+msgid ""
+"Use sentence case (rather than title case) in headings for the reasons "
+"explained `here <https://www.sallybagshaw.com.au/articles/sentence-case-v-"
+"title-case/>`__. In particular, since the authorship of the Qubes "
+"documentation is decentralized and widely distributed among users from "
+"around the world, many contributors come from regions with different "
+"conventions for implementing title case, not to mention that there are often"
+" differing style guide recommendations even within a single region. It is "
+"much easier for all of us to implement sentence case consistently across our"
+" growing body of pages, which is very important for managing the ongoing "
+"maintenance burden and sustainability of the documentation."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:155
+#: 80e83e6f2d4d4635a59cd34ff1dfb5a3
+msgid "Writing command-line examples"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:157
+#: 87732ea45f7a4a9193d2016554c4925f
+msgid "When providing command-line examples:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:159
+#: 9827eef366a742d59dec3ab0a393a24b
+msgid ""
+"Tell the reader where to open a terminal (dom0 or a specific domU), and show"
+" the command along with its output (if any) in a code block, e.g.:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:172
+#: 5cf561afffb94aa4a3ee7db0465a40c3
+msgid ""
+"Precede each command with the appropriate command prompt: At a minimum, the "
+"prompt should contain a trailing ``#`` (for the user ``root``) or ``$`` (for"
+" other users) on Linux systems and ``>`` on Windows systems, respectively."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:177
+#: 2c06c08827b14e559666e212eaf8bc5b
+msgid ""
+"Don’t try to add comments inside the code block. For example, *don’t* do "
+"this:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:191
+#: 60b0e10d789143cfb595fe01076bd5df
+msgid ""
+"The ``#`` symbol preceding each comment is ambiguous with a root command "
+"prompt. Instead, put your comments *outside* of the code block in normal "
+"prose."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:196
+#: 7e1c81e9909444e4beca1d19cc6af310
+msgid "Variable names in commands"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:198
+#: 3ba23de73e224ab39ac77e46d8698d1c
+msgid ""
+"Syntactically distinguish variables in commands. For example, this is "
+"ambiguous:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:205
+#: 3c79262866e845fb9809f558b4702b7a
+msgid "It should instead be:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:211
+#: 9c216bc0d3cc46a1a8102bfdf69fb59c
+msgid "Note that we syntactically distinguish variables in three ways:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:213
+#: 848a45134aef4ac6ba4b9b11db4cca78
+msgid "Surrounding them in angled brackets (``< >``)"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:214
+#: f92e827b478c4e82855965cef4a68036
+msgid "Using underscores (``_``) instead of spaces between words"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:215
+#: a2179a615e17430b9718c1fb85d703d2
+msgid "Using all capital letters"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:217
+#: 8d7333467e8f46129ab156fa0f02a5b3
+msgid ""
+"We have observed that many novices make the mistake of typing the "
+"surrounding angled brackets (``< >``) on the command line, even after "
+"substituting the desired real value between them. Therefore, in "
+"documentation aimed at novices, we also recommend clarifying that the angled"
+" brackets should not be typed. This can be accomplished in one of several "
+"ways:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:224
+#: 1dd8809c53714e25ac36ef84eef0c9cb
+msgid "Explicitly say something like “without the angled brackets.”"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:225
+#: 2938c2365b98494bba3109257fa006ed
+msgid ""
+"Provide an example command using real values that excludes the angled "
+"brackets."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:227
+#: ed7cabde233b4819a8ec82ae318c8407
+msgid ""
+"If you know that almost all users will want to use (or should use) a "
+"specific command containing all real values and no variables, you might "
+"consider providing exactly that command and forgoing the version with "
+"variables. Novices may not realize which parts of the command they can "
+"substitute with different values, but if you’ve correctly judged that they "
+"should use the command you’ve provided as is, then this shouldn’t matter."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:236
+#: 97afca757c6a4f5587ef236069f14c24
+msgid "Organizational guidelines"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:239
+#: 4810cacfcade4a08969fef1a83e7da3d
+msgid "Do not duplicate documentation"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:241
+#: c037bf3593cb493f8007930c1f148c0b
+msgid ""
+"Duplicating documentation is almost always a bad idea. There are many "
+"reasons for this. The main one is that almost all documentation has to be "
+"updated as some point. When similar documentation appears in more than one "
+"place, it is very easy for it to get updated in one place but not the others"
+" (perhaps because the person updating it doesn’t realize it’s in more than "
+"once place). When this happens, the documentation as a whole is now "
+"inconsistent, and the outdated documentation becomes a trap, especially for "
+"novice users. Such traps are often more harmful than if the documentation "
+"never existed in the first place. The solution is to **link** to existing "
+"documentation rather than duplicating it. There are some exceptions to this "
+"policy (e.g., information that is certain not to change for a very long "
+"time), but they are rare."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:255
+#: 79d26d4a41c54d36b72a3cb7b07bbfdd
+msgid "Core vs. external documentation"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:257
+#: 31bbfcf08f0243728297c96adecc70b0
+msgid ""
+"Core documentation resides in the `Qubes OS Project’s official repositories "
+"<https://github.com/QubesOS/>`__, mainly in `qubes-doc "
+"<https://github.com/QubesOS/qubes-doc>`__. External documentation can be "
+"anywhere else (such as forums, community websites, and blogs), but there is "
+"an especially large collection in the `Qubes Community "
+"<https://github.com/Qubes-Community>`__ project. External documentation "
+"should not be submitted to `qubes-doc <https://github.com/QubesOS/qubes-"
+"doc>`__. If you’ve written a piece of documentation that is not appropriate "
+"for `qubes-doc <https://github.com/QubesOS/qubes-doc>`__, we encourage you "
+"to submit it to the `Qubes Community <https://github.com/Qubes-Community>`__"
+" project instead. However, *linking* to external documentation from `qubes-"
+"doc <https://github.com/QubesOS/qubes-doc>`__ is perfectly fine. Indeed, the"
+" maintainers of the `Qubes Community <https://github.com/Qubes-Community>`__"
+" project should regularly submit PRs against the documentation index (see "
+"`How to edit the documentation index </developer/general/how-to-edit-the-"
+"documentation.html#how-to-edit-the-documentation-index>`__) to add and "
+"update Qubes Community links in the `“External documentation” </#external-"
+"documentation>`__ section of the documentation table of contents."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:280
+#: 8cbb78709f4c4e39a55aaf9fb4b06d1f
+msgid ""
+"The main difference between **core** (or **official**) and **external** (or "
+"**community** or **unofficial**) documentation is whether it documents "
+"software that is officially written and maintained by the Qubes OS Project. "
+"The purpose of this distinction is to keep the core docs maintainable and "
+"high-quality by limiting them to the software output by the Qubes OS "
+"Project. In other words, we take responsibility for documenting all of the "
+"software we put out into the world, but it doesn’t make sense for us to take"
+" on the responsibility of documenting or maintaining documentation for "
+"anything else. For example, Qubes OS may use a popular Linux distribution "
+"for an official :doc:`TemplateVM </user/templates/templates>`. However, it "
+"would not make sense for a comparatively small project like ours, with "
+"modest funding and a lean workforce, to attempt to document software "
+"belonging to a large, richly-funded project with an army of paid and "
+"volunteer contributors, especially when they probably already have "
+"documentation of their own. This is particularly true when it comes to Linux"
+" in general. Although many users who are new to Qubes are also new to Linux,"
+" it makes absolutely no sense for our comparatively tiny project to try to "
+"document Linux in general when there is already a plethora of documentation "
+"out there."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:301
+#: b9f23a1be36444ee8c6adb50f03ed0ee
+msgid ""
+"Many contributors do not realize that there is a significant amount of work "
+"involved in *maintaining* documentation after it has been written. They may "
+"wish to write documentation and submit it to the core docs, but they see "
+"only their own writing process and fail to consider that it will have to be "
+"kept up-to-date and consistent with the rest of the docs for years "
+"afterward. Submissions to the core docs also have to `undergo a review "
+"process </doc/how-to-edit-the-documentation#security>`__ to ensure accuracy "
+"before being merged, which takes up valuable time from the team. We aim to "
+"maintain high quality standards for the core docs (style and mechanics, "
+"formatting), which also takes up a lot of time. If the documentation "
+"involves anything external to the Qubes OS Project (such as a website, "
+"platform, program, protocol, framework, practice, or even a reference to a "
+"version number), the documentation is likely to become outdated when that "
+"external thing changes. It’s also important to periodically review and "
+"update this documentation, especially when a new Qubes release comes out. "
+"Periodically, there may be technical or policy changes that affect all the "
+"core documentation. The more documentation there is relative to maintainers,"
+" the harder all of this will be. Since there are many more people who are "
+"willing to write documentation than to maintain it, these individually small"
+" incremental additions amount to a significant maintenance burden for the "
+"project."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:323
+#: 9a05cb16b9a842f9af6dd73b36f6917c
+msgid ""
+"On the positive side, we consider the existence of community documentation "
+"to be a sign of a healthy ecosystem, and this is quite common in the "
+"software world. The community is better positioned to write and maintain "
+"documentation that applies, combines, and simplifies the official "
+"documentation, e.g., tutorials that explain how to install and use various "
+"programs in Qubes, how to create custom VM setups, and introductory "
+"tutorials that teach basic Linux concepts and commands in the context of "
+"Qubes. In addition, just because the Qubes OS Project has officially written"
+" and maintains some flexible framework, such as ``qrexec``, it does not make"
+" sense to include every tutorial that says “here’s how to do something cool "
+"with ``qrexec``” in the core docs. Such tutorials generally also belong in "
+"the community documentation."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:336
+#: 7508a3a1283941eb8ae4b79f04665753
+msgid ""
+"See `#4693 <https://github.com/QubesOS/qubes-issues/issues/4693>`__ for more"
+" background information."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:340
+#: 0246d59bbb5b45dc82131cc2b0e8b1c4
+msgid "Release-specific documentation"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:342
+#: 98050498d27847c8a61e509d028cd46f
+msgid ""
+"*See*\\ `#5308 <https://github.com/QubesOS/qubes-issues/issues/5308>`__\\ "
+"*for pending changes to this policy.*"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:345
+#: ca3d2af049fd43f4be27540d6a02d358
+msgid ""
+"We maintain only one set of documentation for Qubes OS. We do not maintain a"
+" different set of documentation for each release of Qubes. Our single set of"
+" Qubes OS documentation is updated on a continual, rolling basis. Our first "
+"priority is to document all **current, stable releases** of Qubes. Our "
+"second priority is to document the next, upcoming release (if any) that is "
+"currently in the beta or release candidate stage."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:353
+#: e441626a556e4c4d9e8e4f296e2fdc63
+msgid ""
+"In cases where a documentation page covers functionality that differs "
+"considerably between Qubes OS releases, the page should be subdivided into "
+"clearly-labeled sections that cover the different functionality in different"
+" releases (examples below)."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:358
+#: 437b3d16b507447c8c29df6036a52ae6
+msgid ""
+"In general, avoid mentioning specific Qubes versions in the body text of "
+"documentation, as these references rapidly go out of date and become "
+"misleading to readers."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:363
+#: 55a73df96fc34c7a8086685abdb765c4
+msgid "Incorrect Example"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:387
+#: bc1ad6b6a33641b0adb5fbba54ec3f10
+msgid "Correct Example"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:421
+#: 6b8a52df1b1e45e2bf646814ce2064f2
+msgid ""
+"Subdividing the page into clearly-labeled sections for each release has "
+"several benefits:"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:424
+#: d6b566375b0a4c93a2448ba0f84a7e6a
+msgid ""
+"It preserves good content for older (but still supported) releases. Many "
+"documentation contributors are also people who prefer to use the latest "
+"release. Many of them are tempted to *replace* existing content that applies"
+" to an older, supported release with content that applies only to the latest"
+" release. This is somewhat understandable. Since they only use the latest "
+"release, they may be focused on their own experience, and they may even "
+"regard the older release as deprecated, even when it’s actually still "
+"supported. However, allowing this replacement of content would do a great "
+"disservice to those who still rely on the older, supported release. In many "
+"cases, these users value the stability and reliability of the older, "
+"supported release. With the older, supported release, there has been more "
+"time to fix bugs and make improvements in both the software and the "
+"documentation. Consequently, much of the documentation content for this "
+"release may have gone through several rounds of editing, review, and "
+"revision. It would be a tragedy for this content to vanish while the very "
+"set of users who most prize stability and reliability are depending on it."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:442
+#: 5abdb77824764e1d81951730b5de3487
+msgid ""
+"It’s easy for readers to quickly find the information they’re looking for, "
+"since they can go directly to the section that applies to their release."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:445
+#: 53fe560a72714942b017395139fddb3a
+msgid ""
+"It’s hard for readers to miss information they need, since it’s all in one "
+"place. In the incorrect example, information that the reader needs could be "
+"in any paragraph in the entire document, and there’s no way to tell without "
+"reading the entire page. In the correct example, the reader can simply skim "
+"the headings in order to know which parts of the page need to be read and "
+"which can be safely ignored. The fact that some content is repeated in the "
+"two release-specific sections is not a problem, since no reader has to read "
+"the same thing twice. Moreover, as one release gets updated, it’s likely "
+"that the documentation for that release will also be updated. Therefore, "
+"content that is initially duplicated between release-specific sections will "
+"not necessarily stay that way, and this is a good thing: We want the "
+"documentation for a release that *doesn’t* change to stay the same, and we "
+"want the documentation for a release that *does* change to change along with"
+" the software."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:460
+#: b05d24a7b4cf4fb9995fd4db722def4d
+msgid ""
+"It’s easy for documentation contributors and maintainers to know which file "
+"to edit and update, since there’s only one page for all Qubes OS releases. "
+"Initially creating the new headings and duplicating content that applies to "
+"both is only a one-time cost for each page, and many pages don’t even "
+"require this treatment, since they apply to all currently-supported Qubes OS"
+" releases."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:467
+#: 6c5d5ef6acc4485f9ec92953fe79318c
+msgid ""
+"By contrast, an alternative approach, such as segregating the documentation "
+"into two different branches, would mean that contributions that apply to "
+"both Qubes releases would only end up in one branch, unless someone "
+"remembered to manually submit the same thing to the other branch and "
+"actually made the effort to do so. Most of the time, this wouldn’t happen. "
+"When it did, it would mean a second pull request that would have to be "
+"reviewed. Over time, the different branches would diverge in non-release-"
+"specific content. Good general content that was submitted only to one branch"
+" would effectively disappear once that release was deprecated. (Even if it "
+"were still on the website, no one would look at it, since it would "
+"explicitly be in the subdirectory of a deprecated release, and there would "
+"be a motivation to remove it from the website so that search results "
+"wouldn’t be populated with out-of-date information.)"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:482
+#: bd572d45ae0947a58ffecf618c0cc589
+msgid ""
+"For further discussion about release-specific documentation in Qubes, see "
+"`here <https://groups.google.com/d/topic/qubes-"
+"users/H9BZX4K9Ptk/discussion>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:487
+#: 7866798e54d54e8fbdf56a7e41439304
+msgid "Git conventions"
+msgstr ""
+
+#: ../../../_doc/developer/general/documentation-style-guide.rst:489
+#: 68e2bbcc89cd49fa862274c1958b38fe
+msgid ""
+"Please follow our `Git commit message guidelines </developer/code/coding-"
+"style.html#commit-message-guidelines>`__."
+msgstr ""

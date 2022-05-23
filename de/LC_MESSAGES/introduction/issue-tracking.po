@@ -1,0 +1,698 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/introduction/issue-tracking.rst:1
+#: 3391c7c8e97242e08b5f392e94b27400
+msgid ""
+"We use `GitHub Issues <https://docs.github.com/en/issues>`__ as our `issue "
+"tracking system <https://en.wikipedia.org/wiki/Issue_tracking_system>`__. "
+"All issues pertaining to the Qubes OS Project (including auxiliary "
+"infrastructure such as this website) are tracked in `qubes-issues "
+"<https://github.com/QubesOS/qubes-issues/issues>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:9
+#: af04be7324c6409c91714f1bf765883b
+msgid "How to open a new issue"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:11
+#: 94e636c30ba248bda236b439cea883ea
+msgid "First, let’s make sure the issue tracker is the right place."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:14
+#: 1615dd5e57ae48b2aaff458d81dc65e0
+msgid "I need help, have a question, or want to discuss something."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:16
+#: 51c02a4382554c4496f1ec55af5f57a4
+msgid ""
+"We’re happy to help, answer questions, and have discussions, but the issue "
+"tracker is not the right place for these activities. Instead, please see "
+"`Help, Support, Mailing Lists, and Forum </introduction/support>`."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:21
+#: c2e30941517444c7b7fe90fe966048d5
+msgid "I see something that should be changed in the documentation."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:23
+#: b5eb4b0d498745e5a588de6b4218f5e7
+msgid ""
+"We encourage you to submit the change yourself! Please see the :doc:`how to "
+"edit the documentation </developer/general/how-to-edit-the-documentation>` "
+"for instructions on how to do so. If it’s something you can’t do yourself, "
+"please proceed to open an issue."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:29
+#: 2a55784a35fc4e0eaa2531f0c76716f2
+msgid "I would like to report a security vulnerability."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:31
+#: d2bfd7e6e48f4851b751c7dc4f9a8616
+msgid ""
+"Thank you! If the vulnerability is confidential, please do not report it in "
+"our public issue tracker. Instead, please see `Reporting Security Issues in "
+"Qubes OS </project-security/security.html#reporting-security-issues-in-"
+"qubes-os>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:37
+#: 63ae8649b2884af699176e850dc4c55c
+msgid "I still want to open an issue."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:39
+#: 806d27e7642e48aaae59f32a807b0616
+msgid ""
+"Great! Thank you for taking the time and effort to help improve Qubes! To "
+"ensure the process is efficient and productive for everyone involved, please"
+" follow these steps:"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:43
+#: 8dc91314ee37474ca8a4bdbd191eb1de
+msgid ""
+"Carefully read our issue tracking `guidelines <#guidelines>`__. If your "
+"issue would violate any of the guidelines, **stop**. Please do not submit "
+"it."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:46
+#: 2ea9dedff4de4185bcfa7f5a0bd41e34
+msgid ""
+"`Search through the existing issues <#search-tips>`__, both open and closed,"
+" to see if your issue already exists. If it does, **stop**. `Do not open a "
+"duplicate. </introduction/issue-tracking.html#new-issues-should-not-be-"
+"duplicates-of-existing-issues>`__ Instead, comment on the existing issue."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:51
+#: 86540a1ba1a64c99969f3c173b6650e4
+msgid ""
+"Go `here <https://github.com/QubesOS/qubes-issues/issues/new/choose>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:53
+#: 0f0cd6d900de473a9a0cc800d3fbde5e
+msgid "Select the `type <#type>`__ of issue you want to open."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:54
+#: 8cff466b9da6404a996f484e93b0dbe8
+msgid "Enter a descriptive title."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:55
+#: c382e13fd70042ab89bcef3910134af3
+msgid ""
+"Do not delete the provided issue template. Fill out every applicable "
+"section."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:57
+#: 02f43a659cc549429340b5a0b6c1e4a6
+msgid ""
+"Make sure to mention any relevant documentation and other issues you’ve "
+"already seen. We don’t know what you’ve seen unless you tell us. If you "
+"don’t list it, we’ll assume you haven’t seen it."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:60
+#: 025ffab0f6b440d1851ef604644960f7
+msgid ""
+"If any sections of the issue template are *truly* not applicable, you may "
+"remove them."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:62
+#: 614ee28021c14d5fad7a653bed51f9e7
+msgid "Submit your issue."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:63
+#: 3bef879e176444d2bc1472b77233c54c
+msgid ""
+"Respond to any questions the official team asks. For example, you may be "
+"asked to provide specific logs or other additional information."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:67
+#: 02dfb699e4364a18aba438502dc124f5
+msgid ""
+"Eventually, your issue may be closed. See `how issues get closed "
+"</introduction/issue-tracking.html#how-issues-get-closed>`__ for details "
+"about when, why, and how this occurs."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:72
+#: 2da4d4b0d4024dd1b5fe4d2b5c4505f9
+msgid "Labels, milestones, and projects"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:74
+#: d182702cf8d84237ab02c517d68a1fc4
+msgid ""
+"Labels, milestones, and projects are features of GitHub’s issue tracking "
+"system that we use to keep `qubes-issues <https://github.com/QubesOS/qubes-"
+"issues/issues>`__ organized."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:80
+#: 3b2a48ce30bc4021ad701bd3b432ae92
+msgid "Labels"
+msgstr "Bezeichnungen"
+
+#: ../../../_doc/introduction/issue-tracking.rst:82
+#: cc8ae205473540f48e8ee1c3b3a4da28
+msgid ""
+"Only Qubes team members have permission to modify `labels "
+"<https://github.com/QubesOS/qubes-issues/labels>`__ and `milestones "
+"<https://github.com/QubesOS/qubes-issues/milestones>`__. Many labels and "
+"milestones have descriptions on them that can be viewed either in their "
+"respective lists or by hovering over them. Let’s go over some of the most "
+"important ones."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:90
+#: 9933367949e243f98365b6f26e3304d9
+msgid "Type"
+msgstr "Typ"
+
+#: ../../../_doc/introduction/issue-tracking.rst:92
+#: 0f20b67fb94948d9ad51d7c7f49e9e14
+msgid ""
+"There are three **types**: ``T: bug``, ``T: enhancement``, and ``T: task``."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:95
+#: 12584c3458c747a0b04055478abc5e0b
+msgid ""
+"``T: bug`` — Type: bug report. A problem or defect resulting in unintended "
+"behavior in something that exists."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:97
+#: abc3f8ad508240e8b564f09cb60ec46b
+msgid ""
+"``T: enhancement`` — Type: enhancement. A new feature that does not yet "
+"exist **or** improvement of existing functionality."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:99
+#: ca057725144a48268f7f7a7b752fea03
+msgid ""
+"``T: task`` — Type: task. An action item that is neither a bug nor an "
+"enhancement."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:102
+#: eeba8c15b722446cabbe3b51461573be
+msgid ""
+"Every open issue should have **exactly one** type. An open issue should not "
+"have more than one type, and it should not lack a type entirely. Bug reports"
+" are for things that already exist. If something doesn’t exist yet, but you "
+"think it should exist, then ``T: enhancement``. If something already exists "
+"and could be improved in some way, ``T: enhancement`` is appropriate. ``T: "
+"task`` is for issues that fall under under neither ``T: bug`` nor ``T: "
+"enhancement``."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:111
+#: b4cd4c15f7f84617b28ea63f586893b9
+msgid "Priority"
+msgstr "Priorität"
+
+#: ../../../_doc/introduction/issue-tracking.rst:113
+#: 1c82556e155444129660c69b9a638014
+msgid ""
+"There are several **priority** levels ranging from ``P: minor`` to ``P: "
+"blocker`` (see `here <https://github.com/QubesOS/qubes-"
+"issues/labels?q=P%3A>`__ for the full list). Every open issue should have "
+"**exactly one** priority. An open issue should not have more than one "
+"priority, and it should not lack a priority entirely. See `here "
+"</developer/releases/version-scheme.html#bug-priorities>`__ for details "
+"about how the developers use these priorities."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:123
+#: e725071a9f424d2fa1cec25879dc1402
+msgid "Component"
+msgstr "Komponente"
+
+#: ../../../_doc/introduction/issue-tracking.rst:125
+#: 6ed75632bb4f4bdcb6410b4e68fe1dc6
+msgid ""
+"There are many **component** labels, each beginning with ``C:`` (see `here "
+"<https://github.com/QubesOS/qubes-issues/labels?page=2&q=C%3A>`__ for the "
+"full list). Every open issue should have **at least one** component. An open"
+" issue may have more than one component, but it should not lack a component "
+"entirely. When no other component applies, use ``C: other``."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:133
+#: ac34ee60fc9d454da1ae9b27ae45ddca
+msgid "Milestones"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:135
+#: 00a17aab8de14cdb8ac50f1dc5ae5b8d
+msgid ""
+"The issue tracker has several `milestones <https://github.com/QubesOS/qubes-"
+"issues/milestones>`__. Every issue should be assigned to **exactly one** "
+"milestone. The issue tracker does not allow assigning an issue to more than "
+"one milestone. If an issue is already assigned to a milestone, assigning it "
+"to a different one will *replace* the existing milestone assignment. No open"
+" issue should lack a milestone assignment."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:143
+#: 9893903ab4164c05b3e88089a29bb4e3
+msgid ""
+"Most milestones correspond to specific Qubes OS releases. A bug report "
+"assigned to a release milestone indicates an alleged bug *in* that Qubes OS "
+"release. A task or enhancement assigned to a release milestone indicates "
+"that the goal is to implement or do that thing *in* or *for* that Qubes OS "
+"release."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:149
+#: 8ba587df2a0042318b45cf400481f778
+msgid ""
+"The ``Release TBD`` (To Be Determined) milestone is for enhancements or "
+"tasks that will be specific to a Qubes OS release but have yet to be "
+"assigned to a specific release milestone. Bug reports should never be "
+"assigned to this milestone, because every bug is a problem or defect in "
+"something that already exists."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:155
+#: 28a4b5a152c443eb920053d264d60d6a
+msgid ""
+"The ``Non-release`` milestone is for issues that are independent of the "
+"Qubes OS release cycle, including (but not limited to) website, "
+"documentation, and project management issues. These are issues that will "
+"never be assigned to a specific Qubes OS release milestone."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:161
+#: 5af20b060b174bfbb6f7c7c2532d21e9
+msgid "Projects"
+msgstr "Projekte"
+
+#: ../../../_doc/introduction/issue-tracking.rst:163
+#: 5744fbbf8df747d889cd21567201c238
+msgid ""
+"The issue tracker has several `projects <https://github.com/QubesOS/qubes-"
+"issues/projects>`__. A project is a way to create a group of multiple "
+"related issues. This is the preferred method of grouping issues, whereas "
+"trying to use normal issues as “meta-issues” or “epics” is discouraged."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:170
+#: 1014997b56f944d28ad63f661b723c1c
+msgid "Search tips"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:172
+#: 25745cf461c44026a2b1b31f5892407f
+msgid ""
+"`Search both open and closed issues. <https://github.com/QubesOS/qubes-"
+"issues/issues?utf8=%E2%9C%93&q=is%3Aissue>`__ For example, you may be "
+"experiencing a bug that was just fixed, in which case the report for that "
+"bug is probably closed. In this case, it would be useful to view `all bug "
+"reports, both open and closed, with the most recently updated sorted to the "
+"top <https://github.com/QubesOS/qubes-"
+"issues/issues?q=label%3Abug+sort%3Aupdated-desc>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:180
+#: 0ee1e29d94f54e01983c9d9d405b3ec4
+msgid ""
+"`Search using labels. <https://github.com/QubesOS/qubes-issues/labels>`__ "
+"For example, you can search issues by priority (`blocker "
+"<https://github.com/QubesOS/qubes-issues/labels/P%3A%20blocker>`__, "
+"`critical <https://github.com/QubesOS/qubes-"
+"issues/labels/P%3A%20critical>`__, `major <https://github.com/QubesOS/qubes-"
+"issues/labels/P%3A%20major>`__, etc.) and by component (`core "
+"<https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+core%22>`__, "
+"`manager/widget <https://github.com/QubesOS/qubes-"
+"issues/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22C%3A+manager%2Fwidget%22+>`__,"
+" `Xen <https://github.com/QubesOS/qubes-"
+"issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+Xen%22>`__, etc.)."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:192
+#: a19ae3fa9f684efd8663cdf75c247b0d
+msgid ""
+"You can also try searching by `milestone <https://github.com/QubesOS/qubes-"
+"issues/milestones>`__ and by `project <https://github.com/QubesOS/qubes-"
+"issues/projects>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:197
+#: 54d828b196a24bb988d328ade5b5aeb1
+msgid "Guidelines"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:200
+#: e3397537ac064398ac924e567e710bbf
+msgid "The issue tracker is not a discussion forum"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:202
+#: 40a906e715ca42bc931e33311c38f5fa
+msgid ""
+"The issue tracker is a tool to help the developers be more productive and "
+"efficient in their work. It is not a place for discussion. If you wish to "
+"discuss something in the issue tracker, please do so on the forum or mailing"
+" lists (see `Help, Support, Mailing Lists, and Forum "
+"</introduction/support>`). You can simply link to the relevant issue in your"
+" discussion post."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:209
+#: 24a9efcc5a254722b237a314f76581fe
+msgid ""
+"This guideline is important for keeping issues focused on *actionable "
+"information*, which helps the developers to stay focused on their work. When"
+" developers come back to an issue to work on it, we do not want them to have"
+" to sift through a large number of unnecessary comments before they can get "
+"started. In many cases, an issue that gets “too big” essentially becomes "
+"more trouble than it’s worth, and no developer will touch it (also see "
+"`every issue must be about a single, actionable thing <#every-issue-must-be-"
+"about-a-single-actionable-thing>`__). In these cases, we sometimes have to "
+"close the issue and open a new one. This is a waste of energy for everyone "
+"involved, so we ask that everyone help to avoid repeating this pattern."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:222
+#: 4a72c82151de460c843f5b0e07c5203b
+msgid "Do not submit questions"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:224
+#: 93daac59eeef44e68b9ffc9862bef7d7
+msgid ""
+"`qubes-issues <https://github.com/QubesOS/qubes-issues/issues>`__ is not the"
+" place to ask questions. This includes, but is not limited to, "
+"troubleshooting questions and questions about how to do things with Qubes. "
+"Instead, see `Help, Support, Mailing Lists, and Forum "
+"</introduction/support>` for appropriate place to ask questions. By "
+"contrast, `qubes-issues <https://github.com/QubesOS/qubes-issues/issues>`__ "
+"is meant for tracking more general bugs, enhancements, and tasks that affect"
+" a broad range of Qubes users."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:235
+#: e9e0ee89bd5d4ba291f4abf01ebe1d9b
+msgid "Use the issue template"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:237
+#: a7e4cf744a674f0fb0841cc53ed037c5
+msgid ""
+"When you open a new issue, an issue template is provided for you. Please use"
+" it. Do not delete it. The issue template is carefully designed to elicit "
+"important information. Without this information, the issue is likely to be "
+"incomplete. (If certain sections are not applicable, you may remove them, "
+"but please do so only sparingly and only if they are *truly* not "
+"applicable.)"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:244
+#: 8893b7042e7c4c349deb75ee0a55002e
+msgid ""
+"It is also important to note the placement and content of the HTML comments "
+"in the issue template. These help us to have issues with a consistent "
+"format."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:249
+#: 8b1a74c4592d408b9b85d3ed1b14b4ae
+msgid "Every issue must be about a single, actionable thing"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:251
+#: 3299e0c7f04c464a93cfde07b361e0b4
+msgid ""
+"If your issue is not actionable, please see :doc:`Help, Support, Mailing "
+"Lists, and Forum </introduction/support>` for the appropriate place to post "
+"it. If your issue would be about more than one thing, file them as separate "
+"issues instead. This means we should generally not try to use a single issue"
+" as a “meta” or “epic” issue that exists only to group, contain, or track "
+"other issues. Instead, when there is a need to group multiple related issues"
+" together, use `projects <https://github.com/QubesOS/qubes-"
+"issues/projects>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:260
+#: dd60b022a9044fc6b23b6d5e79f8ef06
+msgid ""
+"This guideline is extremely important for making the issue tracker a useful "
+"tool for the developers. When an issue is too big and composite, it becomes "
+"intractable and drastically increases the likelihood that nothing will get "
+"done. Such issues also tend to encourage an excessive amount of general "
+"discussion that is simply not appropriate for a technical issue tracker (see"
+" `the issue tracker is not a discussion forum <#the-issue-tracker-is-not-a-"
+"discussion-forum>`__)."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:269
+#: 2ba3db80d2694a17a429e36bc773a21d
+msgid "New issues should not be duplicates of existing issues"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:271
+#: de06943d98de42a2bb97d8c06332c9b8
+msgid ""
+"Before you submit an issue, check to see whether it has already been "
+"reported. Search through the existing issues – both open and closed – by "
+"typing your key words in the **Filters** box. If you find an issue that "
+"seems to be similar to yours, read through it. If you find an issue that is "
+"the same as or subsumes yours, leave a comment on the existing issue rather "
+"than filing a new one, even if the existing issue is closed. If an issue "
+"affects more than one Qubes version, we usually keep only one issue for all "
+"versions. The Qubes team will see your comment and reopen the issue, if "
+"appropriate. For example, you can leave a comment with additional "
+"information to help the maintainer debug it. Adding a comment will subscribe"
+" you to email notifications, which can be helpful in getting important "
+"updates regarding the issue. If you don’t have anything to add but still "
+"want to receive email updates, you can click the “Subscribe” button at the "
+"side or bottom of the comments."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:287
+#: bc327d906f8c482a88db9a9ad2e31cfe
+msgid "Every issue must be of a single type"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:289
+#: 61392c7b0d5d4e25832bfed9aed10eea
+msgid ""
+"Every issue must be exactly one of the following types: a bug report "
+"(``bug``), a feature or improvement request (``enhancement``), or a task "
+"(``task``). Do not file multi-typed issues. Instead, file multiple issues of"
+" distinct types. The Qubes team will classify your issue according to its "
+"type."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:296
+#: 6b1c07b52caf4302b6ea3d44cc76b02f
+msgid "New issues should include all relevant information"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:298
+#: 8e2ccc72db24493ea4085a90f66e5e3f
+msgid ""
+"When you file a new issue, you should be sure to include the version of "
+"Qubes you’re using, as well as versions of related software packages "
+"(:doc:`how to copy information out of dom0 </user/how-to-guides/how-to-copy-"
+"from-dom0>`). If your issue is related to hardware, provide as many details "
+"as possible about the hardware. A great way to do this is by `generating and"
+" submitting a Hardware Compatibility List (HCL) report </user/hardware/how-"
+"to-use-the-hcl.html#generating-and-submitting-new-reports>`__, then linking "
+"to it in your issue. You may also need to use command-line tools such as "
+"``lspci``. If you’re reporting a bug in a package that is in a :doc:`testing"
+" </user/downloading-installing-upgrading/testing>` repository, please "
+"reference the appropriate issue in the `updates-status "
+"<https://github.com/QubesOS/updates-status/issues>`__ repository. Project "
+"maintainers really appreciate thorough explanations. It usually helps them "
+"address the problem more quickly, so everyone wins!"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:315
+#: 49c38215cd144e83aff6da24fd71b526
+msgid "There are no guarantees that your issue will be addressed"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:317
+#: b1b8df3079914b279e251b8390d1b684
+msgid ""
+"Keep in mind that `qubes-issues <https://github.com/QubesOS/qubes-"
+"issues/issues>`__ is an issue tracker, not a support system. Creating a new "
+"issue is simply a way for you to submit an item for the Qubes team’s "
+"consideration. It is up to the Qubes team to decide whether or how to "
+"address your issue, which may include closing the issue without taking any "
+"action on it. Even if your issue is kept open, however, you should not "
+"expect it to be addressed within any particular time frame, or at all. At "
+"the time of this writing, there are well over one thousand open issues in "
+"`qubes-issues <https://github.com/QubesOS/qubes-issues/issues>`__. The Qubes"
+" team has its own roadmap and priorities, which will govern the manner and "
+"order in which open issues are addressed."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:331
+#: f0b64e846686436abb38f1c3b18c7f80
+msgid "How issues get closed"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:333
+#: 867d4b581fee429685e0a68ab17718e2
+msgid ""
+"If the Qubes developers make a code change that resolves an issue, then the "
+"issue will typically be `closed from the relevant commit or merged pull "
+"request (PR) <https://docs.github.com/en/issues/tracking-your-work-with-"
+"issues/creating-issues/linking-a-pull-request-to-an-issue>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:339
+#: 88d05a783844451881260eb88af8ef3b
+msgid "Bug reports"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:341
+#: 1232d8b1067644888e92195cf3fecbea
+msgid ""
+"In the case of bugs, the package containing the change will move to the "
+"appropriate :doc:`testing </user/downloading-installing-upgrading/testing>` "
+"repository, then to the appropriate stable repository. If you so choose, you"
+" can test the fix while it’s in the :doc:`testing </user/downloading-"
+"installing-upgrading/testing>` repository, or you can wait for it to land in"
+" the stable repository. If, after testing the fix, you find that it does not"
+" really fix the reported bug, please leave a comment on the issue explaining"
+" the situation. When you do, we will receive a notification and respond on "
+"the issue or reopen it (or both). Please **do not** create a duplicate issue"
+" or attempt to contact the developers individually about a problem."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:353
+#: 8a3482c71b1c4e6683a5d101fa5212b4
+msgid "Resolution"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:355
+#: 28400a5059734bc99ff181df524aad77
+msgid ""
+"In other cases, an issue may be closed with a specific resolution, such as "
+"``R: invalid``, ``R: duplicate``, or ``R: won't fix``. Each of these labels "
+"has a description that explains the label. We’ll also leave a comment "
+"explaining why we’re closing the issue with one of these specific "
+"resolutions. If the issue is closed without one of these specific "
+"resolutions, then it means, by default, that the reported bug was fixed or "
+"the requested enhancement was implemented."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:364
+#: 37316b5f86ba4beea688e560fd37472b
+msgid "Backports"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:366
+#: 862ae7d8d83a475b8564b31bef0086a3
+msgid ""
+"Issues in GitHub can only be open or closed, but, when it comes to bugs that"
+" affect multiple versions of Qubes OS, there are several possible states:"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:370
+#: 2a6b66bc3057452e81791acbb07456d8
+msgid "Not fixed yet"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:371
+#: df3c95ca2ca24b0e8a751aedf5c7b0d5
+msgid "Fix developed but not yet committed (PR open)"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:372
+#: bd76d6e13d9348108eaac694790168d6
+msgid "Fix committed (PR merged), but update not yet pushed to any repo"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:373
+#: 3cce1e30f1af47449720077431a5d2d4
+msgid "Update pushed to testing repo for the most recent development version"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:374
+#: 0e1633967a644612bf217e97e30d4af8
+msgid "Update pushed to stable repo for the most recent development version"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:375
+#: 9b578e208f89483591afecf0f04d696a
+msgid "Update backported to stable version(s) and pushed to the testing repo"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:376
+#: 53fc14a597654ab78596226d402316b2
+msgid "Update pushed to stable repo of stable version(s)"
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:378
+#: 853e3e7690b9444a80b1dc7608f53848
+msgid ""
+"We close issues at step 3. Then, as updates are released, the issue "
+"automatically gets the appropriate ``current-testing`` (``rX.Y-*-cur-test``)"
+" and ``stable`` (``rX.Y-*-stable``) labels. Based on these labels, it’s "
+"possible to select issues waiting for step 6 (see `issues by release "
+"<https://github.com/QubesOS/qubes-issues#issues-by-release>`__)."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:385
+#: 722f10e8e9b147f481cbedcfdba37961
+msgid ""
+"Therefore, if you see that an issue is closed, but the fix is not yet "
+"available to you, be aware that it may be at an intermediate stage of this "
+"process between issue closure and the update being available in whichever "
+"repos you have enabled in whichever version of Qubes you’re using."
+msgstr ""
+
+#: ../../../_doc/introduction/issue-tracking.rst:391
+#: e8b853f450034e06ba04ac6314ad09df
+msgid ""
+"In order to assist with this, we have a label called `backport pending "
+"<https://github.com/QubesOS/qubes-issues/labels/backport%20pending>`__, "
+"which means, “The fix has been released for the testing release but is "
+"pending backport to the stable release.” Our infrastructure will attempt to "
+"apply this label automatically, when appropriate, but it is not perfect, and"
+" the developers may be need to adjust it manually."
+msgstr ""

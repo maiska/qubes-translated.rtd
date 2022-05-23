@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# IDRASSI Mounir <mounir.idrassi@idrix.fr>, 2022
+# Emma Peel, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:09+0000\n"
+"Last-Translator: Emma Peel, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:1
+#: c0de213c53dc42e49275d3cdc1d9c05d
+msgid ""
+"The Fedora :doc:`template </user/templates/templates>` is the default "
+"template in Qubes OS. This page is about the standard (or “full”) Fedora "
+"template. For the minimal and Xfce versions, please see the :doc:`Minimal "
+"templates </user/templates/minimal-templates>` and :doc:`Xfce templates "
+"</user/templates/xfce-templates>` pages."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:8
+#: 462b4e5c560746d8b7b22ca3adf97758
+msgid "Installing"
+msgstr "Installiert"
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:10
+#: 837d93abf9aa4741be9dfc5a12770253
+msgid ""
+"To `install </user/templates/templates.html#installing>`__ a specific Fedora"
+" template that is not currently installed in your system, use the following "
+"command in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:18
+#: 707a840b479d4cab8a4f4cf27da1a599
+msgid ""
+"(Replace ``XX`` with the Fedora version number of the template you wish to "
+"install.)"
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:21
+#: cfd106eef0084cfca11882b09f95d961
+msgid ""
+"To reinstall a Fedora template that is already installed in your system, see"
+" :doc:`How to Reinstall a template </user/templates/how-to-reinstall-a-"
+"template>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:25
+#: 117147c3444443b39ce67fe78074ede5
+msgid "After Installing"
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:27
+#: f980d022adef43deb4b5ae7597bc56bf
+msgid ""
+"After installing a fresh Fedora template, we recommend performing the "
+"following steps:"
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:30
+#: 520ea0fbe8fd4b21bb7e62564c415a42
+msgid ""
+":doc:`Update the template </user/how-to-guides/how-to-install-software>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:32
+#: c66903092bd04f49a9d3cc59a2cec8b0
+msgid ""
+"`Switch any app qubes that are based on the old template to the new one "
+"</user/templates/templates.html#switching>`__."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:35
+#: da024a5105af400b923e915d1ceca319
+msgid ""
+"If desired, `uninstall the old template "
+"</user/templates/templates.html#uninstalling>`__."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:39
+#: 6d249e89ff8b4b8f9517a3c4fd6e47c9
+msgid "Installing software"
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:41
+#: 096f4319ac404fa2b047881032c60aaf
+msgid ""
+"See :doc:`How to Install Software </user/how-to-guides/how-to-install-"
+"software>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:44
+#: 8689c1e1fdfd4d0688070e7715707106
+msgid "Updating"
+msgstr "Aktualisieren"
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:46
+#: dd71717b9cc4476798babb665fd25404
+msgid ""
+"For routine daily updates within a given release, see :doc:`How to Update "
+"</user/how-to-guides/how-to-update>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:50
+#: 219222c663ad470791a9d0f063ad8328
+msgid "Upgrading"
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:52
+#: 125d22af99274cb3ba8b7d59c42fadf1
+msgid "There are two ways to upgrade your template to a new Fedora release:"
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:54
+#: 4e44e5cc45764bfdb539e8f1bd187670
+msgid ""
+"**Recommended:** `Install a fresh template to replace the existing one. "
+"<#installing>`__ **This option may be simpler for less experienced users.** "
+"After you install the new template, redo all desired template modifications "
+"and `switch everything that was set to the old template to the new template "
+"</user/templates/templates.html#switching>`__. You may want to write down "
+"the modifications you make to your templates so that you remember what to "
+"redo on each fresh install. To see a log of package manager actions, open a "
+"terminal in the old Fedora template and use the ``dnf history`` command."
+msgstr ""
+
+#: ../../../_doc/user/templates/fedora/fedora.rst:64
+#: 62f0c3adc7de42bc89eb07992c504fb5
+msgid ""
+"**Advanced:** :doc:`Perform an in-place upgrade of an existing Fedora "
+"template. </user/templates/fedora/fedora-upgrade>` This option will preserve"
+" any modifications you’ve made to the template, **but it may be more "
+"complicated for less experienced users.**"
+msgstr ""

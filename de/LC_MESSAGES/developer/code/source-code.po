@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:11+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/code/source-code.rst:1
+#: af78de02b25b4c6ba8cea79c6ad3ed26
+msgid ""
+"All the Qubes code is kept in Git repositories. We have divided the project "
+"into several components, each of which has its own separate repository, for "
+"example:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:5
+#: d504e56d9a5c4810956bc29ae8cea542
+msgid ""
+"``core-admin.git`` – The core Qubes infrastructure, responsible for VM "
+"management, VM templates, fs sharing, etc."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:7
+#: 3270a288e04040fa81f61f2a9ac47c75
+msgid "``gui-daemon.git`` – GUI virtualization, Dom0 side."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:8
+#: 764d16a9241148d9926c182c295c9620
+msgid "``gui-agent-linux.git`` – GUI virtualization, Linux VM side."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:9
+#: 4e60325a2dea4220a5da47323bc41333
+msgid ""
+"``linux-template-builder.git`` – Scripts and other files used to create "
+"Qubes template images."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:12
+#: 3f12a7ed931745528c2989627148e45a
+msgid ""
+"All of our repositories are available under the `QubesOS GitHub account "
+"<https://github.com/QubesOS/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:15
+#: d3117a318b4042de8295b5a3b093011b
+msgid "To clone a repository:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:21
+#: 522e04b56a2840b9a2c741d82ae20a83
+msgid "e.g.:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:27
+#: a793e235560241b396d20db831956642
+msgid ""
+"To build Qubes you do not need to download all these repositories. If you "
+"use :doc:`qubes builder </developer/building/qubes-builder>` you can specify"
+" *what* you want to build, and download only the repositories needed to "
+"build that target."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:32
+#: 8c9fcdf9396b4bd6ad06bc9edd0076f5
+msgid ""
+"If you really do want to clone **all** of the repositories, you can use "
+"these commands:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:40
+#: 8cf03c9463c54c7f9f937fe504fe9c3b
+msgid "To update (git fetch) **all** of these repositories :"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:46
+#: b7293792f2a9460f9993a9ec0645554c
+msgid "(Alternatively, you can pull instead of just fetching.)"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:49
+#: b4e8ca850a56466ab45d474021f32beb
+msgid "How to Send Patches"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:51
+#: af232662a3a8432089535cc660f18b9a
+msgid ""
+"If you want to `contribute code "
+"</introduction/contributing.html#contributing-code>`__ to the project, there"
+" are two ways. Whichever method you choose, you must :doc:`sign your code "
+"</developer/code/code-signing>` before it can be accepted."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:56
+#: 52ec3ea0840b4ea9b3359fa88fab675a
+msgid ""
+"**Preferred**: Use GitHub’s `fork & pull requests "
+"<https://guides.github.com/activities/forking/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:59
+#: 22aa549b43a54eb48cec89f342d56b27
+msgid ""
+"Opening a pull request on GitHub greatly eases the code review and tracking "
+"process. In addition, especially for bigger changes, it’s a good idea to "
+"send a message to the `qubes-devel mailing list "
+"</introduction/support.html#qubes-devel>`__ in order to notify people who do"
+" not receive GitHub notifications."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:65
+#: 4d0f870eed924e19a74fb8711a401d92
+msgid ""
+"Send a patch to the `qubes-devel mailing list "
+"</introduction/support.html#qubes-devel>`__ (``git format-patch``)."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:68
+#: 8039d4e5f1e54162bf3e9721fd6e28ae
+msgid ""
+"Make all the changes in your working directory, i.e. edit files, move them "
+"around (you can use ‘git mv’ for this), etc."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:70
+#: a608e8c41d2945beaa27f190a75c1dba
+msgid ""
+"Add the changes and commit them (``git add``, ``git commit``). Never mix "
+"different changes into one commit! Write a good description of the commit. "
+"The first line should contain a short summary, and then, if you feel like "
+"more explanations are needed, enter an empty new line, and then start the "
+"long, detailed description (optional)."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:76
+#: 1f765c0131e2422aa426a30db082bf2d
+msgid "Test your changes NOW: check if RPMs build fine, etc."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:77
+#: ebf2ace7bffb42db953f142f46d22424
+msgid ""
+"Create the patch using ``git format-patch``. This has an advantage over "
+"``git diff``, because the former will also include your commit message, your"
+" name and email, so that *your* name will be used as a commit’s author."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:81
+#: bc6b13f0d94b4e9a840bf4be39f2f430
+msgid ""
+"Send your patch to ``qubes-devel``. Start the message subject with "
+"``[PATCH]``."
+msgstr ""

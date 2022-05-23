@@ -1,0 +1,631 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# IDRASSI Mounir <mounir.idrassi@idrix.fr>, 2022
+# m, 2022
+# Curtis Baltimore <curtisbaltimore@protonmail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:12+0000\n"
+"Last-Translator: Curtis Baltimore <curtisbaltimore@protonmail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/gui.rst:2 fe8f737ca0224f82bb19b0c043e0e250
+msgid "qubes_gui and qubes_guid processes"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:4 d55634aa6e5c4941ae76010e600da094
+msgid ""
+"All AppVM X applications connect to local (running in AppVM) Xorg servers "
+"that use the following “hardware” drivers:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:7 78a06a21d9af4c02bc1ef859ab21a084
+msgid ""
+"*dummyqsb_drv* - video driver, that paints onto a framebuffer located in "
+"RAM, not connected to real hardware"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:9 48af97e27dec4e02b9f1ffb69700bf50
+msgid ""
+"*qubes_drv* - it provides a virtual keyboard and mouse (in fact, more, see "
+"below)"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:12 f68f9d8d2d94467181801246fdff4aea
+msgid ""
+"For each AppVM, there is a pair of *qubes_gui* (running in AppVM) and "
+"*qubes_guid* (running in dom0) processes connected over vchan. The main "
+"responsibilities of *qubes_gui* are:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:16 112d4ff92339466c91d5fcd4e9dcba5b
+msgid ""
+"call XCompositeRedirectSubwindows on the root window, so that each window "
+"has its own composition buffer"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:18 2543de1063924a8ebd19f5e7b5b2092d
+msgid ""
+"instruct the local Xorg server to notify it about window creation, "
+"configuration and damage events; pass information on these events to dom0"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:21 9df3e65daf144c48a1f4771481c52887
+msgid ""
+"receive information about keyboard and mouse events from dom0, tell "
+"*qubes_drv* to fake appropriate events"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:23
+#: ../../../_doc/developer/system/gui.rst:34 9bc828c9effa449bb932e9ee12ef9b98
+#: 40b156d183e14b3f95d973f3bbae0169
+msgid ""
+"receive information about window size/position change, apply them to the "
+"local window"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:26 a678324a2cc743f6a0c35559f7926a7b
+msgid "The main responsibilities of *qubes_guid* are:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:28 0afbe8d6c6d14268ba54d4eb82585366
+msgid ""
+"create a window in dom0 whenever an information on window creation in AppVM "
+"is received from *qubes_gui*"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:30 933b58d2cd784a978f30724233187c9c
+msgid ""
+"whenever the local window receives XEvent, pass information on it to AppVM "
+"(particularly, mouse and keyboard data)"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:32 19baa7ba73cb42b78b32b50773d9e652
+msgid ""
+"whenever AppVM signals damage event, tell local Xorg server to repaint a "
+"given window fragment"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:37 84c8863063e04944a06478c6ca3c30db
+msgid ""
+"Note that keyboard and mouse events are passed to AppVM only if a window "
+"belonging to this AppVM has focus. AppVM has no way to get information on "
+"keystrokes fed to other AppVMs (e.g. XTEST extension will report the status "
+"of local AppVM keyboard only) or synthesize and pass events to other AppVMs."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:44 973e3a12aa1e472e94374f3b735f2ce1
+msgid "Window content updates implementation"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:46 8440917b3025448b90904404dbd18cb2
+msgid ""
+"Typical remote desktop applications, like *vnc*, pass information on all "
+"changed window content in-band (say, over tcp). As that channel has limited "
+"throughput, this impacts video performance. In the case of Qubes, "
+"*qubes_gui* does not transfer all changed pixels via vchan. Instead, for "
+"each window, upon its creation or size change, *qubes_gui*"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:52 5f2febef59f9461b83378f3521f7afd6
+msgid ""
+"asks *qubes_drv* driver for the list of physical memory frames that hold the"
+" composition buffer of a window"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:54 14ca2f0e27e64490a166801f51bd698e
+msgid ""
+"passes this information via ``MFNDUMP`` message to *qubes_guid* in dom0"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:57 ec274717891d4b7387528797b1c74505
+msgid ""
+"Now, *qubes_guid* has to tell the dom0 Xorg server about the location of the"
+" buffer. There is no supported way (e.g. Xorg extension) to do this zero-"
+"copy style. The following method is used in Qubes:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:61 14da80f3a78b4b23bdcb2c4133e0f311
+msgid ""
+"in dom0, the Xorg server is started with *LD_PRELOAD*-ed library named "
+"*shmoverride.so*. This library hooks all function calls related to shared "
+"memory."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:64 dd8ea31340524f38b5e958aa370fc748
+msgid ""
+"*qubes_guid* creates a shared memory segment, and then tells Xorg to attach "
+"it via *MIT-SHM* extension"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:66 9863c6862cc54c37810c99135140aa39
+msgid ""
+"when Xorg tries to attach the segment (via glibc *shmat*) *shmoverride.so* "
+"intercepts this call and instead maps AppVM memory via "
+"*xc_map_foreign_pages*"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:69 2b0bb65bd751402c9c41ec8ce9fc2171
+msgid ""
+"since then, we can use MIT-SHM functions, e.g. *XShmPutImage* to draw onto a"
+" dom0 window. *XShmPutImage* will paint with DRAM speed; actually, many "
+"drivers use DMA for this."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:73 28b3527b95294804baea589115ff108a
+msgid ""
+"The important detail is that *xc_map_foreign_pages* verifies that a given "
+"mfn range actually belongs to a given domain id (and the latter is provided "
+"by trusted *qubes_guid*). Therefore, rogue AppVM cannot gain anything by "
+"passing crafted mnfs in the ``MFNDUMP`` message."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:78 8ec911fdf24f4f3c92b9d11d40f0d372
+msgid "To sum up, this solution has the following benefits:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:80 54d21c258e7c458b97cb8c4ca7756f80
+msgid "window updates at DRAM speed"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:81 64b619a955cf4f6aa558fd8ce7f7166c
+msgid "no changes to Xorg code"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:82 a9530dd8a54a448288a5d10c4cec7731
+msgid "minimal size of the supporting code"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:87
+#: ../../../_doc/developer/system/gui.rst:87 866dfa8d1be14c5188280da65cd15a64
+#: 96e7c5a088b44351ba311b85120f43b2
+msgid "gui.png"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:90 9dffac0b5bac4968965e7d0bbb0125ff
+msgid "Security markers on dom0 windows"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:92 babd88b99bb24d3fafef27628dd6662c
+msgid ""
+"It is important that the user knows which AppVM a given window belongs to. "
+"This prevents a rogue AppVM from painting a window pretending to belong to "
+"other AppVM or dom0 and trying to steal, for example, passwords."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:97 45367bc6046442039079c0f195eb6740
+msgid ""
+"In Qubes, a custom window decorator is used that paints a colourful frame "
+"(the colour is determined during AppVM creation) around decorated windows. "
+"Additionally, the window title always starts with **[name of the AppVM]**. "
+"If a window has an *override_redirect* attribute, meaning that it should not"
+" be treated by a window manager (typical case is menu windows), *qubes_guid*"
+" draws a two-pixel colourful frame around it manually."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:106 76906527c0654457a4b6aab4812394eb
+msgid "Clipboard sharing implementation"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:108 49e77dc0f17146138030b9954f28cd32
+msgid ""
+"Certainly, it would be insecure to allow AppVM to read/write the clipboards "
+"of other AppVMs unconditionally. Therefore, the following mechanism is used:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:112 4b37db33f52941cab1de6ca313914b48
+msgid ""
+"there is a “qubes clipboard” in dom0 - its contents are stored in a regular "
+"file in dom0."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:114 2a97a7472299406eaae8b4d5f4c2c681
+msgid ""
+"if the user wants to copy local AppVM clipboard to qubes clipboard, she must"
+" focus on any window belonging to this AppVM, and press **Ctrl-Shift-C**. "
+"This combination is trapped by *qubes-guid*, and ``CLIPBOARD_REQ`` message "
+"is sent to AppVM. *qubes-gui* responds with *CLIPBOARD_DATA* message "
+"followed by clipboard contents."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:119 8108293835164fd59bf267e3b8d6fde9
+msgid ""
+"the user focuses on other AppVM window, presses **Ctrl-Shift-V**. This "
+"combination is trapped by *qubes-guid*, and ``CLIPBOARD_DATA`` message "
+"followed by qubes clipboard contents is sent to AppVM; *qubes_gui* copies "
+"data to the local clipboard, and then user can paste its contents to local "
+"applications normally."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:125 84b90f89228a4257b66c6465cda10183
+msgid ""
+"This way, the user can quickly copy clipboards between AppVMs. This action "
+"is fully controlled by the user, it cannot be triggered/forced by any AppVM."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:130 5744172bae5b471cad4b3c60af0f3ad0
+msgid "*qubes_gui* and *qubes_guid* code notes"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:132 d4ee60da4d0b4ad18df79ab59105acef
+msgid ""
+"Both applications are structured similarly. They use *select* function to "
+"wait for any of these two event sources:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:135 a44eee6c495941578fe3643c4b1627dc
+msgid "messages from the local X server"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:136 77bd69004b0c4bcab7e243f63b184076
+msgid "messages from the vchan connecting to the remote party"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:138 c8aad49c45db4e8f8edf66c49604cd17
+msgid ""
+"The XEvents are handled by the *handle_xevent_eventname* function, and "
+"messages are handled by *handle_messagename* function. One should be very "
+"careful when altering the actual *select* loop, because both XEvents and "
+"vchan messages are buffered, and *select* will not wake for each message."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:144 5fd70631f1154aa4b460d72d9c34ccf1
+msgid ""
+"If one changes the number/order/signature of messages, one should increase "
+"the *QUBES_GUID_PROTOCOL_VERSION* constant in *messages.h* include file."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:148 3bdb71b33214405d9360b9fcbb652c5b
+msgid ""
+"*qubes_guid* writes debugging information to "
+"*/var/log/qubes/qubes.domain_id.log* file; *qubes_gui* writes debugging "
+"information to */var/log/qubes/gui_agent.log*. Include these files when "
+"reporting a bug."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:154 6ae72a3c31564785bf1dafc9900b52e5
+msgid "AppVM -> dom0 messages"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:156 694e8d3712174461a5e0a4446c862803
+msgid ""
+"Proper handling of the below messages is security-critical. Observe that "
+"beside two messages (``CLIPBOARD`` and ``MFNDUMP``) the rest have fixed "
+"size, so the parsing code can be small."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:160 9919bb46d58748988c67bdcff6e3bf68
+msgid ""
+"The *override_redirect* window attribute is explained at `Override Redirect "
+"Flag <https://tronche.com/gui/x/xlib/window/attributes/override-"
+"redirect.html>`__. The *transient_for* attribute is explained at "
+"`Transient_for attribute "
+"<https://tronche.com/gui/x/icccm/sec-4.html#WM_TRANSIENT_FOR>`__."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:166 87a4707147cb4f0bad9efa59b2a607fc
+msgid ""
+"Window manager hints and flags are described in the `Extended Window Manager"
+" Hints (EWMH) spec <https://standards.freedesktop.org/wm-spec/latest/>`__, "
+"especially under the ``_NET_WM_STATE`` section."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:171 50f360692be74c5a91ae50e8ca53501f
+msgid "Each message starts with the following header:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:186 72c53e9ba6784c899561e03a315ef997
+msgid "This header is followed by message-specific data:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:200
+#: ../../../_doc/developer/system/gui.rst:849 dd6c312b83d74421b830bd2927115b39
+#: d6886cedd5834ba29f610143803bfd61
+msgid "Message name"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:210
+#: ../../../_doc/developer/system/gui.rst:859 02a03004d2124c36b60cd376910d6fe6
+#: 09568dd503c8426bb2b3008c41a9982a
+msgid "Structure after header"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:220
+#: ../../../_doc/developer/system/gui.rst:869 f038c92bff1542c5a4cbd675b97e1aac
+#: b9f802e9adcd4cd1a8b5f1ea29999698
+msgid "Action"
+msgstr "Aktion"
+
+#: ../../../_doc/developer/system/gui.rst:238
+#: ../../../_doc/developer/system/gui.rst:1295
+#: cfd4e96eb07e47d8bb5a2ddbb4fb1ec1 a6930fbaa76d43a7a236ebbc74fd7140
+msgid "MSG_CLIPBOARD_DATA"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:248 23ac665ee0a34baa995b21d5001325db
+msgid ""
+"amorphic blob (in protocol before 1.2, length determined by the “window” "
+"field, in 1.2 and later - by untrusted_len in the header)"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:259 3f3f6f8848494071bad3c7869c3480ad
+msgid "Store the received clipboard content (not parsing in any way)"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:277 d6ea4d4fff2549fda8c64e9b5cfa37fe
+msgid "MSG_CREATE"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:308 542616e6ef05486bb7163f5e3356cd7b
+msgid "Create a window with given parameters"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:326 ce14f215964d4ea78013a6bf15b75c91
+msgid "MSG_DESTROY"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:336
+#: ../../../_doc/developer/system/gui.rst:419
+#: ../../../_doc/developer/system/gui.rst:654
+#: ../../../_doc/developer/system/gui.rst:1133
+#: ../../../_doc/developer/system/gui.rst:1267
+#: 4c5ea971268148299189adbe4661f7b5 5254c480dbd744fe8581351543796576
+#: b215e06b307f41a8bf0a8881ea393191 17c67620995b4b22816ab00d72885a40
+#: 5176ab2757c84fcfa8cf804a0ae35eb4
+msgid "None"
+msgstr "Keine"
+
+#: ../../../_doc/developer/system/gui.rst:346 b6226b56321a4ceb872e8e31b8eb3bfa
+msgid "Destroy a window"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:364
+#: ../../../_doc/developer/system/gui.rst:1078
+#: fc7625fe0ffe48e1a39dc28440d23022 a8408c9656a34bfc8599f2860c5b8077
+msgid "MSG_MAP"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:391
+#: ../../../_doc/developer/system/gui.rst:1105
+#: 7c60eb63c5ba4e85b95f428648acd740 c83cead16b284b29ad9b0340822bf524
+msgid "Map a window with given parameters"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:409 7093ccbf9bee4752a94734dc673ed3d5
+msgid "MSG_UNMAP"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:429 12abb9ebf44043a085b71b3e0b47742e
+msgid "Unmap a window"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:447
+#: ../../../_doc/developer/system/gui.rst:1030
+#: ea4921ff59f84f96ba78cb220dd538f5 53e0eb85949a4423b8584db2fd868689
+msgid "MSG_CONFIGURE"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:477
+#: ../../../_doc/developer/system/gui.rst:1060
+#: 9351430945964c3389e86d8b239cc502 b42b62c8c6e54becb8cd61bda08970c9
+msgid "Change window position/size/type"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:495 f270c662a7b74ea38bda72b814c29251
+msgid "MSG_MFNDUMP"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:528 34f18b0a0b0b4ccf9d40b22674f0c0d5
+msgid ""
+"Retrieve the array of mfns that constitute the composition buffer of a "
+"remote window."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:531 af81c68c4ccb476ca9ed94c1e65282ca
+msgid ""
+"The “num_mfn” 32bit integers follow the shm_cmd structure; “off” is the "
+"offset of the composite buffer start in the first frame; “shmid” and “domid”"
+" parameters are just placeholders (to be filled by *qubes_guid*), so that we"
+" can use the same structure when talking to *shmoverride.so*\\ \\|"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:553 008bd733c0994b849d149947fe5077d5
+msgid "MSG_SHMIMAGE"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:582 45d5ccad21ff4ac8b37db516f476c249
+msgid "Repaint the given window fragment"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:600 0f81749b59f740d18ae6d5caba0a2443
+msgid "MSG_WMNAME"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:626 986ff547d9e14d28befd230921f77c6c
+msgid "Set the window name; only printable characters are allowed"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:644 d78cda0291f0496c84ecd431e46eeb12
+msgid "MSG_DOCK"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:664 712f7354c0d7462f9ef0b394e0369fc4
+msgid "Dock the window in the tray"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:682 836e9d68ab354dcd9b842237148d0589
+msgid "MSG_WINDOW_HINTS"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:716 56938f2f2e0842be8c1df5bcbb1afc3a
+msgid "Size hints for window manager"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:734
+#: ../../../_doc/developer/system/gui.rst:1409
+#: 63b513cd90e148c5ad87f12f7334c474 cfd113fd1d5049ddbfee22203147be15
+msgid "MSG_WINDOW_FLAGS"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:761 e56f166c3e284f709b261566c15581e5
+msgid ""
+"Change window state request; fields contains bitmask which flags request to "
+"be set and which unset"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:780 bb675c66ff7c49e68ec24cb6e85c2142
+msgid "MSG_CURSOR"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:806 159ab0c42cb54fa5ac5b019dc4756586
+msgid ""
+"Update cursor pointer for a window. Supported cursor IDs are default cursor "
+"(0) and X Font cursors (with 0x100 bit set)."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:822 1b012170a7004cd186d5dfa266603203
+msgid "Dom0 -> AppVM messages"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:824 e6e6e20747784f8cb0037c77abf52dcd
+msgid "Proper handling of the below messages is NOT security-critical."
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:826 718cae70a73b438c9f73358d1c1ec20f
+msgid "Each message starts with the following header"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:835 eb098dda55df43b69a0d6d9c9c435a7c
+msgid "The header is followed by message-specific data:"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:887 8e845b8350824c22b47632453b4863bb
+msgid "MSG_KEYPRESS"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:917 c34172a6d11d4f39b742f19730875558
+msgid "Tell *qubes_drv* driver to generate a keypress"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:935 7effc0cd51474b4cb02037fd0ba4e984
+msgid "MSG_BUTTON"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:965 de22da1ace4a437388f21d22d1d213c3
+msgid "Tell *qubes_drv* driver to generate mouseclick"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:983 37130efdd86142d29823e8d87bc82254
+msgid "MSG_MOTION"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1012
+#: b688e4032a834df0b4c5c7307e0ed55a
+msgid "Tell *qubes_drv* driver to generate motion event"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1123
+#: 99f7d149824d45a180e560f979f65218
+msgid "MSG_CLOSE"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1143
+#: 4a6fb067e0a14f06901ff704ecbba0e6
+msgid "send wmDeleteMessage to the window"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1161
+#: ca6b5623bae6446682f3427d575ed57f
+msgid "MSG_CROSSING"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1193
+#: c8f40306f1844c5d9ca4acbb66ca26c0
+msgid "Notify window about enter/leave event"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1211
+#: bf76ff52cf7c49ff80637aa5e368393b
+msgid "MSG_FOCUS"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1239
+#: 1eed90010ad3411398927e8cde54fe4c
+msgid "Raise a window, XSetInputFocus"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1257
+#: a5ec39235433489a9f7a7341ba343c02
+msgid "MSG_CLIPBOARD_REQ"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1277
+#: a69881fc109b4eb5b76265f3f6a8d13d
+msgid "Retrieve the local clipboard, pass contents to gui-daemon"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1305
+#: 59e0d8578c924418bc3ba8322311481a
+msgid "amorphic blob"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1315
+#: 458ebd3782694dd997041fc541365003
+msgid "Insert the received data into local clipboard"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1333
+#: 4a5e1cfaf4cb4448a653b988346e0040
+msgid "MSG_EXECUTE"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1343
+#: 795d4c80d6584fa2b2460b015e7d6b2b
+msgid "Obsolete"
+msgstr "Veraltet"
+
+#: ../../../_doc/developer/system/gui.rst:1353
+#: 2d7ff5fa0c6342a0b7063b7fedfb8f75
+msgid "Obsolete, unused"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1371
+#: 92ad254a5ec74d27866d4ea7a83cb0e6
+msgid "MSG_KEYMAP_NOTIFY"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1381
+#: 1a63c443d1a84f1c8f9d797b4abb3d7b
+msgid "unsigned char remote_keys[32];"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1391
+#: 5cd652ce98c04c1bb104537bbeda3ff2
+msgid "Synchronize the keyboard state (key pressed/released) with dom0"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1436
+#: d09ff1970f2b4c42bc2154431eb08b82
+msgid "Window state change confirmation"
+msgstr ""
+
+#: ../../../_doc/developer/system/gui.rst:1450
+#: 69645e6e38ed4e319311509d61bf4bb5
+msgid ""
+"``KEYPRESS``, ``BUTTON``, ``MOTION``, ``FOCUS`` messages pass information "
+"extracted from dom0 XEvent; see appropriate event documentation."
+msgstr ""

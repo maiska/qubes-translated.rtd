@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Steve Dougherty, 2022
+# Adam Lynn <adam@opentechfund.org>, 2022
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:10+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:2
+#: 866aacfa0d08485a93d18d2667fff96f
+msgid "Resizing Disk Images"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:4
+#: 2c33ea22ba554af780a93e082137b07c
+msgid ""
+"By default Qubes uses thin volumes for the disk images. This means that "
+"space is not actually allocated for the volume until it is used. So a 2GB "
+"private volume with 100M of files will only use 100M. This explains how you "
+"can have *many* qubes with large private volumes on quite a small disk. This"
+" is called over provisioning. You should keep an eye on the disk-space "
+"widget to see how much free space you actually have."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:11
+#: 7822e597868549f5866664679f8159e0
+msgid ""
+"It is easy to increase the size of disk images. There are risks attached to "
+"reducing the size of an image, and in general you should not need to do "
+"this."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:16
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:43
+#: 9aa3c62513b14df5b444ecd20e507bc7 308859566513434ba0502f50d9636fbe
+msgid "Increasing the size of Disk Images"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:18
+#: 4973922cc7a34ff98c520417fce41aac
+msgid ""
+"There are several disk images which can be easily extended, but pay "
+"attention to the overall consumed space of your sparse/thin disk images. In "
+"most cases, the GUI tool Qube Settings (available for every qube from the "
+"Start menu, and also in the Qube Manager) will allow you to easily increase "
+"maximum disk image size."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:27
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:27
+#: 70f30431d9724e53bb8aa6a2bb1d9cf6 58af08a45349481e9182afb9d8362e6c
+msgid "vm-settings-disk-image.png"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:29
+#: 6fbd087afa7747f68c468a0ee2df3be0
+msgid ""
+"In case of standalone qubes and templates, just change the Disk Storage "
+"settings above. In case of template-based qubes, the private storage (the "
+"/home directory and user files) can be changed in the qube’s own settings, "
+"but the system root image is :doc:`inherited from the template "
+"</introduction/getting-started>`, and so it must be changed in the template "
+"settings. If you are increasing the disk image size for Linux-based qubes "
+"installed from Qubes OS repositories in Qubes 4.0 or later, changing the "
+"settings above is all you need to do - in other cases, you may need to do "
+"more, according to instructions below. See also the OS-specific follow-up "
+"instructions below."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:45
+#: 63fa033024d1455abd9f05425b16d010
+msgid ""
+"Use either GUI tool Qube Settings (``qubes-vm-settings``) or the CLI tool "
+"``qvm-volume``. Maximum size which can be assigned through Qube Settings is "
+"1048576 MiB - if you need more, use ``qvm-volume``:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:53
+#: a4ed9378180b4bc5aff2b79451f34e28
+msgid "OR"
+msgstr "ODER"
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:59
+#: bc697c279c4a43a8a6cbbe2e4e185976
+msgid ""
+"Note: Size is the target size (i.e. 4096MB or 16GB, …), not the size to add "
+"to the existing disk."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:62
+#: 79bb84e7cf2b41c296855308a9b5d7a6
+msgid ""
+"If you have run out of space for software in your Template, you need to "
+"increase *root image* of the Template (not private storage!). **Make sure "
+"changes in the Template between reboots don’t exceed 10G.** It is "
+"recommended that you restart (or start and then shutdown, if it is not "
+"running) the template after resizing the root image."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:68
+#: 7de0f17e256e4a299475bdccfb97a78a
+msgid "If you are **not** using Linux in the qube, you will also need to:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:70
+#: 40db52fe29bf4cdcbe8b193dd4bd576c
+msgid "Start the template."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:71
+#: 09586e066e0046aeb4551eaa98acc301
+msgid "Resize the filesystem using OS appropriate tools."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:72
+#: d5edcb1beefa4e6398d39ff93711a1a3
+msgid ""
+"Verify available space in the template using ``df -h`` or OS specific tools."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:74
+#: 8cceacb2153c4bdfb811f237250d1ccc
+msgid "Shutdown the template."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:77
+#: e5fa2dd3c1ca41ca9b33140995914b9d
+msgid "Windows 7"
+msgstr "Windows 7"
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:79
+#: cbf172e0795b460da9a81df1e2a2fbcf
+msgid "Click Start"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:80
+#: 73021275cb174b3a8d0903b32f6d273a
+msgid "type “diskmgmt.msc” - this takes you to Disk Management"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:81
+#: c7d23461f2ad480e96f860e8b91beb51
+msgid "Right-click on your existing volume, select “Extend Volume…”"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:82
+#: 9d0a0c34c1064cffa3958d303e9fa094
+msgid "Click through the wizard."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:84
+#: e800b3443a314310a6f128d1b646be40
+msgid "No reboot required."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:87
+#: b95d97aed62c45d387a64e31113577d1
+msgid "FreeBSD"
+msgstr "FreeBSD"
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:97
+#: 4aa245b018134a64be62bf9447a28933
+msgid "Linux"
+msgstr "Linux"
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:99
+#: 8ed833e59a064cab96347b8ec551f45e
+msgid ""
+"Qubes will automatically grow the filesystem for you on all app qubes with "
+"Qubes packages installed (which are all app qubes installed from templates, "
+"cloned from templates etc. - if you have not created an empty HVM and "
+"installed a Linux distribution in it, without using Qubes repositories, you "
+"are almost certainly safe). Otherwise, you will see that there is "
+"unallocated free space at the end of your primary disk. You can use standard"
+" linux tools like ``fdisk`` and ``resize2fs`` to make this space available."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:109
+#: 47db706316bb451792f5f7208b73b856
+msgid "Decreasing the size of Disk Images"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:111
+#: f4db69b9f86a418084d147254a3e146f
+msgid ""
+"The number shown for “storage max size” does not mean that the storage is "
+"really using that amount. In most cases you need not worry about the size "
+"shown. If you have increased the max size, and do not need it, then you "
+"*can* reduce the allocated size, but there is a risk of data loss. Remember "
+"you really dont need to do this."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:117
+#: a277fc9bb3294423aca14d8513c35387
+msgid ""
+"You can create a new qube, copy your files in to the new qube, and delete "
+"the old qube. (Simple and effective.)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:120
+#: f30929c29319448faab953bcf40ed635
+msgid ""
+"Or you can take the risk of reducing the size of the disk. For example, to "
+"reduce the private storage of qube1 to 1GiB: Open a terminal in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/resize-disk-image.rst:128
+#: 7df9922d774a49a9a5dede0fd3f0c7cb
+msgid ""
+"If you have a SSD see :doc:`here </external/configuration-guides/disk-trim>`"
+" for information on using fstrim."
+msgstr ""

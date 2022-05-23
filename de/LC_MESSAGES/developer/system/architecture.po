@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:12+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/architecture.rst:1
+#: dbcd1ea71aaf4e7687864bbaa6caaeca
+msgid ""
+"Qubes implements a security-by-compartmentalization approach. To do this, "
+"Qubes utilizes virtualization technology in order to isolate various "
+"programs from each other and even to sandbox many system-level components, "
+"such as networking and storage subsystems, so that the compromise of any of "
+"these programs or components does not affect the integrity of the rest of "
+"the system."
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:8
+#: c94df54077554fa982cffde65f866ea1
+msgid "|qubes-schema-v2.png|"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:0
+#: ../../../_doc/developer/system/architecture.rst:0
+#: 52dc2ebf19df49ddb24072d7ae4f777a ebd72b3d4d54476cbfd92e59c766df69
+msgid "qubes-schema-v2.png"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:10
+#: 86e1346852144a88a88f599e2e88081f
+msgid ""
+"Qubes lets the user define many secure compartments known as `qubes "
+"</user/reference/glossary.html#qube>`__, which are implemented as "
+"lightweight `virtual machines (VMs) </user/reference/glossary.html#vm>`__. "
+"For example, the user can have “personal,” “work,” “shopping,” “bank,” and "
+"“random” app qubes and can use the applications within those qubes just as "
+"if they were executing on the local machine. At the same time, however, "
+"these applications are well isolated from each other. Qubes also supports "
+"secure copy-and-paste and file sharing between qubes, of course."
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:20
+#: aa2872f3348f4ef9995c82a05a637a10
+msgid "Key architecture features"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:22
+#: 915ab987b9e94e2c8ca78e74e8ce9317
+msgid "Based on a secure bare-metal hypervisor (Xen)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:23
+#: bb70f5b60a5b40eda586c26cc716faba
+msgid "Networking code sand-boxed in an unprivileged VM (using IOMMU/VT-d)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:24
+#: 6f4c761c559b4d3796129a8e43da3673
+msgid ""
+"USB stacks and drivers sand-boxed in an unprivileged VM (currently "
+"experimental feature)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:26
+#: 34a461a1602d4dd3a3b80371ce0b3f38
+msgid "No networking code in the privileged domain (dom0)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:27
+#: 067c228d588d49578a25da630d241b89
+msgid ""
+"All user applications run in “app qubes,” lightweight VMs based on Linux"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:29
+#: 578e4c13c2d74f72a8d0b9cc23e1b45c
+msgid "Centralized updates of all app qubes based on the same template"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:30
+#: 7c8595cd7c634ddd80df2aa1ceece073
+msgid ""
+"Qubes GUI virtualization presents applications as if they were running "
+"locally"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:32
+#: a13505f9321540639226d4f64484edb5
+msgid "Qubes GUI provides isolation between apps sharing the same desktop"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:33
+#: ffb1bb8b4556404cb496ea4671927bc5
+msgid "Secure system boot based (optional)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:35
+#: b5bb7d9da14c41078a50ad4f7ea942d2
+msgid ""
+"(For those interested in the history of the project, `Architecture Spec v0.3"
+" [PDF] </attachment/doc/arch-spec-0.3.pdf>`__ is the original 2009 document "
+"that started this all. Please note that this document is for historical "
+"interest only. For the latest information, please see the rest of the "
+"`System Documentation </#system>`__.)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:42
+#: 943b331568414e9eb9b628581f097fbd
+msgid "Qubes Core Stack"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:44
+#: ff06c9a196f14dfeb1df6d2fbe688c1e
+msgid ""
+"Qubes Core Stack is, as the name implies, the core component of Qubes OS. "
+"It’s the glue that connects all the other components together, and which "
+"allows users and admins to interact with and configure the system. The other"
+" components of the Qubes system include:"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:49
+#: bd1cdf407fe246a2a2de8a460ea681f7
+msgid ""
+"VM-located core agents (implementing e.g. qrexec endpoints used by various "
+"Qubes services)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:51
+#: 5c806be41e8e43838df31f2ef9e88dfd
+msgid ""
+"VM-customizations (making the VMs lightweight and working well with seamless"
+" GUI virtualization)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:53
+#: f6faf7c24d4e49bc9e0326f881c8560b
+msgid ""
+"Qubes GUI virtualization (the protocol, VM-located agents, and daemons "
+"located in the GUI domain which, for now, happens to be the same as dom0),"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:56
+#: 59db1b0a466a4297b6c605b8c3997c1c
+msgid ""
+"GUI domain customizations (Desktop Environment customizations, decoration "
+"coloring plugin, etc)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:58
+#: 14d5f61a84b24763890f713309d9d181
+msgid ""
+"The admin qube distribution (various customizations, special services, such "
+"as for receiving and verifying updates, in the future: custom distro)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:61
+#: df119a358e3a496f9a04289ac0962650
+msgid ""
+"The Xen hypervisor (with a bunch of customization patches, occasional "
+"hardening) or - in the future - some other virtualising or containerizing "
+"software or technology"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:64
+#: b514d107003e4768a7cd73245c58c2e6
+msgid ""
+"Multiple “Qubes Apps” (various services built on top of Qubes qrexec "
+"infrastructure, such as: trusted PDF and Image converters, Split GPG, safe "
+"USB proxies for HID devices, USB proxy for offering USB devices (exposed via"
+" qvm-usb), Yubikey support, USB Armory support, etc)"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:68
+#: acdb1b408f9b484f840bf1ff57630181
+msgid ""
+"Various ready-to-use templates (e.g. Debian-, Whonix-based), which are used "
+"to create actual VMs, i.e. provide the root filesystem to the VMs"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:71
+#: 88a3c69170804029b617d7ad0c61b705
+msgid "Salt Stack integration"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:73
+#: e26e2d9fe6674a3aa9bcc4477d7d64f8
+msgid "And all these components are “glued together” by the Qubes Core Stack."
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:75
+#: 725739ed1dbc46729acbb6a589eabb30
+msgid "|Qubes system components|"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:0
+#: ../../../_doc/developer/system/architecture.rst:0
+#: 5df3b291646f4d40a1482eac794a777a 1dd3e688361b48e9aed460dd6a00de83
+msgid "Qubes system components"
+msgstr ""
+
+#: ../../../_doc/developer/system/architecture.rst:77
+#: 6303bc9059c64a71a8349e75fc690fc3
+msgid ""
+"This diagram illustrates the location of all these components in the overall"
+" system architecture. Unlike the other Qubes architecture diagram above, "
+"this one takes an app-qube-centric approach."
+msgstr ""

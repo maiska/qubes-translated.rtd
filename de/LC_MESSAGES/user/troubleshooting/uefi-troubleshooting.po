@@ -1,0 +1,463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:09+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:2
+#: 949a25d1840e4280aa23a817703481d1
+msgid ""
+"Successfully installed in legacy mode, but had to change some kernel "
+"parameters"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:4
+#: a1b9412ca48c464396533ff1a5d64037
+msgid ""
+"If you’ve installed successfully in legacy mode but had to change some "
+"kernel parameters for it to work, you should try installing in UEFI mode "
+"with the same parameters."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:8
+#: c4c2972ef539483b9b26aa21b0860e03
+msgid "**Change the xen configuration on a USB media**"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:10
+#: 6d95e5e9bc014f7ebb51ee46e6875b0b
+msgid ""
+"Attach the usb disk, mount the EFI partition (second partition available on "
+"the disk)"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:13
+#: 1a6b7f5797db479b9146d4ad3b08800c
+msgid ""
+"Open a terminal and enter the command ``sudo su -``. Use your preferred text"
+" editor (e.g ``nano``) to edit your xen config (``EFI/BOOT/BOOTX64.cfg``):"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:21
+#: 9b85b669171b42daad8af110a901ebf1
+msgid ""
+"Change the ``kernel`` key to add your kernel parameters on the boot entry of"
+" your choice"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:24
+#: 460dcd5371b94b52b63a91df4345c570
+msgid "Install using your modified boot entry"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:26
+#: e7598e88a16645a4a3a4e03f5f966c3f
+msgid ""
+"**Change xen configuration directly in an iso image** 01. Set up a loop "
+"device (replacing ``X`` with your ISO’s version name): ``losetup -P "
+"/dev/loop0 Qubes-RX-x86_64.iso`` 02. Mount the loop device: ``sudo mount "
+"/dev/loop0p2 /mnt`` 03. Edit ``EFI/BOOT/BOOTX64.cfg`` to add your params to "
+"the ``kernel`` configuration key 04. Save your changes, unmount and dd to "
+"usb device"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:34
+#: de5587de2c64498faad101c202ac44d0
+msgid "Installation freezes before displaying installer"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:36
+#: 204b0b9540f94bfb968e8e26c83be0b2
+msgid ""
+"If you have an Nvidia card, see also `Nvidia Troubleshooting "
+"<https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/troubleshooting/nvidia-"
+"troubleshooting.md#disabling-nouveau>`__."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:40
+#: 70667c5e6b974fe4ab65f42588043e7a
+msgid "Removing ``noexitboot`` and ``mapbs``"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:42
+#: 16193b5c05f8432280d5a0257ec72996
+msgid ""
+"Some systems can freeze with the default UEFI install options. You can try "
+"the following to remove ``noexitboot`` and ``mapbs``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:45
+#: c79dc96d00a34cb5acd4cd5b7098cd3c
+msgid ""
+"Follow the `steps here </user/troubleshooting/uefi-"
+"troubleshooting.html#successfully-installed-in-legacy-mode-but-had-to-"
+"change-some-kernel-parameters>`__ to edit the ``[qubes-verbose]`` section of"
+" your installer’s ``BOOTX64.cfg``. You want to comment out the ``mapbs`` and"
+" ``noexitboot`` lines. The end result should look like this:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:60
+#: b6976a497e5c4d76993034b5e0cb4266
+msgid ""
+"Boot the installer and continue to install as normal, but don’t reboot the "
+"system at the end when prompted."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:63
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:136
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:190
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:247
+#: ff02549c50a541b18360edec3aaf9d7a 05361e28ec9143c09977914af1dde58c
+#: 2ad8e2222bfe48c2884532cab5c6b85d 1a1b69058578476a86964c7639415c7b
+msgid "Go to ``tty2`` (Ctrl-Alt-F2)."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:65
+#: b312e83576a44e0cb53f1f38c3a1cdaf
+msgid ""
+"Use your preferred text editor (``nano`` works) to edit "
+"``/mnt/sysimage/boot/efi/EFI/qubes/xen.cfg``, verifying the ``noexitboot`` "
+"and ``mapbs`` lines are not present. This is also a good time to make "
+"permanent any other changes needed to get the installer to work, such as "
+"``nouveau.modeset=0``. For example:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:76
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:156
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:206
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:255
+#: 016b0b5462bd440fa2143547365fc4f5 070ab13de33348d78a9f8cc32e6f2cac
+#: ee08c6e58fdc47b6912cb5550cdd1c07 0a0ac112221d4a08abcc11292feeed34
+msgid "Go back to ``tty6`` (Ctrl-Alt-F6) and click ``Reboot``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:78
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:158
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:208
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:232
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:257
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:273
+#: 1c3d2a755f504bc3b0868b9399eea0fe 0f0846d0a2674bbf93f2cdd4f29777a8
+#: 93c072d052aa4abb861a8d94a50e8277 569162bdf39a42828083d5fbdb9a98eb
+#: ae2492a2eecd4d4082bd1dd9d44f52ce e5c29683826644c2917dec23689c5dca
+msgid "Continue with setting up default templates and logging in to Qubes."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:81
+#: b9bd439c74b1408f8eaa71a0b7ed29f5
+msgid "Changing ``options=console=`` parameter to ``none``"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:83
+#: f26d8d995aca4585ae7f37bfd12abf00
+msgid ""
+"If removing ``noexitboot`` and ``mapbs`` did not help, you can try changing "
+"the ``options=console=`` parameter to ``none``. The detailed solution can be"
+" found in the comments of `this GitHub issue "
+"<https://github.com/QubesOS/qubes-issues/issues/5383>`__"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:88
+#: e071992983da42078a7e35fe8cc9fe11
+msgid ""
+"Follow the `steps here </user/troubleshooting/uefi-"
+"troubleshooting.html#successfully-installed-in-legacy-mode-but-had-to-"
+"change-some-kernel-parameters>`__ to edit the ``[qubes-verbose]`` section of"
+" your installer’s ``BOOTX64.cfg``. You want to change "
+"``options=console=vga`` to ``options=console=none``. The end result should "
+"look like this:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:103
+#: 9ea04a8e37664490a3707778d4a7b023
+msgid "Boot the installer and continue to install as normal"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:106
+#: ed7fa27946864503969a6fd9a47b74b6
+msgid "Disable EFI runtime services"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:108
+#: 1103ff959ec34e29bced91fd9aec20fe
+msgid ""
+"On some early, buggy UEFI implementations, you may need to disable EFI under"
+" Qubes completely. This can sometimes be done by switching to legacy mode in"
+" your BIOS/UEFI configuration. If that’s not an option there, or legacy mode"
+" does not work either, you can try the following to add ``efi=no-rs``. "
+"Consider this approach as a last resort, because it will make every Xen "
+"update a manual process."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:115
+#: 7696bb5c53a0459db72a103c1c9e6f33
+msgid ""
+"Follow the `steps here </user/troubleshooting/uefi-"
+"troubleshooting.html#successfully-installed-in-legacy-mode-but-had-to-"
+"change-some-kernel-parameters>`__ to edit the ``[qubes-verbose]`` section of"
+" your installer’s ``xen.cfg``. You want to modify the ``efi=attr=uc`` "
+"setting and comment out the ``mapbs`` and ``noexitboot`` lines. The end "
+"result should look like this:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:131
+#: f6a3f705abd04ecc984c3a8fbce98f9b
+msgid ""
+"Boot the installer and continue to install as normal, until towards the end "
+"when you will receive a warning about being unable to create the EFI boot "
+"entry. Click continue, but don’t reboot the system at the end when prompted."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:138
+#: 913463b5680e43feb361fe79d33ee77f
+msgid ""
+"Use your preferred text editor (``nano`` works) to edit "
+"``/mnt/sysimage/boot/efi/EFI/qubes/xen.cfg``, adding the ``efi=no-rs`` "
+"option to the end of the ``options=`` line. For example:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:148
+#: 3312df9730e84317bacd181c246216ed
+msgid "Execute the following commands:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:160
+#: 1f5d4900a12a431287cb516f696de59d
+msgid ""
+"Whenever there is a kernel or Xen update for Qubes, you will need to follow "
+"`these steps </user/troubleshooting/uefi-troubleshooting.html#boot-device-"
+"not-recognized-after-installing>`__ because your system is using the "
+"fallback UEFI bootloader in ``[...]/EFI/BOOT`` instead of directly booting "
+"to the Qubes entry under ``[...]/EFI/qubes``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:168
+#: 92e90989304a4947a0f210448422d63c
+msgid "Installation from USB stick hangs on black screen"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:170
+#: fcba623241a247c38be6525605c1547f
+msgid ""
+"Some laptops cannot read from an external boot device larger than 8GB. If "
+"you encounter a black screen when performing an installation from a USB "
+"stick, ensure you are using a USB drive less than 8GB, or a partition on "
+"that USB lesser than 8GB and of format FAT32."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:176
+#: fb39409de1f547838dddbb62a1486651
+msgid ""
+"Installation completes successfully but then boot loops or hangs on black "
+"screen"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:178
+#: 1fb894d9eace48eb84197995c83b4d6b
+msgid ""
+"There is a `common bug in UEFI implementation "
+"<http://xen.markmail.org/message/f6lx2ab4o2fch35r>`__ affecting mostly "
+"Lenovo systems, but probably some others too. While some systems need "
+"``mapbs`` and/or ``noexitboot`` disabled to boot, others require them "
+"enabled at all times. Although these are enabled by default in the "
+"installer, they are disabled after the first stage of a successful install. "
+"You can re-enable them either as part of the install process:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:187
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:244
+#: 5786f34192164ec6ad27f2e09fdcb002 3441217f273040c1944424ee621b271f
+msgid ""
+"Perform installation normally, but don’t reboot the system at the end yet."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:192
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:216
+#: 9c8f188c83c0480a8e04746bb196330d d8f03660798e42cd96f6c77a37497c00
+msgid ""
+"Enable ``mapbs`` and/or ``noexitboot`` on the just installed system. Edit "
+"``/mnt/sysimage/boot/efi/EFI/qubes/xen.cfg`` (you can use ``vi`` or ``nano``"
+" editor) and add to every kernel section:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:201
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:225
+#: 4bd9c82670094dd882d3a475ba13ff86 d3e2d33998624b0d97e9421979902bed
+msgid ""
+"**Note:** You must add these parameters on two separate new lines (one "
+"parameter on each line) at the end of each section that includes a kernel "
+"line (i.e., all sections except the first one, since it doesn’t have a "
+"kernel line)."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:210
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:259
+#: 2577b3e146d943989bda47db80dd4241 8845286f789f42c4bb92f89a99ec9b40
+msgid ""
+"Or if you have already rebooted after the first stage install and have "
+"encountered this issue, by:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:213
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:262
+#: dc70a73cf112415f994d142ddcece06e 386b14707f2249748192f6a09bd00ebb
+msgid ""
+"Boot into `rescue mode </user/troubleshooting/uefi-"
+"troubleshooting.html#accessing-installer-rescue-mode-on-uefi>`__."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:230
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:271
+#: ac3eecbf129d4eedb7d82362f344bb2c 3f1dcb7c45ce40faa4e300f241288251
+msgid "Type ``reboot``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:235
+#: 0f8590cdd1c243908d3017924b424fcb
+msgid ""
+"Installation completes successfully but then system crash/restarts on next "
+"boot"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:237
+#: 414002dd6a22437e8e1e9abbe120fbb2
+msgid ""
+"Some Dell systems and probably others have `another bug in UEFI firmware "
+"<http://markmail.org/message/amw5336otwhdxi76>`__. These systems need "
+"``efi=attr=uc`` enabled at all times. Although this is enabled by default in"
+" the installer, it is disabled after the first stage of a successful "
+"install. You can re-enable it either as part of the install process:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:249
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:265
+#: 80dc3aae83da4ce585c7e79942624291 3d0f7b690fe545deb1ccd0f4c946204f
+msgid "Execute:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:276
+#: 4b80693bbe0e42c2aad701b438822512
+msgid "Boot device not recognized after installing"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:278
+#: d9a7d985e1464edbb76a118b1874ed48
+msgid ""
+"Some firmware will not recognize the default Qubes EFI configuration. As "
+"such, it will have to be manually edited to be bootable. This will need to "
+"be done after every kernel and Xen update to ensure you use the most "
+"recently installed versions."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:283
+#: 1fbd8339afbd4244a785deebf53bd7e7
+msgid ""
+"Copy the ``/boot/efi/EFI/qubes/`` directory to ``/boot/efi/EFI/BOOT/`` (the "
+"contents of ``/boot/efi/EFI/BOOT`` should be identical to "
+"``/boot/efi/EFI/qubes`` besides what is described in steps 2 and 3):"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:292
+#: 5387afc3ebae41818830acc35a24aa07
+msgid ""
+"Rename ``/boot/efi/EFI/BOOT/xen.cfg`` to ``/boot/efi/EFI/BOOT/BOOTX64.cfg``:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:299
+#: 9ca7882c77984e09b512d624f1a4a59f
+msgid ""
+"Copy ``/boot/efi/EFI/qubes/xen-*.efi`` to ``/boot/efi/EFI/qubes/xen.efi`` "
+"and ``/boot/efi/EFI/BOOT/BOOTX64.efi``. For example, with Xen 4.8.3 (you may"
+" need to confirm file overwrite):"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:310
+#: 296bd2ee7eb4422e99847efe7424cc09
+msgid ""
+"Installation finished but “Qubes” boot option is missing and xen.cfg is "
+"empty / Installation fails with “failed to set new efi boot target”"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:312
+#: 98babeecc0d142478afbcb1f2dfe5e55
+msgid ""
+"In some cases installer fails to finish EFI setup and leave the system "
+"without a Qubes-specific EFI configuration. In such a case you need to "
+"finish those parts manually. You can do that just after installation (switch"
+" to ``tty2`` with Ctrl-Alt-F2), or by booting from installation media in "
+"`rescue mode </user/troubleshooting/uefi-troubleshooting.html#accessing-"
+"installer-rescue-mode-on-uefi>`__."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:319
+#: ee439830def94b7199ffc7dfb627e0a7
+msgid ""
+"Examine ``/boot/efi/EFI/qubes`` (if using Qubes installation media, it’s in "
+"``/mnt/sysimage/boot/efi/EFI/qubes``). You should see 4 files there:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:323
+#: f7206cd4454a42128457454c96a71b53
+msgid "xen.cfg (empty, size 0)"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:324
+#: 395a9a62a26d48acb7ee5b68f9ba6f42
+msgid "xen-(xen-version).efi"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:325
+#: f69549ffcb574503a5889188aecd7927
+msgid "vmlinuz-(kernel-version)"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:326
+#: ad662b50053b42b8a873667aa4804c19
+msgid "initramfs-(kernel-version).img"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:328
+#: 67a16d25ae8e450e93a6ad8b9370ed0a
+msgid "Copy ``xen-(xen-version).efi`` to ``xen.efi``:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:335
+#: 64befb966daa42618f90d30c5e6e1c18
+msgid ""
+"Create xen.cfg with this content (adjust kernel version, and filesystem "
+"locations, below values are based on default installation of Qubes 3.2):"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:349
+#: e401083862b24e82ac00895ce75bcc08
+msgid ""
+"Create boot entry in EFI firmware (replace ``/dev/sda`` with your disk name "
+"and ``-p 1`` with ``/boot/efi`` partition number):"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:357
+#: ac0daad8160d4803a7b8a2de52e0e111
+msgid "Accessing installer Rescue mode on UEFI"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/uefi-troubleshooting.rst:359
+#: b450eb80641c441b95b43495ed18e3e2
+msgid ""
+"In UEFI mode, the installer does not have a boot menu, but boots directly "
+"into the installation wizard. To get into Rescue mode, you need to switch to"
+" tty2 (Ctrl+Alt+F2) and then execute:"
+msgstr ""

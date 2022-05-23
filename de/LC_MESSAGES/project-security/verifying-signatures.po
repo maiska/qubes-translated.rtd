@@ -1,0 +1,1059 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/project-security/verifying-signatures.rst:1
+#: 1e4f2df1fde6409b8eae994fd5603976
+msgid ""
+"The Qubes OS Project uses `digital signatures "
+"<https://en.wikipedia.org/wiki/Digital_signature>`__ to guarantee the "
+"authenticity and integrity of certain important assets. This page explains "
+"how to verify those signatures. It is extremely important for your security "
+"to understand and apply these practices."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:8
+#: ae807110546549a499b57c12a9f618f1
+msgid "What digital signatures can and cannot prove"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:10
+#: 6ff30363c4854650ba3e53a13e2b1d5e
+msgid ""
+"Most people — even programmers — are confused about the basic concepts "
+"underlying digital signatures. Therefore, most people should read this "
+"section, even if it looks trivial at first sight."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:14
+#: fd3b651d9afb438d9a88ba8413ee3b2e
+msgid ""
+"Digital signatures can prove both **authenticity** and **integrity** to a "
+"reasonable degree of certainty. **Authenticity** ensures that a given file "
+"was indeed created by the person who signed it (i.e., that a third party did"
+" not forge it). **Integrity** ensures that the contents of the file have not"
+" been tampered with (i.e., that a third party has not undetectably altered "
+"its contents *en route*)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:21
+#: 1861e0a32756489faa0beaf07320d531
+msgid ""
+"Digital signatures **cannot** prove, e.g., that the signed file is not "
+"malicious. In fact, there is nothing that could stop someone from signing a "
+"malicious program (and it happens from time to time in reality)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:26
+#: a63d9e889f6b461b9276fe348a9ef0f0
+msgid ""
+"The point is that we must decide who we will trust (e.g., Linus Torvalds, "
+"Microsoft, or the Qubes Project) and assume that if a trusted party signed a"
+" given file, then it should not be malicious or negligently buggy. The "
+"decision of whether to trust any given party is beyond the scope of digital "
+"signatures. It’s more of a social and political decision."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:33
+#: 7119d4bb95db489bbb3409d3724f7075
+msgid ""
+"Once we decide to trust certain parties, digital signatures are useful, "
+"because they make it possible for us to limit our trust only to those few "
+"parties we choose and not to worry about all the bad things that can happen "
+"between them and us, e.g., server compromises (qubes-os.org will surely be "
+"compromised one day, so `don’t blindly trust the live version of this site "
+"</introduction/faq.html#should-i-trust-this-website>`__), dishonest IT staff"
+" at the hosting company, dishonest staff at the ISPs, Wi-Fi attacks, etc. We"
+" call this philosophy `distrusting the infrastructure "
+"</introduction/faq.html#what-does-it-mean-to-distrust-the-"
+"infrastructure>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:43
+#: 7ef00ccf68dc4979b37fee53787129dd
+msgid ""
+"By verifying all the files we download that purport to be authored by a "
+"party we’ve chosen to trust, we eliminate concerns about the bad things "
+"discussed above, since we can easily detect whether any files have been "
+"tampered with (and subsequently choose to refrain from executing, "
+"installing, or opening them)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:49
+#: b2c815373f2a44d28e8f42d3cd4f306a
+msgid ""
+"However, for digital signatures to make sense, we must ensure that the "
+"public keys we use for signature verification are the original ones. Anybody"
+" can generate a cryptographic key that purports to belong to “The Qubes OS "
+"Project,” but of course only the keys that we (the real Qubes developers) "
+"generate are the genuine ones. The rest of this page explains how to verify "
+"the authenticity of the various keys used in the project and how to use "
+"those keys to verify certain important assets."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:58
+#: 05c92b4ad2e24e02843bcdb8d3b35976
+msgid "OpenPGP software"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:60
+#: eb02ae1331cd48abb0a7a1c7d151feff
+msgid ""
+"We use `PGP <https://en.wikipedia.org/wiki/Pretty_Good_Privacy>`__ "
+"(specifically, the `OpenPGP "
+"<https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP>`__ standard). "
+"Before we begin, you’ll need software that can manage PGP keys and verify "
+"PGP signatures. Any program that complies with the OpenPGP standard will do,"
+" but here are some examples for popular operating systems:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:68
+#: 9c76a0e27af54ec8904a77c181db5b7f
+msgid ""
+"**Linux:** `GnuPG <https://gnupg.org/download/index.html>`__ (`documentation"
+" <https://www.gnupg.org/documentation/>`__). Open a terminal and use the "
+"``gpg2`` command. If you don’t already have GnuPG installed, install it via "
+"your distro’s package manager or from the GnuPG website."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:74
+#: 49211099ab004563bf0e183f0893dc7d
+msgid ""
+"**Mac:** `GPG Suite <https://gpgtools.org/>`__ (`documentation "
+"<https://gpgtools.tenderapp.com/kb>`__). Open a terminal to enter commands."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:78
+#: 99d0d4d3ec7e4ddb80e7ff33bd898e1f
+msgid ""
+"**Windows:** `Gpg4win <https://gpg4win.org/download.html>`__ (`documentation"
+" <https://www.gpg4win.org/documentation.html>`__). Use the Windows command "
+"line (``cmd.exe``) to enter commands."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:82
+#: 02f6fb6de89947b99970e603320f7ca3
+msgid ""
+"Throughout this page, we’ll use GnuPG via the ``gpg2`` command. If that "
+"doesn’t work for you, try ``gpg`` instead. If that still doesn’t work, "
+"please consult the documentation for your specific program (see links above)"
+" and the `troubleshooting FAQ <#troubleshooting-faq>`__ below."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:88
+#: 3778b665708e451aae2cba818193a4af
+msgid "How to import and authenticate the Qubes Master Signing Key"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:90
+#: 58c17ffaa50b4b9c857351bee14c9dd2
+msgid ""
+"Many important Qubes OS Project assets (e.g., ISOs, RPMs, TGZs, and Git "
+"objects) are digitally signed by an official team member’s key or by a "
+"release signing key (RSK). Each such key is, in turn, signed by the `Qubes "
+"Master Signing Key (QMSK) <https://keys.qubes-os.org/keys/qubes-master-"
+"signing-key.asc>`__ (``0x427F11FD0FAA4B080123F01CDDFA1A3E36879494``). In "
+"this way, the QMSK is the ultimate root of trust for the Qubes OS Project."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:98
+#: 64d92220bb404b9ab40bca24511d3f67
+msgid ""
+"The developer signing keys are set to expire after one year, while the QMSK "
+"and RSKs have no expiration date. The QMSK was generated on and is kept only"
+" on a dedicated, air-gapped “vault” machine, and the private portion will "
+"(hopefully) never leave this isolated machine."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:103
+#: 14119faf7dab42819f08a870d47251c8
+msgid ""
+"Before we proceed, you must first complete the prerequisite step of "
+"`installing OpenPGP software <#openpgp-software>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:106
+#: 253e16633c0045f29db4a30e94edf8a9
+msgid "Now, there are several ways to get the QMSK."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:108
+#: a6a13b0adb904de89061ad5c0ae0b18b
+msgid ""
+"If you’re on Qubes OS, it’s available in every qube (`except dom0 "
+"<https://github.com/QubesOS/qubes-issues/issues/2544>`__):"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:115
+#: 202bf5b5ee2b4089b528cbf8f8f2e359
+msgid ""
+"If you’re on Fedora, you can get it in the `distribution-gpg-keys "
+"<https://github.com/xsuchy/distribution-gpg-keys>`__ package:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:124
+#: e3360a8d6da9406e8244b45dbbc869de
+msgid "If you’re on Debian, it may already be included in your keyring."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:126
+#: ../../../_doc/project-security/verifying-signatures.rst:325
+#: 3cf79be36dc04988b1c4aef8bd07e685 efd313c0865041f7a14bdefab64d3fa6
+msgid "Fetch it with GPG:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:132
+#: e09ddab0393f41e5809b8ba345e6b314
+msgid ""
+"Get it from a public `keyserver "
+"<https://en.wikipedia.org/wiki/Key_server_%28cryptographic%29#Keyserver_examples>`__"
+" (specified on first use with ``--keyserver <URI>`` along with keyserver "
+"options to include key signatures), e.g.:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:141
+#: fc7d87e8d353498394e4e4f1e36f4086
+msgid "Download it as a file, then import the file."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:143
+#: 6530da6416d94bb8bd902f5dede1ad8a
+msgid "Here are some example download locations:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:145
+#: 0b40ac77ab6c4f89843af1d89ec7086e
+msgid "`Qubes security pack </project-security/security-pack>`"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:146
+#: a07d6a561a154b54bcb61ceb933fd0f9
+msgid ""
+"`Qubes keyserver <https://keys.qubes-os.org/keys/qubes-master-signing-"
+"key.asc>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:148
+#: 1c49097cfee440ec8d41c332a8c7620e
+msgid ""
+"`Email to qubes-devel <https://groups.google.com/d/msg/qubes-"
+"devel/RqR9WPxICwg/kaQwknZPDHkJ>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:150
+#: 2216571d0656492f8becd7d25d71fc48
+msgid ""
+"`Email to qubes-users <https://groups.google.com/d/msg/qubes-"
+"users/CLnB5uFu_YQ/ZjObBpz0S9UJ>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:153
+#: 3ee96b352ade42838a09074fce82b8d3
+msgid "Once you have the key as a file, import it:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:159
+#: 4f10494769434417ae2b679d90a6a00d
+msgid ""
+"Once you’ve obtained the QMSK, you must verify that it’s authentic rather "
+"than a forgery. Anyone can create a PGP key with the name “Qubes Master "
+"Signing Key” and the short key ID ``0x36879494``, so you cannot rely on "
+"these alone. You also should not rely on any single website, not even over "
+"HTTPS."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:165
+#: 48982e79f3b740b8a57d08de9ad1c7f2
+msgid ""
+"So, what *should* you do? One option is to use the PGP `Web of Trust "
+"<https://en.wikipedia.org/wiki/Web_of_trust>`__. In addition, some operating"
+" systems include the means to acquire the QMSK securely. For example, on "
+"Fedora, ``dnf install distribution-gpg-keys`` will get you the QMSK along "
+"with several other Qubes keys. On Debian, your keyring may already contain "
+"the necessary keys."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:172
+#: ca62bb9a8fdb44d881c4bb748f1cd387
+msgid ""
+"Perhaps the most common route is to rely on the key’s fingerprint. Every PGP"
+" key has a fingerprint that uniquely identifies it among all PGP keys "
+"(viewable with ``gpg2 --fingerprint <KEY_ID>``). Therefore, if you know the "
+"genuine QMSK fingerprint, then you always have an easy way to confirm "
+"whether any purported copy of it is authentic, simply by comparing the "
+"fingerprints."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:179
+#: 1d2cb663d43640a2b9ca27c29a76ecb9
+msgid "For example, here is the QMSK fingerprint:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:187
+#: e324dba8314c40518a5a43f7c8207993
+msgid ""
+"But how do you know that this is the real fingerprint? After all, `this "
+"website could be compromised </introduction/faq.html#should-i-trust-this-"
+"website>`__, so the fingerprint you see here may not be genuine. That’s why "
+"we strongly suggest obtaining the fingerprint from *multiple independent "
+"sources in several different ways*."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:193
+#: fda24735501b47c18f71a06c82d0b8c4
+msgid "Here are some ideas for how to do that:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:195
+#: e2e271c79bd2422c8f4528e351dab90a
+msgid ""
+"Check the fingerprint on various websites (e.g., `mailing lists "
+"<https://groups.google.com/g/qubes-devel/c/RqR9WPxICwg/m/kaQwknZPDHkJ>`__, "
+"`discussion forums <https://forum.qubes-os.org/t/there-is-no-way-to-"
+"validate-qubes-master-signing-key/1441/9?u=adw>`__, `social "
+"<https://twitter.com/rootkovska/status/496976187491876864>`__ `media "
+"<https://www.reddit.com/r/Qubes/comments/5bme9n/fingerprint_verification/>`__,"
+" `personal websites <https://andrewdavidwong.com/fingerprints.txt>`__)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:203
+#: 2ae8a5e2677b4d66a7f1cfbe2ac05e30
+msgid ""
+"Check against PDFs, photographs, and videos in which the fingerprint appears"
+" (e.g., `slides from a talk "
+"<https://hyperelliptic.org/PSC/slides/psc2015_qubesos.pdf>`__, on a `T-shirt"
+" <https://twitter.com/legind/status/813847907858337793/photo/2>`__, or in "
+"the `recording of a presentation <https://youtu.be/S0TVw7U3MkE?t=2563>`__)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:210
+#: 5355627884f4409b8432ae6fc328b569
+msgid ""
+"Download old Qubes ISOs from different sources and check the included Qubes "
+"Master Signing Key."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:212
+#: 2191cd57740f4d90a2bd4c743ae36f21
+msgid ""
+"Ask people to post the fingerprint on various mailing lists, forums, and "
+"chat rooms."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:214
+#: bbcbba56a94346959a4d03d60f506a30
+msgid "Repeat the above over Tor."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:215
+#: 2385de633e39428ab05fcdb4e61e34e0
+msgid "Repeat the above over various VPNs and proxy servers."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:216
+#: 0441737ede4540189ff0afb28fdb583e
+msgid ""
+"Repeat the above on different networks (work, school, internet cafe, etc.)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:218
+#: c462d5b2a803499ebb93b26762f24b1c
+msgid ""
+"Text, email, call, video chat, snail mail, or meet up with people you know "
+"to confirm the fingerprint."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:220
+#: 0bb27b33313c4885a80925732d76c838
+msgid "Repeat the above from different computers and devices."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:222
+#: 5a84375129a948a9909a7db6d1ead7bb
+msgid ""
+"Once you’ve obtained the fingerprint from enough independent sources in "
+"enough different ways that you feel confident that you know the genuine "
+"fingerprint, keep it in a safe place. Every time you need to check whether a"
+" key claiming to be the QMSK is authentic, compare that key’s fingerprint to"
+" your trusted copy and confirm they match."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:228
+#: e1dc265881454000bbb4d63b1b8e3015
+msgid ""
+"Now that you’ve imported the authentic QMSK, set its trust level to "
+"“ultimate” so that it can be used to automatically verify all the keys "
+"signed by the QMSK (in particular, RSKs)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:273
+#: 60714f4897184af8b56fdf39d6e93cb6
+msgid ""
+"Now, when you import any of the release signing keys and many Qubes team "
+"member keys, they will already be trusted in virtue of being signed by the "
+"QMSK."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:277
+#: bf46fb7b82c745a9bdbf8d3008ffd15e
+msgid ""
+"As a final sanity check, make sure the QMSK is in your keyring with the "
+"correct trust level."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:287
+#: 13db168edf934747b5ff42bbfacee244
+msgid ""
+"If you don’t see the QMSK here with a trust level of “ultimate,” go back and"
+" follow the instructions in this section carefully and consult the "
+"`troubleshooting FAQ <#troubleshooting-faq>`__ below."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:292
+#: 66f9a140030347f9b622d9d872a58895
+msgid "How to import and authenticate release signing keys"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:294
+#: 846e5a90c7dc4050a3d16da710a06784
+msgid ""
+"Every Qubes OS release is signed by a **release signing key (RSK)**, which "
+"is, in turn, signed by the Qubes Master Signing Key (QMSK)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:297
+#: ../../../_doc/project-security/verifying-signatures.rst:397
+#: ../../../_doc/project-security/verifying-signatures.rst:541
+#: ../../../_doc/project-security/verifying-signatures.rst:583
+#: 50c1c61f9b9949a39de19db01225ccf8 ae214a56cd5f44d9b9241e8c0307b15d
+#: 207538f59adb4c5baf4cbd418644fa2d 0b7674d88e124bda9ae94d70a9cccb75
+msgid ""
+"Before we proceed, you must first complete the following prerequisite steps:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:300
+#: ../../../_doc/project-security/verifying-signatures.rst:400
+#: ../../../_doc/project-security/verifying-signatures.rst:544
+#: ../../../_doc/project-security/verifying-signatures.rst:586
+#: 2fbeee4f8f134ee98cba374d943627fc e992b3afc98b433db0f54f2b82041847
+#: 49857759632a485a8096035e3910c692 37c5631437a44b14bb737261f1f18f71
+msgid "`Install OpenPGP software. <#openpgp-software>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:301
+#: 55d66801df3a4a0ca97faaa8667c4f3c
+msgid ""
+"`Import and authenticate the QMSK. <#how-to-import-and-authenticate-the-"
+"qubes-master-signing-key>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:304
+#: 1c011c0b19d54dce9ca39221387cffa7
+msgid ""
+"The first step is to obtain the correct RSK. The filename of the RSK for "
+"your Qubes OS release is usually ``qubes-release-X-signing-key.asc``, where "
+"``X`` is the `major version number <https://semver.org/>`__ of your Qubes "
+"release. For example, if you were installing release ``1.2.3``, you would "
+"replace ``X`` with ``1``, resulting in ``qubes-release-1-signing-key.asc``. "
+"There are several ways to get the RSK for your Qubes release."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:312
+#: 41154a56857445a990b8103b505813b7
+msgid ""
+"If you have access to an existing Qubes installation, the release keys are "
+"available in dom0 in ``/etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-*``. These can be "
+"`copied </user/how-to-guides/how-to-copy-from-dom0.html#copying-from-"
+"dom0>`__ into other qubes for further use. In addition, every other qube "
+"contains the release key corresponding to that installation’s release in "
+"``/etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-*``. If you wish to use one of these "
+"keys, make sure to import it into your keyring, e.g.:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:331
+#: 3cad6e4d98594d73a2d8964e52f0762f
+msgid ""
+"Download it as a file. You can find the RSK for your Qubes release on the "
+":doc:`downloads </user/downloading-installing-upgrading/downloads>` page. "
+"You can also download all the currently used developers’ signing keys, RSKs,"
+" and the Qubes Master Signing Key from the `Qubes security pack </project-"
+"security/security-pack>` and the `Qubes keyserver <https://keys.qubes-"
+"os.org/keys/>`__. Once you’ve downloaded your RSK, import it with GPG:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:342
+#: 29af22e7b8e242bea02d60b4c41f2593
+msgid ""
+"Now that you have the correct RSK, you simply need to verify that it is "
+"signed by the QMSK:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:356
+#: 508d3351401c4fefaa1173d1b044ca76
+msgid ""
+"This is just an example, so the output you receive may not look exactly the "
+"same. What matters is the line with a ``sig!`` prefix showing that the QMSK "
+"has signed this key. This verifies the authenticity of the RSK. Note that "
+"the ``!`` flag after the ``sig`` tag is important because it means that the "
+"key signature is valid. A ``sig-`` prefix would indicate a bad signature, "
+"and ``sig%`` would mean that gpg encountered an error while verifying the "
+"signature. It is not necessary to independently verify the authenticity of "
+"the RSK, since you already verified the authenticity of the QMSK."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:366
+#: 242453998d1743509e45a69d9e836a66
+msgid ""
+"As a final sanity check, make sure the RSK is in your keyring with the "
+"correct trust level:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:376
+#: e1e18107f2f444f2a1cad270be3d8163
+msgid ""
+"If you don’t see the correct RSK here with a trust level of “full” or "
+"higher, go back and follow the instructions in this section carefully, and "
+"consult the `troubleshooting FAQ <#troubleshooting-faq>`__ below."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:381
+#: 40011dc7a8594959b5cafd327cc7e723
+msgid "How to obtain and authenticate other signing keys"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:383
+#: c5d7a4acb6d44a28b21f1a7efa6ee274
+msgid ""
+"Please see the `Qubes security pack </project-security/security-pack>` "
+"documentation."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:386
+#: c7d07f3c61ba4a56bbb51a9d84b03eed
+msgid "How to verify the cryptographic hash values of Qubes ISOs"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:388
+#: 52d34b3cafa547739499707ea43c790b
+msgid ""
+"There are two ways to verify Qubes ISOs: cryptographic hash values and "
+"detached PGP signatures. Both methods are equally secure. Using just one "
+"method is sufficient to verify your Qubes ISO. Using both methods is not "
+"necessary, but you can do so if you like. One method might be more "
+"convenient than another in certain circumstances, so we provide both. This "
+"section covers cryptographic hash values. For the other method, see `how to "
+"verify detached PGP signatures on Qubes ISOs <#how-to-verify-detached-pgp-"
+"signatures-on-qubes-isos>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:401
+#: ../../../_doc/project-security/verifying-signatures.rst:545
+#: ../../../_doc/project-security/verifying-signatures.rst:587
+#: 09891d5f07fb4ab3b012c71efa377dbd 19da8bbc4bca429abcbf84e10f53dfa6
+#: 6c3c7eaaec1d4547a95fa513b2efb04b
+msgid ""
+"`Import and authenticate the Qubes Master Signing Key. <#how-to-import-and-"
+"authenticate-the-qubes-master-signing-key>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:403
+#: ../../../_doc/project-security/verifying-signatures.rst:547
+#: 13058aa78aae49fcac7cfc8d8e783732 7b5d632d7e0c4c6993eb6e3bb2590b94
+msgid ""
+"`Import and authenticate your release signing key. <#how-to-import-and-"
+"authenticate-release-signing-keys>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:406
+#: 4f799462896448eeb1bfcd2bebaf1284
+msgid ""
+"Each Qubes ISO is accompanied by a set of **cryptographic hash values** "
+"contained in a plain text file ending in ``.DIGESTS``, which can find on the"
+" :doc:`downloads </user/downloading-installing-upgrading/downloads>` page "
+"alongside the ISO. This file contains the output of running several "
+"different cryptographic hash functions on the ISO (a process known as "
+"“hashing”) to obtain alphanumeric outputs known as “hash values” or "
+"“digests.”"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:413
+#: b22b0f96d07f467da026c593417b75fd
+msgid ""
+"One convenient property of hash values is that they can be generated on any "
+"computer. This means, for example, that you can download a Qubes ISO on one "
+"computer, hash it, then visually compare that hash value to the one you "
+"generated or have saved on a different computer."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:418
+#: e955e034e6a549c2a7ef0a600959f035
+msgid ""
+"In addition to the ``.DIGESTS`` files on the :doc:`downloads "
+"</user/downloading-installing-upgrading/downloads>` page alongside each ISO,"
+" and you can always find all the digest files for every Qubes ISO in the "
+"`Qubes security pack </project-security/security-pack>`."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:422
+#: b5a5760c31944ae09128dd5df8eec5df
+msgid ""
+"If the filename of your ISO is ``Qubes-RX-x86_64.iso``, then the name of the"
+" digest file for that ISO is ``Qubes-RX-x86_64.iso.DIGESTS``, where ``X`` is"
+" a specific release of Qubes. The digest filename is always the same as the "
+"ISO filename followed by ``.DIGESTS``. Since the digest file is a plain text"
+" file, you can open it with any text editor. Inside, you should find text "
+"that looks similar to this:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:456
+#: db1bca95b05e4bf0b0bdb57b91028d3c
+msgid ""
+"Four digests have been computed for this ISO. The hash functions used, in "
+"order from top to bottom, are MD5, SHA-1, SHA-256, and SHA-512. One way to "
+"verify that the ISO you downloaded matches any of these hash values is by "
+"using the respective ``*sum`` command:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:476
+#: 9e3b60f2f87a4a5294b473653ec654e2
+msgid ""
+"The ``OK`` response tells us that the hash value for that particular hash "
+"function matches. The program also warns us that there are 23 improperly "
+"formatted lines, but this is expected. This is because each file contains "
+"lines for several different hash values (as mentioned above), but each "
+"``*sum`` program verifies only the line for its own hash function. In "
+"addition, there are lines for the PGP signature that the ``*sum`` programs "
+"do not know how to read. Therefore, it is safe to ignore these warning "
+"lines."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:485
+#: 4ff50da772a2426b9aa6ec94696cf2c5
+msgid ""
+"Another way is to use ``openssl`` to compute each hash value, then compare "
+"them to the contents of the digest file:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:499
+#: 6cb27f867c0f44919acaa9417cc6aa4b
+msgid "(Notice that the outputs match the values from the digest file.)"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:501
+#: 349c98a08b2440688666e16499e360b0
+msgid ""
+"However, it is possible that an attacker replaced ``Qubes-RX-x86_64.iso`` "
+"with a malicious ISO, computed the hash values for that malicious ISO, and "
+"replaced the values in ``Qubes-RX-x86_64.iso.DIGESTS`` with his own set of "
+"values. Therefore, we should also verify the authenticity of the listed hash"
+" values. Since ``Qubes-RX-x86_64.iso.DIGESTS`` is a clearsigned PGP file, we"
+" can use GPG to verify the signature in the digest file:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:520
+#: a9b107f2663643db8f312b4d1fe574e0
+msgid ""
+"This is just an example, so the output you receive will not look exactly the"
+" same. What matters is the line that says ``Good signature from \"Qubes OS "
+"Release X Signing Key\"``. This confirms that the signature on the digest "
+"file is good."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:525
+#: ../../../_doc/project-security/verifying-signatures.rst:576
+#: 98d9f01e18e743c8b60940533d3020c7 f3bb4cafca9b4a4cadbbada626b0f8fa
+msgid ""
+"If you don’t see a good signature here, go back and follow the instructions "
+"in this section carefully, and consult the `troubleshooting FAQ "
+"<#troubleshooting-faq>`__ below."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:530
+#: 83a8ecb582ea403697010b8cd2d7fbfb
+msgid "How to verify detached PGP signatures on Qubes ISOs"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:532
+#: e02722d3345546f7bf888e2bf3485394
+msgid ""
+"There are two ways to verify Qubes ISOs: cryptographic hash values and "
+"detached PGP signatures. Both methods are equally secure. Using just one "
+"method is sufficient to verify your Qubes ISO. Using both methods is not "
+"necessary, but you can do so if you like. One method might be more "
+"convenient than another in certain circumstances, so we provide both. This "
+"section covers detached PGP signatures. For the other method, see `how to "
+"verify the cryptographic hash values of Qubes ISOs <#how-to-verify-the-"
+"cryptographic-hash-values-of-qubes-isos>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:550
+#: ff024e25dbe0439d8de31ca85c223b88
+msgid ""
+"Every Qubes ISO is released with a **detached PGP signature** file, which "
+"you can find on the :doc:`downloads </user/downloading-installing-"
+"upgrading/downloads>` page alongside the ISO. If the filename of your ISO is"
+" ``Qubes-RX-x86_64.iso``, then the name of the signature file for that ISO "
+"is ``Qubes-RX-x86_64.iso.asc``, where ``X`` is a specific release of Qubes. "
+"The signature filename is always the same as the ISO filename followed by "
+"``.asc``."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:557
+#: e3f3a757b49e41eba128e0066b475ed3
+msgid ""
+"Download both the ISO and its signature file. Put both of them in the same "
+"directory, then navigate to that directory. Now, you can verify the ISO by "
+"executing this GPG command in the directory that contains both files:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:571
+#: a336f45cf1094a90af76bc90a3f51a33
+msgid ""
+"This is just an example, so the output you receive will not look exactly the"
+" same. What matters is the line that says ``Good signature from \"Qubes OS "
+"Release X Signing Key\"``. This confirms that the signature on the ISO is "
+"good."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:581
+#: 993a8f9bf73d4f989790a302cb5d04b1
+msgid "How to verify signatures on Git repository tags and commits"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:589
+#: bd82b6af4ede42ef80a73ed497dd9622
+msgid ""
+":doc:`Import and authenticate keys from the Qubes security pack (qubes-"
+"secpack). </project-security/security-pack>` Please see our `PGP key "
+"policies </project-security/security-pack.html#pgp-key-policies>`__ for "
+"important information about these keys."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:594
+#: 40ffb5a2020843b5aea38987b76d0dda
+msgid ""
+"Whenever you use one of the `Qubes repositories "
+"<https://github.com/QubesOS>`__, you should use Git to verify the PGP "
+"signature in a tag on the latest commit or on the latest commit itself. (One"
+" or both may be present, but only one is required.) If there is no trusted "
+"signed tag or commit on top, any commits after the latest trusted signed tag"
+" or commit should **not** be trusted. If you come across a repo with any "
+"unsigned commits, you should not add any of your own signed tags or commits "
+"on top of them unless you personally vouch for the trustworthiness of the "
+"unsigned commits. Instead, ask the person who pushed the unsigned commits to"
+" sign them."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:605
+#: 28a51ddc75234bf69158a7a90e0a34ae
+msgid ""
+"You should always perform this verification on a trusted local machine with "
+"properly authenticated keys rather than relying on a third party, such as "
+"GitHub. While the GitHub interface may claim that a commit has a verified "
+"signature from a member of the Qubes team, this is only trustworthy if "
+"GitHub has performed the signature check correctly, the account identity is "
+"authentic, an admin has not replaced the user’s key, GitHub’s servers have "
+"not been compromised, and so on. Since there’s no way for you to be certain "
+"that all such conditions hold, you’re much better off verifying signatures "
+"yourself. (Also see: `distrusting the infrastructure "
+"</introduction/faq.html#what-does-it-mean-to-distrust-the-"
+"infrastructure>`__.)"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:617
+#: 39e5ec25ee55487f82657cf51661874a
+msgid "How to verify a signature on a Git tag"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:623
+#: ../../../_doc/project-security/verifying-signatures.rst:636
+#: 918ea4c46ae442758ee846cc690d7fdc 58e1d712e984492b9b422d424efb53d9
+msgid "or"
+msgstr "oder"
+
+#: ../../../_doc/project-security/verifying-signatures.rst:630
+#: 69899ea83cce4478899a834e141a4c20
+msgid "How to verify a signature on a Git commit"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:643
+#: cdd3e0f1f51b400e8a5994141dae2a5e
+msgid "Troubleshooting FAQ"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:646
+#: efc800f59d674441b5237b10e6e5c4e7
+msgid "Why am I getting “Can’t check signature: public key not found”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:648
+#: a9f42d5d3ed5450f85d22955a3cc0321
+msgid ""
+"You don’t have the correct `release signing key <#how-to-import-and-"
+"authenticate-release-signing-keys>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:652
+#: b02af7a80653408e87783a9c79a811dc
+msgid ""
+"Why am I getting “BAD signature from ‘Qubes OS Release X Signing Key’”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:654
+#: be166387b93d411fa2cd59130babdaad
+msgid "The problem could be one or more of the following:"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:656
+#: 3f3a50f0ffd04bacbe0085249a827cc0
+msgid "You’re trying to verify the wrong file(s). Reread this page carefully."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:658
+#: 8a61fa1e028245ccae2e168bdff62bba
+msgid ""
+"You’re using the wrong GPG command. Follow the provided examples carefully, "
+"or try using ``gpg`` instead of ``gpg2`` (or vice versa)."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:660
+#: e479f7865e19473681733c4939274fda
+msgid ""
+"The ISO or `detached PGP signature file <#how-to-verify-detached-pgp-"
+"signatures-on-qubes-isos>`__ is bad (e.g., incomplete or corrupt download). "
+"Try downloading the signature file again from a different source, then try "
+"verifying again. If you still get the same result, try downloading the ISO "
+"again from a different source, then try verifying again."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:668
+#: 7de42bdc8fee4384b7fc5d9c54eb6120
+msgid "Why am I getting “bash: gpg2: command not found”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:670
+#: 5885191503994b02be5f78919ad9d4a0
+msgid ""
+"You don’t have ``gpg2`` installed. Please install it using the method "
+"appropriate for your environment (e.g., via your package manager), or try "
+"using ``gpg`` instead."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:675
+#: b2090960068a4018aa56d347fd208aee
+msgid "Why am I getting “No such file or directory”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:677
+#: f913799228854a9c838b05d2fdc7c8b5
+msgid ""
+"Your working directory does not contain the required files. Go back and "
+"follow the instructions more carefully, making sure that you put all "
+"required files in the same directory *and* navigate to that directory."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:682
+#: 23cbcaec1217444f9c53b9facdd0f9c8
+msgid ""
+"Why am I getting “can’t open signed data ‘Qubes-RX-x86_64.iso’ / can’t hash "
+"datafile: file open error”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:684
+#: ../../../_doc/project-security/verifying-signatures.rst:774
+#: fb4838b43d1443e2bcb0104b277b14ec b975687ae2e847b5937ac7bddd9303bb
+msgid "The correct ISO is not in your working directory."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:687
+#: 8031335196b04551beffa7bd6af26394
+msgid ""
+"Why am I getting “can’t open ‘Qubes-RX-x86_64.iso.asc’ / verify signatures "
+"failed: file open error”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:689
+#: f6d1a5f063a441cabc590ba567f43778
+msgid ""
+"The correct `detached PGP signature file <#how-to-verify-detached-pgp-"
+"signatures-on-qubes-isos>`__ is not in your working directory."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:694
+#: 91e1a8958d1d4d488536cab2646966d9
+msgid "Why am I getting “no valid OpenPGP data found”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:696
+#: 377d9f9569b24cce87c19c569c0878ac
+msgid ""
+"Either you don’t have the correct `detached PGP signature file <#how-to-"
+"verify-detached-pgp-signatures-on-qubes-isos>`__, or you inverted the "
+"arguments to ``gpg2``. (The signature file goes first.)"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:701
+#: cffa0ee751da496ca54495180d08302f
+msgid ""
+"Why am I getting “WARNING: This key is not certified with a trusted "
+"signature! There is no indication that the signature belongs to the owner.”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:703
+#: 3759c75f1f5c4bbba4fd084724c71b5a
+msgid ""
+"There are several possibilities: - You don’t have the `Qubes Master Signing "
+"Key <#how-to-import-and-authenticate-the-qubes-master-signing-key>`__. - You"
+" have not `set the Qubes Master Signing Key’s trust level correctly. <#how-"
+"to-import-and-authenticate-the-qubes-master-signing-key>`__ - In the case of"
+" a key that is not directly signed by the Qubes Master Signing Key, you have"
+" not `set that key’s trust level correctly. <#how-to-verify-signatures-on-"
+"git-repository-tags-and-commits>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:713
+#: 37dbff95237d4515b527085aba798b4e
+msgid "Why am I getting “X signature not checked due to a missing key”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:715
+#: 14505828bff649a9aec92e32dee67784
+msgid ""
+"You don’t have the keys that created those signatures in your keyring. For "
+"the purpose of verifying a Qubes ISO, you don’t need them as long as you "
+"have the `Qubes Master Signing Key <#how-to-import-and-authenticate-the-"
+"qubes-master-signing-key>`__ and the `release signing key <#how-to-import-"
+"and-authenticate-release-signing-keys>`__ for your Qubes release."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:724
+#: a34485b1850e4810b4f7f3d6ccf8b394
+msgid ""
+"Why am I seeing additional signatures on a key with “[User ID not found]” or"
+" from a revoked key?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:726
+#: 3d1f8cde237f4c79bee387c3a6c0abed
+msgid ""
+"This is just a fundamental part of how OpenPGP works. Anyone can sign anyone"
+" else’s public key and upload the signed public key to keyservers. Everyone "
+"is also free to revoke their own keys at any time (assuming they possess or "
+"can create a revocation certificate). This has no impact on verifying Qubes "
+"ISOs, code, or keys."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:733
+#: 3437986247e940b4ac11c127279afa63
+msgid "Why am I getting “verify signatures failed: unexpected data”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:735
+#: ../../../_doc/project-security/verifying-signatures.rst:741
+#: 97b8d0d131ab4bbaa22982d65b07550c 0c981a8e741246a4b2903c88c2a42efc
+msgid ""
+"You’re not verifying against the correct `detached PGP signature file <#how-"
+"to-verify-detached-pgp-signatures-on-qubes-isos>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:739
+#: fed91390a23146d3bd0a20b9a0cdab7a
+msgid "Why am I getting “not a detached signature”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:745
+#: 596bc5c39efc4106b37a53b84d8ea5c7
+msgid "Why am I getting “CRC error; […] no signature found […]”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:747
+#: 60beb588802b494b85b109ff305c371c
+msgid ""
+"You’re not verifying against the correct `detached PGP signature file <#how-"
+"to-verify-detached-pgp-signatures-on-qubes-isos>`__, or the signature file "
+"has been modified. Try downloading it again or from a different source."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:753
+#: e072f18d2ff749af9b015d6eeeb4724d
+msgid ""
+"Do I have to verify both the `detached PGP signature file <#how-to-verify-"
+"detached-pgp-signatures-on-qubes-isos>`__ and the `cryptographic hash values"
+" <#how-to-verify-the-cryptographic-hash-values-of-qubes-isos>`__?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:755
+#: 32a12becdea541f18dd5fc0dc26f0a85
+msgid ""
+"No, either method is sufficient by itself, but you can do both if you like."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:759
+#: b778ad4c661b400bbc673656b1b64795
+msgid "Why am I getting “no properly formatted X checksum lines found”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:761
+#: 0a41460cac504c869d742695df2c9545
+msgid ""
+"You’re not checking the correct `cryptographic hash values <#how-to-verify-"
+"the-cryptographic-hash-values-of-qubes-isos>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:765
+#: a211899179314ad28b35f0d15b3e8666
+msgid "Why am I getting “WARNING: X lines are improperly formatted”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:767
+#: 1c03d007353d4ccab0671c55eb29333f
+msgid ""
+"Read `how to verify the cryptographic hash values of Qubes ISOs <#how-to-"
+"verify-the-cryptographic-hash-values-of-qubes-isos>`__ again."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:772
+#: dd8e020504d74c76b2a44d8f5aa82782
+msgid "Why am I getting “WARNING: 1 listed file could not be read”?"
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:777
+#: 7dff9b06989844c58e3b8b036e5f8b45
+msgid "I have another problem that isn’t mentioned here."
+msgstr ""
+
+#: ../../../_doc/project-security/verifying-signatures.rst:779
+#: c2e08b03db5c4e0e8c0463a7dccfb514
+msgid ""
+"Carefully reread this page to be certain that you didn’t skip any steps. In "
+"particular, make sure you have the `Qubes Master Signing Key <#how-to-"
+"import-and-authenticate-the-qubes-master-signing-key>`__, the `release "
+"signing key <#how-to-import-and-authenticate-release-signing-keys>`__ for "
+"your Qubes release, *and* the `cryptographic hash values <#how-to-verify-"
+"the-cryptographic-hash-values-of-qubes-isos>`__ and/or `detached PGP "
+"signature file <#how-to-verify-detached-pgp-signatures-on-qubes-isos>`__, "
+"all for the *correct* Qubes OS release. If your question is about GPG, "
+"please see the `GnuPG documentation "
+"<https://www.gnupg.org/documentation/>`__. Still have question? Please see "
+":doc:`help, support, mailing lists, and forum </introduction/support>` for "
+"places where you can ask!"
+msgstr ""

@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:12+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/security-critical-code.rst:1
+#: 0a5a620d50044bfa9091bd9e1bfc6f41
+msgid ""
+"Below is a list of security-critical (i.e., trusted) code components in "
+"Qubes OS. A successful attack against any of these components could "
+"compromise the system’s security. This code can be thought of as the Trusted"
+" Computing Base (TCB) of Qubes OS. One of the main goals of the project is "
+"to keep the TCB to an absolute minimum. The size of the current TCB is on "
+"the order order of hundreds of thousands of lines of C code, which is "
+"several orders of magnitude less than other OSes. (In Windows, Linux, and "
+"Mac OSes, the amount of trusted code is typically on the order of tens of "
+"*millions* of lines of C code.)"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:11
+#: 5f97469a324b4935990bcf41f3a8da7f
+msgid ""
+"For more information, see :doc:`Qubes Security Goals "
+"</developer/system/security-design-goals>`."
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:14
+#: 8f070237bb88485e97ea7f919c388939
+msgid "Security-critical Qubes-specific Components"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:16
+#: 051debf2acb54e5da7db4c88df353e3a
+msgid "The following code components are security-critical in Qubes OS:"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:18
+#: 4ab5d8dfe873487492fc954d8dc65f96
+msgid "Dom0-side of the libvchan library"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:19
+#: 962bbedf1e014fd3b28406ccaeec9233
+msgid "Dom0-side of the GUI virtualization code (``qubes-guid``)"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:20
+#: c8371210a7734836a969c363dd433568
+msgid "Dom0-side of the sound virtualization code (``pacat-simple-vchan``)"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:21
+#: 8886852163934cbb947972920e218569
+msgid "Dom0-side in qrexec-related code (``qrexec_daemon``)"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:22
+#: 76dc123d521e4ba694098571df272006
+msgid "VM memory manager (``qmemman``) that runs in Dom0"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:23
+#: 9aa8da45deab40fea21f8db3966f8978
+msgid ""
+"Select Qubes RPC servers that run in Dom0: ``qubes.ReceiveUpdates`` and "
+"``qubes.SyncAppMenus``"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:25
+#: 17b1fe59ed674643b72af3e71e60fca2
+msgid ""
+"The ``qubes.Filecopy`` RPC server that runs in a VM (critical because it "
+"could allow one VM to compromise another if the user allows a file copy "
+"operation to be performed between them)"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:30
+#: 5b42c17551c34d10970055cad0f5d104
+msgid "Security-critical Third-party Components"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:32
+#: db6ed2d0d8524ee38fabbd7b6867c3d0
+msgid ""
+"We did not create these components, but Qubes OS relies on them. At the "
+"current stage of the project, we cannot afford to spend the time to "
+"thoroughly review and audit them, so we more or less “blindly” trust that "
+"they are secure."
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:37
+#: 44d77d8d44dd473c89d5021e6f518f0d
+msgid "The Xen hypervisor"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:38
+#: 758ba236ce8f4bd091d13e81bb76c6e0
+msgid "Xen’s xenstore backend running in Dom0"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:39
+#: 538c696754cf4067bdca0811752d4193
+msgid "Xen’s block backend running in Dom0’s kernel"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:40
+#: 39cb8e86f07b4fe890adf3047f6eceb5
+msgid "The RPM program used in Dom0 for verifying signatures on dom0 updates"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:41
+#: c77d8a3a683a45d7b01133eba8a58f53
+msgid ""
+"Somewhat trusted: log viewing software in dom0 that parses VM-influenced "
+"logs"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:45
+#: 2356fa39f3734400954a1162c524e804
+msgid "Attacks on Networking Components"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:47
+#: 86124d9658824775a5a589732aacb8d3
+msgid ""
+"Here are two examples of networking components that an adversary might seek "
+"to attack (or in which to exploit a vulnerability as part of an attack):"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:51
+#: a8c99fa56e3345f3a2ed4a88375daddc
+msgid "Xen network PV frontends"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:52
+#: d01d5ce69a534d4987ef985774a3cf40
+msgid "VMs’ core networking stacks (core TCP/IP code)"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:54
+#: 39a257d3f92a411fb76c4af024831e68
+msgid ""
+"Hypothetically, an adversary could compromise a NetVM, ``sys-net-1``, and "
+"try to use it to attack the VMs connected to that NetVM. However, Qubes "
+"allows for the existence of more than one NetVM, so the adversary would not "
+"be able to use ``sys-net-1`` in order to attack VMs connected to a "
+"*different* NetVM, ``sys-net-2`` without also compromising ``sys-net-2``. In"
+" addition, the adversary would not be able to use ``sys-net-1`` (or, for "
+"that matter, ``sys-net-2``) to attack VMs that have networking disabled "
+"(i.e., VMs that are not connected to any NetVM)."
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:65
+#: 5f17701f8c414e1f91630f39d84936e5
+msgid "Buggy Code vs. Backdoored Code"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:67
+#: 32cba58662ac4f14af97cb89d1c73f18
+msgid ""
+"There is an important distinction between buggy code and maliciously "
+"backdoored code. We could have the most secure architecture and the most "
+"bulletproof TCB that perfectly isolates all domains from each other, but it "
+"would all be pretty useless if all the code we ran inside our domains "
+"(e.g. the code in our email clients, word processors, and web browsers) were"
+" backdoored. In that case, only network-isolated domains would be somewhat "
+"trustworthy."
+msgstr ""
+
+#: ../../../_doc/developer/system/security-critical-code.rst:75
+#: 5dd5034dc36245eda4aa4d046a76d4d6
+msgid ""
+"This means that we must trust at least some of the vendors that supply the "
+"code we run inside our domains. (We don’t have to trust *all* of them, but "
+"we at least have to trust the few that provide the apps we use in the most "
+"critical domains.) In practice, we trust the software provided by the "
+"`Fedora Project <https://getfedora.org/>`__. This software is signed by "
+"Fedora distribution keys, so it is also critical that the tools used in "
+"domains for software updates (``dnf`` and ``rpm``) are trustworthy."
+msgstr ""

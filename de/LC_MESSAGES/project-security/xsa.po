@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/project-security/xsa.rst:1 84ae05d0c8b049ad8171dd91b01d395c
+msgid ""
+"This tracker shows whether Qubes OS is affected by any given `Xen security "
+"advisory (XSA) <https://xenbits.xen.org/xsa/>`__. Shortly after a new XSA is"
+" published, we will add a new row to this tracker. Whenever Qubes is "
+"significantly affected by an XSA, a :doc:`Qubes security bulletin (QSB) "
+"</project-security/qsb>` is published, and a link to that QSB is added to "
+"the row for the associated XSA."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:8 307345ae995e4d3494b88c4ed47b9966
+msgid ""
+"Under the “Is Qubes Affected?” column, there are two possible values: "
+"**Yes** or **No**."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:11 f7eeb64c10874c1f9fbe7587cb250e29
+msgid "**Yes** means that the *security* of Qubes OS *is* affected."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:12 b8c9de42590047d3b5f8293299176ab9
+msgid "**No** means that the *security* of Qubes OS is *not* affected."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:15 29351395bf884174a3ae4007cf4213a2
+msgid "Important notes"
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:17 6dc8a91a81134ec3b5281c9618b6aa6b
+msgid ""
+"For the purpose of this tracker, we do *not* classify mere `denial-of-"
+"service (DoS) attacks <https://en.wikipedia.org/wiki/Denial-of-"
+"service_attack>`__ as affecting the *security* of Qubes OS. Therefore, if an"
+" XSA pertains *only* to DoS attacks against Qubes, the value in the “Is "
+"Qubes Affected?” column will be **No**."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:23 b573c612b13f41cf85fe57987968c04f
+msgid ""
+"For simplicity, we use the present tense (“is affected”) throughout this "
+"page, but this does **not** necessarily mean that up-to-date Qubes "
+"installations are *currently* affected by any particular XSA. In fact, it is"
+" extremely unlikely that any up-to-date Qubes installations are vulnerable "
+"to any XSAs on this page, since patches are almost always published "
+"concurrently with QSBs. Please read the QSB (if any) for each XSA for "
+"patching details."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:30 5a3b0220dcd347849e896c8324b9e18a
+msgid ""
+"Embargoed XSAs are excluded from this tracker until they are publicly "
+"released, since the `Xen security policy "
+"<https://www.xenproject.org/security-policy.html>`__ does not permit us to "
+"state whether Qubes is affected prior to the embargo date."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:35 999e19b096424538b73faeb408b1cc5b
+msgid ""
+"Unused and withdrawn XSA numbers are included in the tracker for the sake of"
+" completeness, but they are excluded from the `statistics <#statistics>`__ "
+"section for the sake of accuracy."
+msgstr ""
+
+#: ../../../_doc/project-security/xsa.rst:38 58436174e82d44289b10a3b2165f93ee
+msgid "All dates are in UTC."
+msgstr ""

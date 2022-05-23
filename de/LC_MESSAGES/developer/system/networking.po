@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# nextloop <ga25day@mytum.de>, 2022
+# E, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:11+0000\n"
+"Last-Translator: E, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/networking.rst:2
+#: fa57471e30994a118a8f63443897131f
+msgid "Overall description"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:4
+#: eaffc65af53b4ff08ab6977eb863e3ed
+msgid ""
+"In Qubes, the standard Xen networking is used, based on backend driver in "
+"the driver domain and frontend drivers in VMs. In order to eliminate layer 2"
+" attacks originating from a compromised VM, routed networking is used "
+"instead of the default bridging of ``vif`` devices and NAT is applied at "
+"each network hop. The default *vif-route* script had some deficiencies "
+"(requires ``eth0`` device to be up, and sets some redundant iptables rules),"
+" therefore the custom *vif-route-qubes* script is used."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:12
+#: e238616c72d54a70a734b7018002160c
+msgid ""
+"The IP address of ``eth0`` interface in AppVM, as well as two IP addresses "
+"to be used as nameservers (``DNS1`` and ``DNS2``), are passed via QubesDB to"
+" AppVM during its boot (thus, there is no need for DHCP daemon in the "
+"network driver domain). ``DNS1`` and ``DNS2`` are private addresses; "
+"whenever an interface is brought up in the network driver domain, the "
+"*/usr/lib/qubes/qubes_setup_dnat_to_ns* script sets up the DNAT iptables "
+"rules translating ``DNS1`` and ``DNS2`` to the newly learned real dns "
+"servers. This way AppVM networking configuration does not need to be changed"
+" when configuration in the network driver domain changes (e.g. user switches"
+" to a different WLAN). Moreover, in the network driver domain, there is no "
+"DNS server either, and consequently there are no ports open to the VMs."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:26
+#: 019b262813394e8d8ea6bdebdaa77628
+msgid "Routing tables examples"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:28
+#: c1c28d5b7a0d4421896734b0dc049b23
+msgid "VM routing table is simple:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:30
+#: 5496b6e8e2874dcaa0462d4044b55d37
+msgid ""
+"\\|\\| \\|Destination|Gateway|Genmask|Flags|Metric|Ref|Use|Iface\\| "
+"\\|0.0.0.0|0.0.0.0|0.0.0.0|U|0|0|0|eth0\\|"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:33
+#: 4a5ca4ca47da4cca83c7478a4d675109
+msgid "Network driver domain routing table is a bit longer:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:35
+#: 64c25a3af3574bd499c6779d40dcec63
+msgid ""
+"\\|\\| \\|Destination|Gateway|Genmask|Flags|Metric|Ref|Use|Iface\\| "
+"\\|10.137.0.16|0.0.0.0|255.255.255.255|UH|0|0|0|vif4.0\\| "
+"\\|10.137.0.7|0.0.0.0|255.255.255.255|UH|0|0|0|vif10.0\\| "
+"\\|10.137.0.9|0.0.0.0|255.255.255.255|UH|0|0|0|vif9.0\\| "
+"\\|10.137.0.8|0.0.0.0|255.255.255.255|UH|0|0|0|vif8.0\\| "
+"\\|10.137.0.12|0.0.0.0|255.255.255.255|UH|0|0|0|vif3.0\\| "
+"\\|192.168.0.0|0.0.0.0|255.255.255.0|U|1|0|0|eth0\\| "
+"\\|0.0.0.0|192.168.0.1|0.0.0.0|UG|0|0|0|eth0\\|"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:45
+#: 418f67bfc582468eb3098bd635dad6fc
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../../../_doc/developer/system/networking.rst:47
+#: 478868145498415d8dff89e358c0c8a8
+msgid ""
+"Starting with Qubes 4.0, there is opt-in support for IPv6 forwarding. "
+"Similar to the IPv4, traffic is routed and NAT is applied at each network "
+"gateway. This way we avoid reconfiguring every connected qube whenever "
+"uplink connection is changed, and even telling the qube what that uplink is "
+"- which may be complex when VPN or other tunneling services are employed. "
+"The feature can be enabled on any network-providing qube, and will be "
+"propagated down the network tree, so every qube connected to it will also "
+"have IPv6 enabled. To enable the ``ipv6`` feature use ``qvm-features`` tool "
+"and set the value to ``1``. For example to enable it on ``sys-net``, execute"
+" in dom0:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:62
+#: f2784ae69d464d90af9b71394387dd11
+msgid ""
+"It is also possible to explicitly disable IPv6 support for some qubes, even "
+"if it is connected to IPv6-providing one. This can be done by setting "
+"``ipv6`` feature to empty value:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:70
+#: 8d7a30e6960c4ff184788f5ccdafaf68
+msgid ""
+"This configuration is presented below - green qubes have IPv6 access, red "
+"one does not."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:76
+#: ../../../_doc/developer/system/networking.rst:76
+#: cb2c45e8da40488cbfa2288861acc9ee 9d53512f54924adc96305d4fcf58ea76
+msgid "ipv6-1"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:78
+#: 078b6318655845efb3acc6aec3426e96
+msgid ""
+"In that case, system uplink connection have native IPv6. But in some cases "
+"it may not be true. Then some tunneling solution can be used (for example "
+"teredo). The same will apply when the user is connected to VPN service "
+"providing IPv6 support, regardless of user’s internet connection. Such "
+"configuration can be expressed by enabling ``ipv6`` feature only on some "
+"subset of Qubes networking, for example by creating separate qube to "
+"encapsulate IPv6 traffic and setting ``ipv6`` to ``1`` only there. See "
+"diagram below"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:90
+#: ../../../_doc/developer/system/networking.rst:90
+#: 1eeb762439714ff09a508f23e84afb54 7f4f5f9834c74f79b1a33d8a8525b48e
+msgid "ipv6-2"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:92
+#: 08bb0b33ac1042d68e7a80ac7a3689bd
+msgid ""
+"Besides enabling IPv6 forwarding, standard Qubes firewall can be used to "
+"limit what network resources are available to each qube. Currently only "
+"``qvm-firewall`` command support adding IPv6 rules, GUI firewall editor will"
+" have this ability later."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:98
+#: 651c7c80d3094e80b43e116811adb636
+msgid "Limitations"
+msgstr "Einschränkungen"
+
+#: ../../../_doc/developer/system/networking.rst:100
+#: 3c5812a7918a42ebb06a0c640ea35210
+msgid ""
+"Currently only IPv4 DNS servers are configured, regardless of ``ipv6`` "
+"feature state. It is done this way to avoid reconfiguring all connected "
+"qubes whenever IPv6 DNS becomes available or not. Configuring qubes to "
+"always use IPv6 DNS and only fallback to IPv4 may result in relatively long "
+"timeouts and poor usability. But note that DNS using IPv4 does not prevent "
+"to return IPv6 addresses. In practice this is only a problem for IPv6-only "
+"networks."
+msgstr ""

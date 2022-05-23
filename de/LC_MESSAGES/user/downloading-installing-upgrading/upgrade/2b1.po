@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:10+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:1
+#: b6b33599e8694bee839fa3db3befcd23
+msgid ""
+"**Note: Qubes R2 Beta 1 is no longer supported! Please install or upgrade to"
+" a newer Qubes R2.**"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:4
+#: bfc1955d28704fd28f05e535889b1b7b
+msgid ""
+"**Note: This page is kept for historical reasons only! Do not follow the "
+"instructions below’’’**"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:7
+#: d089ae3733c249309bd9c400ce132657
+msgid ""
+"Existing users of Qubes R1 (but not R1 betas!) can upgrade their systems to "
+"the latest R2 beta release by following the procedure below. As usual, it is"
+" advisable to backup the system before proceeding with the upgrade"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:13
+#: 459a20b69a9240ee97b12d123492a5c8
+msgid "Upgrade all Template and Standalone VM(s)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:15
+#: 6bba7ae8b11244d4813c45d10654eb06
+msgid ""
+"By default, in Qubes R1, there is only one template, however users are free "
+"to create more templates for special purposes, as well as Standalone VMs. "
+"More information on using multiple templates, as well as Standalone VMs, can"
+" be found :doc::doc:`here </user/templates/templates>` and :doc::doc:`here "
+"</user/advanced-topics/standalones-and-hvms>`. The steps described in this "
+"section should be repeated in *all* user’s Template and Standalone VMs."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:22
+#: 99f93e0f33ee48de9ef8a9fc8f5b78a3
+msgid ""
+"Open terminal in the template (or standalone VM). E.g. use the Qubes "
+"Manager’s right-click menu and choose Run Command in VM and type ``gnome-"
+"terminal`` there."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:26
+#: 2623aabc619746ce900c305f9a900189
+msgid ""
+"Install ``qubes-upgrade-vm`` package (this package brings in R2 repo "
+"definitions and R2 keys)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:33
+#: 46d50d48b1fb44b9b77cb70fd556b84a
+msgid ""
+"Proceed with normal update in the template (this should bring in also the R2"
+" packages for the VMs):"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:40
+#: 8af05b62b09746839a04509004bb9af2
+msgid ""
+"The installer (yum) will prompt to accept the new Qubes R2 signing key:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:52
+#: e8e42b5c318247d6853694c5c73a715f
+msgid ""
+"If you see (as is the case on the “screenshot” above) that the new key was "
+"imported from a local filesystem (``/etc/pki/rpm-gpg/...``) you can safely "
+"accept the key, without checking its fingerprint. This is because there were"
+" only two ways for such a key to make it to your template’s filesystem:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:58
+#: 798c8cd6ccf549ea8cf26033dafbd40a
+msgid ""
+"via a legitimate RPM package previously installed (in our case it was the "
+"``qubes-upgrade-vm`` RPM). Such an RPM must have been signed by one of the "
+"keys you decided to trust previously, by default this would be either via "
+"the Qubes R1 signing key, or Fedora 17 signing key."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:63
+#: b4e3077bfe35438190ed36705ec8ddb5
+msgid ""
+"via system compromise or via some illegal RPM package (e.g. Fedora released "
+"package pretending to bring new Firefox). In that case, however, your VM is "
+"already compromised, and it careful checking of the new R2 key would not "
+"change this situation to any better one. The game is lost for this VM anyway"
+" (and all VMs based on this template)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:69
+#: 1de544784dae4cacb66d888aad5f23a5
+msgid "Shut down the VM."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:72
+#: facf6e39441948e78f814e4ed314ca4d
+msgid "Upgrade Dom0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:74
+#: 6e477ecbcc7d43b7816599580515a966
+msgid ""
+"Be sure to do steps described in this section after *all* your template and "
+"standalone VMs got updated as described in the section above."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:77
+#: a496196a0c8d4578927f852c9e5c0572
+msgid "Open terminal in Dom0. E.g. Start->System Settings->Konsole."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:79
+#: 975c7bc2020646848d15da04ec69b431
+msgid ""
+"Upgrade the ``qubes-release`` package to the latest version which brings in "
+"new repo definitions and R2 signing keys:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:86
+#: 610f2a34a2ac442185c9092f35ec3321
+msgid "This should install ``qubes-release-1-6`` in your Dom0."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:88
+#: d360226e49c04d11a3b9390cbe8c90a8
+msgid "Install R2 packages:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b1.rst:94
+#: a3de188205934c038edb16c58d250ff6
+msgid ""
+"Reboot your system. Please note that if you use Anti Evil Maid, then it "
+"won’t be able to unseal the passphrase this time, because the Xen, kernel, "
+"and initramfs binaries have changed. Once the system boots up again, you "
+"could reseal your Anti Evil Maid’s passphrase to the new configuration. "
+"Please consult Anti Evil Maid documentation for explanation on how to do "
+"that."
+msgstr ""

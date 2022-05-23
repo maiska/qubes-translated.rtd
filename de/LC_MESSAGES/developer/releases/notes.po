@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:13+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/notes.rst:1
+#: 9e4c3fadf40246d1a71396938a8c1510
+msgid ""
+":doc:`Qubes R1.0 release notes </developer/releases/1_0/release-notes>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/notes.rst:2
+#: cb6720bccd7e43d396d5889603c605ac
+msgid ""
+":doc:`Qubes R2.0 release notes </developer/releases/2_0/release-notes>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/notes.rst:3
+#: c5c41b76fd2e4da4988e85bacef24e0c
+msgid ""
+":doc:`Qubes R3.0 release notes </developer/releases/3_0/release-notes>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/notes.rst:4
+#: 03f41fb5f5af415d81f4c9b52a537356
+msgid ""
+":doc:`Qubes R3.1 release notes </developer/releases/3_1/release-notes>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/notes.rst:5
+#: 0ce24d351bec4139ae6d468abf51a3c4
+msgid ""
+":doc:`Qubes R3.2 release notes </developer/releases/3_2/release-notes>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/notes.rst:6
+#: 55c59685926b417fb8aac2f0f01dfee9
+msgid ""
+":doc:`Qubes R4.0 release notes </developer/releases/4_0/release-notes>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/notes.rst:7
+#: 19632355969540caa3a3568c0ffadb35
+msgid ""
+":doc:`Qubes R4.1 release notes </developer/releases/4_1/release-notes>`"
+msgstr ""

@@ -1,0 +1,442 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Tobias Killer, 2022
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:09+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:1
+#: 31eef4bcfe5d4fef80c2fb2c3c5c2afa
+msgid ""
+"With Qubes, it’s easy and secure to back up and restore your whole system, "
+"as well as to migrate between two physical machines."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:4
+#: baa76e6b44ae46f488ea15501353177d
+msgid ""
+"These functions are integrated into the Qube Manager. There are also two "
+"command-line tools available that perform the same functions: ``qvm-backup``"
+" and ``qvm-backup-restore``."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:8
+#: 2f4c638d9f1442a68c408cac34948b83
+msgid ""
+"It’s extremely important to make regular backups of all the data you care "
+"about. This is true of all computing, not just the use of Qubes. Data loss "
+"can and does occur in myriad and unexpected ways. A standard recommendation "
+"is to make backups at least weekly: three copies in two different formats, "
+"one off-site."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:15
+#: 69cc7acd3469421aa6e09a13c0b3cab3
+msgid "Backing up changes to dom0"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:17
+#: fb5145f13ba64b21b62528d5197cdeca
+msgid ""
+"When backing up dom0 using the Qubes backup tool (explained below), only the"
+" home directory is backed up. Therefore, if there are files outside of the "
+"home directory you wish to save, you should copy them into the home "
+"directory prior to creating a backup. Here is an example of how to back up "
+"Qubes config files and RPC policies:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:30
+#: e35160da88b44714a5352c78af96b489
+msgid ""
+"To restore these files, move them from the restored directory in dom0’s home"
+" back to their appropriate locations in ``/etc/``. Please note that any "
+"packages installed via the package manager in dom0 will not be backed up. "
+"Such packages will have to be reinstalled through the package manager when "
+"restoring on a fresh installation."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:37
+#: 384aab70b05347a58aa12349b313aaf1
+msgid "Creating a backup"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:39
+#: 18ab36b8d04947dab7e1bb0136f82e88
+msgid ""
+"Go to **Applications menu -> System Tools -> Backup Qubes**. This brings up "
+"the **Qubes Backup VMs** window."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:42
+#: 690f4581660d4f37997f63217b302d5d
+msgid ""
+"Move the VMs that you want to back up to the right-hand **Selected** column."
+" VMs in the left-hand **Available** column will not be backed up."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:46
+#: f32943672d4f41dcab229ab6db94f91b
+msgid ""
+"You may choose whether to compress backups by checking or unchecking the "
+"**Compress the backup** box. Normally this should be left on unless you have"
+" a specific reason otherwise."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:50
+#: 2b05cb6792be4cabbddebc940464109a
+msgid "Once you have selected all desired VMs, click **Next**."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:52
+#: 25528c0c6c784300b4976cfbbf4a77c4
+msgid "Select the destination for the backup:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:54
+#: 06aa9e138bfc4278b4f581354302a3c4
+msgid ""
+"If you wish to send your backup to a (currently running) VM, select the VM "
+"in the drop-down box next to **Target app qube**. If you wish to send your "
+"backup to a `USB mass storage device </user/how-to-guides/how-to-use-usb-"
+"devices>`, you can use the directory selection widget to mount a connected "
+"device (under “Other locations” item on the left); or first mount the device"
+" in a VM, then select the mount point inside that VM as the backup "
+"destination."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:62
+#: b9f41f46f1544ddfacb9130a7cfe7d0f
+msgid ""
+"You must also specify a directory on the device or in the VM, or a command "
+"to be executed in the VM as a destination for your backup. For example, if "
+"you wish to send your backup to the ``~/backups`` folder in the target VM, "
+"you would simply browse to it using the convenient directory selection "
+"dialog (``...``) at the right. This destination directory must already "
+"exist. If it does not exist, you must create it manually prior to backing "
+"up."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:70
+#: 10b0b1004d844f28b182e59c720e5052
+msgid ""
+"By specifying the appropriate directory as the destination in a VM, it is "
+"possible to send the backup directly to, e.g., a USB mass storage device "
+"attached to the VM. Likewise, it is possible to enter any command as a "
+"backup target by specifying the command as the destination in the VM. This "
+"can be used to send your backup directly to, e.g., a remote server using "
+"SSH."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:77
+#: 5e4d4e7b21754420b2aba58a8f3c7a35
+msgid ""
+"**Note:** The supplied passphrase is used for **both** encryption/decryption"
+" and integrity verification."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:80
+#: 2cc5c71d77d1403eb2b3ff9a15c67aa0
+msgid ""
+"At this point, you may also choose whether to save your settings by checking"
+" or unchecking the **Save settings as default backup profile** box."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:84
+#: 8ac913671d91498ebac1affe0318c283
+msgid ""
+"**Warning: Saving the settings will result in your backup passphrase being "
+"saved in plaintext in dom0, so consider your threat model before checking "
+"this box.**"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:88
+#: d5a0299f6ece445caa871a06e48f63b2
+msgid ""
+"You will now see the summary of VMs to be backed up. If there are any issues"
+" preventing the backup, they will be listed here and the **Next** button "
+"grayed out."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:92
+#: 0c8d579355d04d4f827c4da1a9a8f8be
+msgid ""
+"When you are ready, click **Next**. Qubes will proceed to create your "
+"backup. Once the progress bar has completed, you may click **Finish**."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:96
+#: f3b1eea1c5ba4241bc33794bb545b618
+msgid ""
+"Test restore your backup. Follow the `restore procedure <#restoring-from-a-"
+"backup>`__, selecting **Verify backup integrity, do not restore the data**. "
+"This step is optional but strongly recommended. A backup is useless if you "
+"can’t restore your data from it, and you can’t be sure that your backup is "
+"good until you try to restore."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:104
+#: 2f35a555ed974e34adbfb9beb9fef100
+msgid "Restoring from a backup"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:106
+#: 124ff3cb4ae64085b71f887a2f462064
+msgid ""
+"Go to **Applications menu -> System Tools -> Restore Backup**. This brings "
+"up the **Qubes Restore VMs** window."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:109
+#: 3df3eb8622de49bbb1a0fffe2035aaba
+msgid "Select the source location of the backup to be restored:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:111
+#: 969757a4005343f184365ae59bec60e2
+msgid ""
+"If your backup is located on a :doc:`USB mass storage device </user/how-to-"
+"guides/how-to-use-usb-devices>`, attach it first to another VM or select "
+"``sys-usb`` in the next item."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:114
+#: 5d88eb342a1f4d74ab0e2ca68254497e
+msgid ""
+"If your backup is located in a (currently running) VM, select the VM in the "
+"drop-down box next to **app qube**."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:117
+#: 5ba1987e991a4e57a70803423f489f2d
+msgid ""
+"You must also specify the directory and filename of the backup (or a command"
+" to be executed in a VM) in the **Backup file** field. If you followed the "
+"instructions in the previous section, “Creating a Backup,” then your backup "
+"is most likely in the location you chose as the destination in step 3. For "
+"example, if you had chosen the ``~/backups`` directory of a VM as your "
+"destination in step 3, you would now select the same VM and again browse to "
+"(using ``...``) the ``backups`` folder. Once you’ve located the backup file,"
+" double-click it or select it and hit **OK**."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:127
+#: ebb4f21264374f6fb8a86fe923c89aac
+msgid "There are three options you may select when restoring from a backup:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:129
+#: 7edd171549ff416db37320e3d15cb590
+msgid ""
+"**ignore missing templates and net VMs**: If any of the VMs in your backup "
+"depended upon a NetVM or template that is not present in (i.e., “missing "
+"from”) the current system, checking this box will ignore the fact that they "
+"are missing and restore the VMs anyway and set them to use the default NetVM"
+" and system default template."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:135
+#: a1ba1f560a094b29afa397c4ea365786
+msgid ""
+"**ignore username mismatch**: This option applies only to the restoration of"
+" dom0’s home directory. If your backup was created on a Qubes system which "
+"had a different dom0 username than the dom0 username of the current system, "
+"then checking this box will ignore the mismatch between the two usernames "
+"and proceed to restore the home directory anyway."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:141
+#: 6e686c3b88594711be896f060d9c1878
+msgid ""
+"**Verify backup integrity, do not restore the data**: This will scan the "
+"backup file for corrupted data. However, it does not currently detect if it "
+"is missing data as long as it is a correctly structured, non-corrupted "
+"backup file. See `issue #3498 <https://github.com/QubesOS/qubes-"
+"issues/issues/3498>`__ for more details."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:148
+#: 83ce0ec2fc3846669472068f172226f1
+msgid ""
+"If your backup is encrypted, you must check the **Encrypted backup** box. If"
+" a passphrase was supplied during the creation of your backup (regardless of"
+" whether it is encrypted), then you must supply it here."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:153
+#: 2c37e1b42dee4d2cafe8c2b272eeb2d5
+msgid ""
+"**Note:** The passphrase which was supplied when the backup was created is "
+"used for **both** encryption/decryption and integrity verification. If the "
+"backup was not encrypted, the supplied passphrase is used only for integrity"
+" verification. All backups made from a Qubes R4.0 system will be encrypted."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:159
+#: 4f481cb4ad8f40d581d6bf8ea871af24
+msgid ""
+"You will now see the summary of VMs to be restored. If there are any issues "
+"preventing the restore, they will be listed here and the **Next** button "
+"grayed out."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:163
+#: a1195e38f1c24460a0376ee71adf160b
+msgid ""
+"When you are ready, click **Next**. Qubes will proceed to restore from your "
+"backup. Once the progress bar has completed, you may click **Finish**."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:167
+#: 356e127de9e24d98b8c5c728c867e2f7
+msgid ""
+"**Note:** When restoring from a dom0 backup, a new directory will be created"
+" in the current dom0 home directory, and the contents from the backup will "
+"be placed inside this new directory. This is intentional, as it allows users"
+" to have explicit control over which files and settings get applied in dom0."
+" If the contents from the dom0 backup were instead to overwrite the existing"
+" files in dom0’s home directory, unexpected and undesired configuration "
+"changes could occur. However, if you do wish to move all files from the dom0"
+" backup out of the subdirectory into your current dom0 home directory "
+"(overwriting any existing files in the process), you may do so by following "
+"the instructions `here <https://stackoverflow.com/questions/20192070/how-to-"
+"move-all-files-including-hidden-files-into-parent-directory-via>`__. Just "
+"remember that this can cause unexpected and desired configuration changes in"
+" dom0, depending on exactly which files you’re adding and replacing."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:183
+#: 21ead6c4d26e4882b70f87a11a476b48
+msgid "Emergency backup recovery without qubes"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:185
+#: 992c8df985ff4f94ac36e3d66c743fdf
+msgid ""
+"The Qubes backup system has been designed with emergency disaster recovery "
+"in mind. No special Qubes-specific tools are required to access data backed "
+"up by Qubes. In the event a Qubes system is unavailable, you can access your"
+" data on any GNU/Linux system with the following procedure."
+msgstr ""
+"Das Datensicherungssystem von Qubes wurde in Hinblick auf eine Notfall-"
+"Desaster-Wiederherstellung entworfen. Keine speziellen Qubes-spezifischen "
+"Werkzeuge werden benötigt, um auf gesicherte Daten einer Qubes-"
+"Datensicherung zuzugreifen. Im Falle, dass ein Qubes-System nicht verfügbar "
+"ist, können Sie über jedes GNU/Linux-System mit folgendem Vorgehen auf Ihre "
+"Daten zugreifen."
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:191
+#: b2a680df9520483baec15409e3f5ae9a
+msgid "Refer to the following for emergency restore of a backup created on:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:193
+#: 2a36d178993d40d08466e174be1cddc1
+msgid ""
+":doc:`Qubes R4 or newer </user/how-to-guides/backup-emergency-restore-v4>`"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:194
+#: 66e14c08c7974eaba878338a515af687
+msgid ":doc:`Qubes R3 </user/how-to-guides/backup-emergency-restore-v3>`"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:195
+#: 219c9b0880e348a098f0dc76655ee5cd
+msgid ""
+":doc:`Qubes R2 or older </user/how-to-guides/backup-emergency-restore-v2>`"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:198
+#: 71dbe4cb92cf4af3bb668966db4fa6b6
+msgid "Migrating between two physical machines"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:200
+#: 7efa8745eb824a16aee87e346f025d24
+msgid ""
+"In order to migrate your Qubes system from one physical machine to another, "
+"simply follow the backup procedure on the old machine, :doc:`install Qubes "
+"</user/downloading-installing-upgrading/downloads>` on the new machine, and "
+"follow the restoration procedure on the new machine. All of your settings "
+"and data will be preserved!"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:207
+#: fe5b84743bee4f96b4368e5e0c0138d4
+msgid "Choosing a backup passphrase"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:209
+#: 0ff584030b7644c39b1610c3126fcb53
+msgid ""
+"Here are some things to consider when selecting a passphrase for your "
+"backups:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:212
+#: 95aa6cdac578435d838ed6b0de84f35b
+msgid ""
+"If you plan to store the backup for a long time or on third-party servers, "
+"you should make sure to use a very long, high-entropy passphrase. (Depending"
+" on the decryption passphrase you use for your system drive, this may "
+"necessitate selecting a stronger passphrase. If your system drive decryption"
+" passphrase is already sufficiently strong, it may not.)"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:218
+#: 3e481c2394514614b07f9e7e4eab26f1
+msgid ""
+"An adversary who has access to your backups may try to substitute one backup"
+" for another. For example, when you attempt to retrieve a recent backup, the"
+" adversary may instead give you a very old backup containing a compromised "
+"VM. If you’re concerned about this type of attack, you may wish to use a "
+"different passphrase for each backup, e.g., by appending a number or date to"
+" the passphrase."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:224
+#: d901aedf5ae54417a35ddf34dadc3907
+msgid ""
+"If you’re forced to enter your system drive decryption passphrase in plain "
+"view of others (where it can be shoulder-surfed), then you may want to use a"
+" different passphrase for your backups (even if your system drive decryption"
+" passphrase is already maximally strong). On the other hand, if you’re "
+"careful to avoid shoulder-surfing and/or have a passphrase that’s difficult "
+"to detect via shoulder-surfing, then this may not be a problem for you."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:233
+#: 12f6d9b077b54ab0a910c867bb773247
+msgid "Notes"
+msgstr "Notizen"
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:235
+#: 40c5bc9b803a463ab2f96fa9191046a4
+msgid ""
+"For the technical details of the backup system, please refer to `this thread"
+" <https://groups.google.com/d/topic/qubes-devel/TQr_QcXIVww/discussion>`__."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-back-up-restore-and-migrate.rst:237
+#: 7f4e9dd213124749bb0cffc3c12f5428
+msgid ""
+"If working with symlinks, note the issues described in `this thread "
+"<https://groups.google.com/d/topic/qubes-users/EITd1kBHD30/discussion>`__."
+msgstr ""

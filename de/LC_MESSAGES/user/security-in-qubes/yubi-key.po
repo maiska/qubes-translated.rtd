@@ -1,0 +1,339 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Dominik Schürmann <dominik@schuermann.eu>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:07+0200\n"
+"PO-Revision-Date: 2022-05-23 15:08+0000\n"
+"Last-Translator: Dominik Schürmann <dominik@schuermann.eu>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:1
+#: de7c636d99a7496cbde0b14c0477253b
+msgid ""
+"You can use a YubiKey to enhance Qubes user authentication, for example to "
+"mitigate risk of someone snooping the password. This can also slightly "
+"improve security when you have a `USB keyboard </user/security-in-"
+"qubes/device-handling-security.html#security-warning-on-usb-input-"
+"devices>`__."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:7
+#: 70fa7240d82f41faa74fcd54bb3a618e
+msgid "Challenge-response mode"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:9
+#: da0a5c8f218a4bc790ba1b971cfba892
+msgid ""
+"In this mode, your YubiKey will generate a response based on the secret key,"
+" and a random challenge (instead of counter). This means that it isn’t "
+"possible to generate a response in advance even if someone gets access to "
+"your YubiKey. This makes it reasonably safe to use the same YubiKey for "
+"other services (also in challenge-response mode)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:15
+#: 84a4729339d947c2a00cc7a731ed637b
+msgid ""
+"Same as in the OTP case, you will need to set up your YubiKey, choose a "
+"separate password (other than your login password!) and apply the "
+"configuration."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:19
+#: 66607dd3b85d4876b37f7ea4829e6345
+msgid "To use this mode you need to:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:21
+#: 22268c12fc704a21b2d2e8ea4f4b5d58
+msgid ""
+"Install yubikey personalization the packages in your template on which your "
+"USB VM is based."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:24
+#: 81afc8637d444fc0afc8effa413c5295
+msgid "For Fedora."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:30
+#: dab828ae05644f77be35740111313b3f
+msgid "For Debian."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:36
+#: 8f7f0625457045d39f7fbb3fd6ddc185
+msgid ""
+"Shut down your template. Then, either reboot your USB VM (so changes inside "
+"the template take effect in your USB app qube) or install the packages "
+"inside your USB VM if you would like to avoid rebooting it."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:40
+#: fff1f1e13f9c4a20adadbbe3de9a8a26
+msgid ""
+"Configure your YubiKey for challenge-response ``HMAC-SHA1`` mode, for "
+"example `following this tutorial <https://www.yubico.com/products/services-"
+"software/personalization-tools/challenge-response/>`__."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:44
+#: 5b0a736a8c4b47d4ab4a2419ff8d2c26
+msgid ""
+"On Debian, you can run the graphical user interface ``yubikey-"
+"personalization-gui`` from the command line."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:47
+#: a9e17fd8e7984323a94177803375a89b
+msgid "Choose ``configuration slot 2``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:48
+#: 832f191460bd4d2989e095177e14594a
+msgid ""
+"It is recommended to enable ``Require user input (button press)`` but this "
+"is optional."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:50
+#: 260c259af3a64c759a661583121d79e1
+msgid ""
+"Note: Different from the above video, use the following settings select "
+"``HMAC-SHA1 mode``: ``fixed 64 bit input``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:52
+#: 95dc8e04f3c34a5eb48f976b0b513d1f
+msgid "We will refer the ``Secret Key (20 bytes hex)`` as ``AESKEY``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:54
+#: bb618497ab7a493bbcbe9f1615159bc9
+msgid ""
+"It is recommended to keep a backup of your ``AESKEY`` in an offline VM used "
+"as a vault."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:56
+#: 73a6db6ddf8940d48b0a975454a3be14
+msgid ""
+"Consider keeping a backup of your ``AESKEY`` on paper and storing it in a "
+"safe place."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:58
+#: 0263c0d1344f49eabfe7b185bbf7962b
+msgid ""
+"If you have multiple YubiKeys for backup purposes (in case a yubikey gets "
+"lost, stolen or breaks) you can write the same settings into other YubiKeys."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:62
+#: 56ad3bba564c4cf1b5506f0f8d43ff81
+msgid ""
+"Install `qubes-app-yubikey <https://github.com/QubesOS/qubes-app-yubikey>`__"
+" in dom0."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:70
+#: f90de18b337d4f2ca1bdd8da689581b6
+msgid ""
+"Adjust the USB VM name in case you are using something other than the "
+"default ``sys-usb`` by editing ``/etc/qubes/yk-keys/yk-vm`` in dom0."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:73
+#: 99bc97dddce7433b83e03cb89aed2671
+msgid ""
+"Paste your ``AESKEY`` from step 2 into ``/etc/qubes/yk-keys/yk-secret-"
+"key.hex`` in dom0."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:76
+#: b1229abea4d7485bb6e0d59ed5a056fe
+msgid ""
+"Paste your hashed password (other than your standard Qubes password) into "
+"``/etc/qubes/yk-keys/yk-login-pass-hashed.hex`` in dom0."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:79
+#: 1d239cb05855485e80a0f80d3faeac61
+msgid ""
+"You can calculate your hashed password using the following two commands. "
+"First run the following command to store your password in a temporary "
+"variable ``password``. (This way your password will not leak to the terminal"
+" command history file.)"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:88
+#: b6bea8a64c3241ecb3a58db95f876f45
+msgid "Now run the following command to calculate your hashed password."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:94
+#: d8c0070eb32e43e981b10d96ea6a7d81
+msgid "Edit ``/etc/pam.d/login`` in dom0, adding this line at the beginning:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:100
+#: 02abc94a3a07441d9ef7636294a034ef
+msgid ""
+"Edit ``/etc/pam.d/xscreensaver`` (or appropriate file if you are using "
+"another screen locker program) in dom0, adding this line at the beginning:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:108
+#: ca99001c8b3b430195de98ababc67ee7
+msgid ""
+"Edit ``/etc/pam.d/lightdm`` (or appropriate file if you are using another "
+"display manager) in dom0, adding this line at the beginning:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:116
+#: a579326d99f74346bdbcbd23b6edb4b4
+msgid "Usage"
+msgstr "Verwendungszweck"
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:118
+#: 679b1dd8e6104fc9bc50296e0f195fe9
+msgid "When you want to unlock your screen…"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:120
+#: a77acfcb6caa42a38546807c3b31b81b
+msgid "Plug YubiKey into USB slot."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:121
+#: 25fa55f5a3144b8c9da8cf442c1caa88
+msgid "Enter password associated with YubiKey."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:122
+#: af4e9bec56764ad59552f2a71c8c95a0
+msgid "Press Enter."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:123
+#: 812077bfaac540409388a94e03b74a6b
+msgid ""
+"If you configured so, YubiKey will request confirmation by pressing button "
+"on it (it will blink)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:126
+#: 417f5beb1bdf47c88626570a021e402d
+msgid "When everything is ok, your screen will be unlocked."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:128
+#: aa54741a38b7486292365649df0402ff
+msgid ""
+"In any case you can still use your login password, but do it in a secure "
+"location where no one can snoop your password."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:132
+#: 124e785b10af4d8dbfed5ac58a585fdd
+msgid "Mandatory YubiKey Login"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:134
+#: 3029092d3eaf44f184ac9279526c57a9
+msgid ""
+"Edit ``/etc/pam.d/yubikey`` (or appropriate file if you are using other "
+"screen locker program) and remove ``default=ignore`` so the line looks like "
+"this."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:143
+#: 1448b5c5be8140669db19a6a43417d6a
+msgid "Locking the screen when YubiKey is removed"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:145
+#: 5c53f6dad9b24d618393faf92c10bd3d
+msgid ""
+"You can setup your system to automatically lock the screen when you unplug "
+"your YubiKey. This will require creating a simple qrexec service which will "
+"expose the ability to lock the screen to your USB VM, and then adding a udev"
+" hook to actually call that service."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:150
+#: 5feaa72fbd344d41947b9b38009aa08a
+msgid "In dom0:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:152
+#: 0aded882874f4425ae824fdbf8088fc0
+msgid ""
+"First configure the qrexec service. Create ``/etc/qubes-"
+"rpc/custom.LockScreen`` with a simple command to lock the screen. In the "
+"case of xscreensaver (used in Xfce) it would be:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:160
+#: be04d7e816984ddd96c2911ba2c930cb
+msgid "Then make ``/etc/qubes-rpc/custom.LockScreen`` executable."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:166
+#: 40ccd75165264ceea7b73a8cacbf42d0
+msgid ""
+"Allow your USB VM to call that service. Assuming that it’s named ``sys-usb``"
+" it would require creating ``/etc/qubes-rpc/policy/custom.LockScreen`` with:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:174
+#: ef45a37aec31406789497b99612a9d62
+msgid "In your USB VM:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:176
+#: f84289d2b5e54829916c6218e134e514
+msgid ""
+"Create udev hook. Store it in ``/rw/config`` to have it persist across VM "
+"restarts. For example name the file ``/rw/config/yubikey.rules``. Add the "
+"following line:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:184
+#: 46f5a344086a491a9f738a637aca0e70
+msgid ""
+"Ensure that the udev hook is placed in the right place after VM restart. "
+"Append to ``/rw/config/rc.local``:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:192
+#: c09a3d1b3ba64b56a7ca368d9b0e594e
+msgid "Then make ``/rw/config/rc.local`` executable."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:198
+#: dc96c0cdb5224868835027ce1ce417f1
+msgid ""
+"For changes to take effect, you need to call this script manually for the "
+"first time."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/yubi-key.rst:205
+#: dd3775aa0a7d483da41ad6328f1af00d
+msgid "If you use KDE, the command(s) in first step would be different:"
+msgstr ""
