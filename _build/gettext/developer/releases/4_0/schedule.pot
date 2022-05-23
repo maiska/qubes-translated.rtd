@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:1
+#: 72721559eb694f3ca9d3195b51306373
+msgid "This schedule is based on `Version Scheme </developer/releases/version-scheme.html#release-schedule>`__."
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:5
+#: 5d400089af374cfba68730592d458c48
+msgid "Date"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:5
+#: 499dc9a73e9b49cb9157f23054df0ccc
+msgid "Stage"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:7
+#: d1538e92e84b46a28346f879e4e3baad
+msgid "31 Jul 2017"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:7
+#: 2137ea7205be450bbf5358a81a6c1b32
+msgid "4.0-rc1 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:9
+#: 95baf426c4514daca358be5803d773f3
+msgid "[STRIKEOUT:28 Aug 2017] \\ [STRIKEOUT:11 Sep 2017] \\"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:15
+#: 7feaa73ab0c14a4cbdb93106d845f69d
+msgid "[STRIKEOUT:9"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:16
+#: 7234f9146a76487999c5a29bf3921d31
+msgid "Oct 2017] 18 Oct 2017"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:9
+#: cd75e0841da8433b96150b05e5e64396
+msgid "current-testing freeze before 4.0-rc2"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:19
+#: b38dcbdf6f404c6a83748ef4ee938eea
+msgid "[STRIKEOUT:4 Sep 2017] [STRIKEOUT:18 Sep 2017] \\ [STRIKEOUT:16 Oct 2017] 23 Oct 2017"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:19
+#: d20373cee6cd4605b7c17b524ae9b7fe
+msgid "4.0-rc2 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:28
+#: d3b01c33b6da4bcabc8fa49fd6ecf12c
+msgid "6 Nov 2017"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:28
+#: cec262d2596e453fb8d936aff15f4565
+msgid "decide whether 4.0-rc2 is the final 4"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:30
+#: 2fabf9cdfd8a4fe092ec0c328aa0c0bd
+msgid "20 Nov 2017"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:30
+#: 0e7b5c78d0a341a18b8bf93610c94672
+msgid "current-testing freeze before 4.0-rc3"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:32
+#: e0700d61b6eb44a5992924fa5809ab71
+msgid "27 Nov 2017"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:32
+#: 9a8bc75095c141759fc7cdfe8d99aed2
+msgid "4.0-rc3 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:34
+#: 95c53d5d6b174a10badcad7171781ea9
+msgid "11 Dec 2017"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:34
+#: e7db1d14c7e944ca8899dc44ee6e968b
+msgid "decide whether 4.0-rc3 is the final 4.0"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:36
+#: 828ed7ce11aa45f6934e820c52c9b254
+msgid "1 Jan 2018"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:36
+#: e49038dd765f41809e9aa7b18b6ce851
+msgid "current-testing freeze before 4.0-rc4"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:38
+#: 2a2d6f0751dc4227a345216bb830b016
+msgid "[STRIKEOUT:8 Jan 2018] 31 Jan 2018"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:38
+#: 090529c112294c5bab76010786d60709
+msgid "4.0-rc4 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:42
+#: e0d0da5b23864b6d8814719bcfcb4922
+msgid "[STRIKEOUT:22 Jan 2018] 14 Feb 2018"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:42
+#: 7f6ec46058424e4e826849da665b0bdb
+msgid "decide whether 4.0-rc4 is the final 4.0"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:46
+#: a36435554f3b42888ca75003229ce1e4
+msgid "27 Feb 2018"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:46
+#: e1c20eae6de549729cac045b0b53bcad
+msgid "current-testing freeze before 4.0-rc5"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:48
+#: 7610fd780fa14e12ae5ac3cff3448966
+msgid "6 Mar 2018"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:48
+#: 1537da6eec684286a15b4f1a997c2e2e
+msgid "4.0-rc5 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:50
+#: 4f29b50f2dfa48f2b6aaca4e7e6d4547
+msgid "20 Mar 2018"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:50
+#: 293e48706056420c87401516c9021dc7
+msgid "decide whether 4.0-rc5 is the final 4.0"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:52
+#: 93f8b02583294de1827921737c91b27f
+msgid "28 Mar 2018"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_0/schedule.rst:52
+#: d2b7c53badfe42f585297bd68c6e30b1
+msgid "final 4.0 release"
+msgstr ""

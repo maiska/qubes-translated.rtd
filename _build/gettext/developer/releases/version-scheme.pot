@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/releases/version-scheme.rst:1
+#: 89480ab4188d4b81ac0bb5b9b92ba385
+msgid "The Qubes OS Project uses the `semantic versioning <https://semver.org/>`__ standard. Version numbers are written as ``<major>.<minor>.<patch>``. When ``<patch>`` is zero, it is often omitted as a matter of convention, e.g., ``4.1`` is short for ``4.1.0``."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:7
+#: d552000a9c8a411d8504fc5357b574c6
+msgid "In general, patch releases are for backward-compatible bug fixes, minor releases are for backward-compatible enhancements and new features, and major release are for any backward-incompatible changes. This means that, in general, one should *not* try to introduce features or enhancements in patch releases or any backward-incompatible changes in patch or minor releases. (Templates are a notable exception, as upstream OSes almost always have their own release schedules.) Bug fixes are allowed in all releases, and backward-compatible changes are allowed in all major and minor releases."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:17
+#: d8088c6ca86f4d06b75b3ca2ccef1041
+msgid "Following standard practice, **version** refers to any build that has been assigned a version name or number, e.g., ``3.2-rc2``, ``4.0.4``, ``4.1-beta1``. By contrast, **release** refers to any version that is intended for consumption by the general userbase. For example, ``4.0.4`` was both a **version** and a **release**, since it was stable and intended for general public use, while ``4.1-beta1`` was a **version** but *not* a **release**, since it was not stable and was intended only for `testing </user/downloading-installing-upgrading/testing>`. All releases are versions, but not all versions are releases."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:27
+#: 24db8773dd7f41dc92d8ba42bef1f0b9
+msgid "The letter **R**, as in ``R4.1``, stands for **release**. The abbreviation **RC**, as in ``3.2-rc2``, stands for **release candidate**."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:32
+#: 140aed055635446b847cf2528b927dff
+msgid "Qubes distributions and products"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:34
+#: ba4a92c99827495e854fb6c454f50e1e
+msgid "We intend to make it easy to make a remix of Qubes, targeting another hypervisor or isolation provider. We may also create commercial products intended for specific circumstances. There is one distinguished distribution called **Qubes OS**. All source code for it is available for download under a :doc:`free and open-source license </developer/code/license>` and is openly developed on `GitHub <https://github.com/QubesOS>`__ and our `mailing lists <https://www.qubes-os.org/support/>`__. The rest of this document discusses Qubes OS. Another remix may have its own version series."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:45
+#: 08573778e2334ff7a6b6088a0fdd6d7c
+msgid "Release versioning"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:47
+#: bf9109b7310446c18f79bc66ebb02f6b
+msgid "Qubes OS as a whole is released from time to time. When preparing a new release, we decide on the ``<major>.<minor>`` numbers (e.g., ``3.0``). We then publish the first release candidate, ``3.0-rc1``. When we feel that enough progress has been made, we’ll release ``3.0-rc2`` and so on. All these versions (not yet releases) are considered unstable and not for production use. You are welcome to :doc:`help us test </user/downloading-installing-upgrading/testing>` these versions."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:55
+#: 66f3f60735264e919fe81fc07300a204
+msgid "When enough progress has been made, we announce the first stable release, e.g. ``3.0.0``. This not only a version but an actual release. It is considered stable and we commit to supporting it according to our :doc:`support schedule </user/downloading-installing-upgrading/supported-releases>`. Core components are branched at this moment and bug fixes are backported from the master branch. Please see :doc:`help, support, mailing lists, and forum </introduction/support>` for places to ask questions about stable releases. No major features and interface incompatibilities are to be included in this release. We release bug fixes as patch releases (``3.0.1``, ``3.0.2``, and so on), while backward-compatible enhancements and new features are introduced in the next minor release (e.g., ``3.1``). Any backward-incompatible changes are introduced in the next major release (e.g., ``4.0``)."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:69
+#: b465f2f799f6459384cb331c441dd0f8
+msgid "Issues in our :doc:`issue tracker </introduction/issue-tracking>` are sorted by release `milestones </introduction/issue-tracking.html#milestones>`__."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:73
+#: 98b6a59dd43e46c994227e26e167a6b0
+msgid "Release schedule"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:75
+#: a1973b077c38448996cf264bd0faaaf5
+msgid "There is no specific schedule for releases other that more general roadmap. When time comes, Supreme Committee declares feature freeze and tags ``-rc1`` and releases ISO image. From this time on, no new features are accepted. Also a strict time schedule kicks in."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:80
+#: a31da685140e464088d1b638b32545bd
+msgid "Each release candidate period is as follows. For the first two weeks we accept and assign bug reports to be fixed before next release candidate. For the next two weeks we generally focus on fixing assigned bug reports, so issues discovered during this time may be postponed until later RC. Finally after that there is one week of current-testing freeze, during which time no new packages are released, in hope that they will be installed by wider user base and tested."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:88
+#: 7907473506ff44f9a22eee7813876551
+msgid "The next RC is released five weeks after the former. All packets are published in ``current`` repository and the cycle starts over. There should be no less than 1 and no more than 3 release candidates before final release."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:94
+#: 7fc9ee0847154076bcc1d77c101347b6
+msgid "Stage"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:94
+#: 81fa2a4543344dff81ffd069acf26f13
+msgid "Duration"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:96
+#: 5d65d622e29e48e4996ce991b91d035d
+msgid "initial testing"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:96
+#: ../../../_doc/developer/releases/version-scheme.rst:97
+#: 9d15f5e10042456285c4928f13592f42
+#: 28148baa46044c419059733a9437fe38
+msgid "two weeks"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:97
+#: e9f05e1c5fec41d9b44763538ac93c9b
+msgid "bug fixing"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:98
+#: 7c778cb8553c4c08bd11637f75961e81
+msgid "``current-testing`` freeze"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:98
+#: 1cedc79f771b4d2d8a909822dc0ee767
+msgid "one week"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:101
+#: 2476f0977d034d769ffa421227ac7a21
+msgid "Starting with second cycle (that is, after ``-rc1``) two weeks into the cycle (after primary bug-reporting period) the Supreme Committee decides whether there should be another RC. If, based on remaining issues, the Committee decides to release final, then the Committee agrees upon the release date, which should be no later than a week after."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:107
+#: d74c315ae66f4ba6859818dbb9861198
+msgid "|Release cycle|"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:110
+#: 092e7df9a1374052855cbd50e58a0376
+msgid "Bug priorities"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:112
+#: f7046806b4dd46d6b6f9af2ba0216109
+msgid "When deciding whether the current release candidate is the final one, the Committee takes bug `priorities </introduction/issue-tracking.html#priority>`__ into consideration. The meaning of them is as follows:"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:116
+#: 53ee333e4e4342d99ad17baf891909ae
+msgid "``blocker`` — when any such bug is present in the current release candidate, it can’t be considered final release. Bugs with this priority must be fixed before the next release candidate, even if that means delaying its release (which should be considered only last resort option)."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:122
+#: 9cef20ddf8b146129fe69e01cfaf3a36
+msgid "``critical`` — when any such bug is present in the current release candidate, it can’t be considered final release. But such bugs are not qualified to delay next release candidate release."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:126
+#: 777c4aa8ec674ac8b3f81210a37b1487
+msgid "``major`` — existence of such bugs do not strictly prevent the current release candidate be considered final (but of course we should try hard to not have them there). Fixing bugs of this priority can be delayed and qualified as updates to the final stable release."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:131
+#: 6d0f3e5083b54098b03a0eef08a1fccc
+msgid "``default`` and ``minor`` — existence of such bugs do not prevent the current release candidate be considered final. Fixing such bugs can be delayed to the next Qubes OS release. Eventually such fixes might be backported as an update to the stable release(s). (``default`` should really be assigned a more specific priority, but in practice there are too many issues and not enough time, so ``default`` ends up staying on many issues.)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:139
+#: cf1e379446fc41ac94c610cfe5a8271d
+msgid "All above is about bugs, no features should be assigned to the current release after first ``-rc``. Supreme Committee is free to adjust priorities appropriately."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:144
+#: 2345e0b101c34ba7b69ef1ca4db5b277
+msgid "Component version"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:146
+#: 6b609e3f3a0a4591b9e6955f511e9722
+msgid "Qubes release is defined as specific versions of components, which are developed more or less separately. Their versions are composed of major and minor version of target Qubes OS release followed by third component which is just incremented. There is no apparent indication that given version is stable or not."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:152
+#: f04da4c8ce814fdbbc7fef4311b6f517
+msgid "There are some non-essential components like ``qubes-apps-*`` that are shared between releases. Their versions indicate oldest qubes-release that is supported. We try hard to support multiple releases by one branch to ease code maintenance."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:157
+#: 6ba3ee3fab9043b49a75298b265794e8
+msgid "Different Qubes releases remixes may comprise of different components and version are not guaranteed to be monotonic between releases. We may decide that for newer release some component should be downgraded. There is no guarantee that arbitrary combination of different versions of random components will yield usable (or even install-able) compilation."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:164
+#: b33b402a74e641df8ef4cf1807741e26
+msgid "Git tags and branches"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:166
+#: f501ff29619b4bb685c515456d477254
+msgid "We mark each component version in the repository by tag containing ``v<version>``. Likewise, each Qubes OS release is marked by ``R<release>`` tag."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:170
+#: 48b69c54be9a4dd99801008afe51b83b
+msgid "At the release of some release we create branches named like ``release2``. Only bug fixes and compatible improvements are backported to these branches. These branches should compile. All new development is done in ``master`` branch. This branch is totally unsupported and may not even compile depending on maintainer of repository."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:176
+#: 43a2b97a96974d068754fc2adfc16224
+msgid "All version and release tags should be made and signed by someone from ITL staff. Public keys are included in ``qubes-builder`` and available at https://keys.qubes-os.org/keys/."
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:181
+#: accc1669ce604e3a83b3e55331243763
+msgid "Check installed version"
+msgstr ""
+
+#: ../../../_doc/developer/releases/version-scheme.rst:183
+#: 7e5f897c9f244b188a4837c1a18b1ddc
+msgid "If you want to know which version you are running, for example to report an issue, you can either check in the Qubes Manager menu under ``About > Qubes OS`` or in the file ``/etc/qubes-release`` in dom0. For the latter you can use a command like ``cat /etc/qubes-release`` in a dom0 terminal."
+msgstr ""

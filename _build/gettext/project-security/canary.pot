@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/project-security/canary.rst:1
+#: d54b54c36eae44dc8260623f25b0fdbe
+msgid "A **Qubes canary** is a security announcement periodically issued by the `Qubes security team </project-security/security.html#qubes-security-team>`__ through the :doc:`Qubes security pack </project-security/security-pack>` consisting of several statements to the effect that the signers of the canary have not been compromised. The idea is that, as long as signed canaries including such statements continue to be published, all is well. However, if the canaries should suddenly cease, if one or more signers begin declining to sign them, or if the included statements change significantly without plausible explanation, then this may indicate that something has gone wrong."
+msgstr ""
+
+#: ../../../_doc/project-security/canary.rst:12
+#: 0f268490cf7d499e8524213b9d5110cc
+msgid "The name originates from the practice in which miners would bring caged canaries into coal mines. If the level of methane gas in the mine reached a dangerous level, the canary would die, indicating to miners that they should evacuate. See `Wikipedia: warrant canary <https://en.wikipedia.org/wiki/Warrant_canary>`__ for more information, but bear in mind that Qubes Canaries are not strictly limited to legal warrants."
+msgstr ""
+
+#: ../../../_doc/project-security/canary.rst:21
+#: bf5fa286aed245a7ad2cc511363f8072
+msgid "Full list"
+msgstr ""

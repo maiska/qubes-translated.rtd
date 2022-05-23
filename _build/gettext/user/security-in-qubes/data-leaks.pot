@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:2
+#: 696384b71c8c4b8f97bf63377b4a1875
+msgid "The Role of the Firewall"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:4
+#: 247dfef5bb3b419ba7a1a2bdb3ecf26f
+msgid ":doc:`Firewalling in Qubes </user/security-in-qubes/firewall>`\\ **is not intended to be a leak-prevention mechanism.**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:7
+#: 0127472b8b914764a1b3570663d161c8
+msgid "There are several reasons for this, which will be explained below. However, the main reason is that Qubes cannot prevent an attacker who has compromised one app qube with restrictive firewall rules from leaking data via cooperative covert channels through another compromised app qube with nonrestrictive firewall rules."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:13
+#: 55e1c0c53960487eaf36f4a62ebf9fd2
+msgid "For example, suppose you have an ``email`` app qube. You have set the firewall rules for ``email`` such that it can communicate only with your email server. Now suppose that an attacker sends you a GPG-encrypted message which exploits a hypothetical bug in the GnuPG process. There are now multiple ways the attacker could proceed to leak data (such as confidential email messages) from ``email``. The most obvious way is by simply emailing the data to himself. Another possibility is that the attacker has also compromised another one of your app qubes, such as your ``netvm``, which is normally assumed to be untrusted and has unrestricted access to the network. In this case, the attacker might move data from ``email`` to the ``netvm`` via a covert channel, such as the CPU cache. Such covert channels have been described and even implemented in some “lab environments” and might allow for bandwidths of even a few tens of bits/sec. It is unclear whether such channels could be implemented in a real world system, where multiple VMs are running at the same time, each handling tens or hundreds of processes, all using the same cache memory, but it is worth keeping in mind. Of course, this would require special malware written specifically to attack Qubes OS, and perhaps even a specific Qubes OS version and/or configuration. Nevertheless, it might be possible."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:34
+#: a53f98194f484d3caee91d767271fddd
+msgid "Note that physically air-gapped machines are not necessarily immune to this problem. Covert channels can potentially take many forms (e.g., sneakernet thumb drive, bluetooth, or even microphone and speakers)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:38
+#: 831fb60a017045cd91ef05baa5c45d74
+msgid "For a further discussion of covert channels, see `this thread <https://groups.google.com/d/topic/qubes-users/AqZV65yZLuU/discussion>`__ and `#817 <https://github.com/QubesOS/qubes-issues/issues/817>`__."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:43
+#: 03d8cf3b9977401a951a216492819006
+msgid "Types of Data Leaks"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:45
+#: 0ad130562599488a858e9fb5e36c0cc2
+msgid "In order to understand and attempt to prevent data leaks in Qubes, we must distinguish among three different types of relevant data leaks:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:48
+#: a6ea8fa1ffb7432a88019682d87f657d
+msgid "**Intentional leaks.** Malicious software which actively tries to leak data out of an app qube, perhaps via cooperative covert channels established with other malicious software in another app qube or on some server via networking, if networking, even limited, is allowed for the app qube."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:54
+#: f2d9bf3df7994fc797e8bd0f7000d947
+msgid "**Intentional sniffing.** Malicious software trying to use side channels to, e.g., actively guess some key material used in another VM by some non-malicious software there (e.g., non-leak-proof GPG accidentally leaking out bits of the private key by generating some timing patterns when using this key for some crypto operation). Such attacks have been described in the academic literature, but it is doubtful that they would succeed in practice in a moderately busy general purpose system like Qubes OS where the attacker normally has no way to trigger the target crypto operation explicitly and it is normally required that the attacker trigger many such operations."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:65
+#: f33943f095794016b6cd5cde17febdbe
+msgid "**Unintentional leaks.** Non-malicious software which is either buggy or doesn’t maintain the privacy of user data, whether by design or accident. For example, software which automatically sends error reports to a remote server, where these reports contain details about the system which the user did not want to share."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:71
+#: 08de2a9b6a394846ab1c0481489523da
+msgid "Both Qubes firewall and an empty NetVM (i.e., setting the NetVM of an app qube to “none”) can fully protect against leaks of type 3. However, neither Qubes firewall nor an empty NetVM are guaranteed to protect against leaks of types 1 and 2. There are few effective, practical policy measures available to end-users today to stop the leaks of type 1. It is likely that the only way to fully protect against leaks of type 2 is to either pause or shut down all other VMs while performing sensitive operations in the target VM(s) (such as key generation)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/data-leaks.rst:81
+#: e33ba7ca8fcf4b4ea98c9f9696008357
+msgid "For further discussion, see `this thread <https://groups.google.com/d/topic/qubes-users/t0cmNfuVduw/discussion>`__."
+msgstr ""

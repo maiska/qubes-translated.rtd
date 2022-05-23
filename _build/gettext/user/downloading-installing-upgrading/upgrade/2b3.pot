@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:1
+#: 718f6aae036d48a8bfb0b2162c01232f
+msgid "Current Qubes R2 Beta 2 (R2B2) systems can be upgraded in-place to the latest R2 Beta 3 (R2B3) release by following the procedure below. However, upgrading in-place is riskier than performing a clean installation, since there are more things which can go wrong. For this reason, **we strongly recommended that users perform a**\\ :doc:`clean installation </user/downloading-installing-upgrading/installation-guide>`\\ **of Qubes R2 Beta 3**."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:8
+#: 72b742500d7347e68cee88b7fc719acc
+msgid "**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users back up the system by using the built-in**\\ `backup tool </user/how-to-guides/how-to-back-up-restore-and-migrate>`\\ **.**"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:12
+#: ec35eb41fb1a437fa0239b0b78362dfa
+msgid "Experienced users may be comfortable accepting the risks of upgrading in-place. Such users may wish to first attempt an in-place upgrade. If nothing goes wrong, then some time and effort will have been saved. If something does go wrong, then the user can simply perform a clean installation, and no significant loss will have occurred (as long as the user :doc:`backed up </user/how-to-guides/how-to-back-up-restore-and-migrate>` correctly!)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:20
+#: ba3603589bc94063b00494addcc43102
+msgid "Upgrade all Template and Standalone VM(s)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:22
+#: 4faf4c4dbbb54136b7df3120abb04646
+msgid "By default, in Qubes R2, there is only one template, however users are free to create more templates for special purposes, as well as Standalone VMs. More information on using multiple templates, as well as Standalone VMs, can be found :doc:`here </user/how-to-guides/how-to-install-software>`. The steps described in this section should be repeated in *all* user’s Template and Standalone VMs."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:29
+#: 049010fc539949fd964c2f4246d3d191
+msgid "It is critical to complete this step **before** proceeding to dom0 upgrade. Otherwise you will most likely ends with unusable system."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:32
+#: 952067a7673d4e03beec7de192c4e102
+msgid "Open terminal in the template (or standalone VM). E.g. use the Qubes Manager’s right-click menu and choose Run Command in VM and type ``gnome-terminal`` there."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:36
+#: d490154c71734dcc8ab7e14dc6d77606
+msgid "Proceed with normal update in the template:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:42
+#: 3425962906fc45bf933dcc364350c293
+msgid "Ensure that you’ve got qubes-core-vm package version 2.1.13-3.fc18:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:48
+#: 00d0bae554064adc89451bdddceec216
+msgid "Update the system to R2 beta3 packages:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:54
+#: 92b6f73e9498446dba1b51078a2b469b
+msgid "**Do not** shutdown the VM."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:57
+#: 5bdfb87701f24a1b92b99eabac1ff43c
+msgid "Upgrading dom0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:59
+#: 6458b337296548cc8481095a7c6970d0
+msgid "Be sure to do steps described in this section after *all* your template and standalone VMs got updated as described in the section above. Also make sure you haven’t shutdown any of: netvm, firewallvm, fedora-18-x64 (or to be more precise: template which your netvm and firewallvm is based on)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:65
+#: cbeb5a2be7774db2a62019ebc2c6a7ce
+msgid "Open terminal in Dom0. E.g. Start->System Settings->Konsole."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:67
+#: 81818c2d4657451f8c4604914d58e850
+msgid "Upgrade the ``qubes-release`` package to the latest version which brings in new repo definitions and R2 signing keys:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:74
+#: 59c64b32ac1c4e538114b2762f791500
+msgid "This should install ``qubes-release-2-3.1`` in your Dom0."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:76
+#: c4706deffcc846e0a38de43947b00c37
+msgid "Upgrade dom0 to R2 beta3:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:82
+#: 755afe0467ee49cd93003c7b1cb08659
+msgid "If above step completed successfully you should have qubes-core-dom0 at least 2.1.34. If not, repeat above step with additional ``--clean`` option."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:86
+#: bce914e26a1d47868b59fabc7b7e012a
+msgid "Now is the time to shutdown all the VMs:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:92
+#: 0171e027ee1649f59535f8d81c1ede38
+msgid "Reboot the system."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b3.rst:94
+#: 2aae1e222b9846d6ae063f3e0f6850fc
+msgid "Please note that if you use Anti Evil Maid, then it won’t be able to unseal the passphrase this time, because the Xen, kernel, and initramfs binaries have changed. Once the system boots up again, you could reseal your Anti Evil Maid’s passphrase to the new configuration. Please consult Anti Evil Maid documentation for explanation on how to do that."
+msgstr ""

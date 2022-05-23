@@ -1,0 +1,649 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/introduction/support.rst:1
+#: d7fffd136cc24893878383f4fdcda9c5
+msgid "The Qubes community is here to help! Since Qubes is a security-oriented operating system, we want to make sure you `stay safe <#staying-safe>`__ as you get the support you need, and we want to make sure our community remains a friendly and productive place by ensuring we all follow the `Code of Conduct </introduction/code-of-conduct>` and `discussion guidelines <#discussion-guidelines>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:9
+#: 3645ae7c8a894a5483f3e54948f70618
+msgid "How to get help and support"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:11
+#: 8ad41b3c1a714519b6b45a01d76ab157
+msgid "First, let’s see what kind of help you need."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:14
+#: a3fac78a94ec4cdc9383ac99ff7b0c43
+msgid "I have a problem or a question."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:16
+#: 2a5169b3089d44be811806f21bd6c332
+msgid "No worries! Here’s how we recommend proceeding:"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:18
+#: d700022f475b46faa3925d9916ff3237
+msgid "Check the `documentation </>`__. There may already be a page about it. Specifically, check out the `How-To Guides </#how-to-guides>`__ and `Troubleshooting </#troubleshooting>`__ sections."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:23
+#: e917363265fc4f9a9253309b5e32f537
+msgid "Search the :doc:`FAQ </introduction/faq>`. Your question might already be answered."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:25
+#: dcca6f5292284b75a3e9164dc35e20a8
+msgid "Try `searching the issue tracker </introduction/issue-tracking.html#search-tips>`__. There may already be an open **or closed** issue about your problem. The issue tracker is constantly being updated with known bugs and may contain workarounds for problems you’re experiencing. If there any pinned issues at the top, make sure to check them first!"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:32
+#: 9c3016ab04e04a26a944e5225a3b817e
+msgid "Try `searching the Qubes Forum <https://forum.qubes-os.org/>`__. There may already be a matching topic."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:35
+#: 94bb3ab9db6342f3a1923f307b1351d6
+msgid "Try `searching the ``qubes-users`` archives <https://www.mail-archive.com/qubes-users@googlegroups.com/>`__. There may have already been a relevant thread."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:40
+#: 5f19105285b047c0af0aaa8fa371f4cb
+msgid "I didn’t find a solution or an answer!"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:42
+#: c4500599ad8e4c35a48733413912eff3
+msgid "Sorry to hear that! In that case, we recommend asking for help on the `Qubes Forum <https://forum.qubes-os.org/>`__ or on the ```qubes-users`` mailing list <#qubes-users>`__. Choose the venue you prefer, but please don’t ask on both at the same time! Before you ask, please review our `discussion guidelines <#discussion-guidelines>`__ and StackOverflow’s advice on `how to ask good questions <https://stackoverflow.com/help/how-to-ask>`__. Don’t forget to `stay safe <#staying-safe>`__!"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:52
+#: 0ef9f2ee84c74b9fb6d6edb9a93bec69
+msgid "I don’t need support, but I think I found a bug."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:54
+#: 25708b9829df4a6e8bda4942497b2023
+msgid "We’d be grateful if you reported it (but please make sure no one else has already reported it first)! Please see `Issue Tracking </introduction/issue-tracking>` for details."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:59
+#: 1bac4691d693432d88ac69187cb4f7bf
+msgid "I don’t need support, but I’d like to request a feature."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:61
+#: 64ec0145f9be44baaa95f325a0d8425e
+msgid "No promises, but we’d be happy to consider it! Please see `Issue Tracking </introduction/issue-tracking>` for details."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:65
+#: 664883bc16ee48b994fb5e7571d4298b
+msgid "Where’s the best place to discuss Qubes?"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:67
+#: e9a6b0f637db4648b8b03e0d436ade80
+msgid "That would be the `Qubes Forum <https://forum.qubes-os.org/>`__ and the ```qubes-users`` mailing list <#qubes-users>`__. Please have a look at our `discussion guidelines <#discussion-guidelines>`__ before diving in. Enjoy!"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:73
+#: 088a919314994dd3b3a898a0a609d625
+msgid "How can I get involved and contribute?"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:75
+#: 301e6913c09e4fbbb680c8123ef1a543
+msgid "Thank you for asking! Please see `How to Contribute </introduction/contributing>` for all the ways you can do so."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:79
+#: d26d317432df46ea88b34b7f467e7f8e
+msgid "I would like to report a security vulnerability."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:81
+#: bb3247eb101b476a91694ca69967c8ad
+msgid "That sounds more like you helping us! Thanks! Please see `Reporting Security Issues in Qubes OS </project-security/security.html#reporting-security-issues-in-qubes-os>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:86
+#: e2ad06f2194646fca0a3729c93d515ca
+msgid "Staying safe"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:88
+#: a9fd4d8933344cab949f4b336dbd7569
+msgid "The Qubes mailing lists and forum are open to the public. The contents are crawled by search engines and archived by third-party services outside of our control. Please do not send or post anything that you are not comfortable seeing discussed in public. If confidentiality is a concern, please use PGP encryption in an off-list email."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:94
+#: ca2ce1c7e6c84ca79778e2c125ac678c
+msgid "The Qubes community includes people from all walks of life and from around the world. Individuals differ in areas of experience and technical expertise. You will come into contact with others whose views and agendas differ from your own. Everyone is free to write what they please, as long as it doesn’t violate our :doc:`Code of Conduct </introduction/code-of-conduct>`. Be friendly and open, but do not believe everything you read. Use good judgment, and be especially careful when following instructions (e.g., copying commands) given by others on the lists."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:104
+#: 8a63609581b745cfaa2021fbc450d1ee
+msgid "It’s always possible that a bad actor could try to impersonate any member of the `Qubes team <https://www.qubes-os.org/team/>`__ anywhere on the Internet. Please don’t assume that someone who claims to be an official Qubes team member really is one without an appropriate form of authentication, such as a `verified PGP-signed message </project-security/verifying-signatures>`. (But bear in mind that anyone can generate a key with any name on it and use it to PGP-sign a message, so the mere presence of a PGP signature does not indicate authority. Successful `verification </project-security/verifying-signatures>` is what counts.) All official `news <https://www.qubes-os.org/news/>`__ can be authenticated by `verifying the signatures </project-security/verifying-signatures>` on the relevant tags or commits in the `qubes-posts <https://github.com/QubesOS/qubes-posts>`__ repository."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:118
+#: c3b49f92cb0743cc8152a0984771962b
+msgid "Given that there may be impostors and others trying to lead you astray, how should you sort the good advice from the bad? This is up to each individual to decide, but it helps to know that many members of our community have proven themselves knowledgeable through their :doc:`contributions </introduction/contributing>` to the project. Often, these individuals sign their messages with the same key as (or another key authenticated by) the one they use to :doc:`sign their contributions </developer/code/code-signing>`."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:127
+#: 64945bde5c6d4073a027382fd27621fc
+msgid "For example, you might find it easier to trust advice from someone who has a proven track record of :doc:`contributing software packages </developer/general/package-contributions>` or `contributing to the documentation </developer/general/how-to-edit-the-documentation>`. It’s unlikely that individuals who have worked hard to build good reputations for themselves through their contributions over the years would risk giving malicious advice in signed messages to public mailing lists. Since every contribution to the Qubes OS Project is publicly visible and cryptographically signed, anyone would be in a position to :doc:`verify </project-security/verifying-signatures>` that these came from the same keyholder."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:140
+#: 70608c514eec4116ae18687753088db0
+msgid "Discussion guidelines"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:142
+#: 4b3d7d236da245abb23025310833331e
+msgid "Qubes discussions mainly take place on ``qubes-users``, ``qubes-devel``, and our `forum <#forum>`__, all of which are explained below. Most questions should be directed to ``qubes-users`` or the `forum <#forum>`__. **Please do not send questions to individual Qubes developers.** By sending a message to the appropriate mailing list, you are not only giving others a chance to help you, but you may also be helping others by starting a public discussion about a shared problem or interest."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:151
+#: 09385d268029442c9f0879e8c5eb68a6
+msgid "These are open venues where people freely come together to discuss Qubes and voluntarily help each other out of mutual interest and good will. They are *not* your personal, paid support service. **No one owes you a reply.** No one here is responsible for solving your problems for you. Nonetheless, there are many things you can do to make it more likely that you will receive a reply. This community is fortunate to have an exceptionally large number of friendly and knowledgeable people who enjoy corresponding on these lists. The vast majority of them will be happy to help you if you follow these simple guidelines."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:162
+#: aa5d6cf45a65477994c146d0efd005f7
+msgid "Be polite and respectful"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:164
+#: e33be5a6d8994e03a15b5e697071ccfe
+msgid "Remember, no one here is under any obligation to reply to you. Think about your readers. Most of them are coming home after a long, hard day at work. The last thing they need is someone’s temper tantrum. If you are rude and disrespectful, you are very likely to be ignored."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:170
+#: 19c4c1275f0b4bcb9431c97a570811b6
+msgid "Be concise"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:172
+#: bd8e77eea35642af8832c3f281733ed6
+msgid "Include only essential information. Most of your readers lead busy lives and have precious little time. We *want* to spend some of that time helping you, if we can. But if you ramble, it will be easier to skip over you and help someone else who gets right to the point."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:178
+#: 6d9b5c2421864deda4462daba162491c
+msgid "Help us help you"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:180
+#: 41084cc384b6444ea341ad610951f969
+msgid "Tell us what you’ve already tried, and which documentation pages you’ve already read. Put yourself in your readers’ shoes. What essential information would they require in order to be able to help you? Make sure to include that information in your message. A great way to provide your hardware details is by `generating and submitting a Hardware Compatibility List (HCL) report </user/hardware/how-to-use-the-hcl.html#generating-and-submitting-new-reports>`__, then linking to it in your message. `Ask questions the smart way. <http://www.catb.org/esr/faqs/smart-questions.html>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:191
+#: d4f00e08f4014380910bef19e371012b
+msgid "Be patient"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:193
+#: e8cfffd4254b4c4a80e488d58bd57a9c
+msgid "Do not “bump” a thread more than once every three days *at most*. If it seems like your messages to the mailing lists are consistently being ignored, make sure you’re following the guidelines explained on this page. If you’re already doing so but still not getting any replies, then it’s likely that no one who knows the answer has had time to reply yet. Remember that the devs are very busy working on Qubes. They usually only have a chance to answer questions on the mailing lists once every several days."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:203
+#: 658c7dd3f50d4f9686e6d9cdbaf29007
+msgid "Be a good community member"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:205
+#: ce94bf5fcd3b4da6b1df7751562a1b58
+msgid "As with any social community, members earn different reputations for themselves over time. We want these discussion venues to be friendly, productive places where information and ideas are exchanged for the mutual benefit of all. We understand that the best way to achieve this is to encourage and cultivate other like-minded individuals. Those who have shown themselves to be good community members through their past contributions have earned our good will, and we will be especially eager to help them and collaborate with them. If you are new to the community, you should understand that it may take time for you to earn the good will of others. This does not mean that you will not receive help. On the contrary, we are fortunate to have such a helpful and understanding community that many of them spend hours of their personal time helping complete strangers, including many who post anonymously. (Given the integration of Qubes with `Whonix <https://www.whonix.org/wiki/Qubes>`__, we understand better than most the complexities of privacy and anonymity, and we know that many users have no other choice but to post anonymously.) You can read our project’s `Code of Conduct </introduction/code-of-conduct>` and :doc:`Privacy Policy </introduction/privacy>` for more information."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:226
+#: 7176100f536f42009e8a734d1ef6b1ec
+msgid "Report issues and submit changes in the right places"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:228
+#: 4437f0969e85453fa5761cf95e243410
+msgid "The mailing lists and `forum <#forum>`__ are good places to ask questions and discuss things. However, if you’re submitting a more formal report, we’d prefer that you submit it to our :doc:`issue tracker </introduction/issue-tracking>` so that it doesn’t get overlooked. (However, please remember that `the issue tracker is not a discussion forum </introduction/issue-tracking.html#the-issue-tracker-is-not-a-discussion-forum>`__.) Likewise, if you see that something in the documentation should be changed, don’t simply point it out in a discussion venue. Instead, :doc:`submit the change </developer/general/how-to-edit-the-documentation>`."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:239
+#: dd22f4282e2940a293361c319cdf9312
+msgid "Moderation"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:241
+#: c414c3a7cc0e4e879ace365642638e03
+msgid "The moderation team aims to enforce our :doc:`Code of Conduct </introduction/code-of-conduct>`. Beyond this, users should not expect any specific action from the moderation team. Specifically, users should not request that posts or messages be deleted or edited by a moderator. Users are reminded that, in most venues, anything posted will be sent out as an email to other others, and these emails cannot be deleted from others’ inboxes."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:250
+#: 046fe3daa1ab436d991b2462d35e0e58
+msgid "Specific mailing list rules and notes"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:253
+#: 9604941a2b1f4c5491968ccb72d904b4
+msgid "Use the correct list"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:255
+#: a28205219e034450830495393e5ef3e9
+msgid "Send your message to the correct list. Read the sections below to determine which list is correct for your message."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:259
+#: b8022f9620124c91903852e7be55bc8e
+msgid "Do not top-post"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:261
+#: e00d8ea751dc4845a5fc5cb4ab8ad4d7
+msgid "`Top-posting <https://en.wikipedia.org/wiki/Posting_style#Top-posting>`__ is placing your reply above the quoted message to which you’re replying. Please refrain from doing this. Instead, either `interleave <https://en.wikipedia.org/wiki/Posting_style#Interleaved_style>`__ your reply by placing parts of your message immediately below each quoted portion to which it is replying, or `bottom-post <https://en.wikipedia.org/wiki/Posting_style#Bottom-posting>`__ by placing your entire reply below the quoted message to which you’re replying."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:272
+#: edec9382ea2547c0bb7faa04bb7b2043
+msgid "Use proper subject lines"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:274
+#: 09978ce590244e10821edc9077215ef4
+msgid "Include a precise and informative subject line. This will allow others to easily find your thread in the future and use it as a reference. (Bad: “Help! Qubes problems!” Good: “R2B2 Installation problem: Apple keyboard not working in installer.”)"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:280
+#: 6c35ff8202f04ed7a4ca9fcf3ff092f4
+msgid "Do not send duplicates"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:282
+#: f6d7f9e64c6a4f5ca73d5d34c95feb46
+msgid "If your message is not successfully sent to the list, it probably got caught in the spam filter. We check the spam filter regularly, so please be patient, and your message should be approved (and your email address added to the whitelist) within a few days."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:288
+#: a24aa7a43a5a421897a3f722926c9d06
+msgid "Keep the list CCed"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:290
+#: 7a23e90f21814a58a991bcd2b9068624
+msgid "Keep the mailing list CCed throughout the conversation unless there’s a special need for privacy (in which case, use PGP encryption). This increases the likelihood that a greater quantity of useful information will be available to everyone in the future."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:296
+#: cab3bb69c7094a5895e846f35fa6d969
+msgid "Quote appropriately"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:298
+#: f2cc371b08634ceb8eabacec313cb638
+msgid "If you’re replying to a thread (whether your own or someone else’s), you should make sure to quote enough from previous messages in the thread so that people reading your message can understand the context without having to find and read earlier messages from that thread. Each reply should continue the conversation and, ideally, be readable as a conversation in itself. Do not quote advertisements in signatures or inline PGP signature blocks. (Quoting the latter interferes with the ability of programs like Enigmail to properly quote replies thereafter)."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:308
+#: cc097fd04e5c4d5d91ab4b277300908d
+msgid "English not required"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:310
+#: 3295b0f89a8a42879026142254765c41
+msgid "If you do not speak English, you should feel free to post in your own language. However, bear in mind that most members of the list can only read English. You may wish to include an automated translation in your message out of consideration for those readers. If you choose to write in English, please do not apologize for doing so poorly, as it is unnecessary. We understand and will ask for clarification if needed."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:318
+#: 212c78b912544eccadf5ef2d6566bd84
+msgid "Suggestions"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:320
+#: d79ccfa5a21341d7b1a4e5bc758e7fc8
+msgid "While we’re generally open to hearing suggestions for new features, please note that we already have a pretty well defined `roadmap <https://github.com/QubesOS/qubes-issues/milestones>`__, and it’s rather unlikely that we will change our schedule in order to accommodate your request. If there’s a particular feature you’d like to see in Qubes, a much more effective way to make it happen is to contribute a patch that implements it. We happily accept such contributions, provided they meet our standards. Please note, however, that it’s always a good idea to field a discussion of your idea on the ``qubes-devel`` list before putting in a lot of hard work on something that we may not be able or willing to accept."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:333
+#: 72aebd3a0ea14245aecfd108dd169b23
+msgid "Google Groups"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:335
+#: ae8c3c82856d4dd6ab78c20403c97643
+msgid "While the mailing lists are implemented as Google Group web forums, a Google account is in no way required, expected, or encouraged. Many discussants (including most members of the Qubes team) treat these lists as conventional `mailing lists <https://en.wikipedia.org/wiki/Electronic_mailing_list>`__, interacting with them solely through plain text email with `MUAs <https://en.wikipedia.org/wiki/Email_client>`__ like `Thunderbird <https://www.thunderbird.net/>`__ and `Mutt <http://www.mutt.org/>`__. The Google Groups service is just free infrastructure, and we `distrust the infrastructure </introduction/faq.html#what-does-it-mean-to-distrust-the-infrastructure>`__. This is why, for example, we encourage discussants to use :doc:`Split GPG </user/security-in-qubes/split-gpg>` to sign all of their messages to the lists, but we do not endorse the use of these Google Groups as web forums. For that, we have a separate, dedicated `forum <#forum>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:352
+#: a681f69fdde5459e9c9e5e3f22e83171
+msgid "Mailing lists"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:354
+#: 3be616a8e5c14476b518d5a0235690ec
+msgid "This section covers each of our individual `mailing lists <https://en.wikipedia.org/wiki/Electronic_mailing_list>`__, with details about the purpose of each list and how to use it. A Google account is **not** required for any of these mailing lists."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:360
+#: 702179967f7c4ad6846f109f52d0aaff
+msgid "qubes-announce"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:362
+#: a7b07ad2298144bfa8b89495bb76c31c
+msgid "This is a read-only list for those who wish to receive only very important, infrequent messages. Only the core Qubes team can post to this list. Only :doc:`Qubes Security Bulletins (QSBs) </project-security/qsb>`, new stable releases, and end-of-life notices are announced here."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:367
+#: 2a00e37a6b144d89be4507366200f73d
+msgid "To subscribe, send a blank email to ``qubes-announce+subscribe@googlegroups.com``. (Note: A Google account is **not** required. Any email address will work.) To unsubscribe, send a blank email to ``qubes-announce+unsubscribe@googlegroups.com``. This list also has a `traditional mail archive <https://www.mail-archive.com/qubes-announce@googlegroups.com/>`__ and an optional `Google Groups web interface <https://groups.google.com/group/qubes-announce>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:377
+#: c5b7ecef950e46d8bbc0ceb41b870bb4
+msgid "qubes-users"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:379
+#: 9bae9d31b5744a1b9dc8c61e164df40c
+msgid "This list is for helping users solve various daily problems with Qubes OS. Examples of topics or questions suitable for this list include:"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:382
+#: 9319e1f7a21d4afaad8ac4910f28c3a5
+msgid ":doc:`HCL </user/hardware/hcl>` reports"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:383
+#: a384ba8ba7684401a8079507283377cd
+msgid "Installation problems"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:384
+#: d87e047e9f1b41b3b0708a71901fd9f3
+msgid "Hardware compatibility problems"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:385
+#: d4a853ac0b9646c0a640e1513378195e
+msgid "Questions of the form: “How do I…?”"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:387
+#: 8dd50986085e4cae83f1f56ed95490b1
+msgid "Please try searching both the Qubes website and the archives of the mailing lists before sending a question. In addition, please make sure that you have read and understood the following basic documentation prior to posting to the list:"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:392
+#: 4e06d82e9b374dfdb078dfef352a83d1
+msgid "The :doc:`Installation Guide </user/downloading-installing-upgrading/installation-guide>`, :doc:`System Requirements </user/hardware/system-requirements>`, and :doc:`HCL </user/hardware/hcl>` (for problems related to installing Qubes OS)"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:395
+#: bc38d567da684518b0aaff88014c2ef5
+msgid "The `User FAQ </introduction/faq.html#users>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:396
+#: 3f2613748edd4f3e9bbe3fb5ee0b7bce
+msgid "The `documentation </>`__ (for questions about how to use Qubes OS)"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:399
+#: 6f92f4a144804cdbbd121c47baa4a852
+msgid "You must be subscribed in order to post to this list. To subscribe, send a blank email to ``qubes-users+subscribe@googlegroups.com``. (Note: A Google account is **not** required. Any email address will work.) To post a message to the list, address your email to ``qubes-users@googlegroups.com``. If your post does not appear immediately, please allow time for moderation to occur. To unsubscribe, send a blank email to ``qubes-users+unsubscribe@googlegroups.com``. This list also has a `traditional mail archive <https://www.mail-archive.com/qubes-users@googlegroups.com/>`__ and an optional `Google Groups web interface <https://groups.google.com/group/qubes-users>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:412
+#: 81f202d7601942898dc053ab5cdd3027
+msgid "qubes-devel"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:414
+#: e19dea5905064d498caf1a6ce23d6b91
+msgid "This list is primarily intended for people who are interested in contributing to Qubes or who are willing to learn more about its architecture and implementation. Examples of topics and questions suitable for this list include:"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:419
+#: 4fb0077e10434a12b744ba6c63c4dbae
+msgid "Questions about why we made certain architecture or implementation decisions."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:422
+#: 1d5c861101974e78a860f566e3a97fe7
+msgid "For example: “Why did you implement XYZ this way and not the other way?”"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:425
+#: b1192390364e4b3583a686371c436b43
+msgid "Questions about code layout and where code is for certain functionality."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:427
+#: bd8bad72aefc457195da0e7fc3d079e8
+msgid "Discussions about proposed new features, patches, etc."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:429
+#: d76bf2a6040a4d0790bed2a5e73bb6c8
+msgid "For example: “I would like to implement feature XYZ.”"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:431
+#: 24b42bd33aa94c9fabeed62bfb5b200c
+msgid "Contributed code and patches."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:432
+#: a8e49d97827e41329f06145a34112714
+msgid "Security discussions which are relevant to Qubes in some way."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:434
+#: fd79215e609c4cb48d02894c6e8350ac
+msgid "You must be subscribed in order to post to this list. To subscribe, send a blank email to ``qubes-devel+subscribe@googlegroups.com``. (Note: A Google account is **not** required. Any email address will work.) To post a message to the list, address your email to ``qubes-devel@googlegroups.com``. If your post does not appear immediately, please allow time for moderation to occur. To unsubscribe, send a blank email to ``qubes-devel+unsubscribe@googlegroups.com``. This list also has a `traditional mail archive <https://www.mail-archive.com/qubes-devel@googlegroups.com/>`__ and an optional `Google Groups web interface <https://groups.google.com/group/qubes-devel>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:447
+#: 86faba9517c54805ad8992d41f56865d
+msgid "qubes-project"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:449
+#: 02f3db6f0ca743e1921c46b9d98c4f1b
+msgid "This list is for non-technical discussion and coordination around the Qubes OS project."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:452
+#: ../../../_doc/introduction/support.rst:480
+#: 53cdfbf0cb904966907860d18a9f8a32
+#: b6033ca8b5c046b5abc4736c6541681a
+msgid "Examples of topics or question suitable for this list include:"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:454
+#: a5f46045488d422d8ab4cf6e020a7d23
+msgid "Participation (talks, workshops, etc.) at upcoming events"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:455
+#: 23e426af324d4981b5961ee7f7b201d1
+msgid "Project funding applications and strategies"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:456
+#: 7476fe6da45b45d78d15b14b3d80e553
+msgid "FOSS governance discussions"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:457
+#: 96003830321d4ab3bc39f0b2fd465e95
+msgid "Most Github issues tagged `business <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3Abusiness>`__ or `project management <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22project+management%22>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:462
+#: 3e665f3594a64fe1a7765b1b16287a36
+msgid "You must be subscribed in order to post to this list. To subscribe, send a blank email to ``qubes-project+subscribe@googlegroups.com``. (Note: A Google account is **not** required. Any email address will work.) To post a message to the list, address your email to ``qubes-project@googlegroups.com``. If your post does not appear immediately, please allow time for moderation to occur. To unsubscribe, send a blank email to ``qubes-project+unsubscribe@googlegroups.com``. This list also also has a `traditional mail archive <https://www.mail-archive.com/qubes-project@googlegroups.com/>`__ and an optional `Google Groups web interface <https://groups.google.com/group/qubes-project>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:475
+#: bc115ac0f93d478b904723b657abd93e
+msgid "qubes-translation"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:477
+#: e9dbc741a95744c18d18c3795905e80a
+msgid "This list is for discussion around the localization and translation of Qubes OS, its documentation, and the website."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:482
+#: 8f7dfbe708754c749fff0b890b700d0b
+msgid "Questions about or issues with `Transifex <https://www.transifex.com/>`__, the translation platform we use"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:485
+#: 7ed219ba39b2468da0264179aad7298a
+msgid "Who is managing localization for a given language"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:486
+#: 1cd35bfe28e5412cbe99a08976960e65
+msgid "Most Github issues tagged `localization <https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Alocalization>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:489
+#: d7b07e7a96d4485abcc05bae0670c74d
+msgid "You must be subscribed in order to post to this list. To subscribe, send a blank email to ``qubes-translation+subscribe@googlegroups.com``. (Note: A Google account is **not** required. Any email address will work.) To post a message to the list, address your email to ``qubes-translation@googlegroups.com``. If your post does not appear immediately, please allow time for moderation to occur. To unsubscribe, send a blank email to ``qubes-translation+unsubscribe@googlegroups.com``. This list also has an optional `Google Groups web interface <https://groups.google.com/group/qubes-translation>`__."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:501
+#: 902bde81e7ac4cccae2e01497c0a5ae4
+msgid "Forum"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:503
+#: dd15539af6fe4660addae47d64319a2b
+msgid "The official `Qubes Forum <https://forum.qubes-os.org>`__ is a place where you can ask questions, get help, share tips and experiences, and more! For a long time, members of our community have sought a privacy-respecting forum experience with modern features that traditional mailing lists do not support. The open-source `Discourse <https://www.discourse.org/>`__ platform fills this need for us, as it does for many other open-source projects."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:512
+#: ae7825655cbf4d9e86ddd9d748faf30f
+msgid "Why was this forum created?"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:514
+#: 4dc8027e696846c39d62f6719af5cd32
+msgid "Previously, the only option for a forum-like experience was to interact with our mailing lists via Google Groups, but we understand all too well that the privacy implications and user experience were unacceptable for many members of our community, especially with the recent addition of a sign-in requirement to view threads. Many of you value the lower barrier to entry, organization, ease-of-use, and modern social features that today’s forums support. Moreover, Discourse `features email integration <https://forum.qubes-os.org/t/using-the-forum-via-email/533>`__ for those who still prefer the traditional mailing list format."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:525
+#: 6cd468893b914b24a88a8de9ee901af1
+msgid "How is this different from our mailing lists?"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:527
+#: 2fc3edaf98fe43e69eb7f82492f57b17
+msgid "To be clear, this is *not* a replacement for the mailing lists. This forum is simply an *additional* place for discussion. Certain types of discussions naturally lend themselves more to mailing lists or to forums, and different types of users prefer different venues. We’ve heard from some users who find the mailing lists to be a bit intimidating or who may feel that their message isn’t important enough to merit creating a new email that lands in thousands of inboxes. Others want more selective control over topic notifications. Some users simply appreciate the ability to add a “reaction” to a message instead of having to add an entirely new reply. Whatever your reasons, it’s up to you to decide where and how you want to join the conversation."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:540
+#: 1a67e4d6264b44fc91662c5d59a606af
+msgid "Does this split the community?"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:542
+#: d14d77a77c404732a9c0a54b2c1afd00
+msgid "Many open-source projects (such as Fedora and Debian) have both mailing lists and forums (and additional discussion venues). In fact, the Qubes OS Project already had non-mailing-list discussion venues such as `Reddit <https://www.reddit.com/r/Qubes/>`__ before this forum was introduced. We believe that this additional venue fosters the continued growth of community participation and improves everyone’s experience. In addition, we fully expect that many community members – especially the most active ones – will choose to participate in both venues. (Again, for those who still prefer interacting via email, `Discourse supports that too <https://forum.qubes-os.org/t/using-the-forum-via-email/533>`__!)"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:555
+#: 978349b1fc914da595c4e44e65e469d3
+msgid "Social media"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:557
+#: e326abf462d24174a2d14a148398a3a4
+msgid "The Qubes OS Project has a presence on the following social media platforms:"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:560
+#: 074042224be0487cbf93032d2da9a288
+msgid "`Twitter <https://twitter.com/QubesOS>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:561
+#: d4924dba3fba4ea1a4cb751385947023
+msgid "`Reddit <https://www.reddit.com/r/Qubes/>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:562
+#: b99a7d3b5df74e529bdf6f630bc6e633
+msgid "`Facebook <https://www.facebook.com/QubesOS/>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:563
+#: 47b9aacb9f4e4c3c9fd018294dada992
+msgid "`LinkedIn <https://www.linkedin.com/company/qubes-os/>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:565
+#: f884775c6d994ddea688bf9acdf0b9fb
+msgid "Generally speaking, these are not intended to be primary support venues. (Those would be `qubes-users <#qubes-users>`__ and the `forum <#forum>`__.) Rather, these are primarily intended to be a way to more widely disseminate items published on the `news <https://www.qubes-os.org/news/>`__ page. If you use one of these platforms, you may find it convenient to follow the Qubes OS Project there as a way of receiving Qubes news."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:573
+#: bd3f0b622117409cb27629dbf368f862
+msgid "Unofficial venues"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:575
+#: 38dad25c922f48a7b8fd73d5e681338c
+msgid "If you find another venue on the Internet that is not listed above, it is **unofficial**, which means that the Qubes team does **not** monitor or moderate it. Please be especially careful in unofficial venues."
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:579
+#: 9232d33d1ff54bc19b73def83665811b
+msgid "(Note: If a Qubes team member discovers the venue and decides to pop in, that should not be taken as a commitment to monitor or moderate the venue. It still remains unofficial. Also, please make sure someone claiming to be a Qubes team member really is one. It could be an impostor!)"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:585
+#: 1b53a8178f2f4bf48b3a37e51d7ba589
+msgid "For example, here are some **unofficial** chat channels we know about that are maintained by the community:"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:588
+#: 4b9d0faf0fc94a37ab2adc00b1fa2b7e
+msgid "Matrix, Qubes-related: `https://matrix.to/#/#cybersec-qubes_os:matrix.org <https://matrix.to/#/#cybersec-qubes_os:matrix.org>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:590
+#: 9c94db6234b94f20ad80e995809bfaeb
+msgid "Matrix, strictly Qubes: `https://matrix.to/#/#Qubes-OS:matrix.org <https://matrix.to/#/#Qubes-OS:matrix.org>`__"
+msgstr ""
+
+#: ../../../_doc/introduction/support.rst:592
+#: 3dd555cc04da4cfb87924d25dd215048
+msgid "``#qubes`` channel on libera.chat via traditional IRC clients"
+msgstr ""

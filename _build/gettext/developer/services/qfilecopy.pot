@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/services/qfilecopy.rst:1
+#: 4aa230f271b84617bc33ac65436bb5c3
+msgid "There are two cases when we need a mechanism to copy files between VMs:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:3
+#: 43bd67dad8dc46f2a92edee0971e0ce9
+msgid "“regular” file copy - when user instructs file manager to copy a given files/directories to a different VM"
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:5
+#: a0108351b29a47f1a59ba01339e22b84
+msgid "DispVM copy - user selects “open in DispVM” on a file; this file must be copied to a DisposableVM, edited by user, and possibly a modified file copied back from DispVM to VM."
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:9
+#: 340382be9b97421b8497d50c45c6cd0e
+msgid "In the early days of Qubes OS, for both cases, a block device (backed by a file in dom0 with a vfat filesystem on it) was attached to VM, file(s) copied there, and then the device was detached and attached to target VM. In the DispVM case, if a edited file has been modified, another block device is passed to requester VM in order to update the source file."
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:16
+#: 15176b506f924ceca37ddfdb4ca581b4
+msgid "This has the following disadvantages:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:18
+#: 5757d58ef84e45a9ae200671c710d40d
+msgid "performance - dom0 has to prepare and attach/detach block devices, which is slow because of hotplug scripts involvement."
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:20
+#: 20c6ecc4101e428f860f02481145798c
+msgid "security - VM kernel parses partition table and filesystem metadata from the block device; they are controlled by (potentially untrusted) sender VM."
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:24
+#: 15893a6368f14cc0a49d97dd93dbdfc5
+msgid "In modern Qubes OS releases, we have reimplemented interVM file copy using qrexec, which addresses the above mentioned disadvantages. Nowadays, even more generic solution (qubes rpc) is used. See the developer docs on qrexec and qubes rpc. In a nutshell, the file sender and the file receiver just read/write from stdin/stdout, and the qubes rpc layer passes data properly - so, no block devices are used."
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:31
+#: 741c6f417f804e6d8da64f6428e04032
+msgid "The rpc action for regular file copy is *qubes.Filecopy*, the rpc client is named *qfile-agent*, the rpc server is named *qfile-unpacker*. For DispVM copy, the rpc action is *qubes.OpenInVM*, the rpc client is named *qopen-in-vm*, rpc server is named *vm-file-editor*. Note that the qubes.OpenInVM action can be done on a normal AppVM, too."
+msgstr ""
+
+#: ../../../_doc/developer/services/qfilecopy.rst:37
+#: cbc273fd982f40c2a464e4d1f8b61217
+msgid "Being a rpc server, *qfile-unpacker* must be coded securely, as it processes potentially untrusted data format. Particularly, we do not want to use external tar or cpio and be prone to all vulnerabilities in them; we want a simplified, small utility, that handles only directory/file/symlink file type, permissions, mtime/atime, and assume user/user ownership. In the current implementation, the code that actually parses the data from srcVM has ca 100 lines of code and executes chrooted to the destination directory. The latter is hardcoded to ``~user/QubesIncoming/srcVM``; because of chroot, there is no possibility to alter files outside of this directory."
+msgstr ""

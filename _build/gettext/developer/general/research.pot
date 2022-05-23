@@ -1,0 +1,27 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/general/research.rst:1
+#: 05dc75fc63024c0ca816b8ca0b0c5472
+msgid "Here are links to various research papers, projects, videos, and blog posts related to Qubes OS."
+msgstr ""
+
+#: ../../../_doc/developer/general/research.rst:4
+#: 77522a03532648998a2e00c84888e116
+msgid "{% include research.html %}"
+msgstr ""

@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:1
+#: f43c8b6f565148258645ebeb4de99a68
+msgid "This page details the level and period of support for releases of operating systems in the Qubes ecosystem."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:5
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:15
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:56
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:109
+#: 498c3228d09640ceba33e1fbcb5d40c6
+#: 8e04c61618ae41948112f028109b42cf
+#: 1e042c79fec14678a314369d13c4db5a
+#: 6a4ebe9b37c8458fbfcabb4dd076f10b
+msgid "Qubes OS"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:7
+#: cad97fab44be4b54bb6fd6521554eba5
+msgid "Qubes OS releases are supported for **six months** after each subsequent major or minor release (see :doc:`Version Scheme </developer/releases/version-scheme>`). The current release and past major releases are always available on the :doc:`Downloads </user/downloading-installing-upgrading/downloads>` page, while all ISOs, including past minor releases, are available from our `download mirrors </user/downloading-installing-upgrading/downloads.html#mirrors>`__."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:15
+#: 1c4e4ce4f7ca4401817fa94fdb20ac79
+msgid "Start Date"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:15
+#: cbf16a06a1de4331a913aba48295682f
+msgid "End Date"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:15
+#: aeba6ca1e9b14af3a1572be57e6ff627
+msgid "Status"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:17
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:58
+#: 42fa38d003ce481197031e3a483f2d29
+#: b42ae56a273d42ed9ad518ed0fc347b0
+msgid "Release 1"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:17
+#: b001e98676864d1dbfef69ead1a008be
+msgid "2012-09-03"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:17
+#: a164e02d76584aaf80dba3cb7853d546
+msgid "2015-03-26"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:17
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:19
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:21
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:23
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:25
+#: 0647c457649841548bea766690af22ee
+#: ea41aa5bfe6243e18c7436bf6ae70149
+#: 4ea2b52b88ed4c9baa7aa3e78c53737e
+#: 57f94a18840744158a7b6930f5732e18
+#: 5b22e5145b9b4d999550820d999fbe99
+msgid "Unsupported"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:19
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:59
+#: 6a0dbb106de641a492a37fca6703f34e
+#: 19f77e68d6d64e8db90a0334c235f0f0
+msgid "Release 2"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:19
+#: da2afab134b74d4992228e0edeac4002
+msgid "2014-09-26"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:19
+#: 6fa6b278783f47579f466d6623a8da6a
+msgid "2016-04-01"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:21
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:60
+#: 4afd99c1e5ce45398800e6eeceafde18
+#: c7fb13b47410484ead6d2f4c5b2c0607
+msgid "Release 3.0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:21
+#: 57b44d3df83940609b78e6241557cb16
+msgid "2015-10-01"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:21
+#: 42a49eb62743434d92bfbeae5ff63073
+msgid "2016-09-09"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:23
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:61
+#: efb5f071bde24656a5c400276889c2e9
+#: 41750c72347149d0a29040c0aa8a41f1
+msgid "Release 3.1"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:23
+#: 5918e162616b40dd837038f57150890b
+msgid "2016-03-09"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:23
+#: ab82c5d5bc174826b075d2d75cf3193e
+msgid "2017-03-29"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:25
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:62
+#: 0ad6f50ba173408aacff475afffb191c
+#: 4f5de5b57e5a4c449fff321657c0f234
+msgid "Release 3.2"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:25
+#: 29de48b5b5f94251a3996c718a3309de
+msgid "2016-09-29"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:25
+#: 7c57b928f9d6483987ca08428a2b4e1c
+msgid "2019-03-28"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:27
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:63
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:111
+#: 7df98c2a6eb94abe874ddfa7ae6be577
+#: 005c8eed07b54968b8693da45c2fbd5f
+#: 419a3d3d8d34464598abdd9538dd524d
+msgid "Release 4.0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:27
+#: e342aba262fd40c69f3275156e033a7b
+msgid "2018-03-28"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:27
+#: 822a78b1b6424188b48b1ed1acf81d4e
+msgid "2022-08-04"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:27
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:29
+#: 353df40f1a9c484e8f17a56dedbb2e1d
+#: ff288f45ac46471eb460218bd1f037db
+msgid "Supported"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:29
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:64
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:112
+#: f536966b316a4e6aaa764442e70cc25d
+#: 2aabfa28d2944108b976b9cee0e57cb6
+#: 370c0d78c24f451e95c96526a77a7587
+msgid "Release 4.1"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:29
+#: 15a18bee2c1847e7a3605dc6e948a140
+msgid "2022-02-04"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:29
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:31
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:31
+#: b2a5adc897204928b614b421faca0116
+#: cecec8e4099d4a078f4e878683d8be07
+#: 00f171b6a2214420a410a2500d386929
+msgid "TBA"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:31
+#: 10c85a6f4c814a6b9345c3bfe5598fa2
+msgid "Release 4.2"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:31
+#: 21a8d333c33c4953a3bec10f9ffcd0d6
+msgid "`In development <https:// github.com/QubesOS/qubes- issues/issues?utf8=%E2%9C %93&q=is%3Aissue+mileston e%3A%22Release+4.2%22>`__"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:40
+#: 430367693a054c78bf0b897208b700c2
+msgid "Note on patch releases"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:42
+#: 43cfff9bf83148c790f3c892aeedb0c7
+msgid "Please note that patch releases, such as 3.2.1 and 4.0.1, do not designate separate, new major or minor releases of Qubes OS. Rather, they designate their respective major or minor releases, such as 3.2 and 4.0, inclusive of all package updates up to a certain point. For example, installing Release 4.0 and fully updating it results in the same system as installing Release 4.0.1. Therefore, patch releases are not displayed as separate rows on any of the tables on this page."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:51
+#: c186fd6ab83346ee85f8111ba070f2b8
+msgid "Dom0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:53
+#: 3e6ed641b402487590cd710259b99800
+msgid "The table below shows the OS used for dom0 in each Qubes OS release."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:56
+#: fb6c31ff72d64dddaf554a4babca0180
+msgid "Dom0 OS"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:58
+#: ba66e19151744773bccde31d5c7488ae
+msgid "Fedora 13"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:59
+#: 2b0bc36feb4548979616cdcfa3330443
+msgid "Fedora 18"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:60
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:61
+#: 2a3ed1ee87624a93a42643c0d5a94b86
+#: 1c8de5c74e744c10b85fdb0aff8fe21d
+msgid "Fedora 20"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:62
+#: 4722f4fa55344279a38cd39ffbc2c7f9
+msgid "Fedora 23"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:63
+#: d4649ab9feb343148bdcafe7e2bc5df4
+msgid "Fedora 25"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:64
+#: ba596f9812a045c6a630e20d02fdcd0e
+msgid "Fedora 32"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:68
+#: cafb0b83c9b64f6da2d590812e55c050
+msgid "Note on dom0 and EOL"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:70
+#: e9ab5c4f93434d26878ca6b55939259b
+msgid "Dom0 is isolated from domUs. DomUs can access only a few interfaces, such as Xen, device backends (in the dom0 kernel and in other VMs, such as the NetVM), and Qubes tools (gui-daemon, qrexec-daemon, etc.). These components are :doc:`security-critical </developer/system/security-critical-code>`, and we provide updates for all of them (when necessary), regardless of the support status of the base distribution. For this reason, we consider it safe to continue using a given base distribution in dom0 even after it has reached end-of-life (EOL)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:80
+#: 1310faa0c54049a2a93d9a35f1c287e1
+msgid "Templates"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:82
+#: d9f331fe6e7444689ebc278dbb4e758c
+msgid "The following table shows select :doc:`template </user/templates/templates>` releases that are currently supported. Currently, only :doc:`Fedora </user/templates/fedora/fedora>` and :doc:`Debian </user/templates/debian/debian>` templates are officially supported by the Qubes OS Project. `Whonix <https://www.whonix.org/wiki/Qubes>`__ templates are supported by our partner, the `Whonix Project <https://www.whonix.org/>`__. Qubes support for each template ends when that upstream release reaches end-of-life (EOL), even if that release is included in the table below. Please see below for distribution-specific notes."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:93
+#: c4807f46f4d342548cab56ad4d4e752a
+msgid "It is the responsibility of each distribution to clearly notify its users in advance of its own EOL dates, and it is users’ responsibility to heed these notices by upgrading to supported releases. As a courtesy to Qubes users, we attempt to pass along any upstream EOL notices we receive for officially-supported templates, but our ability to do this reliably is dependent on the upstream distribution’s practices. If a distribution provides a mailing list similar to `qubes-announce </introduction/support.html#qubes-announce>`__, which allows us to receive only very important, infrequent messages, including EOL announcements, we are much more likely to be able to pass along EOL notices to Qubes users reliably. Qubes users can always check the EOL status of an upstream release on the upstream distribution’s website (see `Fedora EOL <https://fedoraproject.org/wiki/End_of_life>`__ and `Debian Releases <https://wiki.debian.org/DebianReleases>`__)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:109
+#: 517e9b4310ff42ae9b3c3013e143c0b4
+msgid "Fedora"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:109
+#: 576ef0c8ee004b83a41a0a8e6d4f1523
+msgid "Debian"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:109
+#: 9a2af4c62adb4cff81115f19a70fadc1
+msgid "Whonix"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:111
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:112
+#: ac17f8d96a8b4de9973589f9c2b4c6d5
+#: c9a4dd12b0a84f3f8660bb7e0380fee2
+msgid "34"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:111
+#: ed2a5318d0404011943c6af5a20b9410
+msgid "9 (Stretch),\\* 10 (Buster), 11 (Bullseye)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:111
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:112
+#: 319b3b68f5d248a5a4a48bbc940b45e5
+#: 3e1dc5230ef3437c91fd9ee146e3cfeb
+msgid "16"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:112
+#: 6ed5c163687d49339764771fc33f17ee
+msgid "10 (Buster), 11 (Bullseye)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:115
+#: 0dc675a8b9e84affa98bced0acbaf135
+msgid "\\* Although Debian 9 has reached regular EOL and is now in `LTS <https://wiki.debian.org/LTS>`__, we continue to support it for Qubes R4.0. This is a *temporary* exception to our `policy <#note-on-debian-support>`__ of ending Qubes support at each Debian release’s *regular* (not LTS) EOL date, since this policy was introduced after the release of Qubes R4.0. In Qubes R4.1 and beyond, Qubes support for each Debian release will end when that release reaches regular EOL and will not extend into LTS."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:125
+#: 6295ec93906145428ad548489051d436
+msgid "Note on Debian support"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:127
+#: 056f0f3ce0fc4a90a677656846a06cb6
+msgid "Debian releases have two EOL dates: regular and `long-term support (LTS) <https://wiki.debian.org/LTS>`__. See `Debian Production Releases <https://wiki.debian.org/DebianReleases#Production_Releases>`__ for a chart that illustrates this. Qubes support ends at the *regular* EOL date, *not* the LTS EOL date, unless a specific exception has been made."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:135
+#: f486e2ac3c734cd298c6631cc32007e9
+msgid "Note on Whonix support"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:137
+#: ee488008c3d0491fa3953c424d1170ee
+msgid "`Whonix <https://www.whonix.org/wiki/Qubes>`__ templates are supported by our partner, the `Whonix Project <https://www.whonix.org/>`__. The Whonix Project has set its own support policy for Whonix templates in Qubes."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:142
+#: f318844a500f43e7b7cf910b4a6ae07e
+msgid "This policy requires Whonix template users to stay reasonably close to the cutting edge by upgrading to new stable releases of Qubes OS and Whonix templates within a month of their respective releases. To be precise:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:147
+#: f7e90264acc1405385cfdbea722a24a5
+msgid "One month after a new stable version of Qubes OS is released, Whonix templates will no longer be supported on any older release of Qubes OS. This means that users who wish to continue using Whonix templates on Qubes must always upgrade to the latest stable Qubes OS release within one month of its release."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:153
+#: 48f23d683192433f8558d876e9e07c55
+msgid "One month after new stable versions of Whonix templates are released, older releases of Whonix templates will no longer be supported. This means that users who wish to continue using Whonix templates on Qubes must always upgrade to the latest stable Whonix template releases within one month of their release."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/supported-releases.rst:159
+#: d5f6e2cd520049baaa47d125aae40cab
+msgid "We aim to announce both types of events one month in advance in order to remind users to upgrade."
+msgstr ""

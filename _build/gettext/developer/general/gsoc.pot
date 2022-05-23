@@ -1,0 +1,1109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/general/gsoc.rst:2
+#: 7aa38efe96694da390d9d9ea13ccf159
+msgid "Information for Students"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:4
+#: 9855ef082f374c1f870f5ee9e53fd5bd
+msgid "Thank you for your interest in participating in the `Google Summer of Code program <https://summerofcode.withgoogle.com/>`__ with the `Qubes OS team <https://www.qubes-os.org/team/>`__. You can read more about the Google Summer of Code program at the `official website <https://summerofcode.withgoogle.com/>`__ and the `official FAQ <https://developers.google.com/open-source/gsoc/faq>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:11
+#: 691591d262e64c39aa829f9cf4b5a9b0
+msgid "Being accepted as a Google Summer of Code contributor is quite competitive. If you are interested in participating in the Summer of Code please be aware that you must be able to produce code for Qubes OS for 3-5 months. Your mentors, Qubes developers, will dedicate a portion of their time towards mentoring you. Therefore, we seek candidates who are committed to helping Qubes long-term and are willing to do quality work and be proactive in communicating with your mentor."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:19
+#: 778e882381fd46a6ae7fa0fef9c5c896
+msgid "You don’t have to be a proven developer – in fact, this whole program is meant to facilitate joining Qubes and other free and open source communities. The Qubes community maintains information about `contributing to Qubes development </introduction/contributing.html#contributing-code>`__ and `how to send patches </developer/code/source-code.html#how-to-send-patches>`__. In order to contribute code to the Qubes project, you must be able to :doc:`sign your code </developer/code/code-signing>`."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:28
+#: 91d08e81684546dbb2b503cfca0cb49a
+msgid "You should start learning the components that you plan on working on before the start date. Qubes developers are available on the `mailing lists </introduction/support.html#qubes-devel>`__ for help. The GSoC timeline reserves a lot of time for bonding with the project – use that time wisely. Good communication is key, you should plan to communicate with your team daily and formally report progress and plans weekly. Students who neglect active communication will be failed."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:37
+#: e18947dacf7245399eee36c94ad623b9
+msgid "Overview of Steps"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:39
+#: b0add17d6e8d4144acfc5508c9a98a60
+msgid "Join the `qubes-devel list </introduction/support.html#qubes-devel>`__ and introduce yourself, and meet your fellow developers"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:41
+#: e404f9c53a2c4912af23986a185aa9c8
+msgid "Read `Google’s instructions for participating <https://developers.google.com/open-source/gsoc/>`__ and the `GSoC Student Manual <https://google.github.io/gsocguides/student/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:45
+#: 8f859004f4fe42019058cc7e2a8eea80
+msgid "Take a look at the list of ideas below"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:46
+#: eb21dfaa2c374d77b3d752dbbdb548a8
+msgid "Come up with a project that you are interested in (and feel free to propose your own! Don’t feel limited by the list below.)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:48
+#: f99ae5e727bc456dab5eb9fcaeea8b35
+msgid "Read the Contributor Proposal guidelines below"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:49
+#: 32b08abe8305497991b3d50305f9fb5d
+msgid "Write a first draft proposal and send it to the qubes-devel mailing list for review"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:51
+#: 66b99fd4340e46feb461af2979c2143d
+msgid "Submit proposal using `Google’s web interface <https://summerofcode.withgoogle.com/>`__ ahead of the deadline (this requires a Google Account!)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:54
+#: ddf507673d99494896e97ac26e6ddb2e
+msgid "Submit proof of enrollment well ahead of the deadline"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:56
+#: 4910fb7c932a4aee95e3c81cb8259c36
+msgid "Coming up with an interesting idea that you can realistically achieve in the time available to you (one summer) is probably the most difficult part. We strongly recommend getting involved in advance of the beginning of GSoC, and we will look favorably on applications from prospective contributors who have already started to act like free and open source developers."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:63
+#: 1d6d040fb4d14affa0d8baedeec40d13
+msgid "Before the summer starts, there are some preparatory tasks which are highly encouraged. First, if you aren’t already, definitely start using Qubes as your primary OS as soon as possible! Also, it is encouraged that you become familiar and comfortable with the Qubes development workflow sooner than later. A good way to do this (and also a great way to stand out as an awesome applicant and make us want to accept you!) might be to pick up some issues from `qubes-issues <https://github.com/QubesOS/qubes-issues/issues>`__ (our issue-tracking repo) and submit some patches addressing them. Some suitable issues might be those with tags `“help wanted” and “P: minor” <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22P%3A%20minor%22%20label%3A%22help%20wanted%22>`__ (although more significant things are also welcome, of course). Doing this will get you some practice with `qubes-builder </developer/building/qubes-builder>`, our code-signing policies, and some familiarity with our code base in general so you are ready to hit the ground running come summer."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:81
+#: d76d98acd2fc4838b63528f0506d6580
+msgid "Contributor proposal guidelines"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:83
+#: 2f7b7cb034dd4258b1430753519cb896
+msgid "A project proposal is what you will be judged upon. Write a clear proposal on what you plan to do, the scope of your project, and why we should choose you to do it. Proposals are the basis of the GSoC projects and therefore one of the most important things to do well."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:88
+#: e941249879054af1968f1f0712d0bdb1
+msgid "Below is the application template:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:124
+#: ad5b63740d0e476cadc7731eb3bc1649
+msgid "Project Ideas"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:126
+#: 7c113be4b5d34cc09f4f6bde016b18d4
+msgid "These project ideas were contributed by our developers and may be incomplete. If you are interested in submitting a proposal based on these ideas, you should contact the `qubes-devel mailing list </introduction/support.html#qubes-devel>`__ and associated GitHub issue to learn more about the idea."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:152
+#: ee1bbd6636fb46aca929bbbbc1cb29b6
+msgid "Qubes as a Vagrant provider"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:154
+#: 3f222ce26dff40b593db79c5caf8eccc
+msgid "**Project**: Qubes as a Vagrant provider"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:156
+#: ceb70957773047c5b9d4d813a183bc7f
+msgid "**Brief explanation**: Currently using Vagrant on Qubes requires finding an image that uses Docker as isolation provider and running Docker in a qube, or downloading the Vagrantfile and manually setting up a qube according to the Vagrantfile. This project aims at simplifying this workflow. Since introduction of Admin API, it’s possible for a qube to provision another qube - which is exactly what is needed for Vagrant. `Related discussion <https://groups.google.com/d/msgid/qubes-devel/535299ca-d16a-4a70-8223-a4ac6be4be41%40googlegroups.com>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:165
+#: ../../../_doc/developer/general/gsoc.rst:201
+#: ../../../_doc/developer/general/gsoc.rst:236
+#: ../../../_doc/developer/general/gsoc.rst:316
+#: ../../../_doc/developer/general/gsoc.rst:377
+#: ../../../_doc/developer/general/gsoc.rst:409
+#: ../../../_doc/developer/general/gsoc.rst:483
+#: ../../../_doc/developer/general/gsoc.rst:608
+#: ../../../_doc/developer/general/gsoc.rst:682
+#: ../../../_doc/developer/general/gsoc.rst:818
+#: 22d2ce812a1747f591bcf9ec75fe58c4
+#: ea1eababebb64356bfe4456b9e31934f
+#: 3b422f172e27437c908e98a28b918bd3
+#: 84af1d60738e42ea91e145d942a18fa7
+#: a8e01c7d5f304a0b8b38b0666260cc9f
+#: a11239a140fb46eebdc4754b28a140e2
+#: 18459865b40549e0af87b1547d125030
+#: 282958f2b4f0460b88cf08d413cb1da7
+#: d4824b1de52a4dd6b0d5eb94a374889a
+#: 439836793c7e42349ce683b47e428253
+msgid "**Expected results**:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:167
+#: 4ae1a4bea6c940f39dbb836c2e861e4f
+msgid "Design how Vagrant Qubes provider should look like, including:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:169
+#: 97ecf13814cf4f2d88a0e35ee3c621a0
+msgid "`box format <https://www.vagrantup.com/docs/plugins/providers.html#box-format>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:171
+#: f2dc53bd61c74220b64d337e7c3be7ef
+msgid "method for running commands inside (ssh vs qvm-run)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:173
+#: fc6fc0d40ea54c9fbc6e2aebbe7559cf
+msgid "Write a Vagrant provider able to create/start/stop/etc a VM"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:174
+#: 9c5567ca9e6c4198a838b1f9fa4be7b3
+msgid "Document how to configure and use the provider, including required qrexec policy changes and possibly firewall rules"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:176
+#: ce2f541b88a94126ae93a2629a7192f5
+msgid "Write integration tests"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:178
+#: ../../../_doc/developer/general/gsoc.rst:215
+#: ../../../_doc/developer/general/gsoc.rst:247
+#: ../../../_doc/developer/general/gsoc.rst:425
+#: ../../../_doc/developer/general/gsoc.rst:574
+#: ../../../_doc/developer/general/gsoc.rst:720
+#: ../../../_doc/developer/general/gsoc.rst:779
+#: a25c9853346344f185891d9d3a5287a4
+#: 78b08fdb4c434b40a2a3765ded94cea8
+#: b33402a6737445d49294f08208fe005a
+#: 9b6da45f470d40bfbc4bbf8c80bef314
+#: d91a084f4d354a9f81a144c7bb8643ec
+#: 52084d1fd1b949e889ee61963a174796
+#: 480f655f76ec49c8a317106be06f3354
+msgid "**Difficulty**: medium"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:180
+#: ../../../_doc/developer/general/gsoc.rst:217
+#: ../../../_doc/developer/general/gsoc.rst:249
+#: ../../../_doc/developer/general/gsoc.rst:331
+#: ../../../_doc/developer/general/gsoc.rst:392
+#: ../../../_doc/developer/general/gsoc.rst:427
+#: ../../../_doc/developer/general/gsoc.rst:503
+#: ../../../_doc/developer/general/gsoc.rst:620
+#: ../../../_doc/developer/general/gsoc.rst:693
+#: ../../../_doc/developer/general/gsoc.rst:855
+#: 5b683b285d404af881189dc8dfa9c02f
+#: 161961ad31e241d29139eb5670590f94
+#: 048b4510fa694cf3b4c0414b7b6c68e1
+#: 2fa5b38678c3439db20594980e8af035
+#: 030829a44a2b4b0587fe2e96015f86d4
+#: 87ff2a7e586148e8ac3e8f48e5acfa4d
+#: 1be1663d837f46e089c01203f70a7e95
+#: 961dafb9e6944b778df8076c6194cfb7
+#: d27dfe4c06d14e3fa90a1b6064a5edc5
+#: e73c812c0e0f4976b504fd206c043b58
+msgid "**Knowledge prerequisite**:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:182
+#: dafb532d4cef42bfa072f7fd73969d76
+msgid "Ruby"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:183
+#: a82d43a0a8124c8484f0b5635cc78228
+msgid "Vagrant concepts"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:185
+#: ../../../_doc/developer/general/gsoc.rst:223
+#: ../../../_doc/developer/general/gsoc.rst:339
+#: ../../../_doc/developer/general/gsoc.rst:583
+#: ../../../_doc/developer/general/gsoc.rst:626
+#: ../../../_doc/developer/general/gsoc.rst:695
+#: ../../../_doc/developer/general/gsoc.rst:784
+#: 637712826b994b72aa58ecb7ae691483
+#: 79fdb2f8e91042eb9a8c829f2dc35222
+#: fd746fb3d5c64b4a8228d656f10f9190
+#: 5c98185bb31945bf894691bb60ee338b
+#: 80718cb0eecb4484b743e3d30ebd31a8
+#: e9fbd3bc34024df3907dc5caa73b402c
+#: 413059da49c7445ea890177252f19c3f
+msgid "**Size of the project**: 350 hours"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:187
+#: 8bfeb91d340b445c88f8dab5d1ef32ef
+msgid "**Mentor**: `Wojtek Porczyk <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:191
+#: db06124919cf4864bbaf8ea1751b22f9
+msgid "System health monitor"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:193
+#: 4f21417e3f5d4f03a2258ee65b20d6a2
+msgid "**Project**: System health monitor"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:195
+#: 1d0a0be9d7304bb391f28166eb0c21aa
+msgid "**Brief explanation**: A tool that informs the user about common system and configuration issues. Some of this is already available, but scattered across different places. See related issues: `6663 <https://github.com/QubesOS/qubes-issues/issues/6663>`__, `2134 <https://github.com/QubesOS/qubes-issues/issues/2134>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:203
+#: 35ff53e1d3b243bbbae135d95e905777
+msgid "a tool / service that checks for common issues and things needing user attention, for example:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:206
+#: 5d56958664cc417e820524bdb9334cae
+msgid "some updates to be applied (separate widget already exists)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:207
+#: f2d377e463bf476298d020e98487ccaa
+msgid "running out of disk space (separate widget already exists)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:208
+#: 9a2b45bb32c84bd59e048076705d72b8
+msgid "insecure USB configuration (USB in dom0)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:209
+#: 296a326f34e24c7f8bebd178e44518fd
+msgid "some system VM crashed"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:210
+#: 83b7bf32bc004440931f78c3c24d85da
+msgid "…"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:212
+#: 38efec09ff174a4ab5d4f17cfa1b68a8
+msgid "a GUI that provides terse overview of the system state, and notifies the user if something bad happens"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:219
+#: 7aa073fde506497e92a1a0d781dd092a
+msgid "Python"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:220
+#: bb530da4f6ed44d6b13acbd2f96fd21b
+msgid "basic knowledge about systemd services"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:221
+#: fe51fc7098614c7092c023dc5caf4dec
+msgid "PyGTK (optional)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:225
+#: 9e9a3e3c43444dea8217ee5e8e889e31
+msgid "**Mentor**: `Marta Marczykowska-Górecka <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:228
+#: d4e8d2ff24e74e2492e056c5e4e26878
+msgid "Mechanism for maintaining in-VM configuration"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:230
+#: 4bc6bcec0e76485fa102d8cc3dca0a0c
+msgid "**Project**: Mechanism for maintaining in-VM configuration"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:232
+#: 65cefe5ecff24122b2ba1f28f03f5df3
+msgid "**Brief explanation**: Large number of VMs is hard to maintain. Templates helps with keeping them updated, but many applications have configuration in user home directory, which is not synchronized."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:238
+#: 4ad8ede6c25043e88231542a11e74dfb
+msgid "Design a mechanism how to *safely* synchronize application configuration living in user home directory (``~/.config``, some other “dotfiles”). Mechanism should be resistant against malicious VM forcing its configuration on other VMs. Some approach could be a strict control which VM can send what changes (whitelist approach, not blacklist)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:244
+#: 090c9874f6074bdaad91efd521321335
+msgid "Implementation of the above mechanism."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:245
+#: af46543771114981b2936c6345fb168a
+msgid "Documentation how to configure it securely."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:251
+#: e2146c8b600e414bb65062a34731fe9a
+msgid "shell and/or python scripting"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:252
+#: 560c2b4abe0043a8aba92f20f3221aee
+msgid "Qubes OS qrexec services"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:254
+#: ../../../_doc/developer/general/gsoc.rst:398
+#: ../../../_doc/developer/general/gsoc.rst:433
+#: ../../../_doc/developer/general/gsoc.rst:464
+#: ../../../_doc/developer/general/gsoc.rst:509
+#: ../../../_doc/developer/general/gsoc.rst:548
+#: ../../../_doc/developer/general/gsoc.rst:727
+#: ../../../_doc/developer/general/gsoc.rst:759
+#: 2c7d68a0ee5b44e8b68ac2db7e275734
+#: 1eec56aa1cda46b1bb2fb59dfae1e823
+#: 5ddb87934cb24199834fa1dfd42b3834
+#: 677c6655a2c1405395ac9fd196258c7b
+#: a5e551ac57f64690875bc6c447bcb5c2
+#: df2b5ff9594847d29d12ecf6c3cfba66
+#: bdd49d2b979c462bb4943d0018127c7b
+#: 63f2ee05e44c47498ae577cd603ae74e
+msgid "**Size of the project**: 175 hours"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:256
+#: ../../../_doc/developer/general/gsoc.rst:341
+#: ../../../_doc/developer/general/gsoc.rst:400
+#: 20bdb9f5f1a942ab8e2eef1ffc4156db
+#: 1147fb70f8ad4452a0800692ac9a2420
+#: 656fc2f1b17a4a6ca75e1e8e0834da94
+msgid "**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:301
+#: e4ca961e89d3412a8c61cc0ec8395fed
+msgid "Qubes Live USB"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:303
+#: 697c4f6b1f3341a18e5039024e9d2c59
+msgid "**Project**: Revive Qubes Live USB, integrate it with installer"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:305
+#: 073b3b830ef7431ab12b1a3de63437bb
+msgid "**Brief explanation**: Qubes Live USB is based on Fedora tools to build live distributions. But for Qubes we need some adjustments: starting Xen instead of Linux kernel, smarter copy-on-write handling (we run there multiple VMs, so a lot more data to save) and few more. Additionally in Qubes 3.2 we have so many default VMs that default installation does not fit in 16GB image (default value) - some subset of those VMs should be chosen. Ideally we’d like to have just one image being both live system and installation image. More details: `#1552 <https://github.com/QubesOS/qubes-issues/issues/1552>`__, `#1965 <https://github.com/QubesOS/qubes-issues/issues/1965>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:318
+#: c5521d8bc4ab4f1293093fd9784e7c70
+msgid "Adjust set of VMs and templates included in live edition."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:319
+#: 5f295765f13f49f0b6c0350cef8219fc
+msgid "Update and fix build scripts for recent Qubes OS version."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:320
+#: d4ee7f72f4a24f68bb24ca5a0d77184d
+msgid "Update startup script to mount appropriate directories as either copy-on-write (device-mapper snapshot), or tmpfs."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:322
+#: 6f4c32f439fb4e1aaa6a60f363eef174
+msgid "Optimize memory usage: should be possible to run sys-net, sys-firewall, and at least two more VMs on 4GB machine. This include minimizing writes to copy-on-write layer and tmpfs (disable logging etc)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:326
+#: d54e506931e947cbac136748161dd1cd
+msgid "Research option to install the system from live image. If feasible add this option."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:329
+#: ../../../_doc/developer/general/gsoc.rst:458
+#: ../../../_doc/developer/general/gsoc.rst:501
+#: ../../../_doc/developer/general/gsoc.rst:618
+#: ../../../_doc/developer/general/gsoc.rst:691
+#: ../../../_doc/developer/general/gsoc.rst:754
+#: 8de6f6da085348699562a13198784fd5
+#: d84223b428a44b10ad31556a98cf8ea3
+#: 196d7907d2154b8abe768a2ee9c9d6ad
+#: 8b2eccb1a1594a999b3f06aa8e8faddf
+#: 133cb5d43d2f4b74b9e50ea28812b283
+#: e1c13333e7ac46799855737f37153084
+msgid "**Difficulty**: hard"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:333
+#: cb40a4a78a624441a83e99462fedc1a7
+msgid "System startup sequence: bootloaders (isolinux, syslinux, grub, UEFI), initramfs, systemd."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:335
+#: 39cbcca0c030484eaefa61569fd203eb
+msgid "Python and Bash scripting"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:336
+#: fbd8b63a004948cdbeae8ad3f5ae257b
+msgid "Filesystems and block devices: loop devices, device-mapper, tmpfs, overlayfs, sparse files."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:366
+#: 769aac07845546e98eedcb1cb0218a6b
+msgid "LogVM(s)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:368
+#: a9e2bb2d4df742ab93ed1d37b5bef549
+msgid "**Project**: LogVM(s)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:370
+#: 101ed00ecf374b0aa3d2f2210fbd9270
+msgid "**Brief explanation**: Qubes AppVMs do not have persistent /var (on purpose). It would be useful to send logs generated by various VMs to a dedicated log-collecting VM. This way logs will not only survive VM shutdown, but also be immune to altering past entries. See `#830 <https://github.com/QubesOS/qubes-issues/issues/830>`__ for details."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:379
+#: b90b587c0521413bb6d8b48afcf1fc2c
+msgid "Design a *simple* protocol for transferring logs. The less metadata (parsed in log-collecting VM) the better."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:381
+#: 66c2f9f189424609b2423a50f76f24f7
+msgid "Implement log collecting service. Besides logs itself, should save information about logs origin (VM name) and timestamp. The service should *not* trust sending VM in any of those."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:384
+#: 51cea88388bd40b590c335d71b8b0bd5
+msgid "Implement log forwarder compatible with systemd-journald and rsyslog. A mechanism (service/plugin) fetching logs in real time from those and sending to log-collecting VM over qrexec service."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:387
+#: 13a80d59d3bc41af98f629f0ca8150c0
+msgid "Document the protocol."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:388
+#: ../../../_doc/developer/general/gsoc.rst:853
+#: f2b359407fc141b38350280aa97c6a09
+#: 3bbaf8b0dc6547bfa195f836cf818f02
+msgid "Write unit tests and integration tests."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:390
+#: ../../../_doc/developer/general/gsoc.rst:540
+#: 93763ec560094fd8ad421706adf1bef9
+#: b0c0b1cb44c24562aa8a3e3a61d17acc
+msgid "**Difficulty**: easy"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:394
+#: 0cb95f40281a4ab09d86ae1775b725a9
+msgid "syslog"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:395
+#: d64f68d982be49ed924083e38b0a849e
+msgid "systemd"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:396
+#: 5c60a91c83cf4392bc9a8f2d39221588
+msgid "Python/Bash scripting"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:403
+#: ca653eb58180419cb9c819d19a3d1df3
+msgid "Whonix IPv6 and nftables support"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:405
+#: 3fc0ec2e017f498a9ecd46f5739ab2a7
+msgid "**Project**: Whonix IPv6 and nftables support"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:407
+#: 17a6b21e88864ce092fe66f902b4e4f2
+msgid "**Brief explanation**: `T509 <https://phabricator.whonix.org/T509>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:411
+#: a216dc215b4f476b9721cc3c431280c2
+msgid "Work at upstream Tor: An older version of `TransparentProxy <https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy>`__ page was the origin of Whonix. Update that page for nftables / IPv6 support without mentioning Whonix. Then discuss that on the tor-talk mailing list for wider input. `here <https://trac.torproject.org/projects/tor/ticket/21397>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:417
+#: 7d0df0154a184b72954d635c19151e61
+msgid "implement corridor feature request add IPv6 support / port to nftables - `issue <https://github.com/rustybird/corridor/issues/39>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:420
+#: e2139e0ec2cc43eda9fcf0a245a069bf
+msgid "port `whonix-firewall <https://github.com/Whonix/whonix-firewall>`__ to nftables"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:422
+#: de30ea58c29f44eb8c5a8b7c20952efb
+msgid "make connections to IPv6 Tor relays work"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:423
+#: 7e5bdda23a2c4fb8aae1ade6f10b8202
+msgid "make connections to IPv6 destinations work"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:429
+#: bed2a6e33eeb4b3689d8492dd430e6b1
+msgid "nftables"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:430
+#: c254b10a61e044ba98e7aa6fa0c52d31
+msgid "iptables"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:431
+#: 7ca745bbf44847348d7be5b0e6d0038c
+msgid "IPv6"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:435
+#: 5664ae7c4cf849adafd3e883719651e0
+msgid "**Mentor**: `Patrick Schleizer <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:438
+#: e5bf224fc883442e849a914148b1e7a0
+msgid "GUI agent for Windows 8/10"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:440
+#: c183a0bf18604a0bbda2f9033af146e7
+msgid "**Project**: GUI agent for Windows 8/10"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:442
+#: bad8ff737aca484aa81f67edba44dc72
+msgid "**Brief explanation**: Add support for Windows 8+ to the Qubes GUI agent and video driver. Starting from Windows 8, Microsoft requires all video drivers to conform to the WDDM display driver model which is incompatible with the current Qubes video driver. Unfortunately the WDDM model is much more complex than the old XPDM one and officially *requires* a physical GPU device (which may be emulated). Some progress has been made to create a full WDDM driver that *doesn’t* require a GPU device, but the driver isn’t working correctly yet. Alternatively, WDDM model supports display-only drivers which are much simpler but don’t have access to system video memory and rendering surfaces (a key feature that would simplify seamless GUI mode). `#1861 <https://github.com/QubesOS/qubes-issues/issues/1861>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:455
+#: b04c13c68dec45f19caac6127ed97356
+msgid "**Expected results**: Working display-only WDDM video driver or significant progress towards making the full WDDM driver work correctly."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:460
+#: 99ec9d44e98e42e4bfd4bb281cdcca42
+msgid "**Knowledge prerequisite**: C/C++ languages, familiarity with Windows API, familiarity with the core Windows WDM driver model. Ideally familiarity with the WDDM display driver model."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:466
+#: 1b20de0718a449c0bff086fa76084d54
+msgid "**Mentor**: `Rafał Wojdyła <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:469
+#: 180ac5988d39487dbfb72897aab9485c
+msgid "GNOME support in dom0 / GUI VM"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:471
+#: 75e07fdc87764bacb21d901258ae3209
+msgid "**Project**: GNOME support in dom0"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:473
+#: 9a28048137334f0682fe4db0b9a04d5c
+msgid "**Brief explanation**: Integrating GNOME into Qubes dom0. This include:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:475
+#: d1a5d9a99f6f4ecea80484c3700b5041
+msgid "patching window manager to add colorful borders"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:476
+#: d7d2458296f04a82b0c0160fa1ed21ca
+msgid "removing stuff not needed in dom0 (file manager(s), indexing services etc)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:478
+#: ac73512fb93a4f97956e1f319c059d7d
+msgid "adjusting menu for easy navigation (same applications in different VMs and such problems, dom0-related entries in one place)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:480
+#: affe83954e3c457b809f863312288dbb
+msgid "More info: `#1806 <https://github.com/QubesOS/qubes-issues/issues/1806>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:485
+#: 6f4f183ac0454d0f85856a17afe0d7aa
+msgid "Review existing support for other desktop environments (KDE, Xfce4, i3, awesome)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:487
+#: ebdfca32e53f43adb932212a03201f79
+msgid "Patch window manager to draw colorful borders (we use only server-side decorations), there is already very similar patch in `Cappsule project <https://github.com/cappsule/cappsule-gui>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:490
+#: bb7f5a80ac9b404896f5d8316575f0cf
+msgid "Configure GNOME to not make use of dom0 user home in visible way (no search in files there, no file manager, etc)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:492
+#: d474c9f0796740c4a28e378ac2a69d56
+msgid "Configure GNOME to not look into external devices plugged in (no auto mounting, device notifications etc)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:494
+#: 52aabe724e7c47c383d5f1c61892b594
+msgid "Package above modifications as RPMs, preferably as extra configuration files and/or plugins than overwriting existing files. Exceptions to this rule may apply if no other option."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:497
+#: 3ac5cc431ae444ce90e077008f92840a
+msgid "Adjust comps.xml (in installer-qubes-os repo) to define package group with all required packages."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:499
+#: 8b7144ab876b4e5ea228149360f0f1fc
+msgid "Document installation procedure."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:505
+#: 85c7063a76c847be9545b4a4788e460a
+msgid "GNOME architecture"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:506
+#: 03721d93c95345b48c11d599ca7e7ab8
+msgid "C language (patching metacity)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:507
+#: aa528ead2adc478bb6044f47c379f27d
+msgid "Probably also javascript - for modifying GNOME shell extensions"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:511
+#: b53d1f1bc8a24f4d8dd7839b31624ed6
+msgid "**Mentor**: `Frédéric Pierret <https://www.qubes-os.org/team/>`__, `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:515
+#: f18621d342cd4c988029dd212d1fc568
+msgid "Generalize the Qubes PDF Converter to other types of files"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:517
+#: b39a881b7d794d79a36a53c08dfcd863
+msgid "**Project**: Qubes Converters"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:519
+#: bd5ce2077b004be2baa28cb5cd4fd759
+msgid "**Brief explanation**: One of the pioneering ideas of Qubes is to use disposable virtual machines to convert untrustworthy files (such as documents given to journalists by unknown and potentially malicious whistleblowers) into trustworthy files. See `Joanna’s blog on the Qubes PDF Convert <https://theinvisiblethings.blogspot.co.uk/2013/02/converting-untrusted-pdfs-into-trusted.html>`__ for details of the idea. Joanna has implemented a prototype for PDF documents. The goal of this project would be to generalize beyond the simple prototype to accommodate a wide variety of file formats, including Word documents, audio files, video files, spreadsheets, and so on. The converters should prioritise safety over faithful conversion. For example the Qubes PDF converter typically leads to lower quality PDFs (e.g. cut and paste is no longer possible), because this makes the conversion process safer."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:534
+#: dfc09570a9fe45cdb4a739dad1b2fead
+msgid "**Expected results**: We expect that in the timeframe, it will be possible to implement many converters for many file formats. However, if any unexpected difficulties arise, we would prioritise a small number of safe and high quality converters over a large number of unsafe or unuseful converters."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:542
+#: b1e042a2d2da4acd83358302f79288c6
+msgid "**Knowledge prerequisite**: Most of the coding will probably be implemented as shell scripts to interface with pre-existing converters (such as ImageMagick in the Qubes PDF converter). However, shell scripts are not safe for processing untrusted data, so any extra processing will need to be implemented in another language – probably Python."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:550
+#: b3706581a0b843ba87fde120cb471df8
+msgid "**Mentors**: Andrew Clausen and Jean-Philippe Ouellet"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:553
+#: 6ecaa01402724b599f01cae0f79c3f2e
+msgid "Progress towards reproducible builds"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:555
+#: 6e75b7c122bc4adea30c98df1f33f16e
+msgid "**Project**: Progress towards reproducible builds"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:557
+#: 52f7965bc8b64151bb59a451a44c61a9
+msgid "**Brief explanation**: A long-term goal is to be able to build the entire OS and installation media in a completely bit-wise deterministic manner, but there are many baby steps to be taken along that path. See:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:561
+#: 2d95cced412d4acb99195c21a5b3b48a
+msgid "“`Security challenges for the Qubes build process <https://www.qubes-os.org/news/2016/05/30/build-security/>`__”"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:563
+#: 5c8a003ddb6e4f83924d82191a1a9e96
+msgid "`This mailing list post <https://groups.google.com/d/msg/qubes-devel/gq-wb9wTQV8/mdliS4P2BQAJ>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:565
+#: 5949df4ced9d4c6c867200ae294134a1
+msgid "and `reproducible-builds.org <https://reproducible-builds.org/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:567
+#: c695dff28e8c47a087ef13bf5e92869d
+msgid "for more information and qubes-specific background."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:569
+#: 16c989d3109b4b98995164612396bd19
+msgid "**Expected results**: Significant progress towards making the Qubes build process deterministic. This would likely involve cooperation with and hacking on several upstream build tools to eliminate sources of variability."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:576
+#: ed6263cb8c46452f9845854e0b8c4630
+msgid "**Knowledge prerequisite**: qubes-builder :doc:`[1] </developer/building/qubes-builder>` :doc:`[2] </developer/building/qubes-builder-details>` `[3] <https://github.com/QubesOS/qubes-builder/tree/master/doc>`__, and efficient at introspecting complex systems: comfortable with tracing and debugging tools, ability to quickly identify and locate issues within a large codebase (upstream build tools), etc."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:585
+#: ../../../_doc/developer/general/gsoc.rst:628
+#: ../../../_doc/developer/general/gsoc.rst:761
+#: ../../../_doc/developer/general/gsoc.rst:786
+#: ../../../_doc/developer/general/gsoc.rst:863
+#: 3d141599aaab4008bae9ea07dd14fc97
+#: 56f700676a31486f8dcd523a0eb7c5fb
+#: f2802944b9414419927c22a31d6e4d36
+#: 53fc1e03418e4680a6508448f17da995
+#: 4b1a48a739944724927ff27624c7c8e7
+msgid "**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:588
+#: 33e7f6dd37cd4cca88ed2ff852d1bad3
+msgid "Porting Qubes to ARM/aarch64"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:590
+#: 0be965b3eedb43538ee30d853432d9ec
+msgid "**Project**: Porting Qubes to ARM/aarch64"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:592
+#: 5f1bc1e762f547e9b7fe9c86eb1df951
+msgid "**Brief explanation**:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:594
+#: c974b895b50e4ce8bbb8341aafd8305a
+msgid "Qubes currently only supports the x86_64 CPU architecture. Xen currently has additional support for ARM32/ARM64 processors, however work needs to be done to integrate this into the Qubes build process, as well as work in integrating this with the Qubes toolstack and security model. This may also be beneficial in simplifying the process of porting to other architectures."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:601
+#: 76d65ba431fb4946bab82d2dfe3665a1
+msgid "Some related discussion:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:603
+#: dc7dd0bd53c945b197f5527b2047bba1
+msgid "`#4318 <https://github.com/QubesOS/qubes-issues/issues/4318>`__ on porting to ppc64."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:605
+#: 7e57b4f38e2d4ed983c2bab9e9c4464e
+msgid "`#3894 <https://github.com/QubesOS/qubes-issues/issues/3894>`__ on porting to L4 microkernel."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:610
+#: 63960732447f4729810e40376b66b751
+msgid "Add cross-compilation support to qubes-builder and related components."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:612
+#: 47e0a06dceb6440aa6ec5aaa50f8434a
+msgid "Make aarch64 specific adjustments to Qubes toolstacks/manager (including passthrough of devices from device tree to guest domains)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:614
+#: 958b2ac6a9274489a8f40db6276b50ab
+msgid "Aarch64 specific integration and unit tests."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:615
+#: deb6d02f83c241958f359001ce87df9e
+msgid "Production of generic u-boot or uefi capable image/iso for target hardware."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:622
+#: 4cebc3e6857348dba50666f341ae7281
+msgid "Libvirt and Qubes toolstacks (C and python languages)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:623
+#: 6145de7c8aae46e483d87bbe743c096c
+msgid "Xen debugging."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:624
+#: 60e39ab07dbd4f2288951525c5ef92bf
+msgid "General ARM architecture knowledge."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:671
+#: 83177fdecea546858ad18fb58d3e5920
+msgid "Android development in Qubes"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:673
+#: 11d69aef04924be1970356b40ff22b32
+msgid "**Project**: Research running Android in Qubes VM (probably HVM) and connecting it to Android Studio"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:676
+#: 26e364a23ca647a1a27e72447f8d32fb
+msgid "**Brief explanation**: The goal is to enable Android development (and testing!) on Qubes OS. Currently it’s only possible using qemu-emulated Android for ARM. Since it’s software emulation it’s rather slow. Details, reference: `#2233 <https://github.com/QubesOS/qubes-issues/issues/2233>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:684
+#: d0a55f90b57243798e4ad22ba0101623
+msgid "a simple way of setting up Android qubes with hardware emulation (distributed as a template or as a salt, handling various modern Android versions)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:687
+#: ba4888b0b8924bd2a1d82774086c45e6
+msgid "figuring out and implementing an easy and secure way to connect an Android qube to a development qube with Android studio"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:689
+#: cfb77243c4b74254b81842764e680e21
+msgid "documentation and tests"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:697
+#: ../../../_doc/developer/general/gsoc.rst:729
+#: 5e4cc6bbeb8f441ebab21b7f0ac2b9c4
+#: 13ab1d38d21648eabab5a6aec6d4618d
+msgid "**Mentor**: Inquire on `qubes-devel </introduction/support.html#qubes-devel>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:700
+#: 0437897317a348159d0a9a7b5a82b25a
+msgid "Admin API Fuzzer"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:702
+#: 53a894f006a04e95bece0a28ebdcbb1d
+msgid "**Project**: Develop a `Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ for the `Qubes OS Admin API </developer/services/admin-api>`."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:706
+#: 70c8d66e3999405bb41d0070bc5cc350
+msgid "**Brief explanation**: The :doc:`Qubes OS Admin API </developer/services/admin-api>` enables VMs to execute privileged actions on other VMs or dom0 - if allowed by the Qubes OS RPC policy. Programming errors in the Admin API however may cause these access rights to be more permissive than anticipated by the programmer."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:712
+#: 6e768b7600344baba3c099216c397c9f
+msgid "Since the Admin API is continuously growing and changing, continuous security assessments are required. A `Fuzzer <https://en.wikipedia.org/wiki/Fuzzing>`__ would help to automate part of these assessments."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:717
+#: 1085d0e1d5804f9e87365b65943e1cf6
+msgid "**Expected results**: - fully automated & extensible Fuzzer for parts of the Admin API - user & developer documentation"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:722
+#: 04365eee112841dea677fd1370ce6324
+msgid "**Prerequisites**: - basic Python understanding - some knowledge about fuzzing & existing fuzzing frameworks (e.g. `oss-fuzz <https://github.com/google/oss-fuzz/tree/master/projects/qubes-os>`__) - a hacker’s curiosity"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:732
+#: af939fe6126648b783bfdd3e8118f59c
+msgid "Secure Boot support"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:734
+#: 1d9593c701c6413b87a5709e02098804
+msgid "**Project**: Add support for protecting boot binaries with Secure Boot technology, using user-generated keys."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:737
+#: f919e1ca69f84928a7d88c8c665a1f31
+msgid "**Brief explanation**: Since recently, Xen supports “unified EFI boot” which allows to sign not only Xen binary itself, but also dom0 kernel and their parameters. While the base technology is there, enabling it is a painful and complex process. The goal of this project is to integrate configuration of this feature into Qubes, automating as much as possible. See discussion in `issue #4371 <https://github.com/QubesOS/qubes-issues/issues/4371>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:745
+#: 7fb077351e574bd4bb71f083ee495090
+msgid "**Expected results**: - a tool to prepare relevant boot files for unified Xen EFI boot - this includes collecting Xen, dom0 kernel, initramfs, config file, and possibly few more (ucode update?); the tool should then sign the file with user provided key (preferably propose to generate it too) - integrate it with updates mechanism, so new Xen or dom0 kernel will be picked up automatically - include a fallback configuration that can be used for troubleshooting (main unified Xen EFI intentionally does not allow to manipulate parameters at boot time)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:756
+#: 9616ffdc927c4b449460ecde1ae21407
+msgid "**Knowledge prerequisite**: - basic understanding of Secure Boot - Bash and Python scripting"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:764
+#: 610411eb3cba4c5097e00217dcda4b8d
+msgid "Reduce logging of Disposable VMs"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:766
+#: 714fad86c3304b49910f28a44e859550
+msgid "**Project**: Reduce logging of Disposable VMs"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:768
+#: 589a870fb42d4a42aa20f26ae5075f76
+msgid "**Brief explanation**: Partial metadata of a DisposableVM is stored in the dom0 filesystem. This applies to various logs, GUI status files etc. There should be an option to hide as much of that as possible - including bypassing some logging, and removing various state files, or at the very least obfuscating any hints what is running inside DisposableVM. More details at `issue #4972 <https://github.com/QubesOS/qubes-issues/issues/4972>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:776
+#: 88fbe242d5f84bc889d1ab9a35bfd3ca
+msgid "**Expected results**: A DisposableVM should not leave logs hinting what was running inside."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:781
+#: ab9ad4ce408a4480a1abb83061dc43e9
+msgid "**Knowledge prerequisite**: - Python scripting - Basic knowledge of Linux system services management (systemd, syslog etc)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:789
+#: 874cf8ee8fcd473da667e6becc0a621e
+msgid "Past Projects"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:791
+#: 553461411b984f4aab0daa979f1ceb09
+msgid "You can view the projects we had in 2017 in the `GSoC 2017 archive <https://summerofcode.withgoogle.com/archive/2017/organizations/5074771758809088/>`__. We also participated in GSoC 2020 and GSoC 2021, and you can see the project in the `GSoC 2020 archive <https://summerofcode.withgoogle.com/archive/2020/organizations/4924517870206976/>`__ and `GSoC 2021 archive <https://summerofcode.withgoogle.com/archive/2021/organizations/5682513023860736>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:799
+#: 24f6dc19562a446da1d61bf61da72d7b
+msgid "Here are some successful projects which have been implemented in the past by Google Summer of Code participants."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:803
+#: 2493db892a0f43dcb261ce3017f6a294
+msgid "Template manager, new template distribution mechanism"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:805
+#: 70190d21a8b9412c89c3218e3ec0e3f2
+msgid "**Project**: Template manager, new template distribution mechanism"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:807
+#: 75021a5648b3410a8d619ea397bac380
+msgid "**Brief explanation**: Template VMs currently are distributed using RPM packages. There are multiple problems with that, mostly related to static nature of RPM package (what files belong to the package). This means such Template VM cannot be renamed, migrated to another storage (like LVM), etc. Also we don’t want RPM to automatically update template package itself (which would override all the user changes there). More details: `#2064 <https://github.com/QubesOS/qubes-issues/issues/2064>`__, `#2534 <https://github.com/QubesOS/qubes-issues/issues/2534>`__, `#3573 <https://github.com/QubesOS/qubes-issues/issues/3573>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:820
+#: 5f54f15c7ae34c4d84c5590b03ef0652
+msgid "Design new mechanism for distributing templates (possibly including some package format - either reuse something already existing, or design new one). The mechanism needs to handle:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:824
+#: fb987790c0344987a7264477d6bc8e3b
+msgid "integrity protection (digital signatures), not parsing any data in dom0 prior to signature verification"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:826
+#: a4845770c2234e9786d45725790bb990
+msgid "efficient handling of large sparse files"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:827
+#: d8861765754746dfaac0934cff295ce0
+msgid "ability to deploy the template into various storage mechanisms (sparse files, LVM thin volumes etc)."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:829
+#: e1eff756e23d4e49904e115d88599b2f
+msgid "template metadata, templates repository - enable the user to browse available templates (probably should be done in dedicated VM, or DisposableVM)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:832
+#: 194fcb7fb9dd48d5a2c076491393745d
+msgid "manual template removal by users (without it, see problems such as `#5509 <https://github.com/QubesOS/qubes-issues/issues/5509>`__"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:835
+#: 163aee93b65e4efe8aa9d613be4acade
+msgid "Implement the above mechanism:"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:837
+#: f123f257eb7d48daa003b44ce3762a5a
+msgid "tool to download named template - should perform download operation in some VM (as dom0 have no network access), then transfer the data to dom0, verify its integrity and then create Template VM and feed it’s root filesystem image with downloaded data."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:842
+#: 6b9645f3346c4d75b5401d1513743884
+msgid "tool to browse templates repository - both CLI and GUI (preferably integrated with existing Template Manager tool)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:844
+#: 52cc17140fca423a9c73b5bbdf2c3f93
+msgid "integrate both tools - user should be able to choose some template to be installed from repository browsing tool - see `#1705 <https://github.com/QubesOS/qubes-issues/issues/1705>`__ for some idea (this one lacks integrity verification, but a similar service could be developed with that added)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:850
+#: ac0171de3288432bb37f616ae5903e13
+msgid "If new “package” format is developed, add support for it into `linux-template-builder <https://github.com/QubesOS/qubes-linux-template-builder>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:852
+#: 1ab0cb2935b949ab8cb2ff514e7211a4
+msgid "Document the mechanism."
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:857
+#: 89940f6032624c3f82c7bbbaa8ba7162
+msgid "Large files (disk images) handling (sparse files, archive formats)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:858
+#: 64bfdf2e04654eaa9bab18924754bc9f
+msgid "Bash and Python scripting"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:859
+#: b4c64ec1cb924232a631186d17414281
+msgid "Data integrity handling - digital signatures (gpg2, gpgv2)"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:860
+#: 320414285c9f4836bbce82c999c2ed90
+msgid "PyGTK"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:861
+#: 0390643a32db4084a321331a464c5fe4
+msgid "RPM package format, (yum) repository basics"
+msgstr ""
+
+#: ../../../_doc/developer/general/gsoc.rst:867
+#: 0690ac8616544321a3efec3b69209be2
+msgid "We adapted some of the language here about GSoC from the `KDE GSoC page <https://community.kde.org/GSoC>`__."
+msgstr ""

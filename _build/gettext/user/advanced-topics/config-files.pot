@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:2
+#: ae4cdceb6ec44eccaef733a9d9d57222
+msgid "Qubes-specific VM config files"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:4
+#: 3521ec3464f54fe39a59e9ba24aa5d2f
+msgid "These files are placed in ``/rw``, which survives a VM restart. That way, they can be used to customize a single VM instead of all VMs based on the same template. The scripts here all run as root."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:8
+#: 8b2ee15fdd5f4b78884fd9208dc42e5b
+msgid "``/rw/config/rc.local`` - script runs at VM startup. Good place to change some service settings, replace config files with its copy stored in ``/rw/config``, etc. Example usage:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:23
+#: 7ba91965cdab4de3a1b3f2e788eb3fea
+msgid "``/rw/config/qubes-ip-change-hook`` - script runs in NetVM after every external IP change and on “hardware” link status change."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:26
+#: 9d55dd980c224011b026dc72ea9e975d
+msgid "In ProxyVMs (or app qubes with ``qubes-firewall`` service enabled), scripts placed in the following directories will be executed in the listed order followed by ``qubes-firewall-user-script`` at start up. Good place to write custom firewall rules."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:37
+#: 2c384f6a22f44949a6d96f55ab291600
+msgid "``/rw/config/suspend-module-blacklist`` - list of modules (one per line) to be unloaded before system goes to sleep. The file is used only in a VM with PCI devices attached. Intended for use with problematic device drivers."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:42
+#: 92b91b32f9844662a0b8766a1abd4d92
+msgid "In NetVMs/ProxyVMs, scripts placed in ``/rw/config/network-hooks.d`` will be ran when configuring Qubes interfaces. For each script, the ``command``, ``vif``, ``vif_type`` and ``ip`` is passed as arguments (see ``/etc/xen/scripts/vif-route-qubes``). For example, consider a PV app qube ``work`` with IP ``10.137.0.100`` and ``sys-firewall`` as NetVM. Assuming it’s Xen domain id is arbitrary ``12`` then, the following script located at ``/rw/config/network-hooks.d/hook-100.sh`` in ``sys-firewall``:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:71
+#: 2b1e62b18257437abcab8bbebd038957
+msgid "will be executed with arguments ``online vif12.0 vif 10.137.0.100`` when starting ``work``. Please note that in case of an HVM, the script will be called twice - once with vif_type ``vif``, then with vif_type ``vif_ioemu`` (and different interface names). As long as the ioemu interface exists, it should be preferred (up to the hook script). When the VM decides to use a PV interface (vif_type ``vif``), the ioemu one will be unplugged."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:79
+#: 10764fb755f040ebad275b66c638c97b
+msgid "Note that scripts need to be executable (``chmod +x``) to be used."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:81
+#: 68ba46786f1d4c1db4cdc1bf1c0e201b
+msgid "Also, take a look at :doc:`bind-dirs </user/advanced-topics/bind-dirs>` for instructions on how to easily modify arbitrary system files in an app qube and have those changes persist."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:86
+#: ecb3fd498b7540e7a73f9dd2234290a8
+msgid "GUI and audio configuration in dom0"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:88
+#: c77ff65d3a264a8380a800924fb1e3e0
+msgid "The GUI configuration file ``/etc/qubes/guid.conf`` in one of a few not managed by ``qubes-prefs`` or the Qubes Manager tool. Sample config (included in default installation):"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:122
+#: 4b2163101c2f4ddcb035ca4dbc333162
+msgid "Currently supported settings:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:124
+#: f497cab677b54f80bc5c17200101be25
+msgid "``allow_fullscreen`` - allow VM to request its windows to go fullscreen (without any colorful frame)."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:127
+#: 5dc8714737194253a77ac3a1592fda08
+msgid "**Note:** Regardless of this setting, you can always put a window into fullscreen mode in Xfce4 using the trusted window manager by right-clicking on a window’s title bar and selecting “Fullscreen”. This functionality should still be considered safe, since a VM window still can’t voluntarily enter fullscreen mode. The user must select this option from the trusted window manager in dom0. To exit fullscreen mode from here, press ``alt`` + ``space`` to bring up the title bar menu again, then select “Leave Fullscreen”."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:136
+#: c0b6225804e644c28e700ca0b764a0e8
+msgid "``allow_utf8_titles`` - allow the use of UTF-8 in window titles; otherwise, non-ASCII characters are replaced by an underscore."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:139
+#: ac714402ac874171a4811916ed756d28
+msgid "``secure_copy_sequence`` and ``secure_paste_sequence`` - key sequences used to trigger secure copy and paste."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:142
+#: ae081aac139446eb87b33ca3fa397686
+msgid "``audio_low_latency`` - force low-latency audio mode (about 40ms compared to 200-500ms by default). Note that this will cause much higher CPU usage in dom0. It’s enabled by default, disabling it may save CPU in dom0."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:147
+#: 1908c3cf641a4e019799a6fb0fab85b9
+msgid "``trayicon_mode`` - defines the trayicon coloring mode. Options are - ``bg`` - color full icon background to the VM color - ``border1`` - add 1px border at the icon edges - ``border2`` - add 1px border 1px from the icon edges - ``tint`` - tinttint icon to the VM color, can be used with additional modifiers (you can enable multiple of them) - ``tint+border1,tint+border2`` - same as tint, but also add a border - ``tint+saturation50`` - same as tint, but reduce icon saturation by 50% - ``tint+whitehack`` - same as tint, but change white pixels (0xffffff) to almost-white (0xfefefe)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:157
+#: 4f57982388d946ef978eb40ce95dd5e1
+msgid "``log level`` - defines the log options logs can take. It can have a value of 0 (only errors), 1 (some basic messages), and 2 (debug)."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/config-files.rst:160
+#: cc2443df094047a08bc1c0381685de0e
+msgid "``startup_timeout`` - The timeout for startup."
+msgstr ""

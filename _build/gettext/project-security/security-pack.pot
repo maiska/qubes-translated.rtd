@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/project-security/security-pack.rst:1
+#: a945d0b77b0f41a2a68fca8c1c5e43bf
+msgid "The **Qubes security pack (qubes-secpack)** is a Git repository that contains:"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:4
+#: 2d463564b2eb48df8dfce53b9daa5174
+msgid ":doc:`Qubes security bulletins (QSBs) </project-security/qsb>`"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:5
+#: 1089900a0a6c4a6eb0e1d1de9ba39c0e
+msgid ":doc:`Qubes canaries </project-security/canary>`"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:6
+#: bb9e83f580814e1e8b8a0a4416cdc922
+msgid "`Qubes ISO cryptographic hash values </project-security/verifying-signatures.html#how-to-verify-the-cryptographic-hash-values-of-qubes-isos>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:8
+#: 163b747e473b4e598f5ab63258e4972c
+msgid "`Qubes fund information <https://github.com/QubesOS/qubes-secpack/tree/master/fund>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:10
+#: 9a0781d11eb04e16ab25d23c037aba05
+msgid "`Qubes PGP keys <https://keys.qubes-os.org/keys/>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:11
+#: 12ebcb022b994cd7bf42641e9c75f893
+msgid "Security-related information and announcements (e.g., key revocations)"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:14
+#: 48322c70c1584528bcd9bc069a73f9ef
+msgid "While qubes-secpack itself is independent of any particular host, its current official location is:"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:17
+#: ce728dce146a4ebdb16e7c747a47c8c9
+msgid "https://github.com/QubesOS/qubes-secpack"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:20
+#: ce3cffdee5c048249628233bca27101e
+msgid "How to obtain and authenticate"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:22
+#: bdda8c755a594be2bde00863d5efabba
+msgid "The following example demonstrates one method of obtaining the qubes-secpack and verifying its authenticity. This requires Git and `OpenPGP software </project-security/verifying-signatures.html#openpgp-software>`__."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:26
+#: 0f852101757f4dd09ffd23a0a1e52138
+msgid "Use Git to clone the qubes-secpack repo."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:38
+#: 07367056ab1a4a97847771b6fc987110
+msgid "Import the included PGP keys. See our `PGP key policies <#pgp-key-policies>`__ for important information about these keys."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:72
+#: 1eedcf7b3ec04d4fac77195ee74185b8
+msgid "`Authenticate and set the trust level of the Qubes Master Signing Key (QMSK). </project-security/verifying-signatures.html#how-to-import-and-authenticate-the-qubes-master-signing-key>`__"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:75
+#: a8ac845ad032408e93516c97f488fa44
+msgid "Verify signed Git tags."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:91
+#: 142e1281cc2c4092b11a9e0f9abf7de3
+msgid "The final line of output confirms that the signature is good."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:93
+#: 195a300e912c4110a144677d10901501
+msgid "Verify detached PGP signatures."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:105
+#: d68c6eb22b314cb8bd476dd3767abedc
+msgid "The fourth and final lines of output confirm that the two signatures are good."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:108
+#: 9c9e8e76363a4d4199277339a2bb5ba5
+msgid "The same procedures can be applied to any directory or file in the qubes-secpack. Two methods of verification (signed Git tags and detached PGP signatures) are provided to ensure that the system is robust (e.g., against a potential failure in Git tag-based verification) and to give users more options to verify the files."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:115
+#: dc9b21eac1b14abca726c446ba38c9b1
+msgid "PGP key policies"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:117
+#: add425a45bc444258823230e7a246718
+msgid "**Inclusion criteria.** The qubes-secpack generally includes only those PGP keys used to sign some kind of official project asset, such as Qubes release ISOs (release signing keys), Git tags and commits (code signing, doc signing, and security team keys), and the qubes-secpack’s own files and Git tags (security team keys again). This means that email keys are generally not included, even for official project email addresses. There is one exception to this rule: the official `Qubes security team </project-security/security.html#qubes-security-team>`__ email address, which is used to report security vulnerabilities in Qubes OS to our security team."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:128
+#: 1c6b01432c36450f9d20442a5652d54b
+msgid "**Key signing (certification).** Only some keys in the qubes-secpack are signed by the QMSK. Keys that are not signed directly by the QMSK are still signed indirectly by virtue of being included in the qubes-secpack, which is itself signed (via Git tags and/or commits) by keys that are in turn signed by the QMSK."
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:135
+#: c66ec622e67847cdac197a3b7d5b3980
+msgid "History and rationale"
+msgstr ""
+
+#: ../../../_doc/project-security/security-pack.rst:137
+#: afb889be01cd4ca7910d3b7edbef7417
+msgid "On 2013-01-05, Joanna Rutkowska announced the qubes-secpack and explained its rationale in an `email <https://groups.google.com/d/msg/qubes-devel/twkOEaMLtNI/lZyGx6_jFCEJ>`__ to the Qubes mailing lists:"
+msgstr ""

@@ -1,0 +1,1766 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/services/admin-api.rst:1
+#: 34171bb4aa3148c0a78e5699ca7f17c8
+msgid "*You may also be interested in the article*\\ `Introducing the Qubes Admin API <https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/>`__\\ *.*"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:5
+#: eeaf50bb386a4c93b31b6b55bbba2ad1
+msgid "Goals"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:7
+#: dc766aeb68ee4c1daf0d44db5cab8f61
+msgid "The goals of the Admin API system is to provide a way for the user to manage the domains without direct access to dom0."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:10
+#: 0a0f2006eebf447886e1e369909917a3
+msgid "Foreseen benefits include:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:12
+#: 61afde1a51a141a59923b5b26d228187
+msgid "Ability to remotely manage the Qubes OS."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:13
+#: 3d38256c838a4c9d823491c1e757d211
+msgid "Possibility to create multi-user system, where different users are able to use different sets of domains, possibly overlapping. This would also require to have separate GUI domain."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:17
+#: e5a757d80fa7446faaf00f0db7ada900
+msgid "The API would be used by:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:19
+#: ef7da40d3d474a7e83af8b7048aa2802
+msgid "Qubes OS Manager (or any tools that would replace it)"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:20
+#: 71ebc1eef2ed4351a0c0793b6ef65c8c
+msgid "CLI tools, when run from another VM (and possibly also from dom0)"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:21
+#: 8f231188de4e4047a4559f028479db60
+msgid "remote management tools"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:22
+#: 587e9c3495754fb68bd8de6432c48000
+msgid "any custom tools"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:25
+#: 1fadabaa4301455a9666c57d20b23385
+msgid "Threat model"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:27
+#: 0ddd978e896b47db8129c20527a75a24
+msgid "TBD"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:30
+#: 3a261acd281d4e03ab293cbf35e3b36e
+msgid "Components"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:35
+#: 1efb0fd6986d4564911995361bdde1ef
+msgid "Admin API Architecture"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:37
+#: 37a7687569934cdfb5a51555b2b64bd5
+msgid "A central entity in the Qubes Admin API system is a ``qubesd`` daemon, which holds information about all domains in the system and mediates all actions (like starting and stopping a qube) with ``libvirtd``. The ``qubesd`` daemon also manages the ``qubes.xml`` file, which stores all persistent state information and dispatches events to extensions. Last but not least, ``qubesd`` is responsible for querying the RPC policy for qrexec daemon."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:45
+#: 8cc13a4dc2fb47629136df257fbae7f7
+msgid "The ``qubesd`` daemon may be accessed from other domains through a set of qrexec API calls called the “Admin API”. This API is the intended management interface supported by the Qubes OS. The API is stable. When called, the RPC handler performs basic validation and forwards the request to the ``qubesd`` via UNIX domain socket. The socket API is private, unstable, and not yet documented."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:53
+#: 0e0871f076f74cb7b142b71c305f9822
+msgid "The calls"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:55
+#: bca08d83c511419ebc87262757f41801
+msgid "The API should be implemented as a set of qrexec calls. This is to make it easy to set the policy using current mechanism."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:58
+#: ../../../_doc/developer/services/admin-api.rst:3344
+#: bd46574b3039437287e1265cf7789e2b
+#: f28888fb0df34dd2b39795d8d4a010b3
+msgid ":doc:`View this table on a fullscreen page. </developer/services/admin-api-table>`"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:61
+#: ../../../_doc/developer/services/admin-api.rst:3536
+#: 25afd8945df346f6844d824f9b402f2b
+#: e9f77b7992c648f5b0fd237e79c0b3d1
+msgid "call"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:61
+#: 57f7226ece504a9fb554b8604e570fe1
+msgid "d e s t"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:61
+#: d250dffc79e7428e979178389f72f665
+msgid "a r g u m e n t"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:61
+#: ../../../_doc/developer/services/admin-api.rst:3536
+#: 848f8e605ff4472abefab3334792bc1e
+#: 70ba582f13ed4effafe6ee0641e9709e
+msgid "inside"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:61
+#: ../../../_doc/developer/services/admin-api.rst:3536
+#: cf34a2120cad4df7a85c3c04fd9c1a7a
+#: c21539ce0c8444a58308f2d2f5ec8cf6
+msgid "return"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:61
+#: 00ab9c29ce4f41d2923f3279dc0b6bbd
+msgid "n o t e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:70
+#: c51a21a26ffc4a548cc7f0653b0daeb6
+msgid "``admin.v mclass.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:72
+#: ../../../_doc/developer/services/admin-api.rst:95
+#: ../../../_doc/developer/services/admin-api.rst:104
+#: ../../../_doc/developer/services/admin-api.rst:514
+#: ../../../_doc/developer/services/admin-api.rst:523
+#: ../../../_doc/developer/services/admin-api.rst:532
+#: ../../../_doc/developer/services/admin-api.rst:541
+#: ../../../_doc/developer/services/admin-api.rst:550
+#: ../../../_doc/developer/services/admin-api.rst:559
+#: ../../../_doc/developer/services/admin-api.rst:568
+#: ../../../_doc/developer/services/admin-api.rst:660
+#: ../../../_doc/developer/services/admin-api.rst:860
+#: ../../../_doc/developer/services/admin-api.rst:952
+#: ../../../_doc/developer/services/admin-api.rst:961
+#: ../../../_doc/developer/services/admin-api.rst:970
+#: ../../../_doc/developer/services/admin-api.rst:979
+#: ../../../_doc/developer/services/admin-api.rst:2303
+#: ../../../_doc/developer/services/admin-api.rst:2312
+#: ../../../_doc/developer/services/admin-api.rst:2350
+#: ../../../_doc/developer/services/admin-api.rst:2359
+#: ../../../_doc/developer/services/admin-api.rst:2368
+#: ../../../_doc/developer/services/admin-api.rst:2377
+#: ../../../_doc/developer/services/admin-api.rst:2386
+#: ../../../_doc/developer/services/admin-api.rst:2395
+#: ../../../_doc/developer/services/admin-api.rst:2404
+#: ../../../_doc/developer/services/admin-api.rst:2413
+#: ../../../_doc/developer/services/admin-api.rst:2422
+#: ../../../_doc/developer/services/admin-api.rst:2431
+#: ../../../_doc/developer/services/admin-api.rst:2440
+#: ../../../_doc/developer/services/admin-api.rst:2449
+#: ../../../_doc/developer/services/admin-api.rst:2458
+#: ../../../_doc/developer/services/admin-api.rst:2596
+#: ../../../_doc/developer/services/admin-api.rst:3120
+#: ../../../_doc/developer/services/admin-api.rst:3221
+#: ../../../_doc/developer/services/admin-api.rst:3256
+#: baa8c1fa696346a98cc6e543ea7c07b6
+#: 109faef636cf4e6eb332556e554a15cf
+#: 3c89ea1086494dc2a402732dbe106275
+#: edeb6fc2bd434508a2e415c46b1a1294
+#: 82f2b64bc3ae456390ca7e752368098c
+#: aa34e283f74540b983248d1fea2d3a4e
+#: 8f7f899b76d948198c01602e6d44183e
+#: d651dd4939f5454783b17e2e6eed4121
+#: 41208742f1344502ab09689bf8f626e1
+#: e3d47d76a3214a549ca8df40b372c050
+#: 83ca3dda923448d2a0535cd164ae3815
+#: 174ca64bb5f748859cd5872c0112f61f
+#: b082f175e850492d86833f74b5fa163c
+#: f354780f084649dea6516d77e40ce8c5
+#: 1b508ec9759244ecb5b9b63c45da89c3
+#: a0353c7e427b44c4be27c37d5ab992d8
+#: a3b60b1e687b4650aa44e9659ae49be7
+#: 12b9d9fba4464559923680f2a0f5fc57
+#: 1f166df17e394dd798b3cad0fd6ad5cb
+#: 5dd7aa51996c458eb09ba52db448807a
+#: df9c78df67be45a4a40d40a80b25f576
+#: 6cc891c08bf0433db300f442fc85f5ef
+#: 00f824b4ac3145ecb7e163324753df77
+#: 369da2c7874244bfa7fa6cfe4decf705
+#: 78d07bdf9f644143831a45316bdac963
+#: 3e903d1660644d1a9b515d5fc741e982
+#: 1fceaf429416409390d23fd3c75501e4
+#: e4ebd31607e54b758b5922a13665b717
+#: 1b50c3c2ce014af29fb02e2d2e498143
+#: 4ef9d13eae4747908edd0cbf44c490c3
+#: 68e518b80a824e6b9d5f348c5e5dda37
+#: 49c5d7031a244aaebb7127e279890863
+#: 3a02a8d89d7c45c18dd63dcc7ba23114
+#: 98429643ecbe4e668c00df314b6f3b62
+#: d15c6f75356c4528ba2e67e958e16049
+msgid "d o m 0 ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:70
+#: 50ada5f0eb4549988b865ade13ae6669
+msgid "``<class>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:79
+#: b777fcf4bf9e40fe954647288b46588e
+msgid "``ad min.vm.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:81
+#: 6f8165a4ff474c3c8145c8e2b4564b88
+msgid "d o m 0 | < v m > ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:79
+#: 43c4839924954b7cbf333047bec920cb
+msgid "``<name> class=<c lass> state=<state>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:93
+#: 6d33d347c21349659bd1665641996be8
+msgid "` `admin.vm.Cre ate.<class>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:93
+#: ../../../_doc/developer/services/admin-api.rst:102
+#: ../../../_doc/developer/services/admin-api.rst:218
+#: f35b3e08632e4647914050e5426e43ae
+#: bd8c0ac4f1f24a978413853bbde058de
+#: 0ae9b1f5acba462584fd8d795fc056ab
+msgid "t e m p l a t e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:93
+#: d9960fa866f645159834f53545221e82
+msgid "``name=<name> label=<label>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:102
+#: 3dfb52280ab14341a6544090cc659c73
+msgid "``admin .vm.CreateInP ool.<class>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:102
+#: c2aa9f511ab746a9879b5e6e7c41bd08
+msgid "``name=<n ame> label=<lab el>``\\ \\ ``pool =<pool> pool:<v olume>=<pool>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:102
+#: 4805bbfe64514254a5e0b22f68e3a8b6
+msgid "e i t h e r u s e ` ` p o o l = ` ` t o p u t a l l v o l u m e s t h e r e , o r ` ` p o o l : < v o l u m e > = ` ` f o r i n d i v i d u a l v o l u m e s - b o t h f o r m s a r e n o t a l l o w e d a t t h e s a m e t i m e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:218
+#: b286688896cb4dc9a19281804fa61952
+msgid "``a dmin.vm.Creat eDisposable``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:218
+#: ../../../_doc/developer/services/admin-api.rst:3542
+#: ../../../_doc/developer/services/admin-api.rst:3546
+#: ../../../_doc/developer/services/admin-api.rst:3551
+#: 6f20f9c9d70a4e7db44d6c7ad01f22d0
+#: 7f929e86efc84263b2ee88cbf37387ea
+#: f07a4f64850e468c9f55444d57404564
+#: 627ded30cb3b4815aa8d046d39c8d888
+msgid "name"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:218
+#: 8ac8cfdaa2e44a1093cf7913321c7def
+msgid "C r e a t e n e w D i s p o s a b l e V M , ` ` t e m p l a t e ` ` i s a n y A p p V M w i t h ` ` d i s p v m _ a l l o w e d ` ` s e t t o T r u e , o r ` ` d o m 0 ` ` t o u s e d e f a u l t d e f i n e d i n ` ` d e f a u l t _ d i s p v m ` ` p r o p e r t y o f c a l l i n g V M ; V M c r e a t e d w i t h t h i s c a l l w i l l b e a u t o m a t i c a l l y r e m o v e d a f t e r i t s s h u t d o w n ; t h e m a i n d i f f e r e n c e f r o m ` ` a d m i n . v m . C r e a t e . D i s p V M ` ` i s a u t o m a t i c ( r a n d o m ) n a m e g e n e r a t i o n ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:509
+#: 731752f98c9849b5acb9994270efae76
+msgid "``admi n.vm.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:509
+#: ../../../_doc/developer/services/admin-api.rst:986
+#: ../../../_doc/developer/services/admin-api.rst:989
+#: ../../../_doc/developer/services/admin-api.rst:1061
+#: ../../../_doc/developer/services/admin-api.rst:1261
+#: ../../../_doc/developer/services/admin-api.rst:1333
+#: ../../../_doc/developer/services/admin-api.rst:1342
+#: ../../../_doc/developer/services/admin-api.rst:1351
+#: ../../../_doc/developer/services/admin-api.rst:1360
+#: ../../../_doc/developer/services/admin-api.rst:1369
+#: ../../../_doc/developer/services/admin-api.rst:1372
+#: ../../../_doc/developer/services/admin-api.rst:1380
+#: ../../../_doc/developer/services/admin-api.rst:1388
+#: ../../../_doc/developer/services/admin-api.rst:1396
+#: ../../../_doc/developer/services/admin-api.rst:1404
+#: ../../../_doc/developer/services/admin-api.rst:1412
+#: ../../../_doc/developer/services/admin-api.rst:1420
+#: ../../../_doc/developer/services/admin-api.rst:1428
+#: ../../../_doc/developer/services/admin-api.rst:1431
+#: ../../../_doc/developer/services/admin-api.rst:1440
+#: ../../../_doc/developer/services/admin-api.rst:1444
+#: ../../../_doc/developer/services/admin-api.rst:1448
+#: ../../../_doc/developer/services/admin-api.rst:1617
+#: ../../../_doc/developer/services/admin-api.rst:1672
+#: ../../../_doc/developer/services/admin-api.rst:1714
+#: ../../../_doc/developer/services/admin-api.rst:1915
+#: ../../../_doc/developer/services/admin-api.rst:1967
+#: ../../../_doc/developer/services/admin-api.rst:2019
+#: ../../../_doc/developer/services/admin-api.rst:2108
+#: ../../../_doc/developer/services/admin-api.rst:2645
+#: ../../../_doc/developer/services/admin-api.rst:2733
+#: ../../../_doc/developer/services/admin-api.rst:2740
+#: ../../../_doc/developer/services/admin-api.rst:2747
+#: ../../../_doc/developer/services/admin-api.rst:2804
+#: ../../../_doc/developer/services/admin-api.rst:2811
+#: ../../../_doc/developer/services/admin-api.rst:2818
+#: ../../../_doc/developer/services/admin-api.rst:2825
+#: ../../../_doc/developer/services/admin-api.rst:2832
+#: ../../../_doc/developer/services/admin-api.rst:2904
+#: ../../../_doc/developer/services/admin-api.rst:2926
+#: ../../../_doc/developer/services/admin-api.rst:3057
+#: ../../../_doc/developer/services/admin-api.rst:3103
+#: ../../../_doc/developer/services/admin-api.rst:3106
+#: ../../../_doc/developer/services/admin-api.rst:3109
+#: ../../../_doc/developer/services/admin-api.rst:3112
+#: ../../../_doc/developer/services/admin-api.rst:3115
+#: 07380948db29437cb3444ab0ca94f12c
+#: f6108e29ad2540ef8013b1860f8c77ff
+#: a00ea4e2bec74441b13a1dbaea2f804c
+#: 381de215c9594da091682c50bbdba68d
+#: ea907d5442304f68b9b1a165eb5b1153
+#: 5d9fb3d9102f4d6b923709d64935d87d
+#: 23c1959648754115aaaa830b1d7c0f7c
+#: 17686eafbf9149f69fbe2f49580067b6
+#: a6143867708d4ff8b620bbc1403fbf7d
+#: e33c3a79b1a4433aa5edf63405c988a7
+#: 94e06db219c74105a4e41da37777ee12
+#: e9b5366e70474b17a89372f8cded634d
+#: 74fd185227bf42cbb0da40703c21cf7c
+#: a54f5fcb20514e3fb2a2d8e0c97a197c
+#: 765a8b20301649fd84763767823d3d5f
+#: 1e9e258dd74b42048f48507fb19575b2
+#: 8935c0cc994f4fabb889070bcbc2eacc
+#: c087026591e542b1adb0706ea6e8a21f
+#: f343e635697e4dc590b88546aacc040e
+#: 2209ab0b364e40258db98a148e7d60a0
+#: ef7ea02d67d64cb0b25b328d74be2200
+#: 1f4307ad3fe14c59b7c1e59ccbccf401
+#: a0e3d4b9955641bdbd2946d86b1dd213
+#: 0aee2b39d7a84ace8c6adb32732c6137
+#: 909b7f03dbab4840b433bd1b6d9f4b5b
+#: 7318ce9695e64b4886a867d98cc5da71
+#: 0026bedc3f9f48bb8adcd831c7e62e02
+#: 529ce73176f8470fa7becd7bb8bad72e
+#: 00363718a2c84b74912ca5475df53af1
+#: c78359b0ebeb491b850ca29634e9cdd5
+#: 718a4fbc5de44235b36b28f88c63da38
+#: 3569b30ffcc24c339f50b80e949238f7
+#: 58323a68650541c883671c274d7a6c29
+#: 4c44c7ea5f8c450080dc193fc815bfe7
+#: 1f43f38e439048999c9ea59fc130b40d
+#: 1b5082963b21485d9a251f6edcd3ed62
+#: bbd5e724c796436d9c14eab56a81a3a8
+#: 01699178653243f3a607621427eaa302
+#: 7b1536aaa47e429b90f9d48d8acc4fef
+#: e39508877cee4b559c2e51b86d80d90f
+#: 7e4026b4ac4f4f95a85a3bb540e49415
+#: e2a1e16851b94c0baeeb4f9679cbcb8e
+#: 02acc786e6044bcc9a2c73e819be9715
+#: bcfc36c43e3b4f9f9bf3b63f004f8855
+#: 55193371d445442c80ffcb8e6af1ca3f
+#: f02936a3be7a46658e446549e5146b57
+msgid "v m"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:512
+#: 2c3aa2974bfc460fafbd4901877ca4bc
+msgid "``admin .label.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:512
+#: ../../../_doc/developer/services/admin-api.rst:557
+#: ../../../_doc/developer/services/admin-api.rst:986
+#: 4d463795da8f46ee9e33132633c3275f
+#: 43c49116d23f4bc68d2b175fe1a2be5b
+#: fc89fb5ed4f14c289dac713d7e4f8fdd
+msgid "``<property>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:521
+#: c0e25dfe4ef6482b85185d0a9049ab31
+msgid "``admin.l abel.Create``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:521
+#: ../../../_doc/developer/services/admin-api.rst:530
+#: ../../../_doc/developer/services/admin-api.rst:539
+#: ../../../_doc/developer/services/admin-api.rst:548
+#: 53d9fa971fab46d3bf8aaefef6b724da
+#: c9ed1f89faef4b499ae84dbf5656d9ff
+#: bf10e3ff17b04dc3985cad6074986e35
+#: afcfee674753429cb988627d003813dd
+msgid "l a b e l"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:521
+#: ../../../_doc/developer/services/admin-api.rst:530
+#: b99310b9186c4161bff3281698481afc
+#: 7a0ef5680dd24209a233e436c5102d6d
+msgid "``0xRRGGBB``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:530
+#: a9e3b6eddbad4035b415be8cf4b9fec1
+msgid "``admi n.label.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:539
+#: 41bebf9fdadd4723979a3e002db200df
+msgid "``admin. label.Index``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:539
+#: 47491e69e17249d38c6210ff3894b259
+msgid "``<label-index>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:548
+#: 820ff2e8f6044437af81b040f2c537a3
+msgid "``admin.l abel.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:557
+#: c3edca09207c4b81a84b58c996dd229e
+msgid "``admin.pr operty.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:566
+#: d680f5e5dcdb479f9f7aeb28eb1fc535
+msgid "``admin.p roperty.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:566
+#: ../../../_doc/developer/services/admin-api.rst:858
+#: ../../../_doc/developer/services/admin-api.rst:950
+#: ../../../_doc/developer/services/admin-api.rst:959
+#: ../../../_doc/developer/services/admin-api.rst:968
+#: ../../../_doc/developer/services/admin-api.rst:977
+#: ../../../_doc/developer/services/admin-api.rst:989
+#: ../../../_doc/developer/services/admin-api.rst:1261
+#: ../../../_doc/developer/services/admin-api.rst:1333
+#: ../../../_doc/developer/services/admin-api.rst:1342
+#: ../../../_doc/developer/services/admin-api.rst:1351
+#: ../../../_doc/developer/services/admin-api.rst:1360
+#: 1f8ced235dd448818b7900ccbcaf718f
+#: 1db1701d608e45a580e1a3057aac1972
+#: 7e0f5ece3c05442f8c048a68044ae869
+#: 7823566679f64438b2a28bc559725bcd
+#: 51f06e469c0a43d292fba92101d9d44e
+#: 9917e23a23684785819b181bffd58b20
+#: 0af9a805895f48648bed3b38d14b66ea
+#: 21ed6c6e176a42679e5c8b515ed7c49c
+#: f119f1605f69462dacd4bf0267421bbf
+#: 936f72f8d0cb4524a949c8ae3a84d487
+#: b88310fc8b3345a99d7aef83d9c16cac
+#: 55788efad8d14188ba06ae7c815b5179
+msgid "p r o p e r t y"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:566
+#: ../../../_doc/developer/services/admin-api.rst:989
+#: 187a9253d1c64bdb97ccd50ab8956f08
+#: b255149e23d54274967ea6ccd97f4c15
+msgid "``de fault={True|False}``\\ \\"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:568
+#: ../../../_doc/developer/services/admin-api.rst:991
+#: 36a214cc8e3f408089a28226145aeda8
+#: 32980b4efe18416c830b5d69e9cba65a
+msgid "``type={str|int|bool|v"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:569
+#: ../../../_doc/developer/services/admin-api.rst:992
+#: 19c5ec3eb78c41358bd0b411fb7e4bd2
+#: a96e6702a15948e4962ded70df9b998c
+msgid "m|label|list} <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:566
+#: ../../../_doc/developer/services/admin-api.rst:858
+#: 72b731c0ed3a4cf2a7bcd6ef7cabe2c5
+#: 8f401dc839c8473b8da4aba462e915bc
+msgid "T y p e ` ` l i s t ` ` i s a d d e d i n R 4 . 1 . V a l u e s a r e o f t y p e ` ` s t r ` ` a n d e a c h e n t r y i s s u f f i x e d w i t h n e w l i n e c h a r a c t e r ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:658
+#: d1862bbc521947e1a02662500a157cc6
+msgid "``admin.prop erty.GetAll``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:658
+#: ../../../_doc/developer/services/admin-api.rst:1061
+#: 9831ba28792c4f2bb04aaee3a8360143
+#: 3834e97d2d93498c820d23b4035f83d0
+msgid "``<prop erty-name> <full-value- as-in-property.Get>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:658
+#: ../../../_doc/developer/services/admin-api.rst:1061
+#: a8725c1f6afe48e4a801a4071ca00ced
+#: 01a1f1801cfb40488399f0c7bfd1d356
+msgid "G e t a l l t h e p r o p e r t i e s i n o n e c a l l . E a c h p r o p e r t y i s r e t u r n e d o n a s e p a r a t e l i n e a n d u s e t h e s a m e v a l u e e n c o d i n g a s p r o p e r t y . G e t m e t h o d , w i t h a n e x c e p t i o n t h a t n e w l i n e s a r e e n c o d e d a s l i t e r a l ` ` \\ n ` ` a n d l i t e r a l ` ` \\ ` ` a r e e n c o d e d a s ` ` \\ \\ ` ` ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:858
+#: eef9af9a29de40d09ad6d0a065e6e880
+msgid "``a dmin.property .GetDefault``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:858
+#: f978777ce63442ba92da88f4578e2238
+msgid "``type={str|int|bool|v m|label|list} <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:950
+#: c46e468b6fed4684ad25919fa48942f8
+msgid "``admin.pr operty.Help``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:950
+#: ../../../_doc/developer/services/admin-api.rst:1333
+#: 798d1236c2c54b14a37204cc5b8d11fe
+#: 4894d55f28c143b3ba847f2b5aaeea9d
+msgid "``help``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:959
+#: f8e4afa17fe44710b5590a94f62d9e0f
+msgid "``admin.prope rty.HelpRst``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:959
+#: ../../../_doc/developer/services/admin-api.rst:1342
+#: c8d070ce340d4ae0b541289d90edf770
+#: f0a61885c95b40778b2ae0f6f043c92d
+msgid "``help.rst``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:968
+#: 365579a8c9bb46aab739be39ed6dfdfd
+msgid "``admin.pro perty.Reset``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:977
+#: fc91c8ada75c4defa51e5aafc026d475
+msgid "``admin.p roperty.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:977
+#: ../../../_doc/developer/services/admin-api.rst:1360
+#: ../../../_doc/developer/services/admin-api.rst:1372
+#: ../../../_doc/developer/services/admin-api.rst:1380
+#: ../../../_doc/developer/services/admin-api.rst:1388
+#: ../../../_doc/developer/services/admin-api.rst:1396
+#: ../../../_doc/developer/services/admin-api.rst:1404
+#: ../../../_doc/developer/services/admin-api.rst:1420
+#: ../../../_doc/developer/services/admin-api.rst:2740
+#: d14d76b1aec6414bb6935582905dd152
+#: 05837ebaac9143fa81ede75a73509c03
+#: 3a9d96476ecb4c95b2fe4ae0d0500ab3
+#: 7dcc7d2f7a7e482ca679af951c219d1b
+#: fdce9b2e69ec4afba6ba9110a811a723
+#: dd13554ba933444983b6beb283776384
+#: 4897b444440d44689eafebb11b3fb2f5
+#: ad9d0daf50634b209def3a739b9d09ec
+#: b2d4346f72a748c08f7561668fd864a3
+msgid "value"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:986
+#: 21a46440e7b5416a9d24ea112e7fd9f5
+msgid "``admin.vm.pr operty.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:989
+#: ec2b0aabb0b2457ead8940077ebfc75b
+msgid "``admin.vm.p roperty.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:989
+#: ../../../_doc/developer/services/admin-api.rst:1261
+#: a4b9da5a2f7f4dad901cd0c6aac1f67e
+#: 8b04f32ee9074d98954d0e88631335fb
+msgid "T y p e ` ` l i s t ` ` i s a d d e d i n R 4 . 1 . E a c h l i s t e n t r y i s s u f f i x e d w i t h a n e w l i n e c h a r a c t e r ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1061
+#: 66f829c32fe3429c8061ab5ab411ecbf
+msgid "`` admin.vm.prop erty.GetAll``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1261
+#: af18ee545ccf4667a6e3c18a4cbfb3ab
+msgid "``admi n.vm.property .GetDefault``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1261
+#: fe645fd626f74e2395af303efefaa7c0
+msgid "``type={str|int|bool|v m|label|type} <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1333
+#: 9588c1e588864e94a09feb24ac5085cf
+msgid "``admin.vm.pr operty.Help``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1342
+#: 68c8692ba6fa4c9391cbb32d5ffb9fab
+msgid "``a dmin.vm.prope rty.HelpRst``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1351
+#: 6d6b1c0c46b24420b903e75edb2c2c37
+msgid "` `admin.vm.pro perty.Reset``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1360
+#: c694238edcd74c2f9d8ef02889199125
+msgid "``admin.vm.p roperty.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1369
+#: 7fba2005ee464e08ac6c170ac9af1264
+msgid "``admin.vm.f eature.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1369
+#: 92fc7fd5093148289d4e4ac1070c6cd3
+msgid "``<feature>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1372
+#: 51358c7fedcb4333b39d8d84351804c3
+msgid "``admin.vm. feature.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1372
+#: ../../../_doc/developer/services/admin-api.rst:1380
+#: ../../../_doc/developer/services/admin-api.rst:1388
+#: ../../../_doc/developer/services/admin-api.rst:1396
+#: ../../../_doc/developer/services/admin-api.rst:1404
+#: ../../../_doc/developer/services/admin-api.rst:1412
+#: ../../../_doc/developer/services/admin-api.rst:1420
+#: abfa6cbd5ff545f599677bdf2fd93e0f
+#: e10c2fdc6e2540d686fcd6255d55030a
+#: 344ea3dad0eb4bddb56a4a56edf8bec0
+#: ab4f74cb9c844883a1636b720e63ba41
+#: 0e64ff90f2884f52924dfcfed323f6af
+#: 00c5c58973f34190939cd29a9958ec92
+#: 677b82d91a7247e8b47e2439dd41e1c2
+msgid "f e a t u r e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1380
+#: 0e3eecf4508a40e3aa973c4034604fa8
+msgid "``admin.vm.f eature.CheckW ithTemplate``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1388
+#: 5f616dc87e804722a6a423dcf666b31e
+msgid "``admin.v m.feature.Che ckWithNetvm``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1396
+#: 82b7ba0386574518b70bda68c62a4f14
+msgid "``admin.vm. feature.Check WithAdminVM``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1404
+#: 6ac7c10e8417483fa4c8d2c2a8df6e13
+msgid "``admin.v m.feature.Che ckWithTemplat eAndAdminVM``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1412
+#: 4ae4df3d87bb45b2b92906cdb1b063ab
+msgid "` `admin.vm.fea ture.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1420
+#: eb0e035b54ba4860a147b60844b955ba
+msgid "``admin.vm. feature.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1428
+#: 1333201fbfc848388df6927547c7a28e
+msgid "``admin. vm.tag.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1428
+#: 60040f970eba4519b40f5e3186e88332
+msgid "``<tag>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1431
+#: 6a940bdb4c0f449d9fb522aea81c4c76
+msgid "``admin .vm.tag.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1431
+#: ../../../_doc/developer/services/admin-api.rst:1440
+#: ../../../_doc/developer/services/admin-api.rst:1444
+#: 1645f1f150084d47a221c71598cdf456
+#: b7d9c6ac120849558e498aa3bf92679d
+#: c2082f0b456e4ee7888d8ecd6c303bab
+msgid "t a g"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1431
+#: 94d97fcacfa14ca7bc18be770ecf2aff
+msgid "``0`` or ``1``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1431
+#: c29e93e956f940988fbce7d4f401a0d5
+msgid "r e t c o d e ?"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1440
+#: ff8978a214654230bd462a715e370135
+msgid "``admin.vm .tag.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1444
+#: 93bb6d4f20f842779e05639e2966d776
+msgid "``admin .vm.tag.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1448
+#: 1f948ebba1f449158079d2b9fc53369c
+msgid "``admin.vm.f irewall.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1448
+#: ../../../_doc/developer/services/admin-api.rst:1617
+#: 016d44cc11854ad18c2eb05ef9b6b22a
+#: d8bb2fc3b7e741d3b50f56d13ec41aa0
+msgid "``<rule>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1448
+#: fdc31d90d7c5404db584964ca6fb2437
+msgid "r u l e s s y n t a x a s i n ` f i r e w a l l i n t e r f a c e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1484
+#: 5783ddb78a8345c89c26f76a8af79efa
+msgid "d o c / v m - i n t e r f a c e / # f i r e w a l l - r u l e s - i n - 4 x > ` _ _ w i t h a d d i t i o n o f ` ` e x p i r e = ` ` a n d ` ` c o m m e n t = ` ` o p t i o n s ; ` ` c o m m e n t = ` ` ( i f p r e s e n t ) m u s t b e t h e l a s t o p t i o n"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1617
+#: 494ef31291ef425583879fcf077bf813
+msgid "``admin.vm.f irewall.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1617
+#: 0e4d55d24d324b9c87e46bf574f20fde
+msgid "s e t f i r e w a l l r u l e s , s e e ` ` a d m i n . v m . f i r e w a l l . G e t ` ` f o r s y n t a x"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1672
+#: a1941e3d50d34b0cb8dfcc43bfbd979c
+msgid "`` admin.vm.fire wall.Reload``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1672
+#: 25a27b134142403d8b9d134bf2a83172
+msgid "f o r c e r e l o a d f i r e w a l l w i t h o u t c h a n g i n g a n y r u l e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1714
+#: c5f52c53725f4addb2fcbdf21ca67643
+msgid "``admin. vm.device.<cl ass>.Attach``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1714
+#: ../../../_doc/developer/services/admin-api.rst:1915
+#: ../../../_doc/developer/services/admin-api.rst:1967
+#: a59c537d3d384e62bce948f456fd0680
+#: 30faee7a1009477594c22db0dbb87647
+#: 1355b3046e524fd1af19ff74331c4333
+msgid "d e v i c e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1714
+#: cb3cce3a0e874fd7a175240fa70f9aaf
+msgid "options"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1716
+#: c48bcd456a91467d8861737d5d0d79ff
+msgid "d e v i c e ` ` i s i n f o r m ` ` < b a c k e n d - n a m e > + < d e v i c e - i d e n t > ` ` o p t i o n a l o p t i o n s g i v e n i n ` ` k e y = v a l u e ` ` f o r m a t , s e p a r a t e d w i t h s p a c e s ; o p t i o n s c a n i n c l u d e ` ` p e r s i s t e n t = T r u e ` ` t o “ p e r s i s t e n t l y ” a t t a c h t h e d e v i c e ( d e f a u l t i s t e m p o r a r y )"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1915
+#: 4a1688cc46ec431d997d22ab838804d3
+msgid "``admin. vm.device.<cl ass>.Detach``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1917
+#: ../../../_doc/developer/services/admin-api.rst:1969
+#: 1726e3c65179441a855b474f416ef86f
+#: 968f86675de444438fdc0397f4b01e3e
+msgid "d e v i c e ` ` i s i n f o r m ` ` < b a c k e n d - n a m e > + < d e v i c e - i d e n t > ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1967
+#: f2552a0c755940db84290fb340c839a9
+msgid "``a dmin.vm.devic e.<class>.Set .persistent``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:1967
+#: 7380e6c6889d47b2b197f83cd41183ad
+msgid "``True`` \\ \\|\\ ``False``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2019
+#: 710102840eba446183064b831940f927
+msgid "``admi n.vm.device.< class>.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2019
+#: 1e0f1155d82044eb9a22f1df970bc7ac
+msgid "` `<device> <options>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2019
+#: b2797ae8369f4b239e4564d752c73e43
+msgid "o p t i o n s c a n i n c l u d e ` ` p e r s i s t e n t = T r u e ` ` f o r “ p e r s i s t e n t l y ” a t t a c h e d d e v i c e s ( d e f a u l t i s t e m p o r a r y )"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2108
+#: 5aae95acaa8d4768868e4a4f7170e096
+msgid "``admin.vm. device.<class >.Available``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2108
+#: 94eeeb3c24cd41b6886bc7d76f7ccdf2
+msgid "d e v i c e - i d e n t"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2108
+#: c5ef516af5cd47759484d721d1d04c42
+msgid "``<dev ice-ident> <properties>"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2110
+#: d4040fac04a64c09b3bffabd2ec5bf7c
+msgid "description=<desc>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2108
+#: aaed72e8b1144b87a04e6df93a6ccc4c
+msgid "o p t i o n a l s e r v i c e a r g u m e n t m a y b e u s e d t o g e t i n f o a b o u t a s i n g l e d e v i c e , o p t i o n a l ( d e v i c e c l a s s s p e c i f i c ) p r o p e r t i e s a r e i n ` ` k e y = v a l u e ` ` f o r m , \\"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2234
+#: 71a063bb49d34b89a4d004a3ae9d1bdc
+msgid "d e s c r i p t i o n ` ` m u s t b e t h e l a s t o n e a n d i s t h e o n l y o n e a l l o w e d t o c o n t a i n s p a c e s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2301
+#: 7171ad944743495eba0b404ccca8ae36
+msgid "``admi n.pool.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2301
+#: 262f6bb64d104d578d9ba65093c1f8a9
+msgid "``<pool>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2310
+#: 5ca58e2196c0467baa05cc1115c5d683
+msgid "``admin.pool. ListDrivers``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2310
+#: b76cfb792b51424880e68960bcf20f60
+msgid "``<pool-dri ver> <property> ...\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2310
+#: 7f1af208e6bf43a88b38e5bb8bc24bf5
+msgid "P r o p e r t i e s a l l o w e d i n ` ` a d m i n . p o o l . A d d ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2348
+#: d2315412061c4126ba11c76485182d4c
+msgid "``admi n.pool.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2348
+#: ../../../_doc/developer/services/admin-api.rst:2366
+#: ../../../_doc/developer/services/admin-api.rst:2375
+#: ../../../_doc/developer/services/admin-api.rst:2384
+#: ../../../_doc/developer/services/admin-api.rst:2393
+#: ../../../_doc/developer/services/admin-api.rst:2402
+#: ../../../_doc/developer/services/admin-api.rst:2411
+#: ../../../_doc/developer/services/admin-api.rst:2420
+#: ../../../_doc/developer/services/admin-api.rst:2429
+#: ../../../_doc/developer/services/admin-api.rst:2438
+#: ../../../_doc/developer/services/admin-api.rst:2447
+#: ../../../_doc/developer/services/admin-api.rst:2456
+#: ../../../_doc/developer/services/admin-api.rst:2594
+#: a23e193703d442d3ae1f633c53ec2648
+#: 20a180a60ec54deeade23aa4e916342d
+#: 03f53e81ad63428cbfc41e121d647b6a
+#: 054c558792e94b2185209f8e171c9f29
+#: 2a81844b38184b27bca02a596d18fbe8
+#: 6e517d91df444aea86bee753e3e5747b
+#: 2d36ee705e5b4f808ea1ce42236016cc
+#: 9288bc4d99e84b70a36453373ee6eeda
+#: 33842b42172b47f6a3adedce620c5539
+#: c7c9f9e65e2c42ffb832438ce101a55b
+#: 6affceadd5e24baf8d8b3c5e5794d92a
+#: 6b2c7590863f4d41891f7492be4ea7a8
+#: d3857d5cac1542efa8b825218079a9d3
+msgid "p o o l"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2348
+#: ../../../_doc/developer/services/admin-api.rst:2393
+#: ../../../_doc/developer/services/admin-api.rst:2733
+#: 088df80a68c94daeab10e5b3820c51e8
+#: 986f9ec208034c04a6146be248d361d9
+#: 23be4a2c441d474bb68fc5327719e05b
+msgid "` `<property>=<value>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2357
+#: cc9eec68f9c94f6eb071ea905da0be46
+msgid "``adm in.pool.Add``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2357
+#: 468bbb77581f404880e7e6e1074ce127
+msgid "d r i v e r"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2357
+#: e7b687c7a4214e8e8db429b7adb58ad2
+msgid "``<proper ty>=<value>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2366
+#: 69b040c116444677912209169b00b713
+msgid "``admin.po ol.Set.revisi ons_to_keep``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2366
+#: acac6f79014849e2b70a071ba9efab89
+msgid "``<value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2375
+#: a5c391767d534dc5ad4cc90807ec1dd3
+msgid "``admin. pool.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2384
+#: 159c178de3014043b046f2da3b27eb6a
+msgid "``admin.pool. volume.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2384
+#: 55961953bddd4065acfe5e42981a5ffa
+msgid "volume id"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2393
+#: b1471e336add453a98517e76f560e520
+msgid "``admin.pool. volume.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2393
+#: ../../../_doc/developer/services/admin-api.rst:2411
+#: ../../../_doc/developer/services/admin-api.rst:2420
+#: ../../../_doc/developer/services/admin-api.rst:2456
+#: a0a8158cfb1d49e682bf3689bb956623
+#: ee989b988b4d4ed19b20791627fa9be8
+#: 995e2f81077d4cabad1bb57be35688c7
+#: 5f30369cc20f43dd86c7a8d54e7b0587
+msgid "vid"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2402
+#: 87da23d4add7456c95df96d76e3a147a
+msgid "``ad min.pool.volu me.Set.revisi ons_to_keep``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2402
+#: 86670336c4bd4835b32ce1a6eb518755
+msgid "`` <vid> <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2411
+#: a7fe67adafaa491fafad99fa7f6399df
+msgid "``admin.p ool.volume.Li stSnapshots``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2411
+#: 12d2aebae8584a0eb020754f6bf808c0
+msgid "``<snapshot>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2420
+#: d9f0e0359b36482899f26b24864c7a76
+msgid "``ad min.pool.volu me.Snapshot``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2420
+#: ../../../_doc/developer/services/admin-api.rst:2747
+#: ../../../_doc/developer/services/admin-api.rst:2804
+#: ../../../_doc/developer/services/admin-api.rst:2811
+#: f609b513b93343d7aad567d4c5f6f310
+#: c75ef93b894042f5a8e5c91b5ace2856
+#: 55b6e9acb56a4f47b4febcac86656102
+#: 437121d6725d419fbd0f1ff925be7341
+msgid "snapshot"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2429
+#: aed21695b0f8488a9ec0ea51957eb84d
+msgid "`` admin.pool.vo lume.Revert``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2429
+#: e7618d591f5e4c5abfb614503f9bf570
+msgid "``<vi d> <snapshot>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2438
+#: 81ec4f4f7b2044a488411fe50d92839a
+msgid "`` admin.pool.vo lume.Resize``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2438
+#: eaf9d39d8a8d4536a8fb6ad8a1b2cf1d
+msgid "``<vid> <s ize_in_bytes>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2447
+#: 6b88c1c7c6944270ad568abc12c5c0f8
+msgid "`` admin.pool.vo lume.Import``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2453
+#: ddfc1080bacb42a8a9c51f9a6a58704d
+msgid "``<vid>\\n<raw"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2448
+#: ../../../_doc/developer/services/admin-api.rst:2834
+#: 5bdbec14c7b94c7c8bc118479b9e5122
+#: 2d90874d02db499ba077f1f84cb31238
+msgid "volume data>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2456
+#: 4c5ccf0dae8c4377b0433de3b019c931
+msgid "``adm in.pool.volum e.CloneFrom``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2456
+#: 6f9930052f564e7e9cccf6db31e61eda
+msgid "token, to be used in ``admi n.pool.volume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2456
+#: 11d7141a5fbe4e5685622b90e2118d18
+msgid "o b t a i n a t o k e n t o c o p y v o l u m e ` ` v i d ` ` i n ` ` p o o l ` ` ; t h e t o k e n i s o n e t i m e u s e o n l y , i t ’ s i n v a l i d a t e d b y ` ` a d m i n . p o o l . v o l u m e . C l o n e T o ` ` , e v e n i f t h e o p e r a t i o n f a i l s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2594
+#: 405a3a2597aa444c999db8e088552f09
+msgid "``a dmin.pool.vol ume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2594
+#: 5e63298dcc354368b2739f21f90724c5
+msgid "`` <vid> <token>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2594
+#: dede092df05845dfb1ea5a663bcf0704
+msgid "c o p y v o l u m e p o i n t e d b y a t o k e n t o v o l u m e ` ` v i d ` ` i n ` ` p o o l ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2645
+#: 280dbdf72b8042948a9680d771cae59c
+msgid "``admin.vm. volume.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2645
+#: ab8942a327d34b09a2a73c94759b2ee4
+msgid "``<volume>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2647
+#: 0f913cb838bd4a61bcdc117f3bc67f45
+msgid "< v o l u m e > ` ` i s p e r - V M v o l u m e n a m e ( ` ` r o o t ` ` , ` ` p r i v a t e ` ` , e t c ) , ` ` < v i d > ` ` i s p o o l - u n i q u e v o l u m e i d"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2733
+#: dfb385870bc3410ab52319e1e3dbb91f
+msgid "``admin.vm. volume.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2733
+#: ../../../_doc/developer/services/admin-api.rst:2740
+#: ../../../_doc/developer/services/admin-api.rst:2747
+#: ../../../_doc/developer/services/admin-api.rst:2804
+#: ../../../_doc/developer/services/admin-api.rst:2811
+#: ../../../_doc/developer/services/admin-api.rst:2818
+#: ../../../_doc/developer/services/admin-api.rst:2825
+#: ../../../_doc/developer/services/admin-api.rst:2832
+#: ../../../_doc/developer/services/admin-api.rst:2904
+#: ../../../_doc/developer/services/admin-api.rst:2926
+#: ../../../_doc/developer/services/admin-api.rst:3057
+#: 27b1404927f345d299b20bb19eb5271b
+#: a7be71bf43184ad3b6494fe6e94ff1e0
+#: b2679905a87a4c0bb591e22d332f3f53
+#: acdc673ad167440583be20a21c3ded5c
+#: c5a33ddc00d04a569b983decafb0e63c
+#: 62625e726b5547389ec7a576bed2cc03
+#: 4d396b20fb2a40d998add49cf5a15f5f
+#: ffdc59dc668f4a6fa7111b5965c1b177
+#: 2a0287348df240b693f52b5b79a5d492
+#: 8d8dd855a1364dc89b04bd9b16a06efe
+#: f90ca64e93b24df2b1a8f186b5b8808e
+msgid "v o l u m e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2740
+#: 6a5850e903fc4306a9f565c5eb198e07
+msgid "`` admin.vm.volu me.Set.revisi ons_to_keep``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2747
+#: 7ecc814832944d129c21003e6fcf3d13
+msgid "``admin .vm.volume.Li stSnapshots``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2747
+#: a34d72f449bb40ad807462ea9d729ca6
+msgid "d u p l i c a t e o f ` ` a d m i n . p o o l . v o l u m e . ` ` , b u t w i t h o t h e r c a l l p a r a m s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2804
+#: 1e1df20638dd404ea487a3ebb1e87ad7
+msgid "`` admin.vm.volu me.Snapshot``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2804
+#: ../../../_doc/developer/services/admin-api.rst:2811
+#: ../../../_doc/developer/services/admin-api.rst:2818
+#: ../../../_doc/developer/services/admin-api.rst:2825
+#: 7b971a55f7454c579c470d9e0f2e4718
+#: e726d8b20df1445385076a07efc2ffd9
+#: e34c9fef913440a596ec65edfae0440b
+#: c30f71fe2a324e6c80bf70cc92cc82c7
+msgid "i d ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2811
+#: dfd179e3edf84363a808b1ed0c40fe17
+msgid "``admin.vm.vo lume.Revert``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2818
+#: 310fd2b11f85427f93520e660f7931bd
+msgid "``admin.vm.vo lume.Resize``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2818
+#: 5e696d4acc89467397b8b117f404db67
+msgid "size_in_bytes"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2825
+#: 78b3e30d31b54227a407f918c0103ba5
+msgid "``admin.vm.vo lume.Import``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2825
+#: 1647f225dfac4f889e3f70e6dc506f09
+msgid "raw volume data"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2832
+#: 97f65da52ff5473faaeb5eeb6e37ea62
+msgid "``admin. vm.volume.Imp ortWithSize``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2832
+#: a588852d13364cf49f732f4f87168816
+msgid "``<size_ in_bytes>\\n<raw"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2832
+#: 9070ad5fae8f4f8286b11843eee28d9a
+msgid "n e w v e r s i o n o f ` ` a d m i n . v m . v o l u m e . I m p o r t ` ` , a l l o w s n e w v o l u m e t o b e d i f f e r e n t s i z e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2904
+#: f2880a484f7045269f10c74bbe627bdf
+msgid "``admin.vm.v olume.Clear``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2904
+#: 845b58b9ccb04f8f9ada4d8ac674a4b4
+msgid "c l e a r c o n t e n t s o f v o l u m e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2926
+#: 780230807d3c4b89909f379f25b66be4
+msgid "``a dmin.vm.volum e.CloneFrom``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2926
+#: 95c9f2ba4a334ece911c329b65530f7a
+msgid "token, to be used in ``ad min.vm.volume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:2926
+#: 873dfdb13fbb4e0382500aab39bf9dc2
+msgid "o b t a i n a t o k e n t o c o p y ` ` v o l u m e ` ` o f ` ` v m ` ` ; t h e t o k e n i s o n e t i m e u s e o n l y , i t ’ s i n v a l i d a t e d b y ` ` a d m i n . v m . v o l u m e . C l o n e T o ` ` , e v e n i f t h e o p e r a t i o n f a i l s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3057
+#: 89ee9865b07a45bb8a97c53904477ec0
+msgid "` `admin.vm.vol ume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3057
+#: e2c509ab0cb241c4b0f8bf402a9b93ac
+msgid "token, obtained with ``admin.vm.vol ume.CloneFrom``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3057
+#: e77a67932d0c487990bb7b37f10fe80d
+msgid "c o p y v o l u m e p o i n t e d b y a t o k e n t o ` ` v o l u m e ` ` o f ` ` v m ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3103
+#: b9ca38824bf84d5cba5aaf5f3412a5d9
+msgid "``adm in.vm.Start``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3106
+#: d7149bbd9d694e6dae8924ac0ae59119
+msgid "``admin. vm.Shutdown``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3109
+#: 3d1e799c0d884e2bab7035ff83696533
+msgid "``adm in.vm.Pause``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3112
+#: ae7e507bf3a2401db3237ff56fc711ab
+msgid "``admin .vm.Unpause``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3115
+#: 4bc5771e90b1492c8148ab257844cc59
+msgid "``ad min.vm.Kill``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3118
+#: 069a5383b7a044c198605c49c903c8ea
+msgid "``admin.bac kup.Execute``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3118
+#: ../../../_doc/developer/services/admin-api.rst:3219
+#: ../../../_doc/developer/services/admin-api.rst:3254
+#: c50ee409422f40788eb980823803ef64
+#: 6433ee4e8fd543189eb7990a3aeeb8ec
+#: ed23dd834e9d43a08c9ff157a1904340
+msgid "c o n f i g i d"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3118
+#: 2860c17904e74770aca8e03e74528f0f
+msgid "c o n f i g i n ` ` / e t c / q u b e s / b a c k u p / < i d > . c o n f ` ` , o n l y o n e b a c k u p o p e r a t i o n o f g i v e n ` ` c o n f i g"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3196
+#: e0fe7a6d125247c0a28d529cb9c00b89
+msgid "i d ` ` c a n b e r u n n i n g a t o n c e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3219
+#: 844470818e6b439894f9bb6bb0c0f791
+msgid "``admin. backup.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3219
+#: 8e48f523024649c097cae5186157e890
+msgid "backup info"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3219
+#: e94767c4249f4e37a0d0cd062bc312d0
+msgid "i n f o w h a t w o u l d b e i n c l u d e d i n t h e b a c k u p"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3254
+#: ba27ef31240e4630b17432e29d150e61
+msgid "``admin.ba ckup.Cancel``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3254
+#: 9947001e2fc34926a2c5c82822bd63c8
+msgid "c a n c e l r u n n i n g b a c k u p o p e r a t i o n"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3283
+#: 99823e8c8d3d43c9ba97b9befb1b961e
+msgid "``a dmin.Events``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3285
+#: ../../../_doc/developer/services/admin-api.rst:3297
+#: f3f3e39be7094d8988ed0ab793af39d7
+#: 2f5a4c5b3c334da99f8971cc60628fdf
+msgid "d o m 0 | v m ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3283
+#: 2baae5dc8023444eb101755a4ef62a96
+msgid "events"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3295
+#: 3afd99d598024ecabf05ec00065bc531
+msgid "``adm in.vm.Stats``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3295
+#: 82c005a2163e42c2840be181cb2747bf
+msgid "``vm-stats`` events, see below"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3295
+#: 16506db0ffc6484e8268649545e936ac
+msgid "e m i t V M s t a t i s t i c s ( C P U , m e m o r y u s a g e ) i n f o r m o f e v e n t s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3346
+#: 9941f6de3f7f4afeb210a683d8b3d28f
+msgid "Volume properties:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3348
+#: 16f9a9743bb7452c9166cd3096818715
+msgid "``pool``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3349
+#: 427b62854c0b43609d866e90c817df1c
+msgid "``vid``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3350
+#: 65aa3d1609a04459832b87c0362380a2
+msgid "``size``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3351
+#: ad591cd49dd244e79a8358312dcf024c
+msgid "``usage``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3352
+#: 2c8a1b48809749bba6a30659ccb64eec
+msgid "``rw``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3353
+#: 9ef0c96ab5c24800a9d25428be9f8dea
+msgid "``source``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3354
+#: acb2c03205c64ae7ab5eab35f5c3fae2
+msgid "``save_on_stop``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3355
+#: 1988a542f008453b83c00ebbd74e03ad
+msgid "``snap_on_start``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3356
+#: d67b6e0e562e400989468390d1e7913b
+msgid "``revisions_to_keep``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3357
+#: 5592f58011cd4e88bd722895e54adabe
+msgid "``is_outdated``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3359
+#: ea84f408782a4aebbe1ebe304702a63f
+msgid "Method ``admin.vm.Stats`` returns ``vm-stats`` events every ``stats_interval`` seconds, for every running VM. Parameters of ``vm-stats`` events:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3363
+#: b54e4035fd874d96b88ff3bb3fd97be1
+msgid "``memory_kb`` - memory usage in kB"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3364
+#: dcd8bf12fa8c4caebe40b94c92688674
+msgid "``cpu_time`` - absolute CPU time (in milliseconds) spent by the VM since its startup, normalized for one CPU"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3366
+#: 4c4a0c19d870473c829270d55428d5e7
+msgid "``cpu_usage`` - CPU usage in percents"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3369
+#: a4a5250dc40c4b15a62abb23d186b97b
+msgid "Returned messages"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3371
+#: 6bc8bdf6eb3144df9337ad8c44e028d7
+msgid "First byte of a message is a message type. This is 8 bit non-zero integer. Values start at 0x30 (48, ``'0'``, zero digit in ASCII) for readability in hexdump. Next byte must be 0x00 (a separator)."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3375
+#: 8879483e74b442fbb98148b42da498ca
+msgid "This alternatively can be thought of as zero-terminated string containing single ASCII digit."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3379
+#: 8a151798cc9d4a3c8c9cd8f366661d28
+msgid "OK (0)"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3385
+#: 3cb6c556902f4bb8a636c0e54fd91158
+msgid "Server will close the connection after delivering single message."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3388
+#: 8da6678ecf5847138e5aaf097372d2e3
+msgid "EVENT (1)"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3394
+#: a5f66503cc184e95950d6be0da1fefd9
+msgid "Events are returned as stream of messages in selected API calls. Normally server will not close the connection."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3397
+#: 7f734dcdf4fc4c12a2c4268a2605f9c3
+msgid "A method yielding events will not ever return a ``OK`` or ``EXCEPTION`` message."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3400
+#: 9f6bea7d0fa5420aad688b6d0f8af228
+msgid "When calling such method, it will produce an artificial event ``connection-established`` just after connection, to help avoiding race conditions during event handler registration."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3405
+#: 4101a8fa439749a184fa539326511717
+msgid "EXCEPTION (2)"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3411
+#: 71e8b20f643f440eb1f123ef36c12389
+msgid "Server will close the connection."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3413
+#: f9734452cb7e472eb514fdabd1c2a099
+msgid "Traceback may be empty, can be enabled server-side as part of debug mode. Delimiting zero-byte is always present."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3416
+#: b3f32e433dd64e1ea6de423c12025b75
+msgid "Fields are should substituted into ``%``-style format string, possibly after client-side translation, to form final message to be displayed unto user. Server does not by itself support translation."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3421
+#: 3cd60a7b174a45ce9b6acab2d0efb0d8
+msgid "Tags"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3423
+#: eb3d1c1acf7c4ff3afc8771fc004388c
+msgid "The tags provided can be used to write custom policies. They are not used in a default Qubes OS installation. However, they are created anyway."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3427
+#: e36875d028fa48f68818315a84239e6f
+msgid "``created-by-<vm>`` — Created in an extension to qubesd at the moment of creation of the VM. Cannot be changed via API, which is also enforced by this extension."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3430
+#: 325248e489a2432dbc0ac8fcad921b1c
+msgid "``managed-by-<vm>`` — Can be used for the same purpose, but it is not created automatically, nor is it forbidden to set or reset this tag."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3434
+#: 2435151c355b45a3b7fbc4536b156358
+msgid "Backup profile"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3436
+#: 33d1c858187545c4b33b508b561c5787
+msgid "Backup-related calls do not allow (yet) to specify what should be included in the backup. This needs to be configured separately in dom0, with a backup profile, stored in ``/etc/qubes/backup/<profile>.conf``. The file use yaml syntax and have following settings:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3441
+#: 122797fc21814ac385237f567e7b4a08
+msgid "``include`` - list of VMs to include, can also contains tags using ``$tag:some-tag`` syntax or all VMs of given type using ``$type:AppVM``, known from qrexec policy"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3444
+#: 3736100623b543aaac0e14833598b216
+msgid "``exclude`` - list of VMs to exclude, after evaluating ``include`` setting"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3446
+#: 589441a5d8dc4d9e8adda4556112bb33
+msgid "``destination_vm`` - VM to which the backup should be send"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3447
+#: 01f280dd632f4218906868f2cb0a08d9
+msgid "``destination_path`` - path to which backup should be written in ``destination_vm``. This setting is given to ``qubes.Backup`` service and technically it’s up to it how to interpret it. In current implementation it is interpreted as a directory where a new file should be written (with a name based on the current timestamp), or a command where the backup should be piped to"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3453
+#: 6c6b8d613b734a56b295fb3afec18695
+msgid "``compression`` - should the backup be compressed (default: True)? The value can be either ``False`` or ``True`` for default compression, or a compression command (needs to accept ``-d`` argument for decompression)"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3457
+#: fccb04c820754b10b9b607b96f5e5b25
+msgid "``passphrase_text`` - passphrase used to encrypt and integrity protect the backup"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3459
+#: 2f581d2d3f4049809dc0b6f42fb1f691
+msgid "``passphrase_vm`` - VM which should be asked what backup passphrase should be used. The asking is performed using ``qubes.BackupPassphrase+profile_name`` service, which is expected to output chosen passphrase to its stdout. Empty output cancel the backup operation. This service can be used either to ask the user interactively, or to have some automated passphrase handling (for example: generate randomly, then encrypt with a public key and send somewhere)"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3468
+#: 4b16e44d8572448f80e20372c6464bc4
+msgid "Not all settings needs to be set."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3470
+#: 0b217db59dfb43e7a7c1165d0984d168
+msgid "Example backup profile:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3488
+#: b0fd2018202643f19151e617e1ab6429
+msgid "And slightly more advanced one:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3512
+#: 9d0f6be1aaae4e7ca74bdf3f09bb7fe4
+msgid "General notes"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3514
+#: e7fc59b4fa28466ba32e889ab2296192
+msgid "there is no provision for ``qvm-run``, but there already exists ``qubes.VMShell`` call"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3516
+#: 1c0f52fdbd5a4a80b7fffe180718dc01
+msgid "generally actions ``*.List`` return a list of objects and have “object identifier” as first word in a row. Such action can be also called with “object identifier” in argument to get only a single entry (in the same format)."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3520
+#: 0b820252a01642bdaa2cd5060a3f2af5
+msgid "closing qrexec connection normally does *not* interrupt running operation; this is important to avoid leaving the system in inconsistent state"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3523
+#: 6e653c67c03445b897cdd2b6108e855c
+msgid "actual operation starts only after caller send all the parameters (including a payload), signaled by sending EOF mark; there is no support for interactive protocols, to keep the protocol reasonable simple"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3529
+#: abb19473dfbc453981a34549a9e1a9f0
+msgid "Policy admin API"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3531
+#: 4450beac9b0b4966bb2a23fcc071ed0e
+msgid "There is also an API to view and update :doc:`Qubes RPC policy files </developer/services/qrexec>` in dom0. All of the following calls have dom0 as destination:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3536
+#: 088f05881a874cc0ba5f3c643ee14348
+msgid "argument"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3538
+#: 63d89b4c707946eb8335fb56d11fa9d5
+msgid "``policy.List`` ``polic y.include.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3538
+#: 1c95b4aa6ce44f55bacdd81dafe3d222
+msgid "``<name1> \\n<name2>\\n...``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3542
+#: ebd889136f7044279bdf497c487b2f61
+msgid "``policy.Get`` ``poli cy.include.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3542
+#: ../../../_doc/developer/services/admin-api.rst:3546
+#: c328efc6a2b64db592b98af058b92751
+#: 438c5bd6fcad4d3f9c8124e0f35ee7c8
+msgid "``<tok en>\\n<content>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3546
+#: 9c16cfa5a89c425ebf00a502e00d4cc5
+msgid "`` policy.Replace`` ``policy.i nclude.Replace``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3551
+#: 1097bf47fcad4a6f9210e411740cc05f
+msgid "` `policy.Remove`` ``policy. include.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3551
+#: 103c0b89c59c4e63ac65742c3350c9d4
+msgid "``<token>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3557
+#: ba24ad132c3a4516b0e8ab90f63c9630
+msgid "The ``policy.*`` calls refer to main policy files (``/etc/qubes/policy.d/``), and the ``policy.include.*`` calls refer to the include directory (``/etc/qubes/policy.d/include/``). The ``.policy`` extension for files in the main directory is always omitted."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3562
+#: b23514be909440e4a12026737e399093
+msgid "The responses do not follow admin API protocol, but signal error using an exit code and a message on stdout."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3565
+#: 18d9ca8aa07e4227b8aabf8fe9a8e0cf
+msgid "The changes are validated before saving, so that the policy cannot end up in an invalid state (e.g. syntax error, missing include file)."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3568
+#: f4153a55470a42c0897726b007352490
+msgid "In addition, there is a mechanism to prevent concurrent modifications of the policy files:"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3571
+#: e8d5aee1c3694d128eb3c82b08649a4e
+msgid "A ``*.Get`` call returns a file along with a *token* (currently implemented as a hash of the file)."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3573
+#: 76e681306a624006bebc3b96d1c83ed9
+msgid "When calling ``Replace`` or ``Remove``, you need to include the current token as first line. If the token does not match, the modification will fail."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3576
+#: baa52bbf6b724c5f985823c6dfc31348
+msgid "When adding a new file using ``Replace``, pass ``new`` as token. This will ensure that the file does not exist before adding."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3578
+#: 8b0f5767af1f4031a501faa59df20e6b
+msgid "To skip the check, pass ``any`` as token."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3581
+#: 26d1c593540e4be0b7b8e5dae102b5ee
+msgid "TODO"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3583
+#: 205f8188953d4a84b6bf4c2af6073699
+msgid "notifications"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3585
+#: 0532ab5b39fe4b32bfbb6dca08c6ebd6
+msgid "how to constrain the events?"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3586
+#: 21e614928bdc474984e5dd5fbdf45865
+msgid "how to pass the parameters? maybe XML, since this is trusted anyway and parser may be complicated"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3589
+#: 3c6c6a0de0fb45cc97cc8d305cd2cad6
+msgid "how to constrain the possible values for ``admin.vm.property.Set`` etc, like “you can change ``netvm``, but you have to pick from this set”; this currently can be done by writing an extension"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3592
+#: 72614e5f837c4228be6d75bb1ee21580
+msgid "a call for executing ``*.desktop`` file from ``/usr/share/applications``, for use with appmenus without giving access to ``qubes.VMShell``; currently this can be done by writing custom qrexec calls"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api.rst:3596
+#: c0bff50903884e30890159878997c614
+msgid "maybe some generator for ``.desktop`` for appmenus, which would wrap calls in ``qrexec-client-vm``"
+msgstr ""

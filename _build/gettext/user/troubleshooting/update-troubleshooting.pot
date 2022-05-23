@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:2
+#: 559d2f0e86174af39c8e364805d4c0a7
+msgid "“Failed to synchronize cache for repo” errors when updating Fedora templates"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:4
+#: f562af6f81654f3db9e189485ee88250
+msgid "This is general Fedora issue, not a Qubes-specific issue. Usually, this is due to network problems (especially if downloading updates over Tor) or problems with the download mirrors. Often, the problem can be resolved by trying again on a different connection (a different Tor circuit, if using Tor) or waiting and trying again later. Here are some examples of non-Qubes reports about this problem:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:11
+#: a5174d6825c2443684197c157b4be614
+msgid "https://ask.fedoraproject.org/en/question/88086/error-failed-to-synchronize-cache-for-repo-fedora/"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:12
+#: 320e2a7e5ed14b6981c160d6e298dc04
+msgid "https://unix.stackexchange.com/questions/390805/repos-not-working-on-fedora-error-failed-to-synchronize-cache-for-repo-update"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:13
+#: 552d44b4a6694727a06c44bfb96f8707
+msgid "https://www.reddit.com/r/Fedora/comments/74nldq/fedora_26_dnf_error_failed_to_synchronize_cache/"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:14
+#: 2a9f568568f44c4e99f393d7f59156a0
+msgid "https://bugzilla.redhat.com/show_bug.cgi?id=1494178"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:15
+#: 0ee7e92438894c64afa2acf550a97b0e
+msgid "https://stackoverflow.com/questions/45318256/error-failed-to-synchronize-cache-for-repo-updates"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:17
+#: 1b0abfd69a304d6d9d0343f4ec9f48d7
+msgid "More examples can be found by searching for “Failed to synchronize cache for repo” (with quotation marks) on your preferred search engine."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:21
+#: ae8ca706d6354b548a8ac7715342b7cb
+msgid "Lost internet access after a template update"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:23
+#: 7f9b166bea12418895ef2ef1d8de8759
+msgid "In earlier versions of Qubes, there were situations where qubes lost internet access after a template update. The following fix should be applied in recent versions of Qubes."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:27
+#: c5f64d7e1ca3484bb8e7b4ba2a4d1748
+msgid "Run ``systemctl enable NetworkManager-dispatcher.service`` in the template upon which your NetVM is based. You may have to reboot afterward for the change to take effect. (Note: This is an upstream problem. See `this Redhat ticket <https://bugzilla.redhat.com/show_bug.cgi?id=974811>`__). For details, see the qubes-users mailing list threads `here <https://groups.google.com/d/topic/qubes-users/xPLGsAJiDW4/discussion>`__ and `here <https://groups.google.com/d/topic/qubes-users/uN9G8hjKrGI/discussion>`__.)"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:38
+#: d1ec44a66d794e1c844a7f8daca3a6ea
+msgid "Windows update is stuck"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:40
+#: 03425a60ae4e4ab480f9f25b2958336e
+msgid "This has nothing to do with Qubes. It’s a longstanding Windows bug. More information about this issue and solutions can be found `here <https://superuser.com/questions/951960/windows-7-sp1-windows-update-stuck-checking-for-updates>`__."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:45
+#: 197df466990b49db9e97e5350cd4ff87
+msgid "Dom0 and/or template update stalls when updating via the GUI tool"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:47
+#: ad3efb2f2bc44950a1dd18f965544993
+msgid "This can usually be fixed by updating via the command line."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:49
+#: af3a740962cf47309b5d08e219901bab
+msgid "In dom0, open a terminal and run ``sudo qubes-dom0-update``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/update-troubleshooting.rst:51
+#: 079935228ed047c69d95ae5ab8258fbd
+msgid "Depending on your operating system, open a terminal in the templates and run: \\* Fedora: ``sudo dnf upgrade`` \\* Debian: ``apt-get update && apt-get dist-upgrade``"
+msgstr ""

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/introduction/statistics.rst:4
+#: 2a8c33b0ee1d402bb24b4b334a6ca94d
+msgid "FAQ"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:7
+#: ce51d9876ae34cacbc4cdd1f131b91b1
+msgid "How often is this graph updated?"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:9
+#: aa9dda53e5fa444591e784ddf359026f
+msgid "Daily."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:12
+#: 807e3331348d4f88b5a86c536639d3d3
+msgid "Why is the bar for the current month so low?"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:14
+#: 19c65b901c6246239886c662f2215484
+msgid "Since the graph is updated daily, the bar for the current month will be very low at the start of the month and rise gradually until the end of the month."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:19
+#: 08bf6c3752d943c9b7976e7160cc89ca
+msgid "How is the userbase estimated?"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:21
+#: 2a41d7dfc7024bc0bcd4133e2bc5b211
+msgid "We simply count the number of unique IPv4 addresses that connect to the Qubes update servers each month (except for Tor connections; see `below <#how-are-tor-users-counted>`__). (Note: Users who have manually configured their systems to bypass the metalink and connect directly to a mirror are not counted.)"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:28
+#: dacf8cb4eba74fc7b6373c377a8ba0db
+msgid "How are Tor users counted?"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:30
+#: 152e21e558b144ecbc3dd1640df5d467
+msgid "We estimate the number of Tor users as a proportion of the total number of *requests* from Tor exit nodes on the assumption that the proportion of users to requests is roughly the same for both clearnet and Tor users. To be precise, the formula is:"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:39
+#: 98fff08d0be040978fa3e5fa38b1eaf9
+msgid "Where:"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:41
+#: f671b9d8d0b340a7aa37e41af5ce33c1
+msgid "``tor_users`` is the estimated number of Qubes users who download updates via Tor each month."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:43
+#: 91eaf2ca6b0247c7b744438461edd8db
+msgid "``tor_requests`` is the total number of requests the Qubes update servers receive from Tor exit nodes each month."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:45
+#: 6f586ce95ed1494ab6ff3da78485336c
+msgid "``plain_users`` is the number of unique clearnet IPv4 addresses that connect to the Qubes update servers each month."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:47
+#: 445a014298374942a2fdc69bbffe9383
+msgid "``plain_requests`` is the total number of requests the Qubes update servers receive from clearnet IPv4 addresses each month."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:50
+#: 559d18099de84cb8bd314d77a30bef25
+msgid "We cross-reference the list of connecting IP addresses with `TorDNSEL’s exit lists <https://metrics.torproject.org/collector.html#type-tordnsel>`__ in order to distinguish Tor and clearnet IPs and requests. For this purpose, we count an IP address as belonging to a Tor exit node if there was a Tor exit node active for that address within the 24-hour periods before or after it connected to the Qubes update servers."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:59
+#: 2ec7ace443924d1a96c9d1a2f6a28ad1
+msgid "What kinds of data do you collect about Qubes users?"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:61
+#: a21f4c495fd04bcda6226d04e3fe14d0
+msgid "Please see our :doc:`Privacy Policy </introduction/privacy>`."
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:64
+#: 3ea1195b2bb6445f8cf58d7b563c7d0c
+msgid "Where can I find the raw data and source code?"
+msgstr ""
+
+#: ../../../_doc/introduction/statistics.rst:66
+#: 1100e3362958457d99f1d37de28700cc
+msgid "The raw data is available `here <https://tools.qubes-os.org/counter/stats.json>`__. (This does not include any personally-identifying user data.) Please note that the format of this data is not documented and may change any time if the developers feel the need to include something else. The source code is available `here <https://github.com/woju/qubes-stats>`__."
+msgstr ""

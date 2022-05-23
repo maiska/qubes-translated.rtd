@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/templates/xfce-templates.rst:1
+#: c29bf7067ea34bf59e3d49b323a4173a
+msgid "If you would like to use Xfce (more lightweight compared to GNOME desktop environment) Linux distribution in your qubes, you can install one of the available Xfce templates for :doc:`Fedora </user/templates/fedora/fedora>`, :doc:`CentOS </external/os-guides/centos>` or :doc:`Gentoo </external/os-guides/gentoo>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/xfce-templates.rst:8
+#: bb9657360c11462f85c4896b2d74a38a
+msgid "Installation"
+msgstr ""
+
+#: ../../../_doc/user/templates/xfce-templates.rst:10
+#: 5f066f99b49341c89be2296d01944539
+msgid "The Fedora Xfce templates can be installed with the following command (where ``X`` is your desired distro and version number):"
+msgstr ""
+
+#: ../../../_doc/user/templates/xfce-templates.rst:17
+#: ../../../_doc/user/templates/xfce-templates.rst:32
+#: 780a056abe6540879eeaecf604faa4db
+#: 8e7934f19450467bb230208b793ccbcf
+msgid "If your desired version is not found, it may still be in :doc:`testing </user/downloading-installing-upgrading/testing>`. You may wish to try again with the testing repository enabled:"
+msgstr ""
+
+#: ../../../_doc/user/templates/xfce-templates.rst:25
+#: 149eb98f5b684123aa497f5dcbfeea3f
+msgid "If you would like to install a community distribution, like CentOS or Gentoo, try the install command by enabling the community repository:"
+msgstr ""
+
+#: ../../../_doc/user/templates/xfce-templates.rst:40
+#: 59cbcd083c3146b49523d90c1fc3c80c
+msgid "The download may take a while depending on your connection speed."
+msgstr ""
+
+#: ../../../_doc/user/templates/xfce-templates.rst:42
+#: 106206bbc6e145f1aa4a4c6c098109ac
+msgid "To reinstall a Xfce template that is already installed in your system, see :doc:`How to Reinstall a template </user/templates/how-to-reinstall-a-template>`."
+msgstr ""

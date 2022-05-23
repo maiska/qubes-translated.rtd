@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:1
+#: 1db9f867da9e4d6abd96acaa9cc27837
+msgid "*This page is for users who wish to install contributed packages. If you want to contribute a package, please see*\\ `package contributions </developer/general/package-contributions>`\\ *.*"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:5
+#: 8b7505ddd3c54cd69bc48a6dea07468d
+msgid "Qubes OS contributed packages are available under the `QubesOS-contrib <https://github.com/QubesOS-contrib/>`__ GitHub Project. This is a place where our community can :doc:`contribute Qubes OS related packages, additions and various customizations </developer/general/package-contributions>`."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:12
+#: c1e58df78608447d89c2a4c54812c891
+msgid "Installing the repositories"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:14
+#: da97005822584197b8bc6da484a361cf
+msgid "If you want to install one of these packages, first you need to enable the repository in your system (dom0 and/or templates). This can be done by installing the ``qubes-repo-contrib`` package. This package includes the repository definition and keys necessary to download, verify, and install `QubesOS-contrib <https://github.com/QubesOS-contrib/>`__ packages."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:21
+#: 13b7468ef6e446709497f17814f0235e
+msgid "In dom0, use ``qubes-dom0-update``:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:27
+#: e471e9b4d5df4524a99eb83c590269b3
+msgid "In a Fedora-based template, use ``dnf``:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:33
+#: c1e63593c3554be3bed563e49bd61eee
+msgid "In a Debian-based template, use ``apt``:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:39
+#: 7adab14d86734c7d93c80c3cf91ac223
+msgid "The new repository definition will be in the usual location for your distro, and it will follow the naming pattern ``qubes-contrib-*``, depending on your Qubes release and whether it is in dom0 or a template. For example, in a Fedora template on Qubes 4.0, the new repository definition would be:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:50
+#: 442b26e87a0c469f9843db6464cde787
+msgid "Installing packages"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:52
+#: b011bea6f64e4b7c93baec3add473e01
+msgid "After you’ve installed the repositories, you can install contributed packages."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:55
+#: b5cd9c217e134a0b90b387de55af67ef
+msgid "**Note:** The first time you install a contrib package in dom0, you must use the ``--clean`` flag."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:58
+#: 694ebb5e5a8f44cb983d0f5f9710404a
+msgid "For example, to install ``qvm-screenshot-tool`` in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/installing-contributed-packages.rst:64
+#: f904a2160ec74b5394be482f51e3a7f1
+msgid "Please see the package’s README for specific installation and setup instructions."
+msgstr ""

@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/project-security/canary-checklist.rst:2
+#: 9316b19277eb4956975d8b34d9d38fb9
+msgid "Preparation"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:4
+#: 5d818cb59f844abf8781aafba723d2fd
+msgid "Draft canary and push to private repository"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:5
+#: f8b43f704572441eba14d7981b03f138
+msgid "Finalize canary, sign, and add signed tags"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:8
+#: 66c4dcdcf2c44da993b111f173bba58b
+msgid "Announcement"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:10
+#: d1b2fb2112e546b591a2bae8ca1e2767
+msgid "Push canary to public repository"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:11
+#: 901fd1acb4ba49a1ae5b905a43c22798
+msgid "Publish a `news post <https://www.qubes-os.org/news/>`__ using the :doc:`Canary Template </project-security/canary-template>`"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:13
+#: 1091948196aa42babefedb88192598e9
+msgid "Send the content of the news post to the appropriate :doc:`mailing lists </introduction/support>`"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:15
+#: 719722c7b4b849379d8714ce507a6259
+msgid "Share link to news post on social media"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:16
+#: 2cd4a426ea8d470699c763443f7cd992
+msgid "Set a reminder for the next canary"
+msgstr ""

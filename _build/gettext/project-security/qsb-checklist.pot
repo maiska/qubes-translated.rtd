@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/project-security/qsb-checklist.rst:2
+#: 4488fd2727eb4114adbdf722c9bcd456
+msgid "Preparation"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:4
+#: 9dedc45434ab48d6955fc097d965c8cf
+msgid "Draft QSB and push to private repository"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:5
+#: ebed737882014daf8893640e66ce4ed8
+msgid "Build fixed packages"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:6
+#: 53a593f69b3346b6a0173b3332369254
+msgid "Finalize QSB, sign, and add signed tags"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:9
+#: 6b8e79a02ecc4bfd92e149291c6ccb0c
+msgid "Announcement"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:11
+#: 65025518cb054e34846c13e653bb4640
+msgid "Upload packages to ``security-testing`` and ``current-testing`` repositories"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:13
+#: fa76ac9192804f0f92cca1971a85824d
+msgid "Push QSB to public repository"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:14
+#: bef4e0efcd4349a99766a7139804f396
+msgid "Publish a `news post <https://www.qubes-os.org/news/>`__ using the :doc:`QSB Template </project-security/qsb-template>`"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:16
+#: d4d1c472944a434287fb69bfb3948639
+msgid "Send the content of the news post to the appropriate :doc:`mailing lists </introduction/support>`"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:18
+#: 507bb0c9049f41be8725116bf903e7ea
+msgid "Share link to news post on social media"
+msgstr ""

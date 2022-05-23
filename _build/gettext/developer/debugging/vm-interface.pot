@@ -1,0 +1,593 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:1
+#: d714e0cc706047d486be56e5e8b1955c
+msgid "Qubes VM have some settings set by dom0 based on VM settings. There are multiple configuration channels, which includes:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:4
+#: ../../../_doc/developer/debugging/vm-interface.rst:11
+#: 4a49d4ae45604c0faa459a83b5ab01b8
+#: ff3feb591ce9495b8b8d102b553059e5
+msgid "QubesDB"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:5
+#: d94df1f84ec448a2a20912261dd52adb
+msgid "XenStore (in Qubes 2, data the same as in QubesDB, keys without leading ``/``)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:7
+#: d16ad6108c544c738cf4e5a14434844f
+msgid "Qubes RPC (called at VM startup, or when configuration changed)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:8
+#: ../../../_doc/developer/debugging/vm-interface.rst:321
+#: 5d9ad1d9cccd418aad914dec34b733dd
+#: 6861947d983341daa1d30a5c384b4a6c
+msgid "GUI protocol"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:14
+#: 7ce6eead5eee461699828c2924bf5a12
+msgid "Keys exposed by dom0 to VM"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:16
+#: 888e388300f5430cb424a5f31928703c
+msgid "``/qubes-vm-type`` - VM type, the same as ``type`` field in ``qvm-prefs``. One of ``AppVM``, ``ProxyVM``, ``NetVM``, ``TemplateVM``, ``HVM``, ``TemplateHVM``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:19
+#: 1217ade5a6144745b553ec3a1d458765
+msgid "``/qubes-vm-updatable`` - flag whether VM is updatable (whether changes in root.img will survive VM restart). One of ``True``, ``False``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:22
+#: 6296e38cc3bc4a1dacf06a0add7737a1
+msgid "``/qubes-vm-persistence`` - what data do persist between VM restarts:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:24
+#: cafd5ada02a744e7a565ae29747a9e5a
+msgid "``full`` - all disks"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:25
+#: aa7fe84c00424f2bb16b5e8b8176ab25
+msgid "``rw-only`` - only ``/rw`` disk"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:26
+#: 596bd785ffc14493a1070b6cdd867c36
+msgid "``none`` - none"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:28
+#: 38e81f07584d4b75a49b7a1f9c69bba2
+msgid "``/qubes-timezone - name of timezone based on dom0 timezone. For example``\\ Europe/Warsaw\\`"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:29
+#: 9f595ef9bc2f4ff383b7beb50477dbf2
+msgid "``/qubes-keyboard`` (deprecated in R4.1) - keyboard layout based on dom0 layout. Its syntax is suitable for ``xkbcomp`` command (after expanding escape sequences like ``\\n`` or ``\\t``). This is meant only as some default value, VM can ignore this option and choose its own keyboard layout (this is what keyboard setting from Qubes Manager does). This entry is created as part of gui-daemon initialization (so not available when gui-daemon disabled, or not started yet)."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:36
+#: f3a2e402a3ee429fb28f2a8007f15d20
+msgid "``/keyboard-layout`` - keyboard layout based on GuiVM layout. Its syntax can be ``layout+variant+options``, ``layout+variant``, ``layout++options`` or simply ``layout``. For example, ``fr+oss``, ``pl++compose:caps`` or ``fr``. This is meant only as some default value, VM can ignore this option and choose its own keyboard layout (this is what keyboard setting from Qubes Manager does)."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:42
+#: 5b32ea9563624206be9363ff2afae6e4
+msgid "``/qubes-debug-mode`` - flag whether VM has debug mode enabled (qvm-prefs setting). One of ``1``, ``0``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:44
+#: a5a45ce426ce4d708c3e264196c2731e
+msgid "``/qubes-service/SERVICE_NAME`` - subtree for VM services controlled from dom0 (using the ``qvm-service`` command or Qubes Manager). One of ``1``, ``0``. Note that not every service will be listed here, if entry is missing, it means “use VM default”. A list of currently supported services is in the ``qvm-service`` man page."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:49
+#: 7f42987f397d4fbe98dc9e085fe1cbce
+msgid "``/qubes-netmask`` - network mask (only when VM has netvm set); currently hardcoded “255.255.255.0”"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:51
+#: 1ea5ca4d7d5842b4844c77af282b0389
+msgid "\\`/qubes-ip - IP address for this VM (only when VM has netvm set)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:52
+#: ba08f036d2e24bf699835c31b0027c42
+msgid "``/qubes-gateway`` - default gateway IP (only when VM has netvm set); VM should add host route to this address directly via eth0 (or whatever default interface name is)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:55
+#: c7991c13ea7c469cac78b1a2f65f4bdc
+msgid "``/qubes-primary-dns`` - primary DNS address (only when VM has netvm set)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:57
+#: 660f1419827d47c8b9f12f6abeecb92a
+msgid "``/qubes-secondary-dns`` - secondary DNS address (only when VM has netvm set)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:59
+#: 7950999ca74c4961834eda0d38171d08
+msgid "``/qubes-netvm-gateway`` - same as ``qubes-gateway`` in connected VMs (only when VM serves as network backend - ProxyVM and NetVM)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:61
+#: 0e597df5e30d46d1828b5ab61d95b510
+msgid "``/qubes-netvm-netmask`` - same as ``qubes-netmask`` in connected VMs (only when VM serves as network backend - ProxyVM and NetVM)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:63
+#: 7585105e242e45ec877070b7486f3e9f
+msgid "``/qubes-netvm-network`` - network address (only when VM serves as network backend - ProxyVM and NetVM); can be also calculated from qubes-netvm-gateway and qubes-netvm-netmask"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:66
+#: 13355098f1034c72af143b4f108e1f75
+msgid "``/qubes-netvm-primary-dns`` - same as ``qubes-primary-dns`` in connected VMs (only when VM serves as network backend - ProxyVM and NetVM); traffic sent to this IP on port 53 should be redirected to primary DNS server"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:70
+#: cc3d510e8d734a7b9e2bafff283ea35f
+msgid "``/qubes-netvm-secondary-dns`` - same as ``qubes-secondary-dns`` in connected VMs (only when VM serves as network backend - ProxyVM and NetVM); traffic sent to this IP on port 53 should be redirected to secondary DNS server"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:74
+#: fe08f3794cdb4ecc80f2bdc15ab9df66
+msgid "``/guivm-windows-prefix`` - title prefix for any window not originating from another qube. This means windows of applications running in GuiVM itself"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:79
+#: ecb64ab999624f0c819467acafc8544f
+msgid "Firewall rules in 3.x"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:81
+#: bff8f837e9eb4e23a03a17cb67f4da0d
+msgid "QubesDB is also used to configure firewall in ProxyVMs. Rules are stored in separate key for each target VM. Entries:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:84
+#: 6ae9dc1a9b6845f1bca1f6ac4deb0dac
+msgid "``/qubes-iptables`` - control entry - dom0 writing ``reload`` here signals ``qubes-firewall`` service to reload rules"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:86
+#: 4aa03e9f68a04d448890693e990a73fe
+msgid "``/qubes-iptables-header`` - rules not related to any particular VM, should be applied before domains rules"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:88
+#: 6c23bc158aaf4a9ab6d69bbd99664eae
+msgid "``/qubes-iptables-domainrules/NNN`` - rules for domain ``NNN`` (arbitrary number) in ``iptables-save`` format. Rules are self-contained - fill ``FORWARD`` iptables chain and contains all required matches (source IP address etc), as well as final default action (``DROP``/``ACCEPT``)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:94
+#: e3899a3278984467b50d34a893ca8394
+msgid "VM after applying rules may signal some error, writing a message to ``/qubes-iptables-error`` key. This does not exclude any other way of communicating problems - like a popup."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:99
+#: d9409469426a4c429cba87d779051d0d
+msgid "Firewall rules in 4.x"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:101
+#: e5a5cebb533946c28c0679c013f13cdc
+msgid "QubesDB is also used to configure firewall in ProxyVMs. Each rule is stored as a separate entry, grouped on target VM:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:104
+#: 1cf00ddeb2614831821af2b5d06e8ee5
+msgid "``/qubes-firewall/SOURCE_IP`` - base tree under which rules are placed. All rules there should be applied to filter traffic coming from ``SOURCE_IP``. This can be either IPv4 or IPv6 address. Dom0 will do an empty write to this top level entry after finishing rules update, so VM can setup a watch here to trigger rules reload."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:109
+#: 947a23ce2a0b472088ac5b0cd01c3c3a
+msgid "``/qubes-firewall/SOURCE_IP/policy`` - default action if no rule matches: ``drop`` or ``accept``."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:111
+#: e0e54c3b3bd4424bb40f924e3c96608c
+msgid "``/qubes-firewall/SOURCE_IP/NNNN`` - rule number ``NNNN`` - decimal number, padded with zeros. Se below for rule format. All the rules should be applied in order of rules implied by those numbers. Note that QubesDB itself does not impose any ordering (you need to sort the rules after retrieving them). The first rule has number ``0000``."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:117
+#: 4047d9fcd6d04dc1a254b429ee3eacc6
+msgid "Each rule is a single QubesDB entry, consisting of pairs ``key=value`` separated by space. QubesDB enforces limit on a single entry length - 3072 bytes. Possible options for a single rule:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:121
+#: 646e5cc2fa1d4bdd9eb3d248518dc287
+msgid "``action``, values: ``accept``, ``drop``; this is present in every rule"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:123
+#: 89394ff73d0044bc9fc98d5036e91605
+msgid "``dst4``, value: destination IPv4 address with a mask; for example: ``192.168.0.0/24``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:125
+#: 311504f4e36944188761e8b514684c17
+msgid "``dst6``, value: destination IPv6 address with a mask; for example: ``2000::/3``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:127
+#: d40a5455246d4285bf5facd42a93f261
+msgid "``dsthost``, value: DNS hostname of destination host"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:128
+#: 078a0a679c6c42efa74d6bfa7ca79046
+msgid "``proto``, values: ``tcp``, ``udp``, ``icmp``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:129
+#: a4820e63f2304fc38fef65b935a11b3f
+msgid "``specialtarget``, value: One of predefined target, currently defined values:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:132
+#: fc3925798ea144919dc032962b91350d
+msgid "``dns`` - such option should match DNS traffic to default DNS server (but not any DNS server), on both TCP and UDP"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:135
+#: 8e04069e6b9440b6ac1b499a4815b657
+msgid "``dstports``, value: destination ports range separated with ``-``, valid only together with ``proto=tcp`` or ``proto=udp``; for example ``1-1024``, ``80-80``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:138
+#: 64e1e64d197e4e75a20587bbd25ab90e
+msgid "``icmptype``, value: numeric (decimal) icmp message type, for example ``8`` for echo request, valid only together with ``proto=icmp``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:140
+#: 9ccb6fd3a7954ab599fe935e854a3b47
+msgid "``dpi``, value: Deep Packet Inspection protocol (like: HTTP, SSL, SMB, SSH, SMTP) or the default ‘NO’ as no DPI, only packet filtering"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:143
+#: cad5e7b009d946de921e00e6fd8fda47
+msgid "Options must appear in the rule in the order listed above. Duplicated options are forbidden."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:146
+#: a64c30e3cd11455eb129e33174928797
+msgid "A rule matches only when all predicates match. Only one of ``dst4``, ``dst6`` or ``dsthost`` can be used in a single rule."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:149
+#: dcf0e470e7bc4a2bb75f45ad84da34a9
+msgid "If tool applying firewall encounters any parse error (unknown option, invalid value, duplicated option, etc), it should drop all the traffic coming from that ``SOURCE_IP``, regardless of properly parsed rules."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:153
+#: 7ed9a6a7b3de45219f98afb39e7a4a0c
+msgid "Example valid rules:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:155
+#: faf24cbe4f1f4628a96fc0589da34881
+msgid "``action=accept dst4=8.8.8.8 proto=udp dstports=53-53``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:156
+#: cc4d1e2671c44465b28b489bf0d32367
+msgid "``action=drop dst6=2a00:1450:4000::/37 proto=tcp``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:157
+#: ae8d87384caf41949ff83b848a0ba0be
+msgid "``action=accept specialtarget=dns``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:158
+#: 8070e26348a747dc95c493bb700dd735
+msgid "``action=drop proto=tcp specialtarget=dns`` - drop DNS queries sent using TCP"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:160
+#: 4e757e4d00414643aa81840ab08bfcbd
+msgid "``action=drop``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:163
+#: 0eb819e41a714a00815277fe610143d8
+msgid "Keys set by VM for passing info to dom0"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:165
+#: 10dbf25c22634971918fa2a0a2625ca5
+msgid "``memory/meminfo`` (**xenstore**) - used memory (updated by qubes-meminfo-writer), input information for qmemman;"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:168
+#: c3d0520f02dc481f8f301f9dd5e87ab7
+msgid "Qubes 3.x format: 6 lines (EOL encoded as ``\\n``), each in format “FIELD: VALUE kB”; fields: ``MemTotal``, ``MemFree``, ``Buffers``, ``Cached``, ``SwapTotal``, ``SwapFree``; meaning the same as in ``/proc/meminfo`` in Linux."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:172
+#: 53c90a762a85424c85b8d5d4486d66f2
+msgid "Qubes 4.0+ format: used memory size in the VM, in kbytes"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:174
+#: 031b1d26aa3a404abdbf99caa3ab2fc2
+msgid "``/qubes-block-devices`` - list of block devices exposed by this VM, each device (subdirectory) should be named in a way that VM can attach the device based on it. Each should contain these entries:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:178
+#: ../../../_doc/developer/debugging/vm-interface.rst:186
+#: e8568541559141d99128773c72c5e018
+#: 846ecfda7b344f0db1285c4bc1a789d7
+msgid "``desc`` - device description (ASCII text)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:179
+#: 1788691d341743b989037cf533521bbb
+msgid "``size`` - device size in bytes"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:180
+#: 9613204226de4a7b90c28319234b91f8
+msgid "``mode`` - default connection mode; ``r`` for read-only, ``w`` for read-write"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:183
+#: d4dcc4814c8546c09279fc1270f0991c
+msgid "``/qubes-usb-devices`` - list of USB devices exposed by this VM, each device (subdirectory) should contain:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:187
+#: bb4e11f3b09f49e0babe9cb0ea349b4c
+msgid "``usb-ver`` - USB version (1, 2 or 3)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:190
+#: 47b91f9fa5dc44d0a14d8c0e24e5025b
+msgid "Qubes RPC"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:192
+#: 5103510784764dab86aafa6fc7d8787e
+msgid "Services called by dom0 to provide some VM configuration:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:194
+#: fa606b60c38d4d7ba0519dd03ad766be
+msgid "``qubes.SetMonitorLayout`` - provide list of monitors, one per line. Each line contains four numbers: ``width height X Y width_mm height_mm`` (physical dimensions - ``width_mm`` and ``height_mm`` - are optional)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:199
+#: ae95432a3cdc4fddbfcc510a6ffef5aa
+msgid "``qubes.WaitForSession`` - called to wait for full VM startup"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:201
+#: 9e84030fc6754fc791797fe4a5286853
+msgid "``qubes.GetAppmenus`` - receive appmenus from given VM (template); TODO: describe format here"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:204
+#: 7005edc9768d404589d8561c6400caa9
+msgid "``qubes.GetImageRGBA`` - receive image/application icon. Protocol:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:206
+#: 94652c3ca7f3401782600c44eb75381b
+msgid "Caller sends name of requested icon. This can be one of:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:208
+#: 65b043cd5bfc4c9685e5dc36b1fc08ae
+msgid "``xdgicon:NAME`` - search for NAME in standard icons theme"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:209
+#: bfa397e2439a45da92eeb9a409194ee5
+msgid "``-`` - get icon data from stdin (the caller), can be prefixed with format name, for example ``png:-``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:211
+#: ed59b41f133b46219fb005dc80c4b8be
+msgid "file name"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:213
+#: e014162eb0f94df59d10a0b02410c5b7
+msgid "The service responds with image dimensions: width and height as decimal numbers, separated with space and with EOL marker at the and; then image data in RGBA format (32 bits per pixel)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:217
+#: 54f2b50fcc904628b16d06ad2050d245
+msgid "``qubes.SetDateTime`` - set VM time, called periodically by dom0 (can be triggered manually from dom0 by calling ``qvm-sync-clock``). The service receives one line at stdin - time in format of ``date -u -Iseconds``, for example ``2015-07-31T16:10:43+0000``."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:222
+#: 7ae00ed5d4e3409cb18716e3df6401ab
+msgid "``qubes.SetGuiMode`` - called in HVM to switch between fullscreen and seamless GUI mode. The service receives a single word on stdin - either ``FULLSCREEN`` or ``SEAMLESS``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:226
+#: fab1f216b18942a58c31447696b79f76
+msgid "``qubes.ResizeDisk`` - called to inform that underlying disk was resized. Name of disk image is passed on standard input (``root``, ``private``, ``volatile``, or other). This is used starting with Qubes 4.0."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:231
+#: 02a2023aec424f34b28fe6242d08675a
+msgid "Other Qrexec services installed by default:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:233
+#: e1202400b57b498793bebedcdaa47426
+msgid "``qubes.Backup`` - store Qubes backup. The service receives location chosen by the user (one line, terminated by ``\\n``), the backup archive (:doc:`description of backup format </user/how-to-guides/backup-emergency-restore-v2>`)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:237
+#: 5db243960f994e4ca72792ff6e472249
+msgid "``qubes.DetachPciDevice`` - service called in reaction to ``qvm-pci -d`` call on running VM. The service receives one word - BDF of device to detach. When the service call ends, the device will be detached"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:241
+#: 8d8701e30b294e7abe4e4ea89c48357b
+msgid "``qubes.Filecopy`` - receive some files from other VM. Files sent in `qfile format </developer/services/qfilecopy>`"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:243
+#: a6d43a7be2cb4cb1a2732a770f72abb1
+msgid "``qubes.OpenInVM`` - open a file in called VM. Service receives a single file on stdin (in `qfile format </developer/services/qfilecopy>`. After a file viewer/editor is terminated, if the file was modified, can be sent back (just raw content, without any headers); otherwise service should just terminate without sending anything. This service is used by both ``qvm-open-in-vm`` and ``qvm-open-in-dvm`` tools. When called in DispVM, service termination will trigger DispVM cleanup."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:250
+#: c8126e6b467e48a9b5d63b4652fc8f04
+msgid "``qubes.Restore`` - retrieve Qubes backup. The service receives backup location entered by the user (one line, terminated by ``\\n``), then should output backup archive in :doc:`qfile format </developer/services/qfilecopy>` (core-agent-linux component contains ``tar2qfile`` utility to do the conversion)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:255
+#: 51bb9de9036247dcb4ca4dbc4af36ea9
+msgid "``qubes.SelectDirectory``, ``qubes.SelectFile`` - services which should show file/directory selection dialog and return (to stdout) a single line containing selected path, or nothing in the case of cancellation"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:259
+#: 16ada0e6eae14f549450ded4051bf882
+msgid "``qubes.SuspendPre`` - service called in every VM with PCI device attached just before system suspend"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:261
+#: 27374e2f7fa249febb3cec9a9e40e5e9
+msgid "``qubes.SuspendPost`` - service called in every VM with PCI device attached just after system resume"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:263
+#: 13ca1be14eef41f98a2affd6343ccf66
+msgid "``qubes.SyncNtpClock`` - service called to trigger network time synchronization. Service should synchronize local VM time and terminate when done."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:266
+#: d90a419a4d78467aa670580d806f73d3
+msgid "``qubes.WindowIconUpdater`` - service called by VM to send icons of individual windows. The protocol there is simple one direction stream: VM sends window ID followed by icon in ``qubes.GetImageRGBA`` format, then next window ID etc. VM can send icon for the same window multiple times to replace previous one (for example for animated icons)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:272
+#: 8cc68f0cbd694105b2250cc06765bd4f
+msgid "``qubes.VMShell`` - call any command in the VM; the command(s) is passed one per line"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:275
+#: 8395a04e12ab425b8a0db9461e8e0936
+msgid "``qubes.VMShell+WaitForSession`` waits for full VM startup first"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:277
+#: 901b3946f3444fc2911079e858cdce23
+msgid "``qubes.VMExec`` - call any command in the VM, without using shell, the command needs to be passed as argument and encoded as follows:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:280
+#: e1c792d87ae241bbb2a197a17558ca00
+msgid "the executable name and arguments are separated by ``+``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:281
+#: 3e57e423ef52482792a24542067df895
+msgid "everything except alphanumeric characters, ``.`` and ``_`` needs to be escaped"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:283
+#: 082b5f0623714f68ba3f556019ba323a
+msgid "bytes are escaped as ``-HH`` (where ``HH`` is hex code, capital letters only)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:285
+#: de50941a91e8481bbf14d6a3089b4741
+msgid "``-`` itself can be escaped as ``--``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:286
+#: ea5e89792da04cf688966c78bc608078
+msgid "example: to run ``ls -a /home/user``, use ``qubes.VMExec+ls+--a+-2Fhome-2Fuser``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:289
+#: c440efc923224229b8703e86e7f5c299
+msgid "``qubes.VMExecGUI`` - a variant of ``qubes.VMExec`` that waits for full VM startup first"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:292
+#: f92b3a0fa5f045cbba2ff795f9190610
+msgid "Services called in GuiVM:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:294
+#: 7c4e46bef045430d9c9ed39e26f2bda7
+msgid "``policy.Ask``, ``policy.Notify`` - confirmation prompt and notifications for Qubes RPC calls, see `qrexec-policy implementation </developer/services/qrexec-internals.html#qrexec-policy-implementation>`__ for a detailed description."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:299
+#: d00d32aa3d24462b8d2801252aa33e7e
+msgid "Currently Qubes still calls few tools in VM directly, not using service abstraction. This will change in the future. Those tools are:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:302
+#: 26f7fb4e9a8449359e7e9b2441326742
+msgid "``/usr/lib/qubes/qubes-download-dom0-updates.sh`` - script to download updates (or new packages to be installed) for dom0 (``qubes-dom0-update`` tool)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:305
+#: ec57e062c01c4657ab7c62d2a4101184
+msgid "``date -u -Iseconds`` - called directly to retrieve time after calling ``qubes.SyncNtpClock`` service (``qvm-sync-clock`` tool)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:307
+#: 9f1a2e38da1046ad8d835e769f322eb4
+msgid "``nm-online -x`` - called before ``qubes.SyncNtpClock`` service call by ``qvm-sync-clock`` tool"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:309
+#: 5f55502511d7464f8b5f053e1015207b
+msgid "``resize2fs`` - called to resize filesystem on /rw partition by ``qvm-grow-private`` tool"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:311
+#: 49a80c28aa5a451bb5c7ec027e33db20
+msgid "``gpk-update-viewer`` - called by Qubes Manager to display available updates in a TemplateVM"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:313
+#: 99744fa13ec34087934f73811d6b395a
+msgid "``systemctl start qubes-update-check.timer`` (and similarly stop) - called when enabling/disabling updates checking in given VM (``qubes-update-check`` :doc:`qvm-service </user/advanced-topics/qubes-service>`)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:317
+#: ae175e8a6a724027a474e0fd5ca3253d
+msgid "Additionally, automatic tests extensively run various commands directly in VMs. We do not plan to change that."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/vm-interface.rst:323
+#: 8fd930f633bc45908c73e046d9d685db
+msgid "GUI initialization includes passing the whole screen dimensions from dom0 to VM. This will most likely be overwritten by qubes.SetMonitorLayout Qubes RPC call."
+msgstr ""

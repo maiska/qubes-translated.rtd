@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/CONTRIBUTING.rst:2
+#: 9f787df9868a4966aabbe6128bf05e5c
+msgid "Contributing to ``qubes-doc``"
+msgstr ""
+
+#: ../../../_doc/CONTRIBUTING.rst:4
+#: 7dc773c993734ba4a27f05c6f4525688
+msgid "Thank you for your interest in contributing to ``qubes-doc``, the Qubes OS Project’s dedicated documentation repository! Please see `how to edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__ for detailed contribution instructions."
+msgstr ""
+
+#: ../../../_doc/CONTRIBUTING.rst:10
+#: 4ed9f90bb1d04aa39ecc4413ff891692
+msgid "In addition, please take a moment to read our `documentation style guide <https://www.qubes-os.org/doc/documentation-style-guide/>`__ before contributing. These guidelines are important to maintaining high standards of quality, and following them will increase the likelihood that your contribution will be accepted."
+msgstr ""

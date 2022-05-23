@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:1
+#: 942394841ed14423b1d115e61d480df4
+msgid "There are several security matters to consider before and during the Qubes installation process."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:5
+#: 31b23ad82c934df78cd50939bdbf7a3a
+msgid "Trusting your hardware"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:7
+#: 906ec725b8994adab26be519d3ec7fe3
+msgid "No operating system, not even Qubes, can help you if you’re installing it on hardware that is already compromised. This includes CPUs, GPUs, SSDs, HDDs, the motherboard, BIOS/EFI/UEFI, and all relevant firmware. Unfortunately, in today’s world of undetectable supply chain attacks, there are no easy solutions. (Tools like :doc:`Anti Evil Maid (AEM) </user/security-in-qubes/anti-evil-maid>` can help with *maintaining* the trustworthiness of your hardware, but not with establishing it in the first place.) Some users have chosen to use tools like `Coreboot <https://www.coreboot.org/>`__, `Heads <http://osresearch.net/>`__, and `Skulls <https://github.com/merge/skulls>`__."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:20
+#: 9b7426dc5c4f48b2b7f009884d8d23ee
+msgid "Verifying the Qubes ISO"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:22
+#: f7c330ff529b44fb9d1f064fbde324ee
+msgid "You should :doc:`verify </project-security/verifying-signatures>` the PGP signature on your Qubes ISO before you install from it. However, if the machine on which you attempt the verification process is already compromised, it could falsely claim that a malicious ISO has a good signature. Therefore, in order to be certain that your Qubes ISO is trustworthy, you require a trustworthy machine. But how can you be certain *that* machine is trustworthy? Only by using another trusted machine, and so forth. This is a `classic problem <https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf>`__. While various `solutions <https://www.dwheeler.com/trusting-trust/>`__ have been proposed, the point is that each user must ultimately make a choice about whether to trust that a file is non-malicious."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:36
+#: bcb7401a02f943309ae1bdb0548c1801
+msgid "Choosing an installation medium"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:38
+#: 73d64e4beb48470fbb9bd73083dc3297
+msgid "So, after taking some measures to verify its integrity and authenticity, you’ve decided to trust your Qubes ISO. Great! Now you must decide what sort of medium on which to write it so that you can install from it. From a Qubes-specific security perspective, each has certain pros and cons."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:45
+#: 9ae0cfa226d148e3826a81f14a37b1df
+msgid "USB drives"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:47
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:66
+#: 83bf9be16fcd4fdebd2aeb1de7fa56e9
+#: 019c918141cb45dfacaea06f7b53fcfb
+msgid "Pros:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:49
+#: ea0fcfdec5c740138ee8667b4b6a36b8
+msgid "Works via USB, including with a :doc:`USB qube </user/advanced-topics/usb-qubes>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:50
+#: a8db4802389e4408991143824723600e
+msgid "Non-fixed capacity. (Easy to find one on which the ISO can fit.)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:52
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:73
+#: 4fce987f86ae4c6d8bcc81211d498bdc
+#: 8e9f0c3af75c4781849e4808cd6ef863
+msgid "Cons:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:54
+#: 271fa64b1c9849a797dbd772040742c3
+msgid "Rewritable. (If the drive is mounted to a compromised machine, the ISO could be maliciously altered after it has been written to the drive.)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:57
+#: 44ef8773529b4de1a17920303e57ffde
+msgid "Untrustworthy firmware. (Firmware can be malicious even if the drive is new. Plugging a drive with rewritable firmware into a compromised machine can also `compromise the drive <https://srlabs.de/badusb/>`__. Installing from a compromised drive could compromise even a brand new Qubes installation.)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:64
+#: 4a40075e9e3e4e3f91128e5530a941a3
+msgid "Optical discs"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:68
+#: befe5dbde41648349b8c6c5065841839
+msgid "Read-only available. (If you use read-only media, you don’t have to worry about the ISO being maliciously altered after it has been written to the disc. You then have the option of verifying the signature on multiple different machines.)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:75
+#: 3298fc22f63b41c8bc92e4387964a137
+msgid "Fixed capacity. (If the size of the ISO is larger than your disc, it will be inconvenient.)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:77
+#: 8b6b20d1c62447d4808464fd9de88524
+msgid "Passthrough recording (a.k.a., “burning”) is not supported by Xen. (This mainly applies if you’re upgrading from a previous version of Qubes.) Currently, the only options for recording optical discs (e.g., CDs, DVDs, BRDs) in Qubes are:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:82
+#: c6c2dac69df5443f97a33647bc85fb67
+msgid "Use a USB optical drive."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:83
+#: 7b0373cb1d124d5e903e7908f53db931
+msgid "Attach a SATA optical drive to a secondary SATA controller, then assign this secondary SATA controller to an app qube."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:85
+#: c68f6c3e8cb643ba96d2ff56013fbdc5
+msgid "Use a SATA optical drive attached to dom0."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:87
+#: 3f44293caf684eb087384964bf87c3e2
+msgid "(Option 3 violates the Qubes security model since it entails transferring an untrusted ISO to dom0 in order to burn it to disc, which leaves only the other two options.)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/install-security.rst:91
+#: 5854cbda0e224f20add20171c07588dd
+msgid "Considering the pros and cons of each, perhaps a USB drive with non-rewritable (or at least cryptographically-signed) firmware and a physical write-protect switch might be the best option."
+msgstr ""

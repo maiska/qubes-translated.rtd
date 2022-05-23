@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:2
+#: 0f69018d332d439580fcfc13c30f9234
+msgid "New features since 3.1"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:4
+#: be0011e8ae164443809602f6374e94c1
+msgid "Management Stack extended to support in-VM configuration - :doc::doc:`documentation </user/advanced-topics/salt>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:6
+#: 03f4625d9bd14119b370fa33fe62c24e
+msgid "PV USB - :doc::doc:`documentation </user/how-to-guides/how-to-use-usb-devices>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:7
+#: 9129927c960c41009f9062e356c23b8c
+msgid "Dom0 update to Fedora 23 for better hardware support"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:8
+#: 80187399e3aa4d3495d5db050cce4b10
+msgid "Kernel 4.4.x"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:9
+#: 8bd352ef54bf436ab6854968ce7dccac
+msgid "Default desktop environment switched to Xfce4"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:10
+#: 2e3119daaca540a3ae7b5b7fe2ed4023
+msgid "KDE 5 support (but it is no longer the default one)"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:11
+#: 84996b38d2f7435b849b543567ffb00c
+msgid "Tiling window managers support: awesome, :doc:`i3 </user/advanced-topics/i3>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:12
+#: 8bef286485c64262b6279a2321b42b2e
+msgid "More flexible Qubes RPC services - `related ticket <https://github.com/QubesOS/qubes-issues/issues/1876>`__, :doc::doc:`documentation </developer/services/qrexec.html#service-policies-with-arguments>`__"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:16
+#: a52cbc23366f46c392e83cc5e8b9f8f6
+msgid "You can get detailed description in `completed github issues <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+3.2%22+label%3Arelease-notes+is%3Aclosed>`__"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:20
+#: 67e0278d6bcc40de80b5fce6e9f23560
+msgid "Known issues"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:22
+#: d88c10a228ad4bbba7d5f4dbe21504a3
+msgid "`Fedora 23 reached EOL in December 2016 <https://fedoraproject.org/wiki/End_of_life>`__. There is a `manual procedure to upgrade your VMs <https://www.qubes-os.org/news/2018/01/06/fedora-26-upgrade/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:27
+#: f9d127e868ae4fdeb94f2624425379cf
+msgid "Windows Tools: ``qvm-block`` does not work"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:29
+#: e91f7566d2ed4061a5820951983c31e1
+msgid "Some icons in the Qubes Manager application might not be drawn correctly when using the Xfce4 environment in Dom0. If this bothers you, please use the KDE environment instead."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:33
+#: 70131258d076438b95748a56c0bb74f3
+msgid "For other known issues take a look at `our tickets <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+3.2%22+label%3Abug>`__"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:36
+#: 1ae36540601347a28813096e36af4eea
+msgid "It is advised to install updates just after system installation to apply bug fixes for (some of) the above problems."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:40
+#: da295009174d435fa63b9f115ade7e8c
+msgid "Downloads"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:42
+#: 8867b1aa9edf48e38fe6eda18910bdfc
+msgid "See :doc:`Qubes Downloads </user/downloading-installing-upgrading/downloads>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:45
+#: feb59aec11a748638af03492bc2775ec
+msgid "Installation instructions"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:47
+#: f7a9079f74f44444bb37f516473a9c5d
+msgid "See :doc:`Installation Guide </user/downloading-installing-upgrading/installation-guide>`. After installation, `manually upgrade to Fedora 26 <https://www.qubes-os.org/news/2018/01/06/fedora-26-upgrade/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:52
+#: d7fc9a5de2564a59b2cceb1f5fb0f999
+msgid "Upgrading"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:55
+#: 43c2b0053c904b7dabb93a4dac4c4cfd
+msgid "From R3.1"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:57
+#: 2b3be59a27ed4949b512ce7be389e98c
+msgid "The easiest and safest way to upgrade to Qubes R3.2 is to install it from scratch and use :doc:`qubes backup and restore tools </user/how-to-guides/how-to-back-up-restore-and-migrate>` for migrating of all of the user VMs."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:61
+#: f38f4915afdb4c3e9751275e2aacfe56
+msgid "Users of Qubes R3.1 can also upgrade using :doc:`this procedure </user/downloading-installing-upgrading/upgrade/3_2>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:65
+#: 01eaa83fa8124741bb4382a43772488b
+msgid "From R3.0 or earlier"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:67
+#: 48f18f535cb04c83a10e1b5d511ab680
+msgid "When upgrading from earlier versions the easiest and safest way is to install it from scratch and use :doc:`qubes backup and restore tools </user/how-to-guides/how-to-back-up-restore-and-migrate>` for migrating of all of the user VMs."
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_2/release-notes.rst:71
+#: 772b4ca133cc4a1da5ec781782dc77bd
+msgid "Alternatively you can `upgrade to R3.1 using </developer/releases/3_1/release-notes.html#upgrading>`__ first, then follow the instructions above. This will be time consuming process."
+msgstr ""

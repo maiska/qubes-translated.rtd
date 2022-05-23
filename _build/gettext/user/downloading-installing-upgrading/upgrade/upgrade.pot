@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:1
+#: 574fd6dac77949dfbecf34cea10745d3
+msgid "These guides are for upgrading from one version of Qubes to another. If you’re just looking to update your system while staying on the same version, see :doc:`how to update </user/how-to-guides/how-to-update>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:5
+#: 60fba48f97844c5d83b71a8ce4b9bd2f
+msgid ":doc:`Upgrade from 1 to 2 Beta 1 </user/downloading-installing-upgrading/upgrade/2b1>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:6
+#: 521576c8d1c54ad98cb487e50eba1140
+msgid ":doc:`Upgrade from 1 to 2 Beta 2 </user/downloading-installing-upgrading/upgrade/2b2>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:7
+#: 7441a955a66345b598ca9b97937362cf
+msgid ":doc:`Upgrade from 2 Beta 2 to 2 Beta 3 </user/downloading-installing-upgrading/upgrade/2b3>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:8
+#: 7dad1961b4f244db987ff1a1e37f2a01
+msgid ":doc:`Upgrade from 2 Beta 3 to 2 </user/downloading-installing-upgrading/upgrade/2>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:9
+#: d82b0942a5c142a0a28c801f01012da0
+msgid ":doc:`Upgrade from 2 to 3.0 </user/downloading-installing-upgrading/upgrade/3_0>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:10
+#: aede6f078fba40c4943e72619bbb0bf9
+msgid ":doc:`Upgrade from 3.0 to 3.1 </user/downloading-installing-upgrading/upgrade/3_1>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:11
+#: ce32c06469764ff4bf9407c717b1c664
+msgid ":doc:`Upgrade from 3.1 to 3.2 </user/downloading-installing-upgrading/upgrade/3_2>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:12
+#: e911161763ad46e0a28e04a1dbcf9404
+msgid ":doc:`Upgrade from 3.2 to 4.0 </user/downloading-installing-upgrading/upgrade/4_0>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/upgrade.rst:13
+#: 23f8b262213e408689c8df5dc0683ba3
+msgid ":doc:`Upgrade from 4.0 to 4.1 </user/downloading-installing-upgrading/upgrade/4_1>`"
+msgstr ""

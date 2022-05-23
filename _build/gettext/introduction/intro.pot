@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/introduction/intro.rst:5
+#: 4058115b5e0847c995b5331841dfff57
+msgid "What is Qubes OS?"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:70
+#: 53da7391866849b1b56fcccda0011bd3
+msgid "Note: See our glossary and FAQ for more information."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:76
+#: c2ed6f64bf964986b45a92799984d960
+msgid "Features"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:192
+#: bff4150b6e2047308c0866bb8490d5cb
+msgid "Note: Given the technical nature of Qubes OS, prior experience with Linux can be helpful."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:199
+#: 5a0eee6f384b49eb93ea51cb7d13b268
+msgid "Why Qubes OS?"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:209
+#: b848ac9722d54e9cb45aec022d963367
+msgid "Physical isolation is a given safeguard that the digital world lacks"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:255
+#: e8de8324d51249f4be880ef00858c999
+msgid "Qubes allows you to compartmentalize your digital life"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:309
+#: c29c13f303fa4921a84a99bc6fc1b00a
+msgid "Made to support vulnerable users and power users alike"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:409
+#: bb07029f99614c3e807aad522122adf8
+msgid "More information"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:419
+#: d2a8dde270d747969ca086d59585bcbe
+msgid "This page is just a brief introduction to what Qubes is all about, and many technical details have been omitted here for the sake of presentation."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:431
+#: f95ace77ddee497f925744f78894e4f0
+msgid "If you’re a current or potential Qubes user, you may want to check out the documentation and the user FAQ."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:442
+#: 0c4f99b36cef457f8faa0a5fb7877369
+msgid "If you’re a developer, there’s dedicated developer documentation and a developer FAQ just for you."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:453
+#: 1b5f417163914b16ac47f56bde8b3eb2
+msgid "Ready to give Qubes a try? Head on over to the downloads page, and read the installation guide."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:464
+#: 349802cf00f141399488ee66f2848261
+msgid "Need help, or just want to join the conversation? Learn more about help, support, the mailing lists, and the forum."
+msgstr ""

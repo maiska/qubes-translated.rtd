@@ -1,0 +1,524 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:2
+#: d57312b0122e474f936246f4cfa9b132
+msgid "Understanding firewalling in Qubes"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:4
+#: fb23ee0aa1c64aed95d52bcf1b85ca43
+msgid "Every qube in Qubes is connected to the network via a FirewallVM, which is used to enforce network-level policies. By default there is one default FirewallVM, but the user is free to create more, if needed."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:8
+#: 3956a27582ed4abda6717745b0874f94
+msgid "For more information, see the following:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:10
+#: 98e56420cf8f47cca495be450ff92e8a
+msgid "https://groups.google.com/group/qubes-devel/browse_thread/thread/9e231b0e14bf9d62"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:11
+#: 9eeb6f3a7ad44eebb075bab8533c4065
+msgid "https://blog.invisiblethings.org/2011/09/28/playing-with-qubes-networking-for-fun.html"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:14
+#: 4090a62d70d1485a9a8fb03f0c31b3bd
+msgid "How to edit rules"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:16
+#: e3f3a6ed9bf6444e983b1c9b77661ba2
+msgid "In order to edit rules for a given qube, select it in the Qube Manager and press the “firewall” button."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:22
+#: 2d3423f122074efd85879153dea83e2f
+msgid "r4.0-manager-firewall.png"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:24
+#: eee836953087457a857a29b1c8299506
+msgid "If the qube is running, you can open Settings from the Qube Popup Menu."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:26
+#: 4374bed58a29456f8183248b820b60ae
+msgid "*R4.0 note:* ICMP and DNS are no longer accessible in the GUI, but can be changed via ``qvm-firewall`` described below. Connections to Updates Proxy are not made over a network so can not be allowed or blocked with firewall rules, but are controlled using the relevant policy file (see :doc:`R4.0 Updates proxy </user/how-to-guides/how-to-install-software>` for more detail)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:32
+#: ab2c05fe49544abdbd5d311243baf1f7
+msgid "Note that if you specify a rule by DNS name it will be resolved to IP(s) *at the moment of applying the rules*, and not on the fly for each new connection. This means it will not work for servers using load balancing, and traffic to complex web sites which draw from many servers will be difficult to control."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:38
+#: f5056c4383334757a5e2cdaff921045c
+msgid "Instead of using the firewall GUI, you can use the ``qvm-firewall`` command in Dom0 to edit the firewall rules by hand. This gives you greater control than by using the GUI."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:42
+#: 9b683b286dc04f4eb108a94fc31b2b1c
+msgid "The firewall rules for each qube are saved in an XML file in that qube’s directory in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:49
+#: ae8f47a03ca144a3bb25c152db2cbc2a
+msgid "Rules are implemented on the netvm."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:51
+#: a622a984f2414f92a7673194682fdfdd
+msgid "You can also manually create rules in the qube itself using standard firewalling controls. See `Where to put firewall rules <#where-to-put-firewall-rules>`__. In complex cases, it might be appropriate to load a ruleset using ``iptables-restore`` called from ``/rw/config/rc.local``. if you do this, be aware that ``rc.local`` is called *after* the network is up, so local rules should not be relied upon to block leaks."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:60
+#: ecb48d454aa7434b972cb7fe6070724d
+msgid "Reconnecting qubes after a NetVM reboot"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:62
+#: 15271c6ae38640caac31a9c3e14a9d2b
+msgid "Normally Qubes doesn’t let the user stop a NetVM if there are other qubes running which use it as their own NetVM. But in case the NetVM stops for whatever reason (e.g. it crashes, or the user forces its shutdown via qvm-kill via terminal in Dom0), Qubes R4.0 will often automatically repair the connection. If it does not, then there is an easy way to restore the connection to the NetVM by issuing in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:69
+#: ac4bf57330414c229b6d29797362f6d7
+msgid "``qvm-prefs <vm> netvm <netvm>``"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:71
+#: 10a978e05b6b4a7aae9738988e0ede76
+msgid "Normally qubes do not connect directly to the actual NetVM which has networking devices, but rather to the default sys-firewall first, and in most cases it would be the NetVM that will crash, e.g. in response to S3 sleep/restore or other issues with WiFi drivers. In that case it is only necessary to issue the above command once, for the sys-firewall (this assumes default VM-naming used by the default Qubes installation):"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:78
+#: e230c5eea0ad43aebbedd0d858ac3dd1
+msgid "``qvm-prefs sys-firewall netvm sys-net``"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:81
+#: b6b705f03a2f4d3aa50a6d8a62587eac
+msgid "Network service qubes"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:83
+#: 572edba99a934effa40c4ea9e4f0ffb2
+msgid "Qubes does not support running any networking services (e.g. VPN, local DNS server, IPS, …) directly in a qube that is used to run the Qubes firewall service (usually sys-firewall) for good reasons. In particular, if you want to ensure proper functioning of the Qubes firewall, you should not tinker with iptables or nftables rules in such qubes."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:89
+#: b3df3a1f699a49ca9915ac8625f42756
+msgid "Instead, you should deploy a network infrastructure such as"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:95
+#: f7dc2fc22dfe45ba88fc475146a77d96
+msgid "Thereby sys-firewall-1 is only needed if you have other client qubes connected there, or you want to manage the traffic of the local network service qube. The sys-firewall-2 proxy ensures that:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:99
+#: b01bbeefb22c41509df3837eeda2fb03
+msgid "Firewall changes done in the network service qube cannot render the Qubes firewall ineffective."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:101
+#: e68355eda47d4a9ab61f64d0286d1f90
+msgid "Changes to the Qubes firewall by the Qubes maintainers cannot lead to unwanted information leakage in combination with user rules deployed in the network service qube."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:104
+#: 509c61b6a82847349cf01753105619b6
+msgid "A compromise of the network service qube does not compromise the Qubes firewall."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:107
+#: 7eae2f28c51b4974ae3dd07256f02a2e
+msgid "If you adopt this model, you should be aware that all traffic will arrive at the ``network service qube`` appearing to originate from the IP address of ``sys-firewall-2``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:111
+#: 817d342328cc43c0b709632e83b27d35
+msgid "For the VPN service please also look at the `VPN documentation <https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md>`__."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:115
+#: 35245b46fd3f454bb718cdaa2a5efc42
+msgid "Enabling networking between two qubes"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:117
+#: e2ed9895ef2c49a9bcebede8ec7dcc00
+msgid "Normally any networking traffic between qubes is prohibited for security reasons. However, in special situations, you might want to selectively allow specific qubes to establish networking connectivity between each other. For example, this might be useful in some development work, when you want to test networking code, or to allow file exchange between HVM domains (which do not have Qubes tools installed) via SMB/scp/NFS protocols."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:125
+#: 80d5b3bf3d954743a632effa8e267ea3
+msgid "In order to allow networking between qubes A and B follow these steps:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:127
+#: ae709d3e48664cf3a4228ea2a4643b2e
+msgid "Make sure both A and B are connected to the same firewall vm (by default all VMs use the same firewall VM)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:129
+#: 2799f3e277024221a280f94202f066ff
+msgid "Note the Qubes IP addresses assigned to both qubes. This can be done using the ``qvm-ls -n`` command, or via the Qubes Manager preferences pane for each qube."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:132
+#: 2c696b958aa4431197cff2a8838e2994
+msgid "Start both qubes, and also open a terminal in the firewall VM"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:133
+#: afedeca24fbb4c898ebd46cb32dd1617
+msgid "In the firewall VM’s terminal enter the following iptables rule:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:139
+#: 76db3b9dc9414be58226db2bb73fa789
+msgid "In qube B’s terminal enter the following iptables rule:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:145
+#: 91d74fd1d4364f3b86cf88a8e56bd823
+msgid "Now you should be able to reach B from A – test it using e.g. ping issued from A. Note however, that this doesn’t allow you to reach A from B – for this you would need two more rules, with A and B swapped."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:149
+#: f064bcad389d4f65a450c8164d39145c
+msgid "If everything works as expected, then you should write the above iptables rules into firewallVM’s ``qubes-firewall-user-script`` script. This script is run when the netvm starts up. You should also write relevant rules in A and B’s ``rc.local`` script which is run when the qube is launched. Here’s an example how to update the script:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:162
+#: bd794ee260cd419194d67b56e9b0079b
+msgid "Here is an example how to update ``rc.local``:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:171
+#: 959ec81116a04b508dba08a0b6dd5f27
+msgid "Opening a single TCP port to other network-isolated qube"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:173
+#: d99ea5dea075410c82a53571fefa5f01
+msgid "In the case where a specific TCP port needs to be exposed from a qubes to another one, you do not need to enable networking between them but you can use the qubes RPC service ``qubes.ConnectTCP``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:177
+#: 895cc6fa4da641a5b81ef5eb573d121e
+msgid "**1. Simple port binding**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:179
+#: 6f5b4ac0bd5a4bf592db1554a121fd02
+msgid "Consider the following example. ``mytcp-service`` qube has a TCP service running on port ``444`` and ``untrusted`` qube needs to access this service."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:183
+#: 30a9c0c1abd84f86893e0df27b56135f
+msgid "In dom0, add the following to ``/etc/qubes-rpc/policy/qubes.ConnectTCP``:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:190
+#: 85c497ca73b94ca88d42cb0078bbc1b4
+msgid "In untrusted, use the Qubes tool ``qvm-connect-tcp``:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:198
+#: 9a942a2c9aa34ce0b2cf811674e02b1a
+msgid "Note: The syntax is the same as SSH tunnel handler. The first ``444`` correspond to the localport destination of ``untrusted``, ``@default`` the remote machine and the second ``444`` to the remote machine port."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:203
+#: 1a22919dd93040138e2a2df21d161667
+msgid "The service of ``mytcp-service`` running on port ``444`` is now accessible in ``untrusted`` as ``localhost:444``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:206
+#: 94de85b5585d438280f408b946516ff3
+msgid "Here ``@default`` is used to hide the destination qube which is specified in the Qubes RPC policy by ``target=mytcp-service``. Equivalent call is to use the tool as follow:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:214
+#: f4514fc215d64ad3b15c8d5b0158da73
+msgid "which means to use default local port of ``unstrusted`` as the same of the remote port and unspecified destination qube is ``@default`` by default in ``qrexec`` call."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:218
+#: 4cb480cfafc243ef8b0f87747ff5068f
+msgid "**2. Binding remote port on another local port**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:220
+#: 343df356f99d40ebad221380d8dbab4d
+msgid "Consider now the case where someone prefers to specify the destination qube and use another port in untrusted,for example ``10044``. Instead of previous case, add"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:228
+#: 2e646aedb88a4b60af8497a170d9cf47
+msgid "in ``/etc/qubes-rpc/policy/qubes.ConnectTCP`` and in untrusted, use the tool as follow:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:235
+#: c909db48874d4f6aa79f04c28df3343a
+msgid "The service of ``mytcp-service`` running on port ``444`` is now accessible in ``untrusted`` as ``localhost:10444``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:238
+#: eec9d86ca6f144ccb7f70721d79e8c2d
+msgid "**3. Binding to different qubes using RPC policies**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:240
+#: 65312971f7d0492481d2ad90bcc219ef
+msgid "One can go further than the previous examples by redirecting different ports to different qubes. For example, let assume that another qube ``mytcp-service-bis`` with a TCP service is running on port ``445``. If someone wants ``untrusted`` to be able to reach this service but port ``445`` is reserved to ``mytcp-service-bis`` then, in dom0, add the following to ``/etc/qubes-rpc/policy/qubes.ConnectTCP+445``:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:251
+#: 09b579d7adfe42aab5639fe78445781e
+msgid "In that case, calling ``qvm-connect-tcp`` like previous examples, will still bind TCP port ``444`` of ``mytcp-service`` to ``untrusted`` but now, calling it with port ``445``"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:259
+#: 58468261b2854a239a978997853ebac1
+msgid "will restrict the binding to only the corresponding TCP port of ``mytcp-service-bis``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:262
+#: 366e00f449e14cfbaf98c5ff83e9a2ee
+msgid "**4. Permanent port binding**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:264
+#: 3f036d927ff94186a0d35951b46de4f2
+msgid "For creating a permanent port bind between two qubes, ``systemd`` can be used. We use the case of the first example. In ``/rw/config`` (or any place you find suitable) of qube ``untrusted``, create ``my-tcp-service.socket`` with content:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:281
+#: 608668d56c1a4fada9f0951cc99c3320
+msgid "and ``my-tcp-service@.service`` with content:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:293
+#: 9f1d94cf7b464dce987667942f6273a1
+msgid "In ``/rw/config/rc.local``, append the lines:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:301
+#: 930745c3bb8945c39d9d8f4e791141a2
+msgid "When the qube ``unstrusted`` has started (after a first reboot), you can directly access the service of ``mytcp-service`` running on port ``444`` as ``localhost:444``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:306
+#: b72e41a58c7a431abeb53fac612826ab
+msgid "Port forwarding to a qube from the outside world"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:308
+#: a2e1c9aa8ed448b0bd151e1ef1545fda
+msgid "In order to allow a service present in a qube to be exposed to the outside world in the default setup (where the qube has sys-firewall as network VM, which in turn has sys-net as network VM) the following needs to be done:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:313
+#: d2d49eae46f04d45aef17044c4d2ed93
+msgid "In the sys-net VM:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:315
+#: c9637cc945d340358f8581a86282f137
+msgid "Route packets from the outside world to the sys-firewall VM"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:316
+#: 2fda7c785f8844e7b7ff76cc4f0799a1
+msgid "Allow packets through the sys-net VM firewall"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:318
+#: 61a556bdbf1241e7b354477d8233eb6b
+msgid "In the sys-firewall VM:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:320
+#: cd44478c161a49cab7a6a489a7fe5d0c
+msgid "Route packets from the sys-net VM to the VM"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:321
+#: 91eb2d92330a41cbb6290b661feed854
+msgid "Allow packets through the sys-firewall VM firewall"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:323
+#: fc1de32002b94f86802083cc05cd9ecf
+msgid "In the qube:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:325
+#: dc37dd85b5f64187a29820e1dbf4595c
+msgid "Allow packets through the qube firewall to reach the service"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:327
+#: ec5fbf45bb1c45bfa7655e4fcac58f42
+msgid "As an example we can take the use case of a web server listening on port 443 that we want to expose on our physical interface eth0, but only to our local network 192.168.x.0/24."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:331
+#: 43f191fa24d9450d95c275ed7e49cbcd
+msgid "Note: To have all interfaces available and configured, make sure the 3 qubes are up and running"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:336
+#: f3858bed11114ae8a2c3e4df8a810bc4
+msgid "Note: `Issue #4028 <https://github.com/QubesOS/qubes-issues/issues/4028>`__ discusses adding a command to automate exposing the port."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:340
+#: 99db4dded7ea4fd5a2387e662f299856
+msgid "**1. Identify the IP addresses you will need to use for sys-net, sys-firewall and the destination qube.**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:343
+#: 5de3506ffb3b4a0089314ae746abf941
+msgid "You can get this information from the Settings Window for the qube, or by running this command in each qube: ``ifconfig | grep -i cast`` Note the IP addresses you will need. > Note: The vifx.0 interface is the one used by qubes connected to this netvm so it is *not* an outside world interface."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:349
+#: a37f0afb5e8c4db5a9c66ab5bec61367
+msgid "**2. Route packets from the outside world to the FirewallVM**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:351
+#: dcfd1ac58b8d481ebd7f18cd441d0ee5
+msgid "In the sys-net VM’s Terminal, code a natting firewall rule to route traffic on the outside interface for the service to the sys-firewall VM"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:358
+#: ../../../_doc/user/security-in-qubes/firewall.rst:476
+#: 30754c939fee4a02acce7eec851307e5
+#: d4d8c7f5b4834d1998609f000c84e286
+msgid "Code the appropriate new filtering firewall rule to allow new connections for the service"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:367
+#: d1da4eaff9e6449281d2304bdb490731
+msgid "If you want to expose the service on multiple interfaces, repeat the steps described in part 1 for each interface. In Qubes R4, at the moment (`QubesOS/qubes-issues#3644 <https://github.com/QubesOS/qubes-issues/issues/3644>`__), nftables is also used which imply that additional rules need to be set in a ``qubes-firewall`` nft table with a forward chain."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:374
+#: b7ab5ba023fd4f40adab3e39f12652e1
+msgid "``nft add rule ip qubes-firewall forward meta iifname eth0 ip daddr 10.137.0.x tcp dport 443 ct state new counter accept``"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:376
+#: 1af57e0dc8e84ce286ec9022b9848e24
+msgid "Verify you are cutting through the sys-net VM firewall by looking at its counters (column 2)"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:386
+#: 28405e581d5940fcbbdf00aabb8ad79f
+msgid "Note: On Qubes R4, you can also check the nft counters"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:392
+#: 67b620a89b3e47eea164bf73b22f7c1c
+msgid "Send a test packet by trying to connect to the service from an external device"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:399
+#: 63c6cd8ab8984bbb9138a7f4d47ef483
+msgid "Once you have confirmed that the counters increase, store these command in ``/rw/config/rc.local`` so they get set on sys-net start-up"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:452
+#: 75ba06b6302440ecbd572309bf8ccf9a
+msgid "Note: Again in R4 the following needs to be added:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:467
+#: b85f015575ab49418cfa739bc348fd4b
+msgid "**3. Route packets from the FirewallVM to the VM**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:469
+#: 5bc5167bf8cf4ab5b3dc2c7d0db77d43
+msgid "In the sys-firewall VM’s Terminal, code a natting firewall rule to route traffic on its outside interface for the service to the qube"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:485
+#: 378f681f33b54ae686326b2c8acff7f1
+msgid "Note: If you do not wish to limit the IP addresses connecting to the service, remove the ``-s 192.168.0.1/24``"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:488
+#: fd7e00e59ed048339cf19dd6dea76475
+msgid "Note: On Qubes R4"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:494
+#: 6cf28e3886b243179d7f8166b2f16ca1
+msgid "Once you have confirmed that the counters increase, store these command in ``/rw/config/qubes-firewall-user-script``"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:556
+#: 294f6b3aabba44679e0374931780abd5
+msgid "Finally make this file executable (so it runs at every Firewall VM update)"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:563
+#: 80850c02ca3b4e6e9171be9669d99cab
+msgid "**4. Allow packets into the qube to reach the service**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:565
+#: d3d14057180542cd9c017dc80821564d
+msgid "Here no routing is required, only filtering. Proceed in the same way as above but store the filtering rule in the ``/rw/config/rc.local`` script."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:594
+#: fb8f304514bc47fb8129492371009346
+msgid "This time testing should allow connectivity to the service as long as the service is up :-)"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:598
+#: 7ec979fe169a41f1ba35050ee7a94940
+msgid "Where to put firewall rules"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:600
+#: 2558c666e37b48699a4a4e3ed878ca3f
+msgid "Implicit in the above example :doc:`scripts </user/advanced-topics/config-files>`, but worth calling attention to: for all qubes *except* those supplying networking, iptables commands should be added to the ``/rw/config/rc.local`` script. For app qubes supplying networking (``sys-firewall`` inclusive), iptables commands should be added to ``/rw/config/qubes-firewall-user-script``."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:608
+#: d8f8d926c42045b9b54f098a84fbcfac
+msgid "Firewall troubleshooting"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/firewall.rst:610
+#: 173b982872194a9da767b7e6c57d0046
+msgid "Firewall logs are stored in the systemd journal of the qube the firewall is running in (probably ``sys-firewall``). You can view them by running ``sudo journalctl -u qubes-firewall.service`` in the relevant qube. Sometimes these logs can contain useful information about errors that are preventing the firewall from behaving as you would expect."
+msgstr ""

@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/services/qrexec2.rst:1
+#: a98573d205404685a74c23d00da923b6
+msgid "(*This page is about qrexec v2. For qrexec v3, see*\\ :doc::doc:`here </developer/services/qrexec>`\\ *.*)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:4
+#: c89733c3a7824ba495699413d4edec42
+msgid "Qubes **qrexec** is a framework for implementing inter-VM (incl. Dom0-VM) services. It offers a mechanism to start programs in VMs, redirect their stdin/stdout, and a policy framework to control this all."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:10
+#: 596d5673de1d4323865f5068241843ca
+msgid "Qrexec basics"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:12
+#: 24e8074a56774b77a8f9d1ed28155b5a
+msgid "During each domain creation a process named ``qrexec-daemon`` is started in dom0, and a process named ``qrexec-agent`` is started in the VM. They are connected over ``vchan`` channel."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:16
+#: b2790430911e4653be8c9e22227956c0
+msgid "Typically, the first thing that a ``qrexec-client`` instance does is to send a request to ``qrexec-agent`` to start a process in the VM. From then on, the stdin/stdout/stderr from this remote process will be passed to the ``qrexec-client`` process."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:21
+#: 00c1f03192ee493698c79d129c684f89
+msgid "E.g., to start a primitive shell in a VM type the following in Dom0 console:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:28
+#: 04487703130740b19afec125305f8634
+msgid "The string before first semicolon specifies what user to run the command as."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:31
+#: 4979fbdf40e646d88e0a3d728269df56
+msgid "Adding ``-e`` on the ``qrexec-client`` command line results in mere command execution (no data passing), and ``qrexec-client`` exits immediately after sending the execution request."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:35
+#: 825848fb5a2b4b75b4d9d62dfa80bc66
+msgid "There is also the ``-l <local program>`` flag, which directs ``qrexec-client`` to pass stdin/stdout of the remote program not to its stdin/stdout, but to the (spawned for this purpose) ``<local program>``."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:39
+#: 44a3f2c048a4451a95d6599e969a6dbc
+msgid "The ``qvm-run`` command is heavily based on ``qrexec-client``. It also takes care of additional activities (e.g., starting the domain, if it is not up yet, and starting the GUI daemon). Thus, it is usually more convenient to use ``qvm-run``."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:44
+#: 3e44ad86ded94d989d55e606803fceb2
+msgid "There can be almost arbitrary number of ``qrexec-client`` processes for a domain (i.e., ``qrexec-client`` processes connected to the same ``qrexec-daemon``); their data is multiplexed independently."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:48
+#: 1e9f877036684ca394c1c30e2e6fc98a
+msgid "There is a similar command line utility available inside Linux AppVMs (note the ``-vm`` suffix): ``qrexec-client-vm`` that will be described in subsequent sections."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:53
+#: 9013734cc8e84d92ade2fc6a4b2d93ee
+msgid "Qubes RPC services"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:55
+#: 8b9e767fcf134f91929206765503233f
+msgid "Apart from simple Dom0->VM command executions, as discussed above, it is also useful to have more advanced infrastructure for controlled inter-VM RPC/services. This might be used for simple things like inter-VM file copy operations, as well as more complex tasks like starting a DispVM, and requesting it to do certain operations on a handed file(s)."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:61
+#: af1ad796a92e4647b7d602250ce322af
+msgid "Instead of implementing complex RPC-like mechanisms for inter-VM communication, Qubes takes a much simpler and pragmatic approach and aims to only provide simple *pipes* between the VMs, plus ability to request *pre-defined* programs (servers) to be started on the other end of such pipes, and a centralized policy (enforced by the ``qrexec-policy`` process running in dom0) which says which VMs can request what services from what VMs."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:69
+#: 1237c026f24a4f6a810a2ade58b835f6
+msgid "Thanks to the framework and automatic stdin/stdout redirection, RPC programs are very simple; both the client and server just use their stdin/stdout to pass data. The framework does all the inner work to connect these file descriptors to each other via ``qrexec-daemon`` and ``qrexec-agent``. Additionally, DispVMs are tightly integrated; RPC to a DispVM is a simple matter of using a magic ``$dispvm`` keyword as the target VM name."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:77
+#: c15f361587ec4ce48b8697f14348dcc1
+msgid "All services in Qubes are identified by a single string, which by convention takes a form of ``qubes.ServiceName``. Each VM can provide handlers for each of the known services by providing a file in ``/etc/qubes-rpc/`` directory with the same name as the service it is supposed to handle. This file will then be executed by the qrexec service, if the dom0 policy allowed the service to be requested (see below). Typically, the files in ``/etc/qubes-rpc/`` contain just one line, which is a path to the specific binary that acts as a server for the incoming request, however they might also be the actual executable themselves. Qrexec framework is careful about connecting the stdin/stdout of the server process with the corresponding stdin/stdout of the requesting process in the requesting VM (see example Hello World service described below)."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:92
+#: c50b06bda86445df8718b2dbeda72ac5
+msgid "Qubes RPC administration"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:94
+#: fb4e45187872464b85a0a0db41c88f9e
+msgid "Besides each VM needing to provide explicit programs to serve each supported service, the inter-VM service RPC is also governed by a central policy in Dom0."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:98
+#: 7f56604268194463be30840353443e7e
+msgid "In dom0, there is a bunch of files in ``/etc/qubes-rpc/policy/`` directory, whose names describe the available RPC actions; their content is the RPC access policy database. Some example of the default services in Qubes are:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:115
+#: 62f15458bc934d5e9f1dd93d025abeac
+msgid "These files contain lines with the following format:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:121
+#: 7183975e2f784394990ddcf56d692bba
+msgid "You can specify ``srcvm`` and ``destvm`` by name, or by one of ``$anyvm``, ``$dispvm``, ``dom0`` reserved keywords (note string ``dom0`` does not match the ``$anyvm`` pattern; all other names do). Only ``$anyvm`` keyword makes sense in the ``srcvm`` field (service calls from dom0 are currently always allowed, ``$dispvm`` means “new VM created for this particular request” - so it is never a source of request). Currently, there is no way to specify source VM by type, but this is planned for Qubes R3."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:130
+#: f4956c80e4f640e6a1d002ae8761dd85
+msgid "Whenever a RPC request for service named “XYZ” is received, the first line in ``/etc/qubes-rpc/policy/XYZ`` that matches the actual ``srcvm``/``destvm`` is consulted to determine whether to allow RPC, what user account the program should run in target VM under, and what VM to redirect the execution to. If the policy file does not exist, user is prompted to create one *manually*; if still there is no policy file after prompting, the action is denied."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:138
+#: 03ca7aef61094b1aa0a42517e5bde84a
+msgid "On the target VM, the ``/etc/qubes-rpc/XYZ`` must exist, containing the file name of the program that will be invoked."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:142
+#: 288b93cb33734b45b9d31aa132549c7a
+msgid "Requesting VM-VM (and VM-Dom0) services execution"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:144
+#: 9d4941814e484fd3b01f1c5e36cda2e2
+msgid "In a src VM, one should invoke the qrexec client via the following command:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:151
+#: 449fc7259e88470184865d467f0bd172
+msgid "Note that only stdin/stdout is passed between RPC server and client – notably, no cmdline argument are passed."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:154
+#: 775933f75647452d86a406af2cc99955
+msgid "The source VM name can be accessed in the server process via ``QREXEC_REMOTE_DOMAIN`` environment variable. (Note the source VM has *no* control over the name provided in this variable–the name of the VM is provided by dom0, and so is trusted.)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:159
+#: e4ab4c4bdd804949a2687d595b69bf7a
+msgid "By default, stderr of client and server is logged to respective ``/var/log/qubes/qrexec.XID`` files, in each of the VM."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:162
+#: 5d0f64b2ce25455fa668fa810cbc53ec
+msgid "Be very careful when coding and adding a new RPC service! Any vulnerability in a RPC server can be fatal to security of the target VM!"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:165
+#: 53360a52a0074a93a27f7f33dc2db276
+msgid "If requesting VM-VM (and VM-Dom0) services execution *without cmdline helper*, connect directly to ``/var/run/qubes/qrexec-agent-fdpass`` socket as described `below <#all-the-pieces-together-at-work>`__."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:170
+#: 18834640b76240cb9c5d48ac46c5472d
+msgid "Revoking “Yes to All” authorization"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:172
+#: 81a0e7340e284cbea0933543ab1ec3fc
+msgid "Qubes RPC policy supports an “ask” action, that will prompt the user whether a given RPC call should be allowed. It is set as default for services such as inter-VM file copy. A prompt window launches in dom0, that gives the user option to click “Yes to All”, which allows the action and adds a new entry to the policy file, which will unconditionally allow further calls for given (service, srcVM, dstVM) tuple."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:180
+#: 53fa322e24ec401e84a7dec117a5e9c6
+msgid "In order to remove such authorization, issue this command from a Dom0 terminal (example below for ``qubes.Filecopy`` service):"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:187
+#: e301cf097eeb40a6a24b8ada48caf11b
+msgid "and then remove any line(s) ending in “allow” (before the first ``##`` comment) which are the “Yes to All” results."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:190
+#: fa864666d90e4d72a70b55b7eaa15cfc
+msgid "A user might also want to set their own policies in this section. This may mostly serve to prevent the user from mistakenly copying files or text from a trusted to untrusted domain, or vice-versa."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:195
+#: 0bc2d97fa8a04b5b9dadd645d4cc3788
+msgid "Qubes RPC “Hello World” service"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:197
+#: 143df5445d3145e38f01943b691079b9
+msgid "We will show the necessary files to create a simple RPC call that adds two integers on the target VM and returns back the result to the invoking VM."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:201
+#: eebedb721b40491fbded2ccf408d2caa
+msgid "Client code on source VM (``/usr/bin/our_test_add_client``)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:209
+#: 6887e14ad61049169e2c1200aeb5e92e
+msgid "Server code on target VM (``/usr/bin/our_test_add_server``)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:217
+#: aca26946caba4b71bc4d36bfa84fe025
+msgid "Policy file in dom0 (``/etc/qubes-rpc/policy/test.Add``)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:223
+#: 65ca87ca53904d2e9b9c8145169419c7
+msgid "Server path definition on target VM (``/etc/qubes-rpc/test.Add``)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:229
+#: 1b6ed85bb85f4d6b92eb9429555e8b58
+msgid "To test this service, run the following in the source VM:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:235
+#: 65da93ea74024c54834ffa3e6b0ff44c
+msgid "and we should get “3” as answer, provided dom0 policy allows the call to pass through, which would happen after we click “Yes” in the popup that should appear after the invocation of this command. If we changed the policy from “ask” to “allow”, then no popup should be presented, and the call will always be allowed."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:241
+#: 0dd3b4667e2843aeb61f50505c4d51e3
+msgid "**Note:** For a real world example of writing a qrexec service, see this `blog post <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-pdfs-into-trusted.html>`__."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:246
+#: 0a45f3612c9248f7bc02acba69943062
+msgid "More high-level RPCs?"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:248
+#: b1e5d242b4fa4373bb6351b5471903af
+msgid "As previously noted, Qubes aims to provide mechanisms that are very simple and thus with very small attack surface. This is the reason why the inter-VM RPC framework is very primitive and doesn’t include any serialization or other function arguments passing, etc. We should remember, however, that users/app developers are always free to run more high-level RPC protocols on top of qrexec. Care should be taken, however, to consider potential attack surfaces that are exposed to untrusted or less trusted VMs in that case."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:258
+#: a60522b3653e46ab89f803931ca117b8
+msgid "Qubes RPC internals"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:260
+#: adb5c2df5fe74feba26bb3b736a32373
+msgid "(*This is about the implementation of qrexec v2. For the implementation of qrexec v3, see*\\ :doc::doc:`here </developer/services/qrexec-internals>`\\ *. Note that the user API in v3 is backward compatible: qrexec apps written for Qubes R2 should run without modification on Qubes R3.*)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:266
+#: 370844d54bae4adc9fffc3ddefe8fca7
+msgid "Dom0 tools implementation"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:268
+#: ../../../_doc/developer/services/qrexec2.rst:282
+#: 1eeac5bef09f408b951343dac88cb96e
+#: 4c462c9110874e17b12b5e5e8b76d454
+msgid "Players:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:270
+#: 1974d70f38944689af5d4f23c5cbb3d2
+msgid "``/usr/lib/qubes/qrexec-daemon``: started by mgmt stack (qubes.py) when a VM is started."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:272
+#: bdaa5f83a0bd422ab29d03073a122470
+msgid "``/usr/lib/qubes/qrexec-policy``: internal program used to evaluate the policy file and making the 2nd half of the connection."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:274
+#: ffcb884988e1481ba989c941b8136470
+msgid "``/usr/lib/qubes/qrexec-client``: raw command line tool that talks to the daemon via unix socket (``/var/run/qubes/qrexec.XID``)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:277
+#: 6da2584d638940e182e9c36be5fa8261
+msgid "**Note:** None of the above tools are designed to be used by users."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:280
+#: 030b509717e14023a5e347f88285de4b
+msgid "Linux VMs implementation"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:284
+#: 1c9ddce2823a45699a65d277e934cc88
+msgid "``/usr/lib/qubes/qrexec-agent``: started by VM bootup scripts, a daemon."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:286
+#: 8e6588ea2206496193df3e570d14ecba
+msgid "``/usr/lib/qubes/qubes-rpc-multiplexer``: executes the actual service program, as specified in VM’s ``/etc/qubes-rpc/qubes.XYZ``."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:288
+#: 37cc225dd2074e6fa55dcec6942fd221
+msgid "``/usr/lib/qubes/qrexec-client-vm``: raw command line tool that talks to the agent."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:291
+#: ../../../_doc/developer/services/qrexec2.rst:310
+#: 0000d80ee93a46c78d0060f588ab9544
+#: ce4a015bf6ec4d828ef45d23995f2f11
+msgid "**Note:** None of the above tools are designed to be used by users. ``qrexec-client-vm`` is designed to be wrapped up by Qubes apps."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:295
+#: b98d5cecd439492aa2233e7ffa0d05c0
+msgid "Windows VMs implementation"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:297
+#: a64cb022b08f449893f71e44697c9743
+msgid "``%QUBES_DIR%`` is the installation path (``c:\\Program Files\\Invisible Things Lab\\Qubes OS Windows Tools`` by default)."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:301
+#: f2736f73aa844721a86464d7f1415131
+msgid "``%QUBES_DIR%\\bin\\qrexec-agent.exe``: runs as a system service. Responsible both for raw command execution and interpreting RPC service requests."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:304
+#: 7abe043db5424fed9c7174d875df0e45
+msgid "``%QUBES_DIR%\\qubes-rpc``: directory with ``qubes.XYZ`` files that contain commands for executing RPC services. Binaries for the services are contained in ``%QUBES_DIR%\\qubes-rpc-services``."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:307
+#: 765dddce47b34893ba0897470852c834
+msgid "``%QUBES_DIR%\\bin\\qrexec-client-vm``: raw command line tool that talks to the agent."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:314
+#: fc14f9589ba042518c46ad1fb2887f06
+msgid "All the pieces together at work"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:316
+#: b464bc393b26489cb1d65233f9be184e
+msgid "**Note:** This section is not needed to use qrexec for writing Qubes apps. Also note the :doc:`qrexec framework implemention in Qubes R3 </developer/services/qrexec>` significantly differs from what is described in this section."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:321
+#: e2088e42da8947cf9b165f91ecf0f34c
+msgid "The VM-VM channels in Qubes R2 are made via “gluing” two VM-Dom0 and Dom0-VM vchan connections:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:327
+#: 3a736e08f9db4df59c4286b93ecaa89e
+msgid "qrexec2-internals.png"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:329
+#: 15823e65279f4f65b5f5b6433b7e302e
+msgid "Note that Dom0 never examines the actual data flowing in neither of the two vchan connections."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:332
+#: 1aeb76a7e3ac4d11b5c29a5cbf569f1c
+msgid "When a user in a source VM executes ``qrexec-client-vm`` utility, the following steps are taken:"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:335
+#: d21eae7193eb44808dd97a0bc834da67
+msgid "``qrexec-client-vm`` connects to ``qrexec-agent``\\ ’s ``/var/run/qubes/qrexec-agent-fdpass`` unix socket 3 times. Reads 4 bytes from each of them, which is the fd number of the accepted socket in agent. These 3 integers, in text, concatenated, form “connection identifier” (CID)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:340
+#: 29d1f54eaa274816a9d93b43c63c74d8
+msgid "``qrexec-client-vm`` writes to ``/var/run/qubes/qrexec-agent`` fifo a blob, consisting of target vmname, rpc action, and CID"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:342
+#: 343ca743f3dd461b96f94cec98ab415d
+msgid "``qrexec-client-vm`` executes the rpc client, passing the above mentioned unix sockets as process stdin/stdout, and optionally stderr (if the ``PASS_LOCAL_STDERR`` env variable is set)"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:345
+#: 19ff083a7ec843adbfd7a3794f548f1c
+msgid "``qrexec-agent`` passes the blob to ``qrexec-daemon``, via ``MSG_AGENT_TO_SERVER_TRIGGER_CONNECT_EXISTING`` message over vchan"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:347
+#: 06b0759c3025481daaa49ad2ce17a964
+msgid "``qrexec-daemon`` executes ``qrexec-policy``, passing source vmname, target vmname, rpc action, and CID as cmdline arguments"
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:349
+#: 986bf52eb5d6429e9e98893a54bb80c9
+msgid "``qrexec-policy`` evaluates the policy file. If successful, creates a pair of ``qrexec-client`` processes, whose stdin/stdout are cross-connected."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:353
+#: e822b8a1ba564f64b269d4dc2dbdab1f
+msgid "The first ``qrexec-client`` connects to the src VM, using the ``-c ClientID`` parameter, which results in not creating a new process, but connecting to the existing process file descriptors (these are the fds of unix socket created in step 1)."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:357
+#: d5813b322bb541cf9a25aac9e3f8abc0
+msgid "The second ``qrexec-client`` connects to the target VM, and executes ``qubes-rpc-multiplexer`` command there with the rpc action as the cmdline argument. Finally, ``qubes-rpc-multiplexer`` executes the correct rpc server on the target."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:362
+#: 3e9a397615814a84b990cbbe2690b9fb
+msgid "In the above step, if the target VM is ``$dispvm``, the DispVM is created via the ``qfile-daemon-dvm`` program. The latter waits for the ``qrexec-client`` process to exit, and then destroys the DispVM."
+msgstr ""
+
+#: ../../../_doc/developer/services/qrexec2.rst:366
+#: 8733182f049c4268ae1e641ff70ef4a6
+msgid "*TODO: Protocol description (“wire-level” spec)*"
+msgstr ""

@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/code/code-signing.rst:1
+#: 63c19fd1225644fe927cb65cf85374e5
+msgid "All contributions to the Qubes OS :doc:`source code </developer/code/source-code>` must be cryptographically signed by the author’s PGP key."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:5
+#: 4f3850dddcb6453f99bb821239d6dd9b
+msgid "Generating a Key"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:7
+#: 2e5e344f381746edb3bda7ea98beab89
+msgid "(Note: If you already have a PGP key, you may skip this step.)"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:9
+#: 3d9df45052c4420eb4da0f49f6a8a909
+msgid "Alex Cabal has written an excellent `guide <https://alexcabal.com/creating-the-perfect-gpg-keypair/>`__ on creating a PGP keypair. Below, we reproduce just the minimum steps in generating a keypair using GnuPG. Please read Cabal’s full guide for further important details."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:57
+#: 6fd1169d55174591ae4efbe3b1b20735
+msgid "Upload the Key"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:59
+#: 0ce2322d95314f169ec0a59a6364535a
+msgid "For others to find the public key, please upload it to a server."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:61
+#: 5c66002a5db54f76b3547a8e480a31d4
+msgid "Currently, `these <https://github.com/marmarek/signature-checker/blob/master/check-git-signature#L133-L135>`__ are the recognized servers."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:65
+#: 43a2576ccae94fb196ab54255bde4724
+msgid "In the example below, we will use ``keyserver.ubuntu.com``."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:67
+#: ab3a7706cabc4cb2b938713ec724ed46
+msgid "Replace 6E2F4E7AF50A5827 with your key ID, which is the last 8 hex digits of the long number in the second line of the output above:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:86
+#: 5203989bad604687a5eeb17cf3850145
+msgid "Using PGP with Git"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:88
+#: 1fd8937c90f842808e2beb57cf92d366
+msgid "If you’re submitting a patch via GitHub (or a similar Git server), please sign your Git commits."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:91
+#: 53c3c5148bbd4ed9a38ecb5b02feaabd
+msgid "Set up Git to use your key:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:97
+#: c1e4c9d61cfd42a18e2850c601de1e14
+msgid "Set up Git to sign your commits with your key:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:103
+#: 4c6766439d0647a580376fa017ce69c6
+msgid "Alternatively, manually specify when a commit is to be signed:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:109
+#: 5cec9682265f4790969f888934f2e13d
+msgid "(Optional) Create signed tags. Signed commits are totally sufficient to contribute to Qubes OS. However, if you have commits which are not signed and you do not want to change them, you can create a signed tag for the commit and push it before the check."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:114
+#: 455af0318e0e41288a81e6b112b25c64
+msgid "This is useful for example, if you have a commit back in the git history which you like to sign now without rewriting the history."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:121
+#: a993b59606e94f55b2d5109b2f7aa41c
+msgid "You can also create an alias to make this easier. Edit your ``~/.gitconfig`` file. In the ``[alias]`` section, add ``stag`` to create signed tags and ``spush`` to create signed tags and push them."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:131
+#: e7c2541439c649f086ff95025053e870
+msgid "You may also find it convenient to have an alias for verifying the tag on the latest commit:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:139
+#: 8565e217e3954bedb666c856e7942c40
+msgid "GitHub Signature Verification (optional)"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:141
+#: d959c82590d44bec85437949d8fcb381
+msgid "GitHub shows a green ``Verified`` label indicating that the GPG signature could be verified using any of the contributor’s GPG keys uploaded to GitHub. You can upload your public key on GitHub by adding your public GPG key on the `New GPG key <https://github.com/settings/gpg/new>`__ under the `SSH GPG keys page <https://github.com/settings/keys>`__."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:149
+#: f6c9a6658f83458397a00ef9265c2fb6
+msgid "Code Signature Checks"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:151
+#: 9233252ebbb443e8a9a06687a3c3af75
+msgid "The `signature-checker <https://github.com/marmarek/signature-checker>`__ checks if code contributions are signed. Although GitHub adds a little green ``Verified`` button next to the commit, the `signature-checker <https://github.com/marmarek/signature-checker>`__ uses this algorithm to check if a commit is correctly signed:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:158
+#: f94040fbbe9b49459798b2826ba63c6f
+msgid "Is the commit signed? If the commit is not signed, you can see the message > policy/qubesos/code-signing — No signature found"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:160
+#: 997b56758d1d4dec9e85a2169a207841
+msgid "If the commit is signed, the key is downloaded from a GPG key server. If you can see the following error message, please check if you have uploaded the key to a key server. > policy/qubesos/code-signing — Unable to verify (no valid key found)"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:166
+#: d2d934b3c9f4431e87025904beca7ba0
+msgid "No Signature Found"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:168
+#: 5adb130ae22e40b680377747345dda46
+msgid "policy/qubesos/code-signing — No signature found"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:170
+#: 037d4d6cc989410396b9d7266dfc98fe
+msgid "In this case, you have several options to sign the commit:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:172
+#: 763abc22f7884ba89345d7383d39971d
+msgid "Amend the commit and replace it with a signed commit. You can use this command to create a new signed commit:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:179
+#: 6378aae72bf3436791d0564fc6aa75aa
+msgid "This also rewrites the commit so you need to push it forcefully:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:185
+#: 97f9342e98134c34989be82869376466
+msgid "Create a signed tag for the unsigned commit. If the commit is back in history and you do not want to change it, you can create a signed tag for this commit and push the signature. You can use the alias from above:"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:195
+#: 47ad9c16b04e42de8b6bef269548d26b
+msgid "Now, the signature checker needs to re-check the signature. Please comment on the pull request that you would like to have the signatures checked again."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:200
+#: 2646e86ef09a42cfad8718ea0fb095ce
+msgid "Unable To Verify"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:202
+#: 76f9fb38a11a4386aa9f30863d313c69
+msgid "policy/qubesos/code-signing — Unable to verify (no valid key found)"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:204
+#: ecd72acfc5d245aca2bdc8aaa35b327d
+msgid "This means that the `signature-checker <https://github.com/marmarek/signature-checker>`__ has found a signature for the commit but is not able to verify it using the any key available. This might be that you forgot to upload the key to a key server. Please upload it."
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:211
+#: d4f24787ac5a40558fdfba6e45385c3a
+msgid "Using PGP with Email"
+msgstr ""
+
+#: ../../../_doc/developer/code/code-signing.rst:213
+#: 2d072dd29c9a411cbcd59156bd6ab2fd
+msgid "If you’re submitting a patch by emailing the `developer mailing list </introduction/support.html#qubes-devel>`__, simply sign your email with your PGP key. One good way to do this is with a program like `Enigmail <https://www.enigmail.net/>`__. Enigmail is a security addon for the Mozilla Thunderbird email client that allows you to easily digitally encrypt and sign your emails."
+msgstr ""

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/advanced-topics/i3.rst:1
+#: f76628293408494dbda7dcbabb11c86f
+msgid "i3 is part of the stable repository (as of Qubes R3.1) and can be installed by using the :doc:`dom0 update mechanism </user/advanced-topics/how-to-install-software-in-dom0>`. To install the i3 window manager and the its Qubes specific configuration:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:10
+#: 38c3a96b31a94694abc31bbddb530baf
+msgid "The Qubes-specific configuration (package ``i3-settings-qubes``) can be installed optionally in case you would prefer writing your own configuration (see `customization <#customization>`__ section for scripts and configuration)."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:15
+#: 332b4a2940fb4f63b015a68f890dcfc1
+msgid "That’s it. After logging out, you can select i3 in the login manager."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:18
+#: abf0b6a13bfa440283c136198110613e
+msgid "Customization"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:20
+#: 412ae5d6b136435bba78558867c347aa
+msgid "**Caution:** The following external resources may not have been reviewed by the Qubes team."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:23
+#: e6b7e96256f646309931dfc250ddd702
+msgid "`xdg_autostart_script <https://gist.github.com/SietsevanderMolen/7b4cc32ce7b4884513b0a639540e454f>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:24
+#: ad935fa4c26e4d8c94f130a41868ae4a
+msgid "`i3bar_script <https://gist.github.com/SietsevanderMolen/e7f594f209dfaa3596907e427b657e30>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:25
+#: 0626d87c1c374e4484f57b13c1177478
+msgid "`terminal_start_script <https://gist.github.com/SietsevanderMolen/7c6f2b5773dbc0c08e1509e49abd1e96>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:26
+#: 61bd7a39c6ae4e9587199524cf4e7b0a
+msgid "`i3 config with dmenu-i3-window-jumper <https://github.com/anadahz/qubes-i3-config/blob/master/config>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:28
+#: 3d5bfade31be41248dc9f6e34bcb8e94
+msgid "`dmenu script to open a terminal in a chosen VM <https://gist.github.com/dmoerner/65528941dd20b05c98ee79e92d7e0183>`__"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:32
+#: 8120306c0761406ab1c02be008bb9ffd
+msgid "Compilation and installation from source"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:34
+#: 8571c263426745de856825c7d750f5ae
+msgid "Note that the compilation from source is done in a Fedora based domU (could be dispvm). The end result is always an ``.rpm`` that is copied to dom0 and then installed through the package manager."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:39
+#: 30bfec373a9a46cdbd92756458e0604c
+msgid "Getting the code"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:41
+#: f51217794b674be4b155db6f7574206e
+msgid "Clone the i3-qubes repository here:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:47
+#: 7f8da42a2520483aa00adcf8a889e044
+msgid "In this case, the most interesting file is probably ``i3/0001-Show-qubes-domain-in-non-optional-colored-borders.patch`` It’s the patch with changes that are necessary to make i3 work nicely with Qubes OS. The code should not need much explanation, it just gets the vmname and label from Qubes OS and changes some defaults so the user can’t override decisions."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:54
+#: d6538b71143849a68483acbfa7d7aacb
+msgid "If you want to make any changes to the package, this is the time and place to do it."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:58
+#: be143b3ab1dc4529883473103e02eaa8
+msgid "Building"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:60
+#: 585ca13f765e44fcac031a7827d88b10
+msgid "You’ll need to install the build dependencies, which are listed in build-deps.list. You can verify them and then install them with:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:67
+#: 88f2f9051f5440c18e7d0abd2e99e835
+msgid "This used to be more complicated, but I finally redid this and use the same buildsystem that’s used by Qubes OS for XFCE. It’s just a Makefile that helps you get the sources and start off the build:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:78
+#: 50f291809c594730a78c5ca854defc19
+msgid "Installing"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:80
+#: f4c7761d9e1c4b0caae0995f70616c45
+msgid "**Warning**: Manually installing software in dom0 is inherently risky, and the method described here circumvents the usual security mechanisms of qubes-dom0-update."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:84
+#: 12981d2350b2474ca21a1827cfb50462
+msgid "You should now have your i3 rpm in ``./rpm/x86_64/i3-4.8-3.fc20.x86_64.rpm``. Protip: copying this file to ``~/i3.rpm`` now will save you some typing in the next step."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:88
+#: ff82ab31ec7d44a5b9e81d1bb749b59c
+msgid "Now in dom0, copy in the rpm:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:94
+#: 81b387b65b664395a383795216b6ee96
+msgid "Now that the rpm is in dom0 we can proceed with installing it. i3 has some dependencies that we can easily install with:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:103
+#: 04213413ef694cceb687ef4d59210bd1
+msgid "After that you can just install the generated rpm like any other local package:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/i3.rst:110
+#: 1dd136aa83d8415c8c8d038e8ae5bb49
+msgid "Log out, select i3, then log in again."
+msgstr ""

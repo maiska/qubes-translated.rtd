@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/README.rst:2
+#: 7ffcce6ddece4a24b7ed595641c56473
+msgid "Qubes OS Documentation"
+msgstr ""
+
+#: ../../../_doc/README.rst:4
+#: fe8b47984dad4a0a86c0fee5060575d7
+msgid "Canonical URL: https://www.qubes-os.org/doc/"
+msgstr ""
+
+#: ../../../_doc/README.rst:6
+#: f9b2a246cf24441e812d32f4b246855c
+msgid "All `Qubes OS Project <https://github.com/QubesOS>`__ documentation pages are stored as plain text files in this dedicated repository. By cloning and regularly pulling from this repo, users can maintain their own up-to-date offline copy of all Qubes documentation rather than relying solely on the Web."
+msgstr ""
+
+#: ../../../_doc/README.rst:12
+#: a8c44187390546feb72c3d498f5d8f26
+msgid "To contribute, please see `how to edit the documentation <https://www.qubes-os.org/doc/how-to-edit-the-documentation/>`__."
+msgstr ""

@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:1
+#: 69d6e8da689d40c4b3828be1ae382320
+msgid "You want to read your LVM image (e.g., there is a problem where you can’t start any VMs except dom0)."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:4
+#: 342f0bfb4cd1441e81c8347aa0e2eca5
+msgid "1: make the image available for qubesdb. From dom0 terminal:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:12
+#: 3c0bd21ac1ca4b68923e14e39c8bcea6
+msgid "2: Create a new disposable VM"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:18
+#: be00d5ff959d4dfea162a29e65f598f7
+msgid "3: Attach the device to your newly created disp VM"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:20
+#: e42e0a43bdf741f4861b5eb729c53d70
+msgid "From the GUI, or from the command line:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:26
+#: c679d0b2ad11447384e5f46949f521f5
+msgid "4: Mount the partition you want to, and do what you want with it"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:32
+#: 73e2f8b8f82041b592ef73f7a68399fe
+msgid "5: Umount and kill the VM"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:38
+#: dfa93ae5838c407ab24545c2c08f7754
+msgid "6: Remove the image from qubesdb"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:45
+#: 6afa61b5fd8044eab812367e093cb369
+msgid "References"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/mount-lvm-image.rst:47
+#: 6428d6f17282469abc6faec3e4882f53
+msgid "Please consult this issue’s `comment <https://github.com/QubesOS/qubes-issues/issues/4687#issuecomment-451626625>`__."
+msgstr ""

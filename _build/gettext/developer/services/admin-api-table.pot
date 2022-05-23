@@ -1,0 +1,1285 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1
+#: 1ad416dcbf3b42b182f4fb1732321b3d
+msgid "This page displays the fullscreen table from :doc:`Admin API </developer/services/admin-api>`."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:5
+#: 9a35d6a096674e498616b14a8a9f7f1d
+msgid "call"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:5
+#: d995eb8473d34afda67c618a58037101
+msgid "d e s t"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:5
+#: eed2331041a440e8a4daa88680e40e77
+msgid "a r g u m e n t"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:5
+#: b6bcadcbc30542f089cbab5606bdb9a5
+msgid "inside"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:5
+#: b9de338809b544ce801a8a66e0a4ad9b
+msgid "return"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:5
+#: 838ac9d782194351b0c584665622b5d0
+msgid "n o t e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:14
+#: 4dd6f3c6c4d34f0da7578f98f30c86cf
+msgid "``admin.v mclass.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:16
+#: ../../../_doc/developer/services/admin-api-table.rst:39
+#: ../../../_doc/developer/services/admin-api-table.rst:48
+#: ../../../_doc/developer/services/admin-api-table.rst:458
+#: ../../../_doc/developer/services/admin-api-table.rst:467
+#: ../../../_doc/developer/services/admin-api-table.rst:476
+#: ../../../_doc/developer/services/admin-api-table.rst:485
+#: ../../../_doc/developer/services/admin-api-table.rst:494
+#: ../../../_doc/developer/services/admin-api-table.rst:503
+#: ../../../_doc/developer/services/admin-api-table.rst:512
+#: ../../../_doc/developer/services/admin-api-table.rst:604
+#: ../../../_doc/developer/services/admin-api-table.rst:804
+#: ../../../_doc/developer/services/admin-api-table.rst:896
+#: ../../../_doc/developer/services/admin-api-table.rst:905
+#: ../../../_doc/developer/services/admin-api-table.rst:914
+#: ../../../_doc/developer/services/admin-api-table.rst:923
+#: ../../../_doc/developer/services/admin-api-table.rst:2247
+#: ../../../_doc/developer/services/admin-api-table.rst:2256
+#: ../../../_doc/developer/services/admin-api-table.rst:2294
+#: ../../../_doc/developer/services/admin-api-table.rst:2303
+#: ../../../_doc/developer/services/admin-api-table.rst:2312
+#: ../../../_doc/developer/services/admin-api-table.rst:2321
+#: ../../../_doc/developer/services/admin-api-table.rst:2330
+#: ../../../_doc/developer/services/admin-api-table.rst:2339
+#: ../../../_doc/developer/services/admin-api-table.rst:2348
+#: ../../../_doc/developer/services/admin-api-table.rst:2357
+#: ../../../_doc/developer/services/admin-api-table.rst:2366
+#: ../../../_doc/developer/services/admin-api-table.rst:2375
+#: ../../../_doc/developer/services/admin-api-table.rst:2384
+#: ../../../_doc/developer/services/admin-api-table.rst:2393
+#: ../../../_doc/developer/services/admin-api-table.rst:2402
+#: ../../../_doc/developer/services/admin-api-table.rst:2540
+#: ../../../_doc/developer/services/admin-api-table.rst:3064
+#: ../../../_doc/developer/services/admin-api-table.rst:3165
+#: ../../../_doc/developer/services/admin-api-table.rst:3200
+#: 38859c10ddbb42c99a21da4664bb1039
+#: cbb011fb2c5145c1bce7ff141ddec466
+#: 027d776637414c3d879daf311756d864
+#: 01028a37b6894943b5e09cb44efdb1bf
+#: 7e02e5e346f94fe3a47b8213bea29901
+#: 4c7be17f61b64430a2675069f626e91a
+#: 492ea6cbace3474894ad82495fcabffb
+#: 773227998c1d4040b6d7afc734622d96
+#: 996242dcb68f4173b1a433f95054ef7f
+#: f6d13909685e4f94af3f339e9912e465
+#: 4567ccc387864648afcca07937081b41
+#: 12e61a982c054a7f8fa344a3b760ff3b
+#: 045862c433c947a88acaa168db62945c
+#: 47a03fa83d834255a3d11d1277bb3b88
+#: c02822ae029442e28127fcedd4c7e68e
+#: 7bb4ec8ccc954c588a488c48e976de8a
+#: e1fb2fdcc83e44afa9378b0b0416693a
+#: 7093b9703a2247c19a8f3e8625e58d06
+#: ef55c148e9264fc29af1dd1772094dd7
+#: 066be63a5b7b4164a67e46aab94e665a
+#: f0c1e4239c704d39bd53adc4e4fedd10
+#: 2fe653f837d0448d9724e845320a6397
+#: c90093f4997c4005a024b0796293b9c1
+#: 2de4bc2a2f354bd2acc6e954b0509fe1
+#: 4b172ac4ed7d4203a421c7098f0ab0cc
+#: 44d6a202228e42d6b7b9ba1c8204cea7
+#: 78e254fe9d1f4653be3d1fd7c2a1cfc1
+#: 6f20aa60592e42c58ecf265a20cf9d93
+#: 90413079f51440d9ae625db99407a4a0
+#: bf6798b8248648dc8e8a2bbf1595a881
+#: 70c75c825c894a7e814c589576508376
+#: df6b8d5edb8248ee82f6a397fc051590
+#: 206a0cc5490b4748a7bf556bfe681062
+#: 2acc5fd3f6d6494c98ba6fe14b801342
+#: b0a9b149dff34d479a52eb44941ae451
+msgid "d o m 0 ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:14
+#: 3a90411f11584836bf62a670d9dde5d2
+msgid "``<class>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:23
+#: 289ee55c04cc4b9cad79aaf385975e08
+msgid "``ad min.vm.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:25
+#: 83f3deceef6848408444c4c0a5d4f6f5
+msgid "d o m 0 | < v m > ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:23
+#: a1557739356a43aa88324695cccd82ea
+msgid "``<name> class=<c lass> state=<state>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:37
+#: b60a2b60db1a404b80dd8c1b7a0bbd24
+msgid "` `admin.vm.Cre ate.<class>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:37
+#: ../../../_doc/developer/services/admin-api-table.rst:46
+#: ../../../_doc/developer/services/admin-api-table.rst:162
+#: d548acefb77f48ea88c84f3bb60fae6d
+#: 4fdcee97a46e412d95f1871142373ad4
+#: 2cfe20b40a8e48848470d962ef2f71df
+msgid "t e m p l a t e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:37
+#: b40cc44a738740a2b5b4203216a9a4e9
+msgid "``name=<name> label=<label>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:46
+#: c61c3052e94648d8862438f6636c7864
+msgid "``admin .vm.CreateInP ool.<class>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:46
+#: 6367f64a9d3b45468c31dda3bc63e1c0
+msgid "``name=<n ame> label=<lab el>``\\ \\ ``pool =<pool> pool:<v olume>=<pool>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:46
+#: 13d31fd1e26f4608b84627c68195faa9
+msgid "e i t h e r u s e ` ` p o o l = ` ` t o p u t a l l v o l u m e s t h e r e , o r ` ` p o o l : < v o l u m e > = ` ` f o r i n d i v i d u a l v o l u m e s - b o t h f o r m s a r e n o t a l l o w e d a t t h e s a m e t i m e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:162
+#: a8c590fd964848cd93a0e04ba7e88e93
+msgid "``a dmin.vm.Creat eDisposable``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:162
+#: 32c722f0075f46bea332ab1a469e4a3a
+msgid "name"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:162
+#: 606e8df723b94c34b47d600d60f7b3b4
+msgid "C r e a t e n e w D i s p o s a b l e V M , ` ` t e m p l a t e ` ` i s a n y A p p V M w i t h ` ` d i s p v m _ a l l o w e d ` ` s e t t o T r u e , o r ` ` d o m 0 ` ` t o u s e d e f a u l t d e f i n e d i n ` ` d e f a u l t _ d i s p v m ` ` p r o p e r t y o f c a l l i n g V M ; V M c r e a t e d w i t h t h i s c a l l w i l l b e a u t o m a t i c a l l y r e m o v e d a f t e r i t s s h u t d o w n ; t h e m a i n d i f f e r e n c e f r o m ` ` a d m i n . v m . C r e a t e . D i s p V M ` ` i s a u t o m a t i c ( r a n d o m ) n a m e g e n e r a t i o n ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:453
+#: a38313cee0a44e019f4aa28cfe16ea67
+msgid "``admi n.vm.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:453
+#: ../../../_doc/developer/services/admin-api-table.rst:930
+#: ../../../_doc/developer/services/admin-api-table.rst:933
+#: ../../../_doc/developer/services/admin-api-table.rst:1005
+#: ../../../_doc/developer/services/admin-api-table.rst:1205
+#: ../../../_doc/developer/services/admin-api-table.rst:1277
+#: ../../../_doc/developer/services/admin-api-table.rst:1286
+#: ../../../_doc/developer/services/admin-api-table.rst:1295
+#: ../../../_doc/developer/services/admin-api-table.rst:1304
+#: ../../../_doc/developer/services/admin-api-table.rst:1313
+#: ../../../_doc/developer/services/admin-api-table.rst:1316
+#: ../../../_doc/developer/services/admin-api-table.rst:1324
+#: ../../../_doc/developer/services/admin-api-table.rst:1332
+#: ../../../_doc/developer/services/admin-api-table.rst:1340
+#: ../../../_doc/developer/services/admin-api-table.rst:1348
+#: ../../../_doc/developer/services/admin-api-table.rst:1356
+#: ../../../_doc/developer/services/admin-api-table.rst:1364
+#: ../../../_doc/developer/services/admin-api-table.rst:1372
+#: ../../../_doc/developer/services/admin-api-table.rst:1375
+#: ../../../_doc/developer/services/admin-api-table.rst:1384
+#: ../../../_doc/developer/services/admin-api-table.rst:1388
+#: ../../../_doc/developer/services/admin-api-table.rst:1392
+#: ../../../_doc/developer/services/admin-api-table.rst:1561
+#: ../../../_doc/developer/services/admin-api-table.rst:1616
+#: ../../../_doc/developer/services/admin-api-table.rst:1658
+#: ../../../_doc/developer/services/admin-api-table.rst:1859
+#: ../../../_doc/developer/services/admin-api-table.rst:1911
+#: ../../../_doc/developer/services/admin-api-table.rst:1963
+#: ../../../_doc/developer/services/admin-api-table.rst:2052
+#: ../../../_doc/developer/services/admin-api-table.rst:2589
+#: ../../../_doc/developer/services/admin-api-table.rst:2677
+#: ../../../_doc/developer/services/admin-api-table.rst:2684
+#: ../../../_doc/developer/services/admin-api-table.rst:2691
+#: ../../../_doc/developer/services/admin-api-table.rst:2748
+#: ../../../_doc/developer/services/admin-api-table.rst:2755
+#: ../../../_doc/developer/services/admin-api-table.rst:2762
+#: ../../../_doc/developer/services/admin-api-table.rst:2769
+#: ../../../_doc/developer/services/admin-api-table.rst:2776
+#: ../../../_doc/developer/services/admin-api-table.rst:2848
+#: ../../../_doc/developer/services/admin-api-table.rst:2870
+#: ../../../_doc/developer/services/admin-api-table.rst:3001
+#: ../../../_doc/developer/services/admin-api-table.rst:3047
+#: ../../../_doc/developer/services/admin-api-table.rst:3050
+#: ../../../_doc/developer/services/admin-api-table.rst:3053
+#: ../../../_doc/developer/services/admin-api-table.rst:3056
+#: ../../../_doc/developer/services/admin-api-table.rst:3059
+#: 60aa01d93f57413a8c4822b263a1d500
+#: ace6c90c6e2f46129f39b5d00cfc537d
+#: f75d00df5cb44164b073e591d19a23ea
+#: 131e66c2fb3f4ab3bc65e19c201e4243
+#: 7ec0277fdf0644af92a631ba2ffdc63e
+#: 3798e8265494495a9fe790dca8a41194
+#: 58f30adf93a04efaa6eae11b4cbd227b
+#: ab3f12abf7e44bdcb846b705b12bd6c8
+#: 37863a4f0c4c4176bc90e03cc4be9d3e
+#: f84ef4f692ba4d5caaf15b56e288ceab
+#: 7a148c2ca59f4d0cb55aea3f006ef21a
+#: 91338b52fc9d49a382ffe050d9e9c0e2
+#: c7c3aaf1534c4a3db95be416c7602dfc
+#: ab56342438df42b2b130e63b4d7c3927
+#: 8ebf8a71254c474b99a41a7d38a59035
+#: 904c566b21e547ed95119198921a9158
+#: 29b3bd3814c244809bc2f855447a5fe8
+#: 99f06e334aa049489561f6811309bec9
+#: 422d7993a5ea46c5a2780d1c601e4f2b
+#: 75d570df17ed41e598d6785cafc13f23
+#: f7669bc46dbd48e0a75efaf6a94471a5
+#: db5c8c6612764aa2aebb34d0cfcb80b5
+#: 9198b5bc21e74f91af706b55fa8e5088
+#: 8b75600b050e4ec6a7d0feda5d417178
+#: 202ccf4c9b114c488e2d7a079a026eb5
+#: 25b016578bec4dc380d88fc09602acd5
+#: 73ffbd05825b48f2a0430e8840383509
+#: f58fb728d00540cb94eb3c5d92eb3697
+#: afaea8b5dfe142febb2b0114f89395e5
+#: 82a55ab879024806a1b801ed895f6ca1
+#: 6255612851f24af59d110c71dd72ffc0
+#: b56bb49b11354c6cb1d94f812ceb0cde
+#: 1acfa40757384cebaf47a3a54a31e5a8
+#: fc52455f76334dd2b7d1730962bd7893
+#: 77a26eb4bba14bffa18a438eff74f5e4
+#: ee20193af5174dc79c0823b83493d924
+#: f8a6f1e35f86438895236a08e57425e8
+#: 1358776284804a7c9598c2d0ee9eaa9e
+#: 44f2294d74a3452baf3600ea24e57d2e
+#: 67546518cbfb4d328cb4742882e2eeb0
+#: ff9da2001a42456e92997dbae2d3e41d
+#: b4592a1a4cf74f238d680b838ed3ceb3
+#: e6c824f41dd344c2b008497f2d933641
+#: fbfb49eda59144f49a70f488691485fb
+#: 51488c4135e34d249c6a4271c680dd3e
+#: b849a33d8d574643a86de2039412db95
+msgid "v m"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:456
+#: 2f5f6397893b457f87be5ee9802f8021
+msgid "``admin .label.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:456
+#: ../../../_doc/developer/services/admin-api-table.rst:501
+#: ../../../_doc/developer/services/admin-api-table.rst:930
+#: 7e69bc0525a9427b979262d2195e9c49
+#: 9aedc43841dd47c198a02e92c16d7ea8
+#: 5dfd5a4888c04bd2bb63428bdf368e40
+msgid "``<property>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:465
+#: 0fe23ef30fe947e0a18e0562074a750a
+msgid "``admin.l abel.Create``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:465
+#: ../../../_doc/developer/services/admin-api-table.rst:474
+#: ../../../_doc/developer/services/admin-api-table.rst:483
+#: ../../../_doc/developer/services/admin-api-table.rst:492
+#: 85c9eca66ae74caa9eaa3a7f83bcbf7a
+#: 6eb95cf297c84733bdb3a06b8d1bbc91
+#: 73e2426fb24a43e3a6f9e648a058f667
+#: be8bc682dc9b4ac3897f422d1c4c701b
+msgid "l a b e l"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:465
+#: ../../../_doc/developer/services/admin-api-table.rst:474
+#: 010beca79e4b4bdea4fa5ffb8243bc48
+#: aabafefe34254c52b9c03c6b01654f9c
+msgid "``0xRRGGBB``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:474
+#: 893441d4a99b4a979d9569fb4c25c885
+msgid "``admi n.label.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:483
+#: ec938c600df44cbcabc2a72c3bffbc65
+msgid "``admin. label.Index``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:483
+#: 31a8154952d64e2f8d8969b18220021e
+msgid "``<label-index>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:492
+#: ebf4f901a9b84c61bb6c39cc7997ef38
+msgid "``admin.l abel.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:501
+#: 6fe64a1981e44366bc08c993eb1513ba
+msgid "``admin.pr operty.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:510
+#: cead6ba01bac4b1795a4b77f6b5f9bb6
+msgid "``admin.p roperty.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:510
+#: ../../../_doc/developer/services/admin-api-table.rst:802
+#: ../../../_doc/developer/services/admin-api-table.rst:894
+#: ../../../_doc/developer/services/admin-api-table.rst:903
+#: ../../../_doc/developer/services/admin-api-table.rst:912
+#: ../../../_doc/developer/services/admin-api-table.rst:921
+#: ../../../_doc/developer/services/admin-api-table.rst:933
+#: ../../../_doc/developer/services/admin-api-table.rst:1205
+#: ../../../_doc/developer/services/admin-api-table.rst:1277
+#: ../../../_doc/developer/services/admin-api-table.rst:1286
+#: ../../../_doc/developer/services/admin-api-table.rst:1295
+#: ../../../_doc/developer/services/admin-api-table.rst:1304
+#: 95b5634359314dab8af637400d2f4c8c
+#: 26f6c8899f7d4cf69f5e934f8af00ee4
+#: 954a5450c5a846e4a40ef46097010e27
+#: 923b9f5d9a154a5385f025b103346ed7
+#: aacad537159240258d4934fe783a8a89
+#: 59b18522c0534226b0634ebca5635b0e
+#: 7c6a6f6f830c48e7ac355fee1c746830
+#: c478595d57034f319fc43c12eb49eeea
+#: eb77a25b2e3e43759e6ff40d13d766b2
+#: 05c9810240ff4334bc4d0a3a192e1df9
+#: 99218754667c4aa9be8938f20c69e581
+#: 284609f4f4c842dfae0bd6631748c1ab
+msgid "p r o p e r t y"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:510
+#: ../../../_doc/developer/services/admin-api-table.rst:933
+#: e498f6192ac541378222bad259b69fde
+#: 5f17d05129484560851b1c4d102ff461
+msgid "``de fault={True|False}``\\ \\"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:512
+#: ../../../_doc/developer/services/admin-api-table.rst:935
+#: 789b06b420a94d3abebcea1eb5a2cf29
+#: a6a5766b3ab44aac8f65eca0c5999056
+msgid "``type={str|int|bool|v"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:513
+#: ../../../_doc/developer/services/admin-api-table.rst:936
+#: 3703bc7f46cd4764872683e7dcdd68be
+#: 7639909682574f2cafea77061256c85b
+msgid "m|label|list} <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:510
+#: ../../../_doc/developer/services/admin-api-table.rst:802
+#: 7be716af8bdc46c88e26a53cfba15d86
+#: 0d56eb9ca9934afba839f8953dd59986
+msgid "T y p e ` ` l i s t ` ` i s a d d e d i n R 4 . 1 . V a l u e s a r e o f t y p e ` ` s t r ` ` a n d e a c h e n t r y i s s u f f i x e d w i t h n e w l i n e c h a r a c t e r ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:602
+#: c573edf1982a4082a48f6f38948d427f
+msgid "``admin.prop erty.GetAll``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:602
+#: ../../../_doc/developer/services/admin-api-table.rst:1005
+#: ed0aeaa586b14ecc86b2064bf7074a46
+#: fd340c86fbc14a32a534d03a0cb1645f
+msgid "``<prop erty-name> <full-value- as-in-property.Get>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:602
+#: ../../../_doc/developer/services/admin-api-table.rst:1005
+#: bbe328bfaef14127b75d88153988e07a
+#: 0e961b2c8e1a4f018489c42f70a6da5b
+msgid "G e t a l l t h e p r o p e r t i e s i n o n e c a l l . E a c h p r o p e r t y i s r e t u r n e d o n a s e p a r a t e l i n e a n d u s e t h e s a m e v a l u e e n c o d i n g a s p r o p e r t y . G e t m e t h o d , w i t h a n e x c e p t i o n t h a t n e w l i n e s a r e e n c o d e d a s l i t e r a l ` ` \\ n ` ` a n d l i t e r a l ` ` \\ ` ` a r e e n c o d e d a s ` ` \\ \\ ` ` ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:802
+#: d4a219100e8e4c7d90120d09ac3da67e
+msgid "``a dmin.property .GetDefault``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:802
+#: e7334135f0c74d969617d92496215d43
+msgid "``type={str|int|bool|v m|label|list} <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:894
+#: b1a03799fa68431f922c55bd9b3c794d
+msgid "``admin.pr operty.Help``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:894
+#: ../../../_doc/developer/services/admin-api-table.rst:1277
+#: 8351ce6e7a9e455d977b3520130086d0
+#: 3d693bdd8c264ee79e4570ef53b98b34
+msgid "``help``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:903
+#: 38651888e15944d4887122219ed2cbd5
+msgid "``admin.prope rty.HelpRst``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:903
+#: ../../../_doc/developer/services/admin-api-table.rst:1286
+#: 517150a5ab5249f994f2e8260dcd229a
+#: c50c9d607b774cc982b2e64bd088cc81
+msgid "``help.rst``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:912
+#: edc27ad7c1da421f9e040936717f14e4
+msgid "``admin.pro perty.Reset``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:921
+#: f510e26df1c840c4aeb02b4bfd88f6b6
+msgid "``admin.p roperty.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:921
+#: ../../../_doc/developer/services/admin-api-table.rst:1304
+#: ../../../_doc/developer/services/admin-api-table.rst:1316
+#: ../../../_doc/developer/services/admin-api-table.rst:1324
+#: ../../../_doc/developer/services/admin-api-table.rst:1332
+#: ../../../_doc/developer/services/admin-api-table.rst:1340
+#: ../../../_doc/developer/services/admin-api-table.rst:1348
+#: ../../../_doc/developer/services/admin-api-table.rst:1364
+#: ../../../_doc/developer/services/admin-api-table.rst:2684
+#: b60ecd07735645e19c4521eb02bbd479
+#: 9999bf483a67414a8e6b1295d881970f
+#: 0672196a4650437d8ca93ab23b9d45f3
+#: 2f0baef45df749068f5c43ca9829c2f8
+#: cc7777d4084945d4ad89c3b23966d043
+#: b6cc7aa673174b4a8935e9f050b33c54
+#: 30470bc3c186492089d1522517969abd
+#: bb5f3fc85f8b4b68826eb53d96ef15db
+#: fbd7832066f44582ae584f305404b02d
+msgid "value"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:930
+#: e5c542628c5446a78c683178c522cbf0
+msgid "``admin.vm.pr operty.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:933
+#: 44db219b3fe34cebb9c49f244ccaa280
+msgid "``admin.vm.p roperty.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:933
+#: ../../../_doc/developer/services/admin-api-table.rst:1205
+#: 479f8d397f614918bcc07cd0b9481f08
+#: e475792f958b4f0aaa8a95dadf1226a6
+msgid "T y p e ` ` l i s t ` ` i s a d d e d i n R 4 . 1 . E a c h l i s t e n t r y i s s u f f i x e d w i t h a n e w l i n e c h a r a c t e r ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1005
+#: 6d64f11dcef24a81a13961bc0bc52953
+msgid "`` admin.vm.prop erty.GetAll``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1205
+#: ef4c3acafbfa47f5ad7b79373df1d61f
+msgid "``admi n.vm.property .GetDefault``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1205
+#: 2c85b943ce264dc3bcdeafe3ef7c6eca
+msgid "``type={str|int|bool|v m|label|type} <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1277
+#: 7f149f7b17f947fca5355d777d0d43ba
+msgid "``admin.vm.pr operty.Help``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1286
+#: 0e5ff0acc3bc49bfb6a0185be7bc0aa5
+msgid "``a dmin.vm.prope rty.HelpRst``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1295
+#: 31d6148a448243d3a523a7cb7327f664
+msgid "` `admin.vm.pro perty.Reset``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1304
+#: 2fff2847e01c4cd1bb02d0fd8e724128
+msgid "``admin.vm.p roperty.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1313
+#: 181173627ac84a818388f4fbfae5cf19
+msgid "``admin.vm.f eature.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1313
+#: c99d159d5ad943f1be6d5df2288d5d47
+msgid "``<feature>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1316
+#: 51f58bbc74dc43a58d7d1698290c1e0b
+msgid "``admin.vm. feature.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1316
+#: ../../../_doc/developer/services/admin-api-table.rst:1324
+#: ../../../_doc/developer/services/admin-api-table.rst:1332
+#: ../../../_doc/developer/services/admin-api-table.rst:1340
+#: ../../../_doc/developer/services/admin-api-table.rst:1348
+#: ../../../_doc/developer/services/admin-api-table.rst:1356
+#: ../../../_doc/developer/services/admin-api-table.rst:1364
+#: 64c65d07d73b4b2695fac6c2c06f0c21
+#: bf9847c477d54f5c8846f5a9eef4c721
+#: 4895fb46140b4ae1bc33670d5021b6d8
+#: 1404a4a88dc84d768dfd6b28f7660e15
+#: 4128f49b8d6f4596a66ec64e6185fe8e
+#: 41e99130ddc341dcba381743601866cd
+#: 095263d54a8a45be89f3248bc96652b9
+msgid "f e a t u r e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1324
+#: 2ddcbe0f5b294ebd97e644283be45c9d
+msgid "``admin.vm.f eature.CheckW ithTemplate``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1332
+#: d30565a4b6e24bfd88a117c6d644930b
+msgid "``admin.v m.feature.Che ckWithNetvm``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1340
+#: 9945c9b423bf4b54a048022336d4ab81
+msgid "``admin.vm. feature.Check WithAdminVM``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1348
+#: 4f58ad7a7eab499cad5d6bbce2a6c860
+msgid "``admin.v m.feature.Che ckWithTemplat eAndAdminVM``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1356
+#: e6ae5a78e89b4058a610374883c2dae9
+msgid "` `admin.vm.fea ture.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1364
+#: ca0d0344a809422f86e69228bd695d24
+msgid "``admin.vm. feature.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1372
+#: 1d7188439e2d47f1b1864ce46f16f425
+msgid "``admin. vm.tag.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1372
+#: 86bf0545cb644a39898dbbdafe38c04a
+msgid "``<tag>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1375
+#: bdfa0310e2db4c719becea5c9371d8f4
+msgid "``admin .vm.tag.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1375
+#: ../../../_doc/developer/services/admin-api-table.rst:1384
+#: ../../../_doc/developer/services/admin-api-table.rst:1388
+#: b09be232f9b24bfaa3924d89ecfbb923
+#: a388e119a05c4291a87398bd2f09ee8a
+#: 458a15b51cee428bbd1477e8d97520c0
+msgid "t a g"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1375
+#: a3dbc563cdeb471280625089c0ca1f07
+msgid "``0`` or ``1``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1375
+#: a3acd45a3c9244d684394cbd7ec7ed2f
+msgid "r e t c o d e ?"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1384
+#: 7738787a4bdd44e4a49083290035689b
+msgid "``admin.vm .tag.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1388
+#: 057542906b98469e9afe25f57a05201e
+msgid "``admin .vm.tag.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1392
+#: 817ee0a4caeb4965954e198f999a0f8b
+msgid "``admin.vm.f irewall.Get``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1392
+#: ../../../_doc/developer/services/admin-api-table.rst:1561
+#: 6bb31ce6110d4c3c9011b0271bb7f792
+#: cad0ba04737b45a998778c7472ed3bb7
+msgid "``<rule>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1392
+#: cd0d9ad4339b46ff8e2a891016883fcb
+msgid "r u l e s s y n t a x a s i n ` f i r e w a l l i n t e r f a c e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1428
+#: 49c6b2c326ce4cf9b3bd9a8e8693b0e0
+msgid "d o c / v m - i n t e r f a c e / # f i r e w a l l - r u l e s - i n - 4 x > ` _ _ w i t h a d d i t i o n o f ` ` e x p i r e = ` ` a n d ` ` c o m m e n t = ` ` o p t i o n s ; ` ` c o m m e n t = ` ` ( i f p r e s e n t ) m u s t b e t h e l a s t o p t i o n"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1561
+#: 8906e421d7c74c39aeb7c26359800a33
+msgid "``admin.vm.f irewall.Set``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1561
+#: 70e227ab1c7d4976afb2f9237902ae0a
+msgid "s e t f i r e w a l l r u l e s , s e e ` ` a d m i n . v m . f i r e w a l l . G e t ` ` f o r s y n t a x"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1616
+#: 73a0d2ba7c3942b9976bb406e3b0ab97
+msgid "`` admin.vm.fire wall.Reload``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1616
+#: b4bf068f317f447289ecf02198d188e4
+msgid "f o r c e r e l o a d f i r e w a l l w i t h o u t c h a n g i n g a n y r u l e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1658
+#: b833e7d6db0b4c62a81d9b93b174e2da
+msgid "``admin. vm.device.<cl ass>.Attach``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1658
+#: ../../../_doc/developer/services/admin-api-table.rst:1859
+#: ../../../_doc/developer/services/admin-api-table.rst:1911
+#: d7e90660eedc43a1abc4265286c235f2
+#: b7b981303bc24f2eaab0dbbf42336065
+#: 6c4b48363dd841f9bd513db0daf5c165
+msgid "d e v i c e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1658
+#: 80723e83aee14f5c8de31f006fde1384
+msgid "options"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1660
+#: 93e825528e894a298253b4a4ed2a8873
+msgid "d e v i c e ` ` i s i n f o r m ` ` < b a c k e n d - n a m e > + < d e v i c e - i d e n t > ` ` o p t i o n a l o p t i o n s g i v e n i n ` ` k e y = v a l u e ` ` f o r m a t , s e p a r a t e d w i t h s p a c e s ; o p t i o n s c a n i n c l u d e ` ` p e r s i s t e n t = T r u e ` ` t o “ p e r s i s t e n t l y ” a t t a c h t h e d e v i c e ( d e f a u l t i s t e m p o r a r y )"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1859
+#: 380bef5bef374214918c80bb122d07c6
+msgid "``admin. vm.device.<cl ass>.Detach``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1861
+#: ../../../_doc/developer/services/admin-api-table.rst:1913
+#: ceca260690424f1aad7222e95bf5d5ff
+#: 27122bb87852420caea60eee36f889f0
+msgid "d e v i c e ` ` i s i n f o r m ` ` < b a c k e n d - n a m e > + < d e v i c e - i d e n t > ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1911
+#: a756af5a17c94c679bc3002ae3c0efba
+msgid "``a dmin.vm.devic e.<class>.Set .persistent``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1911
+#: ca3a8821a88f4d62b283644590c15b4b
+msgid "``True`` \\ \\|\\ ``False``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1963
+#: 3c8b8eedbcb7494ebcfef3d435f2aaa0
+msgid "``admi n.vm.device.< class>.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1963
+#: 6887973add6d4ba3882256bf9eef2aae
+msgid "` `<device> <options>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:1963
+#: 087ad1b824074cc991c91ec4e42256e7
+msgid "o p t i o n s c a n i n c l u d e ` ` p e r s i s t e n t = T r u e ` ` f o r “ p e r s i s t e n t l y ” a t t a c h e d d e v i c e s ( d e f a u l t i s t e m p o r a r y )"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2052
+#: 5662199d671549248c959c1c6706e697
+msgid "``admin.vm. device.<class >.Available``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2052
+#: 82afc7626a314786ac965cc6d612f4eb
+msgid "d e v i c e - i d e n t"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2052
+#: abb20567c0864d82a1f9d503552c6d05
+msgid "``<dev ice-ident> <properties>"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2054
+#: af2fd44c426d4dbc8a1adeb8000179ca
+msgid "description=<desc>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2052
+#: b8d7e6bf8dbc49ca81e76b40dd27e8f3
+msgid "o p t i o n a l s e r v i c e a r g u m e n t m a y b e u s e d t o g e t i n f o a b o u t a s i n g l e d e v i c e , o p t i o n a l ( d e v i c e c l a s s s p e c i f i c ) p r o p e r t i e s a r e i n ` ` k e y = v a l u e ` ` f o r m , \\"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2178
+#: 8145dc8d78254f60a7e5655b94100f6c
+msgid "d e s c r i p t i o n ` ` m u s t b e t h e l a s t o n e a n d i s t h e o n l y o n e a l l o w e d t o c o n t a i n s p a c e s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2245
+#: 5919e950ab154115852906a90f810426
+msgid "``admi n.pool.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2245
+#: 2e9d4dd0d53249aea04f034a279fc5e7
+msgid "``<pool>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2254
+#: fae7d9b992174ae0af07a6c14a98bc1c
+msgid "``admin.pool. ListDrivers``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2254
+#: 02c4bef1ca1642548f55bfc410cd1275
+msgid "``<pool-dri ver> <property> ...\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2254
+#: 6a446a6cd9444f81b86ef31d80d3456a
+msgid "P r o p e r t i e s a l l o w e d i n ` ` a d m i n . p o o l . A d d ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2292
+#: 4f9d753c46304c80a6aad489a3185a19
+msgid "``admi n.pool.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2292
+#: ../../../_doc/developer/services/admin-api-table.rst:2310
+#: ../../../_doc/developer/services/admin-api-table.rst:2319
+#: ../../../_doc/developer/services/admin-api-table.rst:2328
+#: ../../../_doc/developer/services/admin-api-table.rst:2337
+#: ../../../_doc/developer/services/admin-api-table.rst:2346
+#: ../../../_doc/developer/services/admin-api-table.rst:2355
+#: ../../../_doc/developer/services/admin-api-table.rst:2364
+#: ../../../_doc/developer/services/admin-api-table.rst:2373
+#: ../../../_doc/developer/services/admin-api-table.rst:2382
+#: ../../../_doc/developer/services/admin-api-table.rst:2391
+#: ../../../_doc/developer/services/admin-api-table.rst:2400
+#: ../../../_doc/developer/services/admin-api-table.rst:2538
+#: cce74fcfc29b4a48bd336fcdbda487b2
+#: 7340fb628a3a4b8287666c0a27328521
+#: 76424db096e548e38e865b6c033263cc
+#: 9082d3c001fa4c3999fdadc81318c708
+#: 35e854c533b8485db6f07cb494bdd82d
+#: 49285c166d3a4897ad99d5d1f3248a2e
+#: f64b81e21af14e61a0aa51d4024601c4
+#: 17c1238c99f949e7895b8c9635c27c6f
+#: 9ae0670dc6e54c24b76d18c77d866119
+#: 77fc1a2de0ee4718b0968424fb811c7e
+#: a7c3ebf792db475d9ae5a5109c12b3d6
+#: 0422ac5257574395b48bb7b4c37a1335
+#: 8dccac02f7dc434fb26ed8d71988e932
+msgid "p o o l"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2292
+#: ../../../_doc/developer/services/admin-api-table.rst:2337
+#: ../../../_doc/developer/services/admin-api-table.rst:2677
+#: 869194b918b544bc970b4c8c7327220d
+#: 53f28ae166284480a96abcb4d5aa21c5
+#: 2bfc9a48a9ae45eab98db8c273d16b67
+msgid "` `<property>=<value>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2301
+#: 6408b68c58234ea6a6df7e9274a7fe0c
+msgid "``adm in.pool.Add``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2301
+#: ac973b3c0c7a4bb9a31ab09ebbca8647
+msgid "d r i v e r"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2301
+#: 8cbec016fde941728a27f0361a37c90f
+msgid "``<proper ty>=<value>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2310
+#: c20d93f8e24e46718e89d51488e64370
+msgid "``admin.po ol.Set.revisi ons_to_keep``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2310
+#: adf275e47eaa411a953a35adf19cc11d
+msgid "``<value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2319
+#: 8b953ec61a984dff88f31992daed6574
+msgid "``admin. pool.Remove``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2328
+#: e9799809a8e741649b4a06c62694568b
+msgid "``admin.pool. volume.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2328
+#: f3e4da35aeca4b11826424b4eb1db35b
+msgid "volume id"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2337
+#: 5b1e0a639d12448b9bb3b0684ebc852d
+msgid "``admin.pool. volume.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2337
+#: ../../../_doc/developer/services/admin-api-table.rst:2355
+#: ../../../_doc/developer/services/admin-api-table.rst:2364
+#: ../../../_doc/developer/services/admin-api-table.rst:2400
+#: 8be39e0defc444fb9208ab8875ba1cf4
+#: 8703c93052444a9ea2e8bf58e6e9fd40
+#: 80fe741d4405409c80aac10dc1b5ce02
+#: c3cfb69281ce4f198289c66cfad3e66a
+msgid "vid"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2346
+#: a521ad4e1a2c49089e31c48b7354888b
+msgid "``ad min.pool.volu me.Set.revisi ons_to_keep``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2346
+#: d7723faf850c42de93c3de8f3bf3a312
+msgid "`` <vid> <value>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2355
+#: 35cf5d4c63f24129955b15d9a8488e0b
+msgid "``admin.p ool.volume.Li stSnapshots``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2355
+#: 6b05379dbb5247b5b0a69261c72ed0da
+msgid "``<snapshot>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2364
+#: 3b7a9e4b8ac94d99b02977c9df9061d6
+msgid "``ad min.pool.volu me.Snapshot``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2364
+#: ../../../_doc/developer/services/admin-api-table.rst:2691
+#: ../../../_doc/developer/services/admin-api-table.rst:2748
+#: ../../../_doc/developer/services/admin-api-table.rst:2755
+#: 9ac72c62d48e49b8812a73431365605e
+#: 5fca8f6cd2334f13b0b51ef7307a288b
+#: e881be343c8d4d41a1e78f17bed69b15
+#: 92f658b16414431db0f6b8e23862d6dc
+msgid "snapshot"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2373
+#: 0752f55bca71469cb091972078822ee1
+msgid "`` admin.pool.vo lume.Revert``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2373
+#: 1d612b3ad4c6409195cce3f166cf23d4
+msgid "``<vi d> <snapshot>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2382
+#: bbd11c83c6df4cfb8e28645dd4f629e9
+msgid "`` admin.pool.vo lume.Resize``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2382
+#: d9154db167eb413f91d2f22fa7a04fdd
+msgid "``<vid> <s ize_in_bytes>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2391
+#: 0d080c1610234c1eaf35be8aa0c912fd
+msgid "`` admin.pool.vo lume.Import``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2397
+#: c597bbb556754108b0e6652a7e73e64d
+msgid "``<vid>\\n<raw"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2392
+#: ../../../_doc/developer/services/admin-api-table.rst:2778
+#: 3b7b4d2de2e2441aa0bc6418a93ad85a
+#: 955e01996be34f2282dc2d724833813e
+msgid "volume data>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2400
+#: 06ac4e9b626f4a03a677107607da5fb2
+msgid "``adm in.pool.volum e.CloneFrom``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2400
+#: 8fcb80434bf140889d5fb3af6b9f8812
+msgid "token, to be used in ``admi n.pool.volume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2400
+#: 90e7d0197ca64091819370919be5d6fc
+msgid "o b t a i n a t o k e n t o c o p y v o l u m e ` ` v i d ` ` i n ` ` p o o l ` ` ; t h e t o k e n i s o n e t i m e u s e o n l y , i t ’ s i n v a l i d a t e d b y ` ` a d m i n . p o o l . v o l u m e . C l o n e T o ` ` , e v e n i f t h e o p e r a t i o n f a i l s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2538
+#: 9fc770b0caae4e42a67964a98103712c
+msgid "``a dmin.pool.vol ume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2538
+#: d18d20fee51b48c0b1b1a150ce443660
+msgid "`` <vid> <token>``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2538
+#: 30a93a883e724646b8a54064e272051e
+msgid "c o p y v o l u m e p o i n t e d b y a t o k e n t o v o l u m e ` ` v i d ` ` i n ` ` p o o l ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2589
+#: 24696698caf24ffaa699785ebb316606
+msgid "``admin.vm. volume.List``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2589
+#: 0011f5803bac48da85b5c842a8208d88
+msgid "``<volume>\\n``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2591
+#: 0efb4e2665c34ef8a385249f2c4ee0b0
+msgid "< v o l u m e > ` ` i s p e r - V M v o l u m e n a m e ( ` ` r o o t ` ` , ` ` p r i v a t e ` ` , e t c ) , ` ` < v i d > ` ` i s p o o l - u n i q u e v o l u m e i d"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2677
+#: 34689aec1d6945e5ad88fbf5c1b66aaf
+msgid "``admin.vm. volume.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2677
+#: ../../../_doc/developer/services/admin-api-table.rst:2684
+#: ../../../_doc/developer/services/admin-api-table.rst:2691
+#: ../../../_doc/developer/services/admin-api-table.rst:2748
+#: ../../../_doc/developer/services/admin-api-table.rst:2755
+#: ../../../_doc/developer/services/admin-api-table.rst:2762
+#: ../../../_doc/developer/services/admin-api-table.rst:2769
+#: ../../../_doc/developer/services/admin-api-table.rst:2776
+#: ../../../_doc/developer/services/admin-api-table.rst:2848
+#: ../../../_doc/developer/services/admin-api-table.rst:2870
+#: ../../../_doc/developer/services/admin-api-table.rst:3001
+#: 6e9a9998a48e489e9ac42655707bdf32
+#: 203937dd3c1646e6b51f602c259430de
+#: 6fda577932844ac5aead297da74f4302
+#: fdeab218c3c64ee99e93d5b05dc0f1cb
+#: ec2a1efc4e284044aa07d08c06993571
+#: 8932084167ae4f78b0a07df97e64e491
+#: 006473698a404c6cba4f8418f3ecb429
+#: a796ddc8f0c5476ebccee871b336ded9
+#: 8438879a59604871b52453d54f8ef2a2
+#: be033992be2640d4adce505ca05a0ace
+#: 8f0c0e5f71c344acb27e03065e1a9ddf
+msgid "v o l u m e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2684
+#: eb26cd5e79d442e2b4bd8fc9be8b87b9
+msgid "`` admin.vm.volu me.Set.revisi ons_to_keep``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2691
+#: f19cb6e922e24555a9b2031d1319ac77
+msgid "``admin .vm.volume.Li stSnapshots``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2691
+#: e7f4815e7ded4bd8b446ffe3918c439f
+msgid "d u p l i c a t e o f ` ` a d m i n . p o o l . v o l u m e . ` ` , b u t w i t h o t h e r c a l l p a r a m s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2748
+#: 87b6580a33924439a00813044b4338c4
+msgid "`` admin.vm.volu me.Snapshot``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2748
+#: ../../../_doc/developer/services/admin-api-table.rst:2755
+#: ../../../_doc/developer/services/admin-api-table.rst:2762
+#: ../../../_doc/developer/services/admin-api-table.rst:2769
+#: 677173180d4c410b8675de6d7621dfcf
+#: b28e7b6e817b4fa7853c957bd7b12a90
+#: e3fa6475389b4a6e850a448351de257f
+#: 3922b8b192744ab9bc5b68f3ab7c27ff
+msgid "i d ."
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2755
+#: 002a859fa1af42b4b5587a0338824ea7
+msgid "``admin.vm.vo lume.Revert``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2762
+#: 65d5c96b3d0c49adb71a9ccd6839ac44
+msgid "``admin.vm.vo lume.Resize``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2762
+#: f4d9ac2e8d0a4db294a37917ff4a9069
+msgid "size_in_bytes"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2769
+#: 3190608925134509962a97a3ab3d696d
+msgid "``admin.vm.vo lume.Import``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2769
+#: 909ac24b0cba4ec0bcac78485b88531a
+msgid "raw volume data"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2776
+#: 64481d3201084a87b8fdd7e6e6ea7437
+msgid "``admin. vm.volume.Imp ortWithSize``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2776
+#: fbfa0442adc445f7bc7406c0d256eef0
+msgid "``<size_ in_bytes>\\n<raw"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2776
+#: e3efacdb664141de9848b19645ab058b
+msgid "n e w v e r s i o n o f ` ` a d m i n . v m . v o l u m e . I m p o r t ` ` , a l l o w s n e w v o l u m e t o b e d i f f e r e n t s i z e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2848
+#: 82d05e4a058e4064bf1921e69f4b4cd1
+msgid "``admin.vm.v olume.Clear``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2848
+#: 3bb2318401c440c28a23696a1943fe3c
+msgid "c l e a r c o n t e n t s o f v o l u m e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2870
+#: 8782b7b5c94f474ea47e1d85c49a70e3
+msgid "``a dmin.vm.volum e.CloneFrom``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2870
+#: a1458c90678d4412bf9eae6c567449cc
+msgid "token, to be used in ``ad min.vm.volume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:2870
+#: d31e3a9106f14a829521505ac63de42b
+msgid "o b t a i n a t o k e n t o c o p y ` ` v o l u m e ` ` o f ` ` v m ` ` ; t h e t o k e n i s o n e t i m e u s e o n l y , i t ’ s i n v a l i d a t e d b y ` ` a d m i n . v m . v o l u m e . C l o n e T o ` ` , e v e n i f t h e o p e r a t i o n f a i l s"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3001
+#: 41f38c3d51914b449b0035921d6868a6
+msgid "` `admin.vm.vol ume.CloneTo``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3001
+#: 57e34b9852864781ac5d109c4875d6c1
+msgid "token, obtained with ``admin.vm.vol ume.CloneFrom``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3001
+#: 4fca61b90422444288c3bd2be944cc34
+msgid "c o p y v o l u m e p o i n t e d b y a t o k e n t o ` ` v o l u m e ` ` o f ` ` v m ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3047
+#: dcbd65a110f64064b832207836cc4963
+msgid "``adm in.vm.Start``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3050
+#: 4fe650186e224c2392ea4b4c8b208463
+msgid "``admin. vm.Shutdown``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3053
+#: c4d956dca5084a01945bee67a063138d
+msgid "``adm in.vm.Pause``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3056
+#: 7012633f254d488b8561a67dc35f4156
+msgid "``admin .vm.Unpause``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3059
+#: c04afb975f754913a72bb27408536628
+msgid "``ad min.vm.Kill``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3062
+#: 23c505492b874d68a8e5ca611093102b
+msgid "``admin.bac kup.Execute``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3062
+#: ../../../_doc/developer/services/admin-api-table.rst:3163
+#: ../../../_doc/developer/services/admin-api-table.rst:3198
+#: cfeb1626407c46e8a26a9137b050a02d
+#: 39511afa72904099a12a166cf3188274
+#: 82f49b74fd6440ccb81f38a3400326c0
+msgid "c o n f i g i d"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3062
+#: 37a193ffc11f4752a072012b5a8ff923
+msgid "c o n f i g i n ` ` / e t c / q u b e s / b a c k u p / < i d > . c o n f ` ` , o n l y o n e b a c k u p o p e r a t i o n o f g i v e n ` ` c o n f i g"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3140
+#: f40d5c0c9aaf482bb9878c2f4df24408
+msgid "i d ` ` c a n b e r u n n i n g a t o n c e"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3163
+#: a96b342ad72e448197a21f5f6df9d124
+msgid "``admin. backup.Info``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3163
+#: 951d13a782494ae2855c40cfff0645ed
+msgid "backup info"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3163
+#: 1e152d5834924575ba1cf730573800fa
+msgid "i n f o w h a t w o u l d b e i n c l u d e d i n t h e b a c k u p"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3198
+#: 4779db6c98a547168298f33b8c8304b7
+msgid "``admin.ba ckup.Cancel``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3198
+#: 81d0682034a7431290d89e5876e26fbc
+msgid "c a n c e l r u n n i n g b a c k u p o p e r a t i o n"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3227
+#: 466b41723c0b4d49b85ac801be805a8c
+msgid "``a dmin.Events``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3229
+#: ../../../_doc/developer/services/admin-api-table.rst:3241
+#: 99af0f9a5a924c3a861d1c01c5178c09
+#: 0010b25cbacc496b97ba03a7f5a91231
+msgid "d o m 0 | v m ` `"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3227
+#: 2de48964dc3a442aaed4e3b3f04d97df
+msgid "events"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3239
+#: 0c6dd1aa7cd148a29b8bb28906f42ca8
+msgid "``adm in.vm.Stats``"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3239
+#: 8043673483c64f3f84f0d4c98b669315
+msgid "``vm-stats`` events, see below"
+msgstr ""
+
+#: ../../../_doc/developer/services/admin-api-table.rst:3239
+#: 55ba430e8c434b1384798cf471c9a8f1
+msgid "e m i t V M s t a t i s t i c s ( C P U , m e m o r y u s a g e ) i n f o r m o f e v e n t s"
+msgstr ""

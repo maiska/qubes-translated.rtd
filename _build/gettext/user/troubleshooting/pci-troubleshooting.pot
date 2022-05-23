@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:2
+#: e59ccedd073648bc87b8a73426581a59
+msgid "DMA errors"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:4
+#: cc8859100e97401993e07e1da7faa68c
+msgid "VMs with attached PCI devices in Qubes have allocated a small buffer for DMA operations (called swiotlb). By default, it is 2MB, but some devices (such as the `Realtek RTL8111DL Gigabit Ethernet Controller <https://groups.google.com/group/qubes-devel/browse_thread/thread/631c4a3a9d1186e3>`__) need a larger DMA buffer size. Without a larger buffer, you will face DMA errors such as ``Failed to map TX DMA``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:11
+#: 3585fbb143eb4375bc44086778199d09
+msgid "To change this allocation, edit VM’s kernel parameters (this is expressed in 512B chunks) by running the following in a dom0 terminal:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:20
+#: 5b6618088fbe40cc8850f246a5642f73
+msgid "The ``8192`` value is the default value and some devices may require a larger value (like ``16384``)."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:24
+#: 8e2a814883a04c67a1fe4d3b0ad77047
+msgid "PCI Passthrough Issues"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:26
+#: 540e8633346945078d94c16c1bc942a6
+msgid "Sometimes the PCI arbitrator is too strict, which may cause errors such as ``Unable to reset PCI device`` and other PCI-related errors. There is a way to enable permissive mode for it. See also: `this thread <https://groups.google.com/forum/#!topic/qubes-users/Fs94QAc3vQI>`__ and the Xen wiki’s `PCI passthrough <https://wiki.xen.org/wiki/Xen_PCI_Passthrough>`__ page. Other times, you may instead need to disable the FLR requirement on a device."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:35
+#: 08b1ba392ca14d8aaaf67af461f00dbe
+msgid "Both can be achieved during attachment with ``qvm-pci`` as described `PCI Devices documentation </user/how-to-guides/how-to-use-pci-devices.html#additional-attach-options>`__."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:40
+#: e7d8bd053424420d9249b23e89d88094
+msgid "“Unable to reset PCI device” errors"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:43
+#: 85547d96163b4c87b776e8893b9bf937
+msgid "libvirt.libvirtError: internal error: Unable to reset PCI device […]: internal error: Active […] devices on bus with […], not doing bus reset"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:45
+#: 17d044596b144577b210ce1f4f76c4d7
+msgid "After running ``qvm-start sys-net``, you may encounter an error message which begins with ``libvirt.libvirtError: internal error: Unable to reset PCI device``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:49
+#: 97bfbdca394f4a549a80b1d50822e4a8
+msgid "This issue is likely to occur if you have the same device assigned to more than one VM. When you try to start sys-net with the ``qvm-start sys-net`` command, there is already a VM running (e.g., auto-starting) with one or more of the same devices as those assigned to sys-net."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:55
+#: ec959c03e42f46cfbad8ded23df2b556
+msgid "To fix the error, remove the offending PCI device."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:58
+#: 090fa8b864ef429095261da1fbf4e6b7
+msgid "Using the Qubes interface"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:60
+#: 2be2ef7b2a0a4dedb5ec438b380f060d
+msgid "From the “Selected” panel in sys-net, navigate to VM Settings, then Devices. There, you can remove the offending PCI device(s) and keep the desired PCI device."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:65
+#: 452f72e8868649f598659544fe7d4ff7
+msgid "Using the command line"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:67
+#: 98c1b8751601422caa34879299f647fd
+msgid "To see all the PCI available devices, enter the ``lspci`` command into the dom0 terminal. Each device will be listed on a line, for example:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:75
+#: aabe891f8dd847418c875fa49eebeda7
+msgid "In the above output, the BDF (Bus Device Function) of the device is ``0000:03:00.0``"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:78
+#: f4c59a77d3c148938fe423f61ee985fb
+msgid "Now that you can see all the PCI devices and their BDFs, you can decide which to remove and which to keep. Imagine we faced the following error message:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:86
+#: d36ce127f2b54f42b067405a6bc2989c
+msgid "In the above case, the device ``0000:03:00.1`` is the device which we want to use. But we are facing the ``Unable to reset PCI device`` error because another device, ``0000:03:00.0``, is active. To fix this error and get device ``0000:03:00.1`` to work, we must first remove the offending device ``0000:03:00.0``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:97
+#: 6668e02db45642e6a1e1d89d2e994690
+msgid "In order to make this change persistent, create a file ``/etc/systemd/system/qubes-pre-netvm.service`` and add the following:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:115
+#: 03d7d65bb9b3401aa6058be1220e204b
+msgid "Finally, run ``systemctl enable qubes-pre-netvm.service`` and it will now persist between reboots."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:119
+#: 4e62659604cf4bd383a59fd4c1304fb0
+msgid "Domain […] has failed to start: internal error: Unable to reset PCI device […]: no FLR, PM reset or bus reset available"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:121
+#: f5a8bb6d5359435ab67c43bb361b62c8
+msgid "This is a `PCI passthrough issue </user/troubleshooting/pci-troubleshooting.html#pci-passthrough-issues>`__, which occurs when PCI arbitrator is too strict. There is a way to enable permissive mode for it. Sometimes, you may instead need to disable the FLR requirement on a device. Both can be achieved during attachment with ``qvm-pci`` as described below."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:128
+#: a294e8a90f3a4a1cb331954226c557f5
+msgid "NOTE: The ``permissive`` flag increases attack surface and possibility of `side channel attacks <https://en.wikipedia.org/wiki/Side-channel_attack>`__. While using the ``no-strict-reset`` flag, do not require PCI device to be reset before attaching it to another VM. This may leak usage data even without malicious intent. Both ``permissive`` and ``no-strict-reset`` options may not be necessary and you should try one first, then the other, before using both."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:141
+#: ad0944a1f6044d65aa2f72592c54caeb
+msgid "Be sure to replace ``<BDF_OF_DEVICE>`` with the BDF of your PCI device, which can be be obtained from running ``qvm-pci``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:144
+#: 5d417783c5364328b8aeebebf0f6d661
+msgid "You can also configure strict reset directly from the Qubes interface by following these steps:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:147
+#: a710a8ff5f0245d1aa19bdd0bede60f4
+msgid "Go to the sys-net VM settings"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:149
+#: 51d4e092e2c14e8fa175963fc4a9875a
+msgid "Go to Devices"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:151
+#: 8d472a4897534f789117be0650ee89d7
+msgid "Make sure the device is in the right field"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:153
+#: 72b4ccdb9b4b455a83653b55f7a6358a
+msgid "Click “Configure strict reset for PCI devices”"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:155
+#: 8e2c5b57115449d1ba765e44a1f52dae
+msgid "Select the device, click OK and apply"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:158
+#: eeb8b73849834bbe9d9ed17b7a25297d
+msgid "Broadcom BCM43602 Wi-Fi card causes system freeze"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:160
+#: 2089ba7aea524fcaab0f2268ac9696ed
+msgid "You may face the problem where the BCM43602 Wi-Fi chip causes a system freeze whenever it is attached to a VM. To fix this problem on a Macbook, follow the steps in `Macbook Troubleshooting <https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/macbook-troubleshooting.md#system-freezes-after-attaching-broadcom-bcm43602-wi-fi-card>`__."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:165
+#: 0321df70fe8644539643503cbf2f43ea
+msgid "For other non-Macbook machines, it is advisable to replace the Broadcom BCM43602 with one known to work on Qubes, such as the Atheros AR9462."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:168
+#: dd4234cc64554b60bf8448a87b32f86d
+msgid "Note that your computer manufacturer may have added a Wi-Fi card whitelist in your BIOS, which will prevent booting your computer if you have a non-listed wireless card. It is possible bypass this limitation by removing the whitelist, disabling a check for it or modifying the whitelist to replace device ID of a whitelisted WiFi card with device ID of your new WiFi card."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:176
+#: 5eabdb5112e0469794c30938f9ce38f8
+msgid "Wireless card stops working after dom0 update"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:178
+#: dad9974fb466415686ccc9f0b260b1e3
+msgid "There have been many instances where a Wi-Fi card stops working after a dom0 update. If you run ``sudo dmesg`` in sys-net, you may see errors beginning with ``iwlwifi``. You can fix the problem by going to the sys-net VM’s settings and changing the VM kernel to the previous version."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:185
+#: e2dafec264234db5a74d51b3a6a8edf2
+msgid "Attached devices in Windows HVM stop working on suspend/resume"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:187
+#: 7f660ffa573b4fc7940a54b832d47750
+msgid "After the whole system gets suspended into S3 sleep and subsequently resumed, some attached devices may stop working. Refer to `Suspend/Resume Troubleshooting </user/troubleshooting/resume-suspend-troubleshooting.html#attached-devices-in-windows-hvm-stop-working-on-suspendresume>`__ for a solution."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:194
+#: d1b5e095d42146e1adc3b3d914dcc079
+msgid "PCI device not available in dom0 after being unassigned from a qube"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:196
+#: d8e4f3e6bb8648199740b0cbfe12601f
+msgid "After you assign a PCI device to a qube, then unassign it/shut down the qube, the device is not available in dom0. This is an intended feature. A device which was previously assigned to a less trusted qube could attack dom0 if it were automatically reassigned there. Look at the `FAQs </introduction/faq.html#i-assigned-a-pci-device-to-a-qube-then-unassigned-itshut-down-the-qube-why-isnt-the-device-available-in-dom0>`__ to learn how to re-enable the device in dom0."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:204
+#: 7d6eca9298ee4c3e9eadb4c7516877e0
+msgid "Network adapter does not work"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:206
+#: 65bbe5c2f52342dc8b6d0f2c26d33add
+msgid "You may have an adapter (wired, wireless), that is not compatible with open-source drivers shipped by Qubes. You may need to install a binary blob, which provides drivers, from the linux-firmware package."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/pci-troubleshooting.rst:210
+#: 59bc2a6df5ad45e2bcc9dcb206fe3176
+msgid "Open a terminal and run ``sudo dnf install linux-firmware`` in the template upon which your NetVM is based. You have to restart the NetVM after the template has been shut down."
+msgstr ""

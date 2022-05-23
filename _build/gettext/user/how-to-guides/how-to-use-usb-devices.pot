@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:1
+#: ca92a50dbc6540579892dc6a453e94ea
+msgid "*This page is part of*\\ :doc:`device handling in qubes </user/how-to-guides/how-to-use-devices>`\\ *.*"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:4
+#: 6b440d2643e745d8b8756f2c09b7ce09
+msgid "If you are looking to handle USB *storage* devices (thumbdrives or USB-drives), please have a look at the :doc:`block device </user/how-to-guides/how-to-use-block-storage-devices>` page."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:8
+#: 71291e0b3f0d467db4150668a95fadb1
+msgid "**Note:** Attaching USB devices to VMs requires a `USB qube </user/advanced-topics/usb-qubes>`."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:11
+#: d708f84af9384fd291e39e86eb125897
+msgid "**Important security warning:** USB passthrough comes with many security implications. Please make sure you carefully read and understand the `security considerations </user/security-in-qubes/device-handling-security.html#usb-security>`__. Whenever possible, attach a :doc:`block device </user/how-to-guides/how-to-use-block-storage-devices>` instead."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:18
+#: f82c114898b34aa391efc38ca9f91070
+msgid "Examples of valid cases for USB-passthrough:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:20
+#: 3bbb3ada1cad433293e908bd62658a93
+msgid "`microcontroller programming <https://www.arduino.cc/en/Main/Howto>`__"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:22
+#: bba9ac70c0b54621891c417d93ebeaee
+msgid ":doc:`external audio devices </external/configuration-guides/external-audio>`"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:23
+#: 0959f4ef44b34526b85d575e0eb3efa7
+msgid ":doc:`optical drives </user/how-to-guides/how-to-use-optical-discs>` for recording"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:25
+#: dc6b9aeae22749c797be824054729a5d
+msgid "(If you are thinking to use a two-factor-authentication device, :doc:`there is an app for that </user/security-in-qubes/u2f-proxy>`. But it has some `issues <https://github.com/QubesOS/qubes-issues/issues/4661>`__.)"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:30
+#: 096c4641486c48c6a9c2d1130097de9f
+msgid "Attaching And Detaching a USB Device"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:33
+#: ec3c057f5d9341cba1c9302838c34269
+msgid "With Qubes Device Manager"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:35
+#: ed2e19f493e74238b6312c15d69e6a14
+msgid "Click the device-manager-icon: |device manager icon| A list of available devices appears. USB-devices have a USB-icon to their right: |usb icon|"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:38
+#: 19cea3fb03034c6ea7868260f3e5d608
+msgid "Hover on one device to display a list of VMs you may attach it to."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:40
+#: 9fd0ef5addd040129583efb5c0369b4b
+msgid "Click one of those. The USB device will be attached to it. You’re done."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:42
+#: fa3202d7b3d64a489b6dc48461dda5f3
+msgid "After you finished using the USB-device, you can detach it the same way by clicking on the Devices Widget. You will see an entry in bold for your device such as **``sys-usb:2-5 - 058f_USB_2.0_Camera``**. Hover on the attached device to display a list of running VMs. The one to which your device is connected will have an eject button |eject icon| next to it. Click that and your device will be detached."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:50
+#: adf37de5e6fb48db9a867fe024af1164
+msgid "With The Command Line Tool"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:52
+#: b88b5987c2a546968919762d73bfbffe
+msgid "In dom0, you can use ``qvm-usb`` from the commandline to attach and detach devices."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:55
+#: 85262edfcb6f4c449b0d1b6da321a84c
+msgid "Listing available USB devices:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:65
+#: 1b2c7fcfd98649028b9c80fda4fea60b
+msgid "Attaching selected USB device:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:76
+#: ff01474d3335435abc5878a97a139985
+msgid "Now, you can use your USB device (camera in this case) in the ``work`` qube. If you see the error ``ERROR: qubes-usb-proxy not installed in the VM`` instead, please refer to the `Installation Section <#installation-of-qubes-usb-proxy>`__."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:81
+#: 1f74e606b225477d9262c55f37a5e324
+msgid "When you finish, detach the device."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:93
+#: 10f6d90a566e48539f7bc4f1b65f069a
+msgid "Maintenance And Customisation"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:96
+#: 28671912e05d483b9f058acb96e2f89a
+msgid "Creating And Using a USB qube"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:98
+#: bec53917d466441e985ed2a49c0144a7
+msgid "If you’ve selected to install a usb-qube during system installation, everything is already set up for you in ``sys-usb``. If you’ve later decided to create a usb-qube, please follow `this guide </user/advanced-topics/usb-qubes>`."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:104
+#: 5af2b32eff9f4dfa96cca7af138a2979
+msgid "Installation Of ``qubes-usb-proxy``"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:106
+#: 9eb4fd88a11b4989bcdf1bbe861c5083
+msgid "To use this feature, the ``qubes-usb-proxy`` package needs to be installed in the templates used for the USB qube and qubes you want to connect USB devices to. This section exists for reference or in case something broke and you need to reinstall ``qubes-usb-proxy``. Under normal conditions, ``qubes-usb-proxy`` should already be installed and good to go."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:113
+#: 03826daf7cd44d03aad86b5ea9577500
+msgid "If you receive this error: ``ERROR: qubes-usb-proxy not installed in the VM``, you can install the ``qubes-usb-proxy`` with the package manager in the VM you want to attach the USB device to."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:118
+#: 278e92deaffc4e64a1237d713750a091
+msgid "Fedora:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:124
+#: bdf4013795e14c7eb0177698a5e9c8ac
+msgid "Debian/Ubuntu:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:131
+#: 9078f7433c0c4702a8b23e43b954affc
+msgid "Using USB Keyboards And Other Input Devices"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:133
+#: 4494b5f3b0214646adbadd8bf92ca0b8
+msgid "**Warning:** especially keyboards need to be accepted by default when using them to login! Please make sure you carefully read and understood the `security considerations </user/security-in-qubes/device-handling-security.html#usb-security>`__ before continuing!"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:139
+#: d21f5d12c22847fb8bf62f1384367257
+msgid "Mouse and keyboard setup are part of :doc:`setting up a USB qube </user/advanced-topics/usb-qubes>`."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:143
+#: 84b0df9e3b14423998a362cdc09932fc
+msgid "Finding The Right USB Controller"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:145
+#: e4335f1045a448feac2e67b41e8b4377
+msgid "Some USB devices are not compatible with the USB pass-through method Qubes employs. In situations like these, you can try to pass through the entire USB controller to a qube as PCI device. However, with this approach one cannot attach single USB devices but has to attach the whole USB controller with whatever USB devices are connected to it."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:151
+#: 7a571bd7652d4954b875071fe6b43959
+msgid "If you have multiple USB controllers, you must first figure out which PCI device is the right controller."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:154
+#: 4802e76b1f124631958fa04ea4ebba91
+msgid "First, find out which USB bus the device is connected to (note that these steps need to be run from a terminal inside your USB qube):"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:161
+#: 90f54b62a7ad415787ebd43fa9aba20a
+msgid "For example, I want to attach a broadband modem to the NetVM. In the output of ``lsusb`` it may be listed as something like:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:168
+#: 78cf306f1d104580a3733254afa9f0be
+msgid "(In this case, the device isn’t fully identified)"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:170
+#: 617aa96f870a43d8a17da813fdf73594
+msgid "The device is connected to USB bus #3. Check which other devices are connected to the same bus, since *all* of them will be attach to the same VM."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:174
+#: 28b361ff86e94aa7bc1f9942fc94508b
+msgid "To find the right controller, follow the usb bus:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:180
+#: 8b35900736bf4f1eb6da01a225206b59
+msgid "This should output something like:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:186
+#: 055d393f79c342caa6e096b75cf8f896
+msgid "Now you see the path and the text between ``/pci0000:00/0000:`` and ``/usb3`` i.e. ``00:1a.0`` is the BDF address. Strip the address and pass it to the ```qvm-pci`` tool </doc/how-to-use-pci-devices/>`__ to attach the controller to the targetVM."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-use-usb-devices.rst:191
+#: 2d3ec52cc5984eec8fdc84e87e0fb31c
+msgid "For example, On R 4.0 the command would look something like"
+msgstr ""

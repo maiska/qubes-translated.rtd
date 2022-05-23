@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:1
+#: ab2e609230ea478ab7f1966e69dbff7f
+msgid "This page covers copying files and clipboard text between `dom0 </user/reference/glossary.html#dom0>`__ and `domUs </user/reference/glossary.html#domu>`__. Since dom0 is special, the processes are different from :doc:`copying and pasting text between qubes </user/how-to-guides/how-to-copy-and-paste-text>` and :doc:`copying and moving files between qubes </user/how-to-guides/how-to-copy-and-move-files>`."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:9
+#: a79334c7f28c460b8ba38a0e149795ae
+msgid "Copying **from** dom0"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:12
+#: 55fc953a2d93470c8cd530815dd57dd1
+msgid "Copying files from dom0"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:14
+#: a1327548966d47a5b2137f666727bb3d
+msgid "To copy a file from dom0 to a VM, simply use ``qvm-copy-to-vm``:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:20
+#: 8f843d84137d473cb151a35ba854d8a0
+msgid "The file will arrive in the target VM in the ``/home/user/QubesIncoming/dom0/`` directory."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:24
+#: a4170194ae014cbfa968577e1348301f
+msgid "Copying and pasting clipboard text from dom0"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:26
+#: c27b704228db4584a6911241c68835a4
+msgid "Use the **Qubes Clipboard** widget:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:28
+#: 9ee0f051f0bb402bbfa3be674e7b0cba
+msgid "Copy text to the clipboard normally in dom0 (e.g., by pressing Ctrl+C)."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:31
+#: 43034118251d4f8e82099d88e21eb2c3
+msgid "Click the **Qubes Clipboard** icon in the Notification Area."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:33
+#: e63db131fb0d43a897a378f4beeb25e5
+msgid "Click “Copy dom0 clipboard”. This displays a notification that text has been copied to the inter-qube clipboard."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:36
+#: 032849e8e26e445dbcd6f156045c9dde
+msgid "Press Ctrl+Shift+V in the target qube. This pastes the inter-qube clipboard contents into the target qube’s normal clipboard."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:39
+#: 894892f423174bf8a7ab10933123a7b1
+msgid "Paste normally within that qube (e.g., by pressing Shift+V)."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:41
+#: cadebcf3e3404b7a85be8f8da6f63e5b
+msgid "Alternatively, you can put your text in a file, then `copy it as a file <#copying-files-from-dom0>`__. Or, you can write the data you wish to copy into ``/var/run/qubes/qubes-clipboard.bin``, then ``echo -n dom0 > /var/run/qubes/qubes-clipboard.bin.source``. Then use Ctrl+Shift+V to paste the data to the target qube."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:48
+#: 65dd547b056e4c7ea42459fef043f312
+msgid "Copying logs from dom0"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:50
+#: 54f4a25ed93442748f85262968ccb499
+msgid "In order to easily copy/paste the contents of logs from dom0 to the inter-VM clipboard, you can simply:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:53
+#: 0a97db6094f543b98530a0efa19a6e85
+msgid "Right-click on the desired qube in the Qube Manager."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:55
+#: 4d9e757495a34e798199821717a540a4
+msgid "Click “Logs.”"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:57
+#: 1207a78854c64c1d87adb5d7bb406ea3
+msgid "Click on the desired log."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:59
+#: cc7e775ffd43479590d9d37e8cdeec4b
+msgid "Click “Copy to Qubes clipboard.”"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:61
+#: 6ca53dc4778840889e38b4544c827dc1
+msgid "You may now paste the log contents in qube as you normally would (e.g., Ctrl+Shift+V, then Ctrl+V)."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:65
+#: 6755d3a12f4d455d90915ed0082f9f6c
+msgid "Copying **to** dom0"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:67
+#: a35cd07dee88430f95937d28a2bc2f40
+msgid "Copying anything into dom0 is not advised, since doing so can compromise the security of your Qubes system. For this reason, there is no simple means of copying anything into dom0, unlike `copying from dom0 <#copying-from-dom0>`__."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:72
+#: 80db91b76f3f4f5b9cb04a07e70f7500
+msgid "There should normally be few reasons for the user to want to copy anything from domUs to dom0, as dom0 only acts as a “thin trusted terminal”, and no user applications run there. Sometimes, new users feel the urge to copy a desktop wallpaper image into dom0, but that is not necessary. A safer approach is simply to display the image in :doc:`full-screen mode </user/how-to-guides/how-to-enter-fullscreen-mode>` in an app qube, then take a screenshot from dom0, which results in exactly the image needed for a wallpaper, created securely and natively in dom0."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:81
+#: 9ee688cecd1c41079d5faff10cedfc70
+msgid "If you are determined to copy some files to dom0 anyway, you can use the following method. (If you want to copy text, first save it into a text file.) Run this command in a dom0 terminal:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-copy-from-dom0.rst:89
+#: b356000084d24c42ae19195aff7d7955
+msgid "Note that you can use the same method to copy files from dom0 to domUs (if, for some reason, you don’t want to use ``qvm-copy-to-vm``):"
+msgstr ""

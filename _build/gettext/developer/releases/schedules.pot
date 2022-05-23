@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 17:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../_doc/developer/releases/schedules.rst:1
+#: afee69c9c8e543d58305ee367e039749
+msgid ":doc:`Qubes R3.0 release schedule </developer/releases/3_0/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:2
+#: 097475e6716f4323bff72701b1a9a1cb
+msgid ":doc:`Qubes R3.1 release schedule </developer/releases/3_1/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:3
+#: 6af5e9b9a2884fe78c515ba3dc97915c
+msgid ":doc:`Qubes R3.2 release schedule </developer/releases/3_2/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:4
+#: 9ac42f455dc741a680fb8f037c7703f2
+msgid ":doc:`Qubes R4.0 release schedule </developer/releases/4_0/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:5
+#: fb5a5d5c71104f57a84ec6b01700ef45
+msgid ":doc:`Qubes R4.1 release schedule </developer/releases/4_1/schedule>`"
+msgstr ""
